@@ -1,0 +1,72 @@
+---
+title: "Put your agent on your website"
+description: "Copy the agent's current installation code, add and publish it through your website, then check the widget on the actual destination page."
+keywords: ["Alysium", "Put your agent on your website", "Share and deploy"]
+---
+
+Add a chat widget so people can talk to your agent while visiting your website. Alysium supplies a short piece of installation code; your website supplies the place to add and publish it.
+
+## What you need
+
+Use an agent whose deployment settings you can edit. You also need access to edit and publish your website's custom code. If someone else manages the website, you can copy the installation code and give it to them to install.
+
+[Make the agent live](/share-and-deploy/make-your-agent-live) first. Set **Welcome Message** in **Build → Settings**, then choose the widget's appearance and enabled features in **Design** before installing it.
+
+The separate **Direct link** switch does not need to be on for a website embed.
+
+**Already in Embed on a website?** Continue with [Copy the current code](#copy-the-current-code). If you already copied the current generated code, continue with [Install it on your website](#install-it-on-your-website).
+
+## Open the embed panel
+
+1. Open [Home](https://app.alysium.ai/spaces).
+2. Select the intended agent.
+3. Open **Deploy**.
+4. Select **Embed on a website**.
+5. Continue with [Copy the current code](#copy-the-current-code).
+
+Home opens your active space, where you choose the agent. If it asks you to sign in, sign in. Open Home again if needed.
+
+## Copy the current code
+
+1. Wait for the saved widget settings to load.
+2. Select **Copy code**.
+3. Continue with [Install it on your website](#install-it-on-your-website), or give the code to your website manager for those steps.
+
+Use the exact code Alysium generated. Do not replace its agent details with a name, paste a public chat link into it, or use the builder's address as an embed.
+
+## Install it on your website
+
+Website services put custom-code controls in different locations. Use the website's code or script facility, rather than an ordinary text block. Ask your website manager where site scripts belong if you cannot find it.
+
+1. Open your website's editor.
+2. Find its facility for custom website code or scripts.
+3. Paste the copied code once, before the closing body tag where the editor supports that placement.
+4. Save the website change.
+5. Publish the website using that service's publishing controls.
+6. Open the published website in a normal browser.
+7. Open the widget.
+8. Check that it shows the intended agent.
+
+A saved draft website change is not necessarily visible on the published site. Check the actual public page; the website editor preview can differ.
+
+## Choose which websites may use it
+
+The **Allowed websites** section can restrict where the embed loads. For an installation on your own website, add the actual hostname visitors use, including a separate www hostname if needed, then enable the restriction.
+
+Follow [Limit which websites can show your agent](/share-and-deploy/limit-which-websites-can-show-your-agent) for the hostname choices and saving. Then reopen the published site and check that its widget still loads.
+
+These rules apply to the embed. They do not control the standalone chat page offered through Direct link.
+
+## Check completion
+
+The published website displays the widget, the widget opens, and it starts the intended agent. A copied snippet alone does not complete installation.
+
+The code uses your agent's Design theme. After changing installation-related settings, return to **Embed on a website** and use the current generated code rather than an old saved snippet.
+
+## Find the cause if it does not appear
+
+If Alysium does not offer the code, check that the agent is published, public access is enabled and settings loaded successfully.
+
+If the code is available but the widget is missing on the website, confirm you published the website change and used the right page or site-wide code placement. Check the hostname against any saved Allowed websites rules.
+
+If the widget opens but cannot connect, follow [When the widget will not load](/widget-visitors/when-the-widget-will-not-load). Include the website address and visible error when asking your website manager or the Alysium team for help.

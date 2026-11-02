@@ -1,0 +1,53 @@
+---
+title: "Upload and file messages"
+description: "Read Library or Attached knowledge status messages to distinguish waiting, uploading, ready and failed steps, then choose the relevant recovery."
+keywords: ["Alysium", "Upload and file messages", "Start here"]
+---
+
+Use the status on a **Library** or **Attached knowledge** row to tell whether a document is waiting, uploading, ready or in need of recovery. A filename in a list does not mean that every stage succeeded.
+
+For agent knowledge, open [Home](https://app.alysium.ai/spaces), select the agent, then open **Build → Settings → Knowledge**. [Library](https://app.alysium.ai/library) opens your stored files and other reference material. These messages concern stored knowledge documents, rather than visitor chat attachments.
+
+## Document status
+
+| Status | Meaning | What to check next |
+|---|---|---|
+| **Queued** | The item is waiting. | Allow the operation to continue. |
+| **Uploading** | The file is transferring from your device. | Keep the original file available until the operation completes. |
+| **Processing** | Alysium is preparing readable contents for knowledge search. | Wait for preparation to finish before expecting the agent to use it. |
+| **Ready** | Preparation has finished. | Confirm that the document is also attached to the intended agent. |
+| **Failed** | A stage did not finish successfully. | Read the accompanying message and use the relevant recovery below. |
+
+Processing can take longer than the file transfer. Repeatedly uploading while it is processing does not complete that preparation.
+
+## Saved in Library but not attached
+
+This warning means the document was saved, but its connection to the agent did not succeed. The saved document has not disappeared.
+
+1. Select **Retry attachment** on the affected row.
+2. Wait for the attachment result.
+3. Check the source's row on the intended agent under **Build → Settings → Knowledge**.
+
+Re-uploading the same file creates another intentional document instead of silently fixing the first attachment. Use the attachment recovery when that is the failed stage.
+
+## Format, size and storage messages
+
+| Message concerns | Appropriate recovery |
+|---|---|
+| File format | Export to a supported format. Changing the filename extension does not convert its contents. |
+| Individual file size | Reduce the file or split it into supported documents within the cap. |
+| Space storage | Review saved material and the space's plan. A model change or chat-credit top-up does not free document storage. |
+
+[File and storage limits](/help/file-and-storage-limits) lists the accepted formats and separate caps.
+
+## Retry a failed upload or processing step
+
+1. Read the affected row's message.
+2. Correct the cause it identifies, such as an unsupported format.
+3. Select **Retry** when offered.
+4. If asked to select the same file again, select the original local file.
+5. Read the resulting row status.
+
+Keep the original file available for a transfer retry. Check the result before deciding to delete a failed row.
+
+[Fix a file that failed to process](/knowledge-and-library/fix-a-file-that-failed-to-process) provides the full recovery walkthrough. If the problem remains unclear, use [Get help from a person](/help/get-help-from-a-person) with the exact message, file type and screen name.

@@ -1,0 +1,75 @@
+---
+title: "Fix a file that failed to process"
+description: "Use the message beside a failed document to identify the stage that stopped, recover that step and check whether processing has completed."
+keywords: ["Alysium", "Fix a file that failed to process", "Knowledge and Library"]
+---
+
+Use the message beside a failed item to recover the step that stopped. A document can finish one stage and fail at another.
+
+| Stage | What is happening |
+|---|---|
+| Transfer | The file moves from your device to Alysium. |
+| Processing | Readable knowledge is prepared from the file. |
+| Attachment | The saved document is connected to an agent. |
+
+Keep the original file on your device until the upload is complete. Avoid repeated uploads before checking what was already saved.
+
+## Find the failed item
+
+For an agent upload:
+
+1. Open [Home](https://app.alysium.ai/spaces).
+2. Select the intended agent.
+3. Open **Build** → **Settings** → **Knowledge**.
+4. Find the file in **Attached knowledge**.
+5. Read its name, status and accompanying message.
+
+If the upload began in [Library](https://app.alysium.ai/library), open the relevant upload or location there. Read the file's status and message, then continue with [Correct the cause](#correct-the-cause).
+
+**Ready** means preparation completed. **Failed** needs attention. A processing spinner is a waiting state, not an instruction to delete the source.
+
+## Correct the cause
+
+| Message concerns | What to do before retrying |
+|---|---|
+| Format | Export to a supported actual format. Renaming an extension does not convert the file. |
+| File size | Reduce or split the source. |
+| Storage | Review usage and Trash using [Storage limits](/knowledge-and-library/storage-limits). Resolve the space's storage issue first. |
+
+[File and storage limits](/help/file-and-storage-limits) lists supported formats and caps. Retry cannot make an unsupported or over-quota selection valid.
+
+If the message says the document is saved in Library but not attached, go to [Recover the attachment](#recover-the-attachment).
+
+## Retry the existing item when offered
+
+After correcting the cause:
+
+1. Select **Retry** if the failed row offers it.
+2. Select the original file if Alysium asks for the same file again.
+3. Wait for the updated state.
+4. Check whether it reaches **Ready**.
+
+An earlier browser session may no longer hold the local file needed for transfer. Use the same original file when requested.
+
+Some saved document rows do not offer Retry. If no recovery action is available, use [Get help from a person](/help/get-help-from-a-person) with the filename, file type and exact message. **Remove** is a different action from retrying.
+
+## Recover the attachment
+
+If the document is saved in Library but not attached:
+
+1. Select **Retry attachment** beside the warning.
+2. Check that the source appears in this agent's **Attached knowledge**.
+
+This repairs the connection to the agent. It does not upload or process another copy.
+
+If you intended a different agent, follow [Use Library files in an agent](/knowledge-and-library/use-library-files-in-an-agent) to attach the saved material there. Do not assume an unsuccessful attachment connected it elsewhere.
+
+## Check the recovered result
+
+Confirm the document is Ready. If it is meant for an agent, also confirm it is attached to that intended agent, then ask about a fact the source contains.
+
+[Test your agent while you build](/build-your-agent/test-your-agent-while-you-build) explains how to find the preview and check that reply.
+
+If a corrected file keeps failing, give support the file type, visible state and exact message. Avoid sending confidential content unnecessarily.
+
+If you choose to delete a failed row, read the action carefully; deletion is separate from retry. [Upload and file messages](/help/upload-and-file-messages) explains the visible stages.

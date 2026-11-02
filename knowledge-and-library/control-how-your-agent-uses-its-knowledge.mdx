@@ -1,0 +1,79 @@
+---
+title: "Control how your agent uses its knowledge"
+description: "Choose how closely an agent's answers follow attached knowledge and what it should say when the sources do not answer a visitor's question."
+keywords: ["Alysium", "Control how your agent uses its knowledge", "Knowledge and Library"]
+---
+
+Choose how closely your agent's answers should follow its sources and what it should say when information is missing.
+
+Attach useful knowledge first. The Behavior section appears after the agent has a file, an attached folder or project, or a website source. These settings require an agent you can edit.
+
+## Open Behavior
+
+1. Open [Home](https://app.alysium.ai/spaces).
+2. Select the intended agent.
+3. Open **Build** → **Settings**.
+4. Find **Knowledge**.
+5. Open **Behavior**.
+
+If Behavior is already open, continue with [Choose the answer boundary](#choose-the-answer-boundary). The collapsed summary shows the current grounding, whether knowledge is always consulted and whether the missing-answer reply is custom.
+
+## Choose the answer boundary
+
+Under **Answer grounding**, choose for the agent's job:
+
+| Choice | Intended behavior |
+|---|---|
+| **Strict** | Answer only from the agent's knowledge and use a not-found response for gaps. |
+| **Balanced** | Prefer the knowledge and identify added general information. |
+| **Open** | Use the knowledge alongside general information. |
+
+For a customer FAQ that must not invent business policies, start with **Strict**. A brainstorming agent may suit Open or Balanced. The label describes the intended answer boundary; it does not add missing facts or guarantee correctness.
+
+## Decide whether to search first
+
+**Always consult knowledge before answering** tells the agent to search attached knowledge first on every factual question. Turn it on when your own notes should be the first place it looks.
+
+This is separate from grounding. Strict defines the intended answer boundary; always-consult controls search-first behavior. Neither makes an unreadable or unattached source usable.
+
+## Write the missing-answer reply
+
+Use **When the answer isn't in my knowledge…** for a knowledge gap. For a fictional shop:
+
+> I do not have that detail in the shop notes. Please contact the shop team for the current policy.
+
+Replace the business and contact route with your own. Keep the wording within the displayed character limit. Do not claim the agent emailed a person or created a ticket.
+
+## Apply and save a factual-FAQ setup
+
+For an agent whose answers should stay within its supplied FAQ:
+
+1. Under **Answer grounding**, select **Strict**.
+2. Turn on **Always consult knowledge before answering**.
+3. Enter your missing-answer wording.
+4. Pause to let the settings save automatically.
+
+There is no separate Design **Save Changes** step for these choices.
+
+To check persistence, return to [Home](https://app.alysium.ai/spaces), reopen the same agent and check **Build** → **Settings** → **Knowledge** → **Behavior**.
+
+## Try a known fact and a gap
+
+Use the chat beside the Build settings, or **Chat Preview** within Build on a narrow screen.
+
+1. Enter a question your actual source answers.
+2. Select **Send message**, or press Enter.
+3. Compare the full reply with the source.
+4. Enter a question the source does not answer.
+5. Select **Send message**, or press Enter.
+6. Check how the reply handles the missing information.
+
+You are checking that the instructions and knowledge fit the task, not guaranteeing future replies. [Test your agent while you build](/build-your-agent/test-your-agent-while-you-build) explains this comparison.
+
+## If the behavior does not match
+
+- **A supported fact is missing:** check the exact attachment and its **Ready** or **Saved** state before changing grounding.
+- **A policy is invented:** confirm the intended grounding and check **Agent Instructions** for a conflicting rule.
+- **Behavior is absent:** check whether a source has been attached or whether the last source was removed.
+
+Let any correction save, then try the question again. Continue with [Why your agent can't find something](/knowledge-and-library/why-your-agent-cant-find-something) for source-specific checks.

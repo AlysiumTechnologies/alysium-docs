@@ -1,72 +1,345 @@
 {
   "$schema": "https://mintlify.com/docs.json",
-  "theme": "mint",
-  "name": "Mintlify Starter Kit",
+  "theme": "maple",
+  "name": "Alysium Docs",
+  "description": "Learn to build, test and share your AI agent with Alysium. Find practical guides to knowledge, widgets, conversations, plans and billing.",
   "colors": {
-    "primary": "#16A34A",
-    "light": "#07C983",
-    "dark": "#15803D"
-  },
-  "favicon": "/favicon.svg",
-  "navigation": {
-    "pages": [
-      {
-        "group": "Getting Started",
-        "pages": [
-          "index",
-          "quickstart"
-        ]
-      }
-    ],
-    "global": {
-      "anchors": [
-        {
-          "anchor": "Documentation",
-          "href": "https://mintlify.com/docs",
-          "icon": "book-open-cover"
-        },
-        {
-          "anchor": "Blog",
-          "href": "https://mintlify.com/blog",
-          "icon": "newspaper"
-        }
-      ]
-    }
+    "primary": "#CE005D",
+    "light": "#FF66C4",
+    "dark": "#D91B68"
   },
   "logo": {
-    "light": "/logo/light.svg",
-    "dark": "/logo/dark.svg"
+    "light": "/images/logo-light.svg",
+    "dark": "/images/logo-dark.svg",
+    "href": "/"
+  },
+  "favicon": "/favicon.png",
+  "fonts": {
+    "heading": {
+      "family": "Alysium Fraunces",
+      "source": "/fonts/fraunces.woff2",
+      "format": "woff2"
+    },
+    "body": {
+      "family": "Alysium Geist",
+      "source": "/fonts/geist.woff2",
+      "format": "woff2"
+    }
+  },
+  "appearance": {
+    "default": "light",
+    "strict": false
+  },
+  "background": {
+    "color": {
+      "light": "#FFFFFF",
+      "dark": "#171717"
+    }
+  },
+  "icons": {
+    "library": "lucide"
+  },
+  "styling": {
+    "eyebrows": "breadcrumbs"
+  },
+  "navigation": {
+    "groups": [
+      {
+        "group": "Start here",
+        "pages": [
+          "index",
+          "about-alysium/what-is-alysium",
+          "about-alysium/how-to-get-started",
+          "help/where-things-are-in-alysium",
+          "about-alysium/what-you-can-build-with-alysium",
+          "about-alysium/who-alysium-is-for",
+          "about-alysium/how-alysium-is-different",
+          "about-alysium/is-my-data-safe-with-alysium",
+          "about-alysium/what-alysium-costs",
+          "about-alysium/selling-agents-with-alysium",
+          "help/meet-brandy",
+          "help/alysium-glossary"
+        ],
+        "expanded": true
+      },
+      {
+        "group": "Account and space",
+        "pages": [
+          "getting-started/create-an-alysium-account",
+          "getting-started/sign-in-to-alysium",
+          "getting-started/use-alysium-as-a-guest",
+          "getting-started/what-a-space-is",
+          "getting-started/reset-your-password",
+          "getting-started/fix-a-verification-check",
+          "getting-started/change-your-theme",
+          "getting-started/choose-your-privacy-settings",
+          "getting-started/update-your-profile-and-avatar",
+          "getting-started/browsers-and-devices",
+          "getting-started/log-out",
+          "getting-started/delete-your-account-or-your-data",
+          {
+            "group": "Space settings",
+            "pages": [
+              "spaces/team-roles-in-a-space",
+              "spaces/set-your-public-creator-handle",
+              "spaces/switch-spaces",
+              "spaces/invite-people-to-your-space",
+              "spaces/change-a-member-role",
+              "spaces/remove-a-member-from-a-space",
+              "spaces/leave-a-space"
+            ],
+            "expanded": false
+          }
+        ],
+        "expanded": false
+      },
+      {
+        "group": "Build your agent",
+        "pages": [
+          "build-your-agent/create-your-first-agent",
+          "build-your-agent/set-your-agents-name-picture-and-description",
+          "build-your-agent/write-your-agents-instructions",
+          "build-your-agent/let-ai-draft-or-refine-your-instructions",
+          "build-your-agent/choose-your-agents-ai-model",
+          "build-your-agent/when-your-agent-answers-with-a-different-model",
+          "build-your-agent/fine-tune-how-your-agent-answers",
+          "build-your-agent/set-a-welcome-message-and-starter-prompts",
+          "build-your-agent/add-skills-to-your-agent",
+          "build-your-agent/review-a-skill-before-adding-it",
+          "build-your-agent/upload-your-own-skill",
+          "build-your-agent/update-or-retire-a-skill-you-created",
+          "build-your-agent/test-your-agent-while-you-build"
+        ],
+        "expanded": false
+      },
+      {
+        "group": "Knowledge and Library",
+        "pages": [
+          "knowledge-and-library/give-your-agent-knowledge",
+          "knowledge-and-library/upload-files-to-your-agent",
+          "knowledge-and-library/paste-text-as-knowledge",
+          "knowledge-and-library/add-a-website-to-your-agents-knowledge",
+          "knowledge-and-library/change-website-scan-settings",
+          "knowledge-and-library/control-how-your-agent-uses-its-knowledge",
+          "knowledge-and-library/how-sources-show-in-answers",
+          "knowledge-and-library/why-your-agent-cant-find-something",
+          "knowledge-and-library/fix-a-file-that-failed-to-process",
+          "knowledge-and-library/organise-your-library",
+          "knowledge-and-library/find-files-in-your-library",
+          "knowledge-and-library/use-library-files-in-an-agent",
+          "knowledge-and-library/attach-library-items-to-an-agent",
+          "knowledge-and-library/remove-a-file-from-your-agent",
+          "knowledge-and-library/restore-or-permanently-delete-from-trash",
+          "knowledge-and-library/storage-limits",
+          "knowledge-and-library/share-library-items-with-your-team"
+        ],
+        "expanded": false
+      },
+      {
+        "group": "Design your widget",
+        "pages": [
+          "design-your-widget/change-how-your-widget-looks",
+          "design-your-widget/change-the-widgets-title-and-message-box-text",
+          "design-your-widget/set-up-your-widget-menu",
+          "design-your-widget/turn-widget-features-on-or-off",
+          "design-your-widget/preview-your-widget"
+        ],
+        "expanded": false
+      },
+      {
+        "group": "Publish and share",
+        "pages": [
+          "share-and-deploy/make-your-agent-live",
+          "share-and-deploy/share-your-agent-with-a-link-and-qr-code",
+          "share-and-deploy/customize-your-agents-qr-code",
+          "share-and-deploy/put-your-agent-on-your-website",
+          "share-and-deploy/limit-which-websites-can-show-your-agent",
+          "share-and-deploy/unpublish-your-agent",
+          "share-and-deploy/delete-an-agent"
+        ],
+        "expanded": false
+      },
+      {
+        "group": "Chat with agents",
+        "pages": [
+          "share-and-deploy/chat-with-your-agents",
+          "share-and-deploy/attach-files-in-a-chat",
+          "share-and-deploy/share-a-chat-link-with-someone",
+          "share-and-deploy/rate-an-answer",
+          "share-and-deploy/conversation-check-ins"
+        ],
+        "expanded": false
+      },
+      {
+        "group": "Widget visitors",
+        "pages": [
+          "widget-visitors/what-visitors-see-in-your-widget",
+          "widget-visitors/your-widget-on-phones",
+          "widget-visitors/visitor-accounts-and-saved-history",
+          "widget-visitors/files-visitors-send-you",
+          "widget-visitors/visitor-data-and-privacy",
+          "widget-visitors/when-the-widget-will-not-load"
+        ],
+        "expanded": false
+      },
+      {
+        "group": "Analytics",
+        "pages": [
+          "analytics/read-your-analytics-dashboard",
+          "analytics/see-one-agents-analytics",
+          "analytics/who-can-see-which-conversations",
+          "analytics/search-conversations",
+          "analytics/filter-conversations-by-date",
+          "analytics/read-answer-feedback",
+          "analytics/export-conversations"
+        ],
+        "expanded": false
+      },
+      {
+        "group": "AgentHub",
+        "pages": [
+          "agenthub/browse-and-search-agenthub",
+          "agenthub/read-an-agents-page",
+          "agenthub/try-an-agent-for-free",
+          "agenthub/add-a-free-agent-to-your-space",
+          "agenthub/subscribe-to-an-agent",
+          "agenthub/why-a-marketplace-chat-is-read-only",
+          "agenthub/cancel-an-agent-subscription",
+          "agenthub/get-a-refund-for-an-agent-subscription",
+          "agenthub/leave-a-review"
+        ],
+        "expanded": false
+      },
+      {
+        "group": "Plans and billing",
+        "pages": [
+          "plans-and-billing/free-and-pro-plans-compared",
+          "plans-and-billing/how-credits-work",
+          "plans-and-billing/check-your-usage",
+          "plans-and-billing/upgrade-to-pro",
+          "plans-and-billing/turn-on-overages-and-set-a-cap",
+          "plans-and-billing/what-happens-when-you-run-out-of-credits",
+          "plans-and-billing/manage-your-agent-subscriptions",
+          "plans-and-billing/update-your-payment-method-or-see-invoices",
+          "plans-and-billing/fix-a-failed-payment",
+          "plans-and-billing/cancel-pro"
+        ],
+        "expanded": false
+      },
+      {
+        "group": "Selling and payouts",
+        "pages": [
+          "selling-and-payouts/ways-to-share-or-sell-your-agent",
+          "selling-and-payouts/apply-to-sell-on-agenthub",
+          "selling-and-payouts/set-up-stripe-to-get-paid",
+          "selling-and-payouts/what-your-stripe-status-means",
+          "selling-and-payouts/price-your-agent",
+          "selling-and-payouts/list-your-agent-on-agenthub",
+          "selling-and-payouts/publish-a-new-version",
+          "selling-and-payouts/use-your-creator-dashboard",
+          "selling-and-payouts/refund-a-subscriber",
+          "selling-and-payouts/when-and-how-you-get-paid"
+        ],
+        "expanded": false
+      },
+      {
+        "group": "Troubleshooting",
+        "pages": [
+          "help/get-help-from-a-person",
+          "help/sign-in-and-verification-messages",
+          "help/upload-and-file-messages",
+          "help/file-and-storage-limits",
+          "help/billing-and-usage-messages",
+          "help/free-preview-and-paywall-messages",
+          "help/what-alysium-cannot-do-yet"
+        ],
+        "expanded": false
+      }
+    ]
   },
   "navbar": {
     "links": [
       {
-        "label": "Support",
-        "href": "mailto:support@mintlify.com"
+        "label": "Alysium",
+        "href": "https://www.alysium.ai"
       }
     ],
     "primary": {
       "type": "button",
-      "label": "Dashboard",
-      "href": "https://app.mintlify.com"
+      "label": "Open Alysium",
+      "href": "https://app.alysium.ai/spaces"
     }
+  },
+  "footer": {
+    "links": [
+      {
+        "header": "Learn",
+        "items": [
+          {
+            "label": "Get started",
+            "href": "/about-alysium/how-to-get-started"
+          },
+          {
+            "label": "Find your way around",
+            "href": "/help/where-things-are-in-alysium"
+          },
+          {
+            "label": "Get help",
+            "href": "/help/get-help-from-a-person"
+          }
+        ]
+      },
+      {
+        "header": "Alysium",
+        "items": [
+          {
+            "label": "Website",
+            "href": "https://www.alysium.ai"
+          },
+          {
+            "label": "Open the app",
+            "href": "https://app.alysium.ai/spaces"
+          },
+          {
+            "label": "Plans and credits",
+            "href": "/plans-and-billing/free-and-pro-plans-compared"
+          }
+        ]
+      }
+    ]
+  },
+  "search": {
+    "prompt": "Search Alysium guides..."
   },
   "contextual": {
     "options": [
       "copy",
-      "view",
-      "chatgpt",
-      "claude",
-      "perplexity",
-      "mcp",
-      "cursor",
-      "vscode"
-    ]
+      "view"
+    ],
+    "display": "header"
   },
-  "footer": {
-    "socials": {
-      "x": "https://x.com/mintlify",
-      "github": "https://github.com/mintlify",
-      "linkedin": "https://linkedin.com/company/mintlify"
+  "seo": {
+    "indexing": "navigable",
+    "metatags": {
+      "canonical": "https://docs.alysium.ai",
+      "og:locale": "en_US"
     }
+  },
+  "errors": {
+    "404": {
+      "title": "This guide could not be found",
+      "description": "Use the search or navigation to find an Alysium guide.",
+      "redirect": false
+    }
+  },
+  "redirects": [
+    {
+      "source": "/quickstart",
+      "destination": "/about-alysium/how-to-get-started",
+      "permanent": true
+    }
+  ],
+  "interaction": {
+    "drilldown": false
   }
 }

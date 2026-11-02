@@ -1,0 +1,67 @@
+---
+title: "Choose your agent's AI model"
+description: "Choose an available AI model for an agent you can edit, save the choice and check which model is actually producing the agent's replies."
+keywords: ["Alysium", "Choose your agent's AI model", "Build your agent"]
+---
+
+Choose the AI model that produces replies for an agent you can edit. The agent is the assistant you configure; the model is the AI option that writes its responses.
+
+Changing the model keeps the agent's existing instructions and attached knowledge. Use this choice when you want to compare how models handle your task or balance useful responses with credit use.
+
+## Open the model picker
+
+If **Choose Your AI Model** is already open for the intended agent, continue with [Choose from the available options](#choose-from-the-available-options).
+
+1. Open [Home](https://app.alysium.ai/spaces).
+2. Select the agent you want to edit.
+3. Open **Build** → **Settings**.
+4. In **Agent Builder**, select **Choose Your AI Model**.
+
+Home opens your current space; you choose the agent there. If the link asks you to sign in, complete sign-in and reopen Home.
+
+## Choose from the available options
+
+The picker lets you browse models or describe the job you need help with. Its options and plan requirements can change, so use the choices shown to your account.
+
+For a fictional shop assistant, a task description could be:
+
+> Answers short factual questions using a small set of product and shop-policy documents; asks for clarification when needed.
+
+This describes the work you want the model to handle. Replace it with your own task. A model name that mentions reasoning does not give the agent access to your account or outside applications.
+
+To search by task:
+
+1. Enter your description in the picker's search box.
+2. Press Enter.
+3. Wait for the relevant choices to appear.
+4. Continue with [Select and save the model](#select-and-save-the-model).
+
+If you prefer to browse, review the available choices, then continue below.
+
+## Select and save the model
+
+Note the current model's name if you may want to return to it.
+
+1. Review the option you want and any plan indication.
+2. Select that model.
+3. Wait for the builder's save operation to finish.
+
+Selection saves directly. You do not need **Save Changes** in Design for this choice.
+
+A model may require Pro. If Free blocks your selection, read the plan explanation and choose an included option or review the current upgrade offer. Do not assume a blocked selection became active. Different models can use credits at different rates; a more expensive model is not automatically the better choice for your task.
+
+## Check the saved choice and try it
+
+Reopen the same agent from [Home](https://app.alysium.ai/spaces). Open **Build** → **Settings** → **Choose Your AI Model** and check the selection.
+
+Then try a question your own sources answer in the builder preview. On a wide screen, use the chat beside the settings; on a narrow screen, select **Chat Preview** within **Build**. Compare the full reply with your source and instructions. [Test your agent while you build](/build-your-agent/test-your-agent-while-you-build) explains that check.
+
+For the fictional shop example, ask about a product or returns fact present in the attached document. A greeting alone does not show how well the model handles that job.
+
+## If the result is unexpected
+
+- **The picker is still loading:** wait for its options before selecting a model.
+- **A Running as notice appears:** the preview is using a different model from the saved choice because of the current plan. Read [When your agent answers with a different model](/build-your-agent/when-your-agent-answers-with-a-different-model) before treating the saved setting as lost.
+- **A reply misses a fact:** check that the right knowledge is attached and shows **Ready** before changing models again.
+- **A reply stops partway through:** check **Max Length** using [Fine-tune how your agent answers](/build-your-agent/fine-tune-how-your-agent-answers).
+- **The new model handles the task poorly:** reopen **Choose Your AI Model** and select the previous model you noted. Wait for its save, then try the same representative question again.

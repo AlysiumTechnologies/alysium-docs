@@ -1,55 +1,32 @@
-# Mintlify Starter Kit
+# Alysium Docs
 
-Use the starter kit to get your docs deployed and ready to customize.
+Alysium's public consumer help library, built with native Mintlify navigation, search and article rendering.
 
-Click the green **Use this template** button at the top of this repo to copy the Mintlify starter kit. The starter kit contains examples with
+## Local preview and checks
 
-- Guide pages
-- Navigation
-- Customizations
-- API reference pages
-- Use of popular components
+Use Node 24 with the current Mintlify preview. Run these commands from this repository:
 
-**[Follow the full quickstart guide](https://starter.mintlify.com/quickstart)**
-
-## AI-assisted writing
-
-Set up your AI coding tool to work with Mintlify:
-
-```bash
-npx skills add https://mintlify.com/docs
+```sh
+npx mint@4.2.1184 dev --no-open
+npx mint@4.2.1184 validate
+npx mint@4.2.1184 broken-links --check-anchors --check-redirects
+npx mint@4.2.1184 a11y
 ```
 
-This command installs Mintlify's documentation skill for your configured AI tools like Claude Code, Cursor, Windsurf, and others. The skill includes component reference, writing standards, and workflow guidance.
+The unauthenticated dev preview may request `mint login` for hosted search. An optional static export can support offline review when available for the account; it is not part of the required Starter publishing workflow. Export HTML uses local placeholder canonical URLs and does not certify live indexing settings.
 
-See the [AI tools guides](/ai-tools) for tool-specific setup.
+## Content and publishing
 
-## Development
+Import the accepted shared Alysium consumer guides. Keep the source wording synchronized with the content supplied to Brandy; avoid a separately rewritten website library. Read AGENTS.md before editing.
 
-Install the [Mintlify CLI](https://www.npmjs.com/package/mint) to preview your documentation changes locally. To install, use the following command:
+Prepare changes on a branch, run the checks, review the exact diff and merge through the owner's authorized release process. Mintlify Git sync publishes changes merged to the connected `main` branch. Confirm the actual deployment is live and verify public article HTML, canonical URLs, robots, sitemap and custom-domain HTTPS after publication. A pull request alone is not a release.
 
-```
-npm i -g mint
-```
+The site uses Starter-compatible Git/local-CLI operations. The ongoing workflow does not require the Pro trial's assistant, automations, Admin API or hosted previews.
 
-Run the following command at the root of your documentation, where your `docs.json` is located:
+## Brandy
 
-```
-mint dev
-```
+`brandy.js` loads the owner-configured floating widget once per document on the selected production docs hosts. It skips local QA hosts. Do not execute production chats, uploads or widget smokes as a verification step; use an authorized nonproduction integration for behavioral QA.
 
-View your local preview at `http://localhost:3000`.
+## Recovery
 
-## Publishing changes
-
-Install our GitHub app from your [dashboard](https://dashboard.mintlify.com/settings/organization/github-app) to propagate changes from your repo to your deployment. Changes are deployed to production automatically after pushing to the default branch.
-
-## Need help?
-
-### Troubleshooting
-
-- If your dev environment isn't running: Run `mint update` to ensure you have the most recent version of the CLI.
-- If a page loads as a 404: Make sure you are running in a folder with a valid `docs.json`.
-
-### Resources
-- [Mintlify documentation](https://mintlify.com/docs)
+If a docs release fails, prepare and review a revert of that exact docs commit, publish it through the same authorized Git workflow and verify the previous serving revision. Daily automatic maintenance and Brandy knowledge synchronization are separate controlled workflows.

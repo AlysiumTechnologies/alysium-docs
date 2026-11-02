@@ -1,0 +1,73 @@
+---
+title: "Limit which websites can show your agent"
+description: "Save Allowed websites hostnames for an embedded widget, then check the actual website. This setting does not restrict the separate public chat link."
+keywords: ["Alysium", "Limit which websites can show your agent", "Share and deploy"]
+---
+
+Use **Allowed websites** when you want your embedded widget to load on specified websites. This controls website installation; it does not restrict the separate public chat link.
+
+Use an agent whose deployment settings you can edit. Have the address of every website where you intend to install the widget. You can save rules before installation, but checking them requires the widget on your published website.
+
+**Already at Allowed websites?** Continue with [Choose the hostnames](#choose-the-hostnames).
+
+## Open Allowed websites
+
+1. Open [Home](https://app.alysium.ai/spaces).
+2. Select the intended agent.
+3. Open **Deploy**.
+4. Select **Embed on a website**.
+5. Find **Allowed websites**.
+6. Continue with [Choose the hostnames](#choose-the-hostnames).
+
+Home opens your active space, where you choose the agent. If it asks you to sign in, sign in. Open Home again if needed.
+
+## Choose the hostnames
+
+The hostname is the part of a website address before any page path. For the illustrative address `www.example.com/help`, the hostname is `www.example.com`.
+
+**Add a website** accepts a hostname, such as `example.com`. Enter the hostname alone, without `https://` or a page path.
+
+A wildcard such as `*.example.com` can cover subdomains. Add the base `example.com` separately if you also use that address. A separate www hostname may need its own entry. Use the narrowest set of hostnames that covers your intended installation.
+
+**Restrict embedding to allowed websites** switches between restricted embedding and any-website embedding. A restriction needs at least one saved hostname. An empty list does not enforce a restriction even if the switch is on.
+
+Continue with [Save a restriction](#save-a-restriction) when you know which hostnames you need.
+
+## Save a restriction
+
+1. Enter a hostname in **Add a website**.
+2. Select **Add website**.
+3. Wait for the hostname to appear in the saved list.
+4. Repeat those actions for each other hostname you use.
+5. Turn on **Restrict embedding to allowed websites** if it is off.
+6. Wait for the setting to save.
+7. Open your published website.
+8. Check that the widget can load there.
+
+Do not rely on a hostname that is still only typed into the input. It must be in the saved list. If the widget is not installed yet, follow [Put your agent on your website](/share-and-deploy/put-your-agent-on-your-website), then check the published page.
+
+## Change or remove a rule
+
+1. Use the remove control beside the saved hostname.
+2. Wait for the change to save.
+3. Check the remaining saved list.
+
+Removing the last entry leaves an empty list; it is not a way to block every website.
+
+To allow embedding on any website, turn **Restrict embedding to allowed websites** off. Wait for the setting to save and confirm its state.
+
+To stop all public use, [unpublish the agent or make it private](/share-and-deploy/unpublish-your-agent).
+
+## Keep direct-link access separate
+
+The saved list and restriction switch define where the embedded widget can load. They do not make the standalone direct link private.
+
+If you do not want to offer that separate chat page, open **Deploy → Share link + QR**. Turn **Direct link** off, wait for the setting to save and check that it remains off. That switch does not control website embedding.
+
+## Fix a rejected website or failed save
+
+If the hostname is rejected, remove the protocol, slash and page path, then check the spelling. If adding fails, read the local error and retry. A failed value can remain in the field without being saved.
+
+If your legitimate website is blocked, compare the browser's actual hostname with the saved list, including www and other subdomains.
+
+If an unintended website still loads the embed, confirm that the switch is on and a nonempty list has saved. An empty list is not a restriction.

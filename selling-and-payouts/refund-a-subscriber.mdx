@@ -1,0 +1,57 @@
+---
+title: "Refund a subscriber"
+description: "Review a subscriber payment, request an eligible refund and check the resulting payment and access states as the selling space's owner."
+keywords: ["Alysium", "Refund a subscriber", "Selling and payouts"]
+---
+
+Review one subscriber payment, request an eligible refund and check the resulting payment and access states. In the current owner-only space, this is the selling space owner's task.
+
+Have the buyer, agent, payment date and amount ready. Refunds are chosen per payment, rather than by entering an arbitrary subscription-level amount.
+
+## Choose cancellation or refund
+
+Ordinary cancellation stops the next renewal and keeps access until the current period ends. A refund returns an eligible charge.
+
+If the refunded charge funds the current access period, the subscription is cancelled and access ends once Stripe confirms. A historical charge can have a different access consequence. Read the actual confirmation before acting.
+
+The in-app action requires a successful eligible charge within the **30-day self-service window**. This is an action-eligibility window, not the timing of bank settlement. Failed charges have nothing to refund.
+
+Already refunded payments, an in-flight action and previously submitted refunds can disable the button. Older payments direct you to support. There is no arbitrary partial-refund amount entry.
+
+If the intended payment or amount cannot be handled by the offered action, contact [billing@alysium.ai](mailto:billing@alysium.ai). Do not use another charge as a substitute.
+
+**Already at the intended subscriber's payment history?** Continue with [Review the intended charge](#review-the-intended-charge).
+
+## Open the subscriber
+
+1. Open [Team settings](https://app.alysium.ai/spaces?settings=team).
+2. Select **Creator**.
+3. Select **Subscribers**.
+4. Open the intended subscriber.
+5. Confirm the buyer and agent names.
+6. Find **Payment history**.
+7. Continue with [Review the intended charge](#review-the-intended-charge).
+
+The link opens the active space's settings on Team; select Creator there. If it asks you to sign in, sign in and reopen the link if needed. Use [Use your Creator Dashboard](/selling-and-payouts/use-your-creator-dashboard) if business navigation is unavailable.
+
+## Review the intended charge
+
+Confirm the buyer and agent names before choosing a charge. For example, to return the current month's payment, select that month's successful charge rather than a similarly sized historical charge.
+
+1. Match the payment's date, amount and status.
+2. Select **Refund** on that payment when available.
+3. Read the confirmation's charge details.
+4. Read its access consequence and earnings effect.
+5. Select **Refund & end access** only if that is the intended charge and outcome.
+6. Wait for the action to finish.
+7. Inspect the refreshed payment and subscription states.
+
+Select **Keep as-is** instead of the refund confirmation to cancel the request.
+
+## Recognize a confirmed or pending result
+
+Read the resulting status and any verification message. Pending or verifying means the process is still being reconciled. Do not issue another refund for the same charge; reload the subscriber detail to see the latest state when needed.
+
+Current-period access ends when Stripe confirms the refund/cancellation, not when you open the confirmation. A refund affects subscription earnings; earned usage margin is treated separately. Review the actual updated record.
+
+If the action errors or refund/access results disagree, preserve the payment reference and contact [billing@alysium.ai](mailto:billing@alysium.ai). Do not promise the buyer an unverified bank-arrival date. [When and how you get paid](/selling-and-payouts/when-and-how-you-get-paid) explains the separate earnings and payout clocks.

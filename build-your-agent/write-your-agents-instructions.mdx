@@ -1,0 +1,104 @@
+---
+title: "Write your agent's instructions"
+description: "Write an agent's job, audience, answer style and limits in ordinary language, save its Agent Instructions and check the resulting behavior."
+keywords: ["Alysium", "Write your agent's instructions", "Build your agent"]
+---
+
+Use **Agent Instructions** to describe your agent's job, audience, answer style and limits in ordinary language.
+
+Knowledge supplies the reference facts; instructions explain what to do with them. Put a full menu or delivery policy in Knowledge. Use instructions to say how the agent should explain it and what to do when an answer is missing.
+
+Some AgentHub agents do not permit editing. Use an agent you created or a copy that allows edits. If you need to make one, follow [Create your first agent](/build-your-agent/create-your-first-agent).
+
+## Open the instructions editor
+
+If the intended agent's **Agent Instructions** field is already open, continue with [Decide what to write](#decide-what-to-write).
+
+1. Open [Home](https://app.alysium.ai/spaces).
+2. Select the agent you want to edit.
+3. Open **Build**.
+4. Select **Settings**.
+5. Find **Agent Instructions** in **Agent Builder**.
+6. Read the current text.
+
+On a phone, the main builder tabs are at the bottom of the screen. A newly drafted agent may already have instructions. Copy useful text into your own notes before replacing it.
+
+## Decide what to write
+
+Answer these questions before editing:
+
+- What is this agent's job?
+- Who will ask it questions?
+- Which sources should it use?
+- How should it explain an answer?
+- Which requests should go to a person?
+- What should it say when its sources do not cover a question?
+
+Use short paragraphs or a clear list. The useful detail is the job and its boundaries, not a special AI-writing formula.
+
+Have a real contact route ready for questions the agent cannot handle. If it will answer from a document, attach that document separately in **Knowledge**. Changing instructions does not attach a source.
+
+## Adapt an example
+
+These example instructions are for a fictional café:
+
+> You help visitors understand our café's menu, opening hours and accessibility information. Use the café FAQ attached to your knowledge. Answer in friendly, plain language and keep the first reply short. Ask a brief question when the visitor's request is unclear. If the FAQ does not answer the question, say you do not have that information and give the contact route from its Contact and bookings section. Explain the booking information in the FAQ, but do not claim to make or change a booking. Do not invent prices, policies or opening hours.
+
+This defines a job, source, style and limit. If you used the fictional FAQ in [Create your first agent](/build-your-agent/create-your-first-agent), its contact route is speaking to a café team member at the counter.
+
+For your own agent, replace the audience, tasks, source name and contact route. Put the actual contact details in the source and make the instructions match it.
+
+## Apply and save your version
+
+1. Replace or revise the text in **Agent Instructions**.
+2. Wait for the save indicator near the top of the builder to stop animating.
+
+Typing saves automatically; manual editing has no separate Save button or proposal-acceptance step. On a computer, hover over the indicator to check for **All changes saved**. It may show **Saving changes...** or **Unsaved changes** while work remains.
+
+Correct any validation message before leaving. If a save error appears, copy your intended wording into your notes so you can recover it.
+
+## Confirm that the text remains
+
+1. Return to [Home](https://app.alysium.ai/spaces).
+2. Open the same agent.
+3. Open **Build** → **Settings**.
+4. Check that **Agent Instructions** contains your intended text.
+
+This is also a persistence check on a touch screen, where a hover message may be unavailable. If the text did not remain, keep your copy and follow [If you cannot save the instructions](#if-you-cannot-save-the-instructions).
+
+## Try the instructions in a conversation
+
+Use the chat beside the Build settings on a wide screen. On a phone or narrower screen, select **Chat Preview** within **Build**. Preview messages use the space's credits.
+
+For the café example:
+
+1. Enter **What does the café serve?** in the message box.
+2. Select the arrow button labelled **Send message**, or press Enter.
+3. Compare the menu reply with the attached FAQ.
+4. Enter **Can you change my booking?**
+5. Send the question.
+6. Check that the reply gives the documented contact route without claiming to change a booking.
+
+For your own agent, use one question within its job and one outside it. Look for the answer style and limit you wrote.
+
+If facts are missing, check that the required knowledge is attached and shows **Ready**. After knowledge is attached, its **Behavior** section supplies additional source-use controls. Follow [Control how your agent uses its knowledge](/knowledge-and-library/control-how-your-agent-uses-its-knowledge) for those choices.
+
+## Use nearby controls for different needs
+
+**Choose Your AI Model** selects which AI produces the replies. **Fine Tune Agent** adjusts response settings such as variation or length. Neither supplies business facts. Use [Choose your agent's AI model](/build-your-agent/choose-your-agents-ai-model) or [Fine-tune how your agent answers](/build-your-agent/fine-tune-how-your-agent-answers) when you have a specific reason to change those settings.
+
+If you own the current space, **Generate Agent Prompt** can help draft or refine instructions. You review the proposal, then choose **Insert instructions** or **Replace instructions** to apply it. [Let AI draft or refine your instructions](/build-your-agent/let-ai-draft-or-refine-your-instructions) explains that separate flow.
+
+Current spaces contain only their owner. Invitations and member-role workflows are unavailable; you do not need to request a different team role for this editing task.
+
+## If you cannot save the instructions
+
+- **The field is required:** enter a clear description of the agent's job.
+- **The length counter or validation says the text is too long:** remove repetition and move long reference material into Knowledge. Keep the important boundaries.
+- **A connection or save error persists:** preserve the text in your notes. Reopen the same agent from Home and check what remained. Restore your intended wording if needed, then wait for the saved state again.
+
+Creating another agent is not required to recover an instructions edit.
+
+The task is complete when the intended text remains after reopening and you have checked how it appears in a preview reply. Saving instructions does not publish the agent, change its public profile or install it on a website.
+
+To supply the reference facts, continue with [Give your agent knowledge](/knowledge-and-library/give-your-agent-knowledge). To introduce the same job to visitors, use [Set a welcome message and starter prompts](/build-your-agent/set-a-welcome-message-and-starter-prompts).

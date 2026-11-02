@@ -1,0 +1,83 @@
+---
+title: "Attach files in a chat"
+description: "Send a document or picture with a question for use in that conversation. Chat attachments do not automatically become reusable agent knowledge."
+keywords: ["Alysium", "Attach files in a chat", "Share and deploy"]
+---
+
+Send a document or picture with a question so the agent can use it in that conversation. A chat attachment does not automatically become reusable knowledge for everyone who uses the agent.
+
+The agent must allow file input. Questions about pictures also need an image-capable model. Have a supported file on your device and permission to share its contents.
+
+## Choose a suitable file
+
+Supported documents include PDF, Word, Excel, CSV, plain text and Markdown. Common image types include GIF, JPEG/JPG, PNG and WebP. HTML and SVG are not accepted.
+
+| Limit | What it applies to |
+|---|---|
+| **25 MB** | Each file. |
+| **5 files** | One message. |
+| **20 stored attachments** | One conversation, including files uploaded before you send a message. |
+
+For a first practice question, use a short, non-sensitive document containing facts you understand. For example, ask for a summary of that document.
+
+## Find the attachment action
+
+**Already in the intended agent's chat or widget?** Continue with [Attach the file](#attach-the-file).
+
+To use the main app:
+
+1. Open [Chat](https://app.alysium.ai/chat), or select **Chat** in the sidebar.
+2. Select the agent you want to ask.
+3. Continue with [Attach the file](#attach-the-file).
+
+The link opens the general Chat area. You choose your agent there. For a website widget, open the website where you use that agent, then continue below.
+
+## Attach the file
+
+Beside the message box, the plus menu is labelled **Add context or attachments**. It offers **Add files** in the main chat and **Add files or photos** in the widget. Some layouts show **Attach file** directly.
+
+1. Open the plus menu, if your layout uses it.
+2. Select **Add files**, **Add files or photos**, or the direct **Attach file** action shown in your chat.
+3. Choose your file in the device's file picker.
+4. Read the **Privacy Notice** if it appears.
+
+The notice explains processing and whether a copy is shared with the creator. Choose **Cancel** to stop if you do not want to proceed under those terms. Otherwise, continue:
+
+1. Select **Upload** if the notice asks you to confirm.
+2. Wait for uploading and processing to finish.
+3. Check the attachment shown beside your message.
+4. Type a specific question about its content.
+5. Select the arrow button labelled **Send message**, or press Enter.
+6. Wait for the response.
+
+The sent message should include the attachment. A file name alone does not mean processing has finished. Do not send while a file is pending or has failed.
+
+## Understand where the file goes
+
+A chat attachment belongs to the conversation. Some agents also share a copy with their creator; the upload notice explains when this happens. Read it before uploading personal or confidential material.
+
+Removing an unsent attachment from the message is different from deleting a stored upload. In a widget, **Account** → **Your uploaded files** offers deletion where available. See [Files visitors send you](/widget-visitors/files-visitors-send-you) for that process.
+
+To give an agent reusable knowledge, follow [Upload files to your agent](/knowledge-and-library/upload-files-to-your-agent).
+
+## If the file is not ready or the answer misses it
+
+- **The upload failed:** use the attachment's offered retry action, or remove the unwanted attachment before sending.
+- **The file was rejected:** check its type, size and the displayed limit.
+- **The conversation is at its stored limit:** follow [Start a new conversation at the stored limit](#start-a-new-conversation-at-the-stored-limit) for your main-app or widget chat.
+- **The attachment action is absent:** the agent may not allow uploads.
+- **The answer ignores a completed upload:** ask a direct question about the attached content.
+
+## Start a new conversation at the stored limit
+
+Starting fresh is for a new task. It does not establish that earlier stored uploads were erased. Removing a draft attachment chip also does not confirm erasure of earlier stored files.
+
+**In the main app:** follow [Start a fresh topic](/share-and-deploy/chat-with-your-agents#start-a-fresh-topic) using the chat-navigation sidebar. Then return to [Attach the file](#attach-the-file) for your new question.
+
+**In a website widget:** use the menu beside its message box.
+
+1. Wait for any current reply to finish.
+2. Open the plus menu labelled **Add context or attachments**.
+3. Select **New conversation** when available.
+4. Check that the earlier conversation's messages are no longer shown and the message box is empty.
+5. Return to [Attach the file](#attach-the-file) to add the file for your new question.

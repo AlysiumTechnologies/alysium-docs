@@ -1,0 +1,86 @@
+---
+title: "When the widget will not load"
+description: "Start with the visible symptom to investigate a missing widget launcher, connection error or unavailable agent, then check the affected route."
+keywords: ["Alysium", "When the widget will not load", "Your widget visitors"]
+---
+
+A missing launcher, a chat connection error and an unavailable agent can have different causes. Start with the symptom you can see.
+
+| Your situation | Continue with |
+|---|---|
+| You are visiting a website and cannot use its chat | [Check as a visitor](#check-as-a-visitor) |
+| You created the agent | [Check public availability](#check-public-availability) |
+| The agent is live but its launcher is missing | [Check website installation](#check-website-installation) |
+| The widget reports that the site is blocked | [Check allowed websites](#check-allowed-websites) |
+
+## Check as a visitor
+
+1. Confirm the website itself loaded.
+2. Check that your connection is working.
+3. Open the widget if its launcher is visible.
+4. Read any displayed error.
+5. Select **Retry** if offered.
+6. If it still fails, try the same website in another normal browser.
+
+If the launcher is absent, tell the website owner it is missing. Otherwise report the exact error and whether the issue affects only one browser or other visitors too. Use [Prepare a useful report](#prepare-a-useful-report) for the details.
+
+The widget can report trouble establishing its chat session when cookies, privacy tools or a network filter interfere. Review whether the site is permitted under your browser or network's normal settings. On a managed device, ask its administrator for help.
+
+Keep passwords, verification codes and payment details out of a problem report.
+
+## Check public availability
+
+For an agent you manage:
+
+1. Open [Home](https://app.alysium.ai/spaces).
+2. Select the intended agent.
+3. Open **Deploy**.
+4. Read the launch card.
+
+If it is not **Live**, inspect **Launch settings**. Public use requires the agent to be Published and public access to be on. Resolve any missing name or instruction requirement in **Build** → **Settings**, then wait for changes to save.
+
+[Make your agent live](/share-and-deploy/make-your-agent-live) gives the full launch procedure.
+
+**Direct link** controls the separate standalone destination. It does not need to be on for the embedded website widget.
+
+Once availability is correct, continue with [Check website installation](#check-website-installation) for a missing launcher or [Check allowed websites](#check-allowed-websites) for a site restriction.
+
+## Check website installation
+
+If you are elsewhere, open [Home](https://app.alysium.ai/spaces), select the intended agent and open **Deploy**. Then continue below.
+
+1. In the intended agent's **Deploy** area, open **Embed on a website**.
+2. Select **Copy code** for the current embed code.
+3. Have the website manager confirm that code is in the intended code location.
+4. Confirm the website change was published.
+5. Open the published site again.
+6. Open the widget if its launcher appears.
+
+An unpublished website draft can contain the code while the public page does not. [Put your agent on your website](/share-and-deploy/put-your-agent-on-your-website) explains placement and publication.
+
+If the launcher remains missing, prepare the report below. If it appears but reports a website restriction, continue with [Check allowed websites](#check-allowed-websites).
+
+## Check allowed websites
+
+From [Home](https://app.alysium.ai/spaces), select the intended agent and open **Deploy** → **Embed on a website**. Inspect **Allowed websites**. If that panel is already open, start with this list check.
+
+When restrictions are enabled with saved entries, the actual website hostname must match an allowed rule. Check www and other subdomains.
+
+Wait for the hostname to appear in the saved list before relying on it. An enabled switch with an empty list does not establish a restricted list.
+
+[Limit which websites can show your agent](/share-and-deploy/limit-which-websites-can-show-your-agent) explains the rule choices and saving. Then reopen the published website and check the widget again.
+
+## Prepare a useful report
+
+Include:
+
+- Website address and agent name.
+- Device and browser.
+- Exact message, if shown.
+- Whether the launcher appears.
+- Whether the same problem affects other visitors.
+- Which checks above you completed.
+
+Visitors can give this to the website owner. Creators can use [Get help from a person](/help/get-help-from-a-person) if the cause remains unclear.
+
+The working result is the intended widget opening and connecting on the published website. A copied snippet, saved hostname or Retry click alone does not establish that result.

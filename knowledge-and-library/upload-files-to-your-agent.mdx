@@ -1,0 +1,132 @@
+---
+title: "Upload files to your agent"
+description: "Upload reference documents an agent can search for answers, then check processing and try a question using your FAQ, handbook or class notes."
+keywords: ["Alysium", "Upload files to your agent", "Knowledge and Library"]
+---
+
+Give your agent reference documents it can search when answering questions. Use these for a FAQ, product information, handbook or class notes.
+
+Instructions describe how the agent should behave; knowledge supplies the information it should use. Describing your business during agent creation does not upload its facts.
+
+Choose a document you are allowed to share with the intended audience. Use an agent you can edit. For practice, start with a small, clear source and keep private customer records and passwords out of it.
+
+## Choose a supported document
+
+Stored knowledge accepts:
+
+- PDF
+- Word documents
+- Excel spreadsheets
+- CSV
+- Plain text
+- Markdown
+
+It does not accept pictures, HTML files or PowerPoint presentations as stored knowledge documents. Each file can be up to **25 MiB**, which the upload area may display as 25 MB. The space also needs enough available storage.
+
+[File and storage limits](/help/file-and-storage-limits) lists the accepted extensions.
+
+## Make a practice file if you need one
+
+You can use your own approved document or this fictional shop example.
+
+1. Open a plain-text editor on your device.
+2. Copy the four lines below into a new document.
+3. Use the editor's save command.
+4. Save the file as **Customer questions.txt** somewhere you can find again.
+
+Choose plain text if the editor asks for a format.
+
+> Shop name: Ridge and River Outdoor Shop. This shop is fictional.
+>
+> Returns: Customers should bring unused products and the purchase receipt to the shop. Staff review damaged items separately.
+>
+> Boot fitting: Try both boots with the socks you expect to hike in. Ask staff for help if the fit is uncertain.
+>
+> Delivery: This note does not state delivery times.
+
+These are practice facts, not an Alysium policy or a real shop's policy. Replace them with approved information before using the agent for a real business.
+
+## Find Upload Documents
+
+1. Open [Home](https://app.alysium.ai/spaces).
+2. Select the agent that should use the file.
+3. Open **Build**.
+4. Select **Settings**.
+5. Find **Knowledge** → **Upload Documents**.
+
+Home opens your current space; choose the intended agent there. If the upload area is already open, continue with [Select the file](#select-the-file). **Paste Text** beside it is a separate way to add a passage.
+
+## Select the file
+
+1. Select **Browse files**.
+2. Select your document in the device's file picker.
+3. Confirm the selection in that picker.
+4. Continue with [Wait for Ready](#wait-for-ready).
+
+The selection starts uploading. There is no second Alysium Upload button.
+
+You can also drop the file onto **Drop files here**, then continue with [Wait for Ready](#wait-for-ready). Keep the page open while transfer and preparation finish.
+
+## Wait for Ready
+
+Find the file in **Attached knowledge**.
+
+| State | Meaning |
+|---|---|
+| **Queued** | Waiting to start. |
+| **Uploading** | The file's bytes are transferring. |
+| **Processing** | Its contents are being prepared for knowledge search. |
+| **Ready** | Preparation is complete. |
+| **Failed** | Read the message and choose the relevant recovery below. |
+
+A file appearing in the list does not prove it has finished processing.
+
+A successful builder upload saves the document and attaches it to this agent. You do not need Design's **Save Changes** or a second attachment from Library. Other agents do not automatically receive it, and this upload does not publish the agent.
+
+To reuse the saved document elsewhere, follow [Use Library files in an agent](/knowledge-and-library/use-library-files-in-an-agent).
+
+## Try a source question
+
+After Ready, use the chat beside the Build settings. On a narrow screen, select **Chat Preview** within Build.
+
+For the practice file, ask:
+
+> What should a customer bring when requesting a return?
+
+Enter the question in the message box, then select **Send message** or press Enter. Compare the answer with the source: it says unused products and the purchase receipt. For your own document, ask about a fact it actually contains.
+
+A completion message may offer **Ask in the preview**. Selecting it sends the suggested question; it does not upload another file.
+
+## If the file type is rejected
+
+Read the message naming the file and allowed types. Export to a supported format and select the new file. Renaming an extension does not convert the contents.
+
+One unsupported file can cause the whole selection to be rejected. Check the result rather than assuming the other files uploaded.
+
+For a short passage, use [Paste text as knowledge](/knowledge-and-library/paste-text-as-knowledge) instead.
+
+## If size or storage blocks the upload
+
+For a size refusal, reduce the file or split it into smaller supported documents. For a storage warning, review the space's Library usage rather than retrying the same selection.
+
+Files in Trash still use storage until erased. [Storage limits](/knowledge-and-library/storage-limits) explains storage and plan choices separately from chat credits.
+
+## If uploading or processing fails
+
+1. Read the message beside the **Failed** row.
+2. Correct the cause.
+3. Select **Retry** if that row offers it.
+4. Select the original file if Alysium asks for it again.
+5. Wait for **Ready**.
+
+Some saved document rows do not offer Retry. Use [Get help from a person](/help/get-help-from-a-person) if there is no recovery action. Include the file type and exact message without sending confidential contents unnecessarily.
+
+A document still showing **Processing** is not ready. [Fix a file that failed to process](/knowledge-and-library/fix-a-file-that-failed-to-process) explains the separate failure stages.
+
+## If the file is saved but not attached
+
+Select **Retry attachment** beside that warning. The file is already saved; the unfinished step is connecting it to this agent.
+
+Do not upload another copy to resolve the warning. Confirm it appears in the intended agent's **Attached knowledge**.
+
+Once it is ready and attached, continue with [Control how your agent uses its knowledge](/knowledge-and-library/control-how-your-agent-uses-its-knowledge). For a missing answer, use [Why your agent can't find something](/knowledge-and-library/why-your-agent-cant-find-something).

@@ -1,0 +1,212 @@
+---
+title: "How to get started"
+description: "Build a practice agent for a fictional café, add a short reference note and try a conversation. Sharing is an optional final step in this guide."
+keywords: ["Alysium", "How to get started", "About Alysium"]
+---
+
+Create an agent, give it a short reference note and try a conversation. This project uses a fictional café so you can learn without preparing a business website or choosing advanced AI settings. Sharing the agent is an optional final step.
+
+An agent is the assistant. Its instructions describe its job and behavior; its knowledge supplies the facts it should use. Use a space you own for this guided creation flow. Drafting and preview conversations use the space's credits.
+
+## Start where you are
+
+- **New to Alysium?** Follow [Create an Alysium account](/getting-started/create-an-alysium-account). When account setup is finished, continue with [Create the practice agent](#create-the-practice-agent).
+- **Already have an account?** Continue with [Create the practice agent](#create-the-practice-agent). If Home asks you to sign in, use [Sign in to Alysium](/getting-started/sign-in-to-alysium), then reopen Home.
+- **Already created this practice agent?** Open it from [Home](https://app.alysium.ai/spaces) and continue with [Review the drafted setup](#review-the-drafted-setup).
+
+A space holds your agents, files and plan. A new personal account receives its own space; you are its owner.
+
+## Create the practice agent
+
+Use this example description. It names the job, the material you will add and a boundary:
+
+> Create a friendly assistant for a practice café. Answer visitors' questions using the café FAQ that I will add. Keep answers short and clear. If the FAQ does not include the answer, say so and suggest contacting the café team. Do not invent opening hours or claim to make bookings.
+
+1. Open [Home](https://app.alysium.ai/spaces).
+2. Select **Create New Agent**.
+3. Enter the example description in the large description box.
+4. Select **Draft my agent**.
+5. Wait for Alysium to create the draft and open its builder.
+
+The draft is an agent you can edit. Creating it does not add the café FAQ or make a public website chat. Home is where you will find the agent again.
+
+In the builder, **Build** contains its instructions and knowledge, **Design** controls the visitor chat's appearance, and **Deploy** contains publishing and sharing. On a phone, the main builder tabs may appear at the bottom. You can leave model and fine-tuning choices alone for this project.
+
+## Review the drafted setup
+
+1. Open **Build** → **Settings**.
+2. Set **Agent Name** to a recognizable name, such as **Practice café FAQ**.
+3. Read **Agent Instructions**.
+4. Correct any invented café facts or promises to make bookings.
+5. Wait for the automatic save before leaving Settings.
+
+Keep the instructions focused on explaining the FAQ you will supply. Name and instruction changes save as you edit; there is no separate Save button. On a computer, hover over the save indicator near the top of the builder to check for **All changes saved**.
+
+If saving fails, preserve your text and resolve the displayed error before continuing. [Write your agent's instructions](/build-your-agent/write-your-agents-instructions) explains that field and its separate AI drafting helper.
+
+## Add the practice facts
+
+Copy this fictional note into your agent's knowledge. It is learning material, not a real café's information:
+
+> Practice café FAQ — fictional learning example.
+>
+> The café serves coffee, tea and sandwiches.
+>
+> The entrance is step-free.
+>
+> For booking changes or questions the FAQ cannot answer, speak to a café team member at the counter. The chat assistant cannot make or change bookings.
+>
+> Opening hours are not included in this FAQ.
+
+1. In **Build** → **Settings** → **Knowledge**, enter the note in **Paste Text**.
+2. Select **Add as Document**.
+3. Wait for the source to show **Ready** in **Attached knowledge**.
+
+Typing into Paste Text does not submit the note. **Add as Document** saves it and attaches it to this agent; you do not need to upload it again through Library.
+
+When you use your own material later, supply the actual approved facts visitors need. Keep passwords and private customer records out of the practice material.
+
+## Set how the agent uses the note
+
+The note deliberately leaves out opening hours. Choose a response for that missing information.
+
+1. In **Knowledge**, open **Behavior**.
+2. Under **Answer grounding**, select **Strict**.
+3. Turn on **Always consult knowledge before answering**.
+4. In **When the answer isn't in my knowledge…**, enter: “The practice FAQ does not include that information. Please speak to a café team member at the counter.”
+5. Pause to let the settings save automatically.
+
+There is no separate Save button in Behavior. These controls guide how the agent uses its sources; they do not add facts that are absent from the note. [Control how your agent uses its knowledge](/knowledge-and-library/control-how-your-agent-uses-its-knowledge) explains the other choices.
+
+## Try the practice agent
+
+If the preview is already beside the settings, use that conversation. Otherwise, select **Chat Preview** within **Build**, then follow these steps.
+
+1. Enter **What does the café serve?** in the message box.
+2. Select the arrow button labelled **Send message**, or press Enter.
+3. Compare the reply with the note: it should say coffee, tea and sandwiches.
+4. Enter **What are the café's opening hours?**
+5. Send the question.
+6. Check that the reply explains the missing information instead of inventing hours.
+
+If the café facts are missing, return to **Knowledge**. Confirm that the note is attached to this agent and shows **Ready**, then ask again. [Why your agent can't find something](/knowledge-and-library/why-your-agent-cant-find-something) explains source and attachment checks.
+
+If the facts are present but the answer has the wrong tone or is too long, revise **Agent Instructions**. Wait for the automatic save, then try a fresh question. You can improve the same agent.
+
+You can finish the practice project with this saved draft. If you want to prepare it for visitors, continue below.
+
+## Add a visitor greeting
+
+**Welcome Message** introduces the agent to a visitor. Use this example:
+
+> Hi! I can help you explore our practice café FAQ. What would you like to know?
+
+1. Return to **Build** → **Settings**.
+2. Enter the greeting in **Welcome Message**.
+3. Wait for the automatic save.
+
+Correct any validation message beneath the field. Wait for the save indicator to stop animating; on a computer, hover over it to check for **All changes saved**. The greeting does not replace the agent's instructions or reference material.
+
+## Add a starter question
+
+In **Build** → **Settings**, find **Suggested Conversation Starters**. Visitors can choose these questions to begin a conversation.
+
+For this project, use **Is the café entrance step-free?** The practice note contains the answer.
+
+### If a starter already exists
+
+1. Edit an existing starter to use the example question.
+2. Click or tap outside its text box to save the edit.
+
+Continue with [Remove unsupported starters](#remove-unsupported-starters).
+
+### If there are no starters
+
+1. Select **Add prompt**.
+2. Enter the example question in the new field.
+3. Click or tap outside the field to save the text.
+
+Continue with [Remove unsupported starters](#remove-unsupported-starters).
+
+### Remove unsupported starters
+
+If a drafted starter suggests something the agent cannot do, use its X button labelled **Remove prompt**. Repeat for other unsupported starters. Add and remove actions save immediately; edited text saves when you leave its field.
+
+Continue with [Choose the visitor appearance](#choose-the-visitor-appearance). [Set a welcome message and starter prompts](/build-your-agent/set-a-welcome-message-and-starter-prompts) explains these controls in more detail.
+
+## Choose the visitor appearance
+
+These are practice choices, not required defaults. The preview can show Design edits before they are saved.
+
+1. Open **Design**.
+2. Under **Theme**, select a readable option, such as **Light**.
+3. Under **Features**, turn on **Starter prompts**.
+4. Turn off **File upload** if it is on.
+5. Review the widget preview.
+6. Select **Save Changes**.
+7. Wait for **All Changes Saved**.
+
+Visitors do not need to submit files for this practice task. On a smaller screen, use the **Design** subtab for controls and **Preview** to inspect the widget. Return to Design and finish steps 6–7 to save.
+
+[Change how your widget looks](/design-your-widget/change-how-your-widget-looks) and [Turn widget features on or off](/design-your-widget/turn-widget-features-on-or-off) cover other choices.
+
+## Make the practice purpose visible
+
+Before sharing, keep **Practice café FAQ** as the agent's recognizable name. Add a description so visitors know its facts are fictional:
+
+> Fictional café FAQ created to learn Alysium. Its answers are practice information, not a real business's policies.
+
+1. Open **Build** → **Profile**.
+2. Enter the example in **Description**.
+3. Wait for the builder's save indicator to finish.
+
+Description saves as you edit. You do not need a custom picture or extra profile fields for this project. [Set your agent's name, picture and description](/build-your-agent/set-your-agents-name-picture-and-description) explains that separate task.
+
+## Make it live when you want to share
+
+Making the agent live opens public access. Continue only when you want others to use it and its name, description and knowledge are suitable for visitors. You can keep the saved draft and finish here instead.
+
+1. Open **Deploy**.
+2. Read the launch card.
+
+If the card shows **Finish in Build** requirements, open **Build** → **Settings**. Complete each named field and wait for its automatic save. Return to **Deploy**, then continue below.
+
+3. Select **Make agent live**.
+4. Wait for the launch state to show **Live**.
+
+This saves publication and public access together; there is no second final Save button. Listing an agent for sale on AgentHub is a separate task. [Make your agent live](/share-and-deploy/make-your-agent-live) explains the launch controls.
+
+## Share the generated link
+
+With the agent live, use its actual sharing link.
+
+1. In **Deploy**, select **Share link + QR**.
+2. Turn on **Direct link** if it is off.
+3. Wait for the saved setting and generated link to appear.
+4. Select **Try your live agent**.
+5. Confirm that the intended practice agent opens in the new tab.
+6. Return to **Deploy**.
+7. Select **Copy** beside the link.
+8. Paste it into the destination where you want to share it.
+
+Alysium generates the destination for this agent. Use that link rather than the builder's address bar.
+
+[Share your agent with a link and QR code](/share-and-deploy/share-your-agent-with-a-link-and-qr-code) explains the other link and QR choices. For a website chat, follow [Put your agent on your website](/share-and-deploy/put-your-agent-on-your-website). That separate installation task requires access to your website's editor.
+
+## Check your finished project
+
+Reopen the same agent from [Home](https://app.alysium.ai/spaces). Check that your edited name and instructions remain, that the note is attached and **Ready**, and that **Knowledge** → **Behavior** retains your choices.
+
+You have completed the core project when you can identify its instructions and knowledge and try questions in its preview. If you chose to share, also check the generated link's visitor destination.
+
+You can return to this agent to change its facts, instructions or appearance. This practice sequence does not require a Pro upgrade, marketplace listing, website scan or custom skill package.
+
+## If you get stuck
+
+- **Draft my agent is unavailable:** enter a description and check the message shown. Guided creation requires a space you own.
+- **The draft was created but its builder did not open:** refresh Home and find the agent there. Open it and continue with [Review the drafted setup](#review-the-drafted-setup).
+- **Drafting or chat stops for a usage reason:** open [Billing](https://app.alysium.ai/spaces?settings=billing) for your current space and review the displayed plan information. Then return to the step where you stopped.
+- **The note is missing from answers:** follow the checks in [Try the practice agent](#try-the-practice-agent).
+- **The sharing link is missing:** check that the agent is **Live**, then return to [Share the generated link](#share-the-generated-link) to check **Direct link**.
+
+Use the task guide linked beside the step where you are stuck for more detail.

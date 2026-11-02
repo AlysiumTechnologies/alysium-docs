@@ -1,0 +1,69 @@
+---
+title: "Why your agent can't find something"
+description: "Check whether missing information is attached, readable and ready before uploading again or changing models, then try a source-based question."
+keywords: ["Alysium", "Why your agent can't find something", "Knowledge and Library"]
+---
+
+Check the source before repeatedly uploading files or changing models. An agent can miss information because it is attached elsewhere, still processing, paused or absent from the readable source.
+
+Use these checks on an agent you can edit. The goal is to identify the missing connection or information, then make a targeted correction.
+
+## Open the intended agent's knowledge
+
+1. Open [Home](https://app.alysium.ai/spaces).
+2. Select the agent whose answer you are checking.
+3. Open **Build** → **Settings**.
+4. Find **Knowledge**.
+
+If the right Knowledge card is already open, continue with [Check attachment and readiness](#check-attachment-and-readiness).
+
+## Check attachment and readiness
+
+Read **Attached knowledge** on this agent. A document stored only in [Library](https://app.alysium.ai/library) is not automatically attached.
+
+- **The file is absent:** attach it with [Use Library files in an agent](/knowledge-and-library/use-library-files-in-an-agent), or use the upload/paste guide if it has not been saved yet.
+- **It shows Queued, Uploading or Processing:** preparation is not finished. Wait for **Ready**.
+- **It shows Failed:** follow [Fix a file that failed to process](/knowledge-and-library/fix-a-file-that-failed-to-process).
+- **A folder or project is attached:** confirm the file is inside that covered location. Moving a file can change whether the attachment covers it.
+
+After fixing an attachment or readiness issue, continue with [Ask a direct question again](#ask-a-direct-question-again).
+
+## Check website knowledge separately
+
+1. Open **Review pages** on the website source.
+2. Check that the relevant page is listed.
+3. Check that it shows **Saved**.
+
+**Scanned** alone means the page has not yet been saved as knowledge. Follow [Add a website to your agent's knowledge](/knowledge-and-library/add-a-website-to-your-agents-knowledge) for the saving actions.
+
+On the source card, check **Active** rather than **Paused**. If the original site changed after collection, use **Refresh** and check the new result.
+
+Writing a website address in instructions does not give the agent automatic live browsing. Once the needed page is saved and active, continue with [Ask a direct question again](#ask-a-direct-question-again).
+
+## Read the actual source
+
+Open the saved material and look for the answer in its text. A poorly extracted document or an image of a page may not supply the readable information you expect.
+
+For a fictional shop, suppose the agent cannot explain delivery times. If the source contains only fitting and returns advice, supply the approved delivery information. Do not ask the agent to guess it.
+
+Use [Paste text as knowledge](/knowledge-and-library/paste-text-as-knowledge) for a short approved note or [Upload files to your agent](/knowledge-and-library/upload-files-to-your-agent) for a document. Then continue with [Ask a direct question again](#ask-a-direct-question-again).
+
+## Check answer behavior and instructions
+
+In **Knowledge** → **Behavior**, check the intended grounding and **Always consult knowledge before answering**. For a factual FAQ, Strict plus search-first can suit the job. These settings guide answers; they do not guarantee them.
+
+Read **Agent Instructions** in **Build** → **Settings** for a conflicting rule, such as ignoring sources or always inventing an answer. Let any correction save.
+
+[Control how your agent uses its knowledge](/knowledge-and-library/control-how-your-agent-uses-its-knowledge) explains those settings. After correcting them, continue with [Ask a direct question again](#ask-a-direct-question-again).
+
+## Ask a direct question again
+
+Use the preview beside the Build settings, or select **Chat Preview** within Build on a narrow screen. Enter a direct question using terms from the actual source, then select **Send message** or press Enter.
+
+Compare the reply with the relevant passage. If the answer is still missing, give [support](/help/get-help-from-a-person) the source name, visible state and exact question. Avoid disclosing unnecessary private contents.
+
+## Avoid changes that obscure the cause
+
+Uploading the same file again creates another document; it is not an in-place replacement. Moving an old file to Trash does not automatically remove it from agents. Use [Remove a file from your agent](/knowledge-and-library/remove-a-file-from-your-agent) for that task.
+
+A different model cannot supply a private business fact that was never added. Correct one source, attachment or behavior issue at a time, then ask again.

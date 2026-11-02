@@ -1,0 +1,75 @@
+---
+title: "Change website scan settings"
+description: "Change which pages an existing Library website collects and when it refreshes, then check whether the saved scan settings fit your source."
+keywords: ["Alysium", "Change website scan settings", "Knowledge and Library"]
+---
+
+Change which pages an existing Library website collects and when it refreshes. Use this when a scan is too broad, misses useful linked pages or needs a different schedule.
+
+These settings change collection. They do not edit the original site or rewrite the agent's instructions. Use a website in a space you own for this Library settings task.
+
+## Open Website settings
+
+1. Open [Library](https://app.alysium.ai/library).
+2. Open the intended website entry.
+3. Open the three-dot menu beside its heading.
+4. Select **Website settings**.
+5. Confirm the website name and address.
+
+If the dialog is already open, continue with [Choose the change](#choose-the-change).
+
+This guide covers an existing Library source. For first setup directly in an agent, use [Add a website to your agent's knowledge](/knowledge-and-library/add-a-website-to-your-agents-knowledge).
+
+## Choose the change
+
+The website address is read-only in this dialog. To use a different starting address, add a new website.
+
+The available crawl fields may vary with the offered website source. Follow the displayed labels and bounds.
+
+| Your goal | Setting to review |
+|---|---|
+| Reach useful pages farther from the starting page | Link depth |
+| Allow more pages in the result | Maximum pages |
+| Exclude an unrelated section | Pages to skip |
+| Request updates on a different schedule | Re-scan frequency |
+
+For a fictional shop FAQ collecting unrelated blog pages, add the site's actual blog section to **Pages to skip**. For example:
+
+1. Enter **/blog** in **Pages to skip**.
+2. Press Enter or Space.
+3. Check that it appears as a visible exclusion.
+
+Use its remove button to undo the entry. Use paths from your own site, rather than a fabricated tutorial domain.
+
+If information is stale, consider a different schedule or a scan now. Widening the scope does not by itself request fresher information.
+
+## Save the settings
+
+Choose one of these actions:
+
+| Action | Result requested |
+|---|---|
+| **Save** | Keep the settings without an immediate scan. |
+| **Save & scan now** | Keep the settings and request fresh collection now. |
+
+1. Change the relevant crawl or schedule fields.
+2. Select the action that matches your goal.
+3. Read the result.
+
+These buttons are alternatives. You do not need to select both.
+
+## Check settings and scan outcomes separately
+
+After a rescan, return to the website's page list and inspect the results and statuses before relying on changed information.
+
+A schedule requests future updates; it does not promise that each website edit is immediately known. Saving settings also does not prove a requested scan started.
+
+If the settings saved but the scan could not start, read that separate result. Correct the cause, then select **Scan again** in the website view. You do not need to assume the settings were lost.
+
+For the intended agent to use the Library material, check its attachment using [Use Library files in an agent](/knowledge-and-library/use-library-files-in-an-agent).
+
+## If you cannot make the change
+
+- **A field is refused:** read its validation message and use the displayed bounds.
+- **A permission message appears:** confirm you are editing the intended website in your own space. Use [Get help from a person](/help/get-help-from-a-person) if the restriction is unexpected.
+- **The address needs to change:** add a new source; do not try to force a value into the read-only field.

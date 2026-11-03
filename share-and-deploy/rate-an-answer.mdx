@@ -4,53 +4,43 @@ description: "Tell an agent's creator whether a particular answer helped, and ex
 keywords: ["Alysium", "Rate an answer", "Share and deploy"]
 ---
 
-Use answer feedback to tell the creator whether a particular reply helped. It is useful when an answer missed the question, was unclear or solved the problem well.
+<span id="rate-an-answer" />
 
-The creator must have enabled answer feedback, and the answer must be saved and eligible for rating. The controls sit below the completed answer in your chat or widget. Some layouts reveal older answers' controls when you hover over or focus the answer.
+Use the thumbs below a completed answer to tell the agent's creator whether it helped. You can leave a rating on its own or explain a problem with a reason and an optional note.
+
+In a website widget or direct-link chat, the creator chooses whether to show answer feedback. In Alysium [Chat](https://app.alysium.ai/chat), open the agent's conversation and find the answer you want to rate. Older answers may reveal their controls when you hover over the answer or move keyboard focus to it; on touch screens, the controls stay visible.
 
 ## Give a rating
 
-**Helpful** is the thumbs-up control. **Not helpful** is the thumbs-down control. You can rate an answer without adding a reason or written note.
+1. Find the thumbs below the completed answer.
+2. Select **Helpful** (thumbs up) or **Not helpful** (thumbs down).
+3. Check the filled thumb and wait for **Thanks!**, which confirms the vote saved.
 
-1. Find the answer you want to rate.
-2. Select **Helpful** or **Not helpful** below it.
-3. Wait for the selected state or thanks message.
-4. Check that there is no save error.
-
-The vote saves when you select it. If **Not helpful** opens a follow-up and you want to explain, continue with [Explain what went wrong](#explain-what-went-wrong).
+The vote saves when you select it. **Not helpful** also opens **What went wrong?**, where you can explain the problem.
 
 ## Explain what went wrong
 
-The note field names its audience: the people responsible for the agent and Alysium. Feedback does not itself rewrite the agent's instructions, guarantee a corrected answer or create a support conversation.
+Feedback is shared with the space or agent creator named in the form and with Alysium. Keep passwords and sensitive personal information out of your note.
 
-A useful fictional note might say: “The answer explained setup but did not tell me where to find Upload Documents.” Keep passwords and private account information out of the note.
+1. Select a reason that fits, such as **Wrong information**, **Didn't answer my question** or **Hard to understand**. The reason saves when you select it.
+2. If you want to add detail, type in **Add a note (optional)**. For example: “The answer gave me opening hours but did not answer whether the entrance is step-free.”
+3. Check the counter and keep the note within **280 characters**. If it is too long, shorten it to enable **Send**.
+4. Select **Send** to save the written note, then check for **Thanks!** without a save error.
 
-1. Select a reason if one fits.
-2. Enter an optional note describing the problem.
-3. Check the character counter beneath the note.
-4. Shorten the note if it exceeds the limit.
-5. Select **Send** to submit the written note.
-6. Check for a thanks or saved state without a save error.
-
-A selected reason saves when selected. A written note needs **Send**. If Send becomes unavailable because the note is too long, shorten it before trying again.
+You can close the follow-up or press Escape to dismiss it. Your saved vote and reason remain; a note you have not sent is not submitted.
 
 ## Change or clear the vote
 
-Select the other thumb to change your vote. Select the chosen thumb again to clear it. Check the resulting selected state and any save error.
+Select the other thumb to change your rating. Select the filled thumb again to clear it. Wait for the change to save and check the resulting thumb state.
 
 ## Ask for another answer
 
-After a saved negative rating on the latest answer, **Try again** may appear. Select it if you want the agent to generate another response. This is a new chat request and can use credits or preview allowance.
+After a saved negative rating on the latest answer, **Try again** may appear when the chat can send another request. Select it to ask the agent for another answer. This uses a new chat turn and can consume credits or a free-trial message.
 
-**Retry** beside a failed feedback save has a different purpose: it retries saving the feedback. It does not ask the agent for another answer.
+This differs from **Retry** beside a feedback error: **Retry** saves your feedback again; **Try again** asks the agent to respond again.
 
 ## If feedback did not save
 
-If **Didn't save.** appears, the submission did not complete as intended.
+If **Didn't save.** appears, the feedback save failed. Select **Retry** if it is offered, then wait for the error to clear and **Thanks!** to confirm the save. Some errors do not offer a retry.
 
-1. Read the displayed error or guidance.
-2. Select **Retry** when offered.
-3. Wait for the saved state.
-4. Check that the save error has cleared.
-
-If controls are absent, look below a completed answer and check whether feedback is enabled. A separate [Conversation check-in](/share-and-deploy/conversation-check-ins) may appear to rate the whole discussion.
+A rating applies to one answer. A separate [conversation check-in](/share-and-deploy/conversation-check-ins) can ask about the discussion as a whole.

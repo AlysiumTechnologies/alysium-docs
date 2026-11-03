@@ -4,63 +4,48 @@ description: "Stop renewal of a paid agent subscription and check when its acces
 keywords: ["Alysium", "Cancel an agent subscription", "Agenthub buying"]
 ---
 
-Stop renewal of a paid agent subscription and check when its access ends. This is separate from canceling your space's Alysium Pro plan.
+<span id="cancel-an-agent-subscription" />
 
-Use the account that holds the agent subscription or access grant. A paid subscription has a recurring fee. **Access without a subscription** and **Legacy access** describe grants without a linked recurring agent subscription; removing one ends that grant immediately.
+Stop a paid agent subscription from renewing and check when access will end. Your space's Alysium Pro plan is [managed separately](/plans-and-billing/cancel-pro).
 
 ## Find the correct record
 
-**Already viewing the intended agent's Billing card?** Continue with [Stop a paid renewal](#stop-a-paid-renewal), or [Remove an access grant](#remove-an-access-grant) if that is what the card describes.
+1. Open [Billing](https://app.alysium.ai/spaces?settings=billing), which opens settings for your active space.
+2. Wait for the details to load, then scroll to **Agent Access and Subscriptions**.
+3. Match the agent and creator names, and read the card's access description and status.
 
-1. Open [Billing](https://app.alysium.ai/spaces?settings=billing).
-2. Find **Agent Access and Subscriptions**.
-3. Match both the agent and creator names.
-4. Read the card's access description and status.
-5. Continue with [Stop a paid renewal](#stop-a-paid-renewal) for a subscription, or [Remove an access grant](#remove-an-access-grant) for a grant.
-
-Billing opens settings for your active space. Choose the record for the agent you intend to stop using.
+A paid subscription has a recurring fee. **Access without a subscription** and **Legacy access** describe grants with no linked recurring agent subscription. An active paid subscription offers **Unsubscribe**; an active grant offers **Remove access**. These actions end access at different times.
 
 ## Stop a paid renewal
 
-Ordinary cancellation keeps access until the current paid period ends, then stops renewal. It does not return a payment already made. For that separate task, use [Get a refund for an agent subscription](/agenthub/get-a-refund-for-an-agent-subscription).
+Canceling a paid subscription keeps access through the current paid period and stops its renewal. It does not refund a charge already made; [requesting a payment review](/agenthub/get-a-refund-for-an-agent-subscription) is a separate task.
 
-1. Select **Unsubscribe** on the intended card.
-2. Read **Cancel subscription?** and the period-end date if shown.
+1. Select **Unsubscribe** on the intended agent's card.
+2. Read **Cancel subscription?**, including the period-end date if shown.
+3. Select **Unsubscribe** in the confirmation to proceed. Choose **Keep subscription** if you want to leave the renewal in place.
+4. Wait for **Agent subscription will end after the current billing period.** Check that the card shows **Ending** with a date, or **Ending at period end**.
 
-Select **Keep subscription** to leave it active. To confirm cancellation:
-
-1. Select **Unsubscribe** in the confirmation.
-2. Wait for the result.
-3. Check the card's **Ending** state and end date.
-
-You can retain access for the remainder of that paid period. The ending state does not mean a refund was issued.
+The confirmation and resulting card state let you check that cancellation was scheduled. Closing the confirmation alone does not complete it.
 
 ## Remove an access grant
 
-Use this path for a card offering **Remove access**. Unlike a paid cancellation at period end, grant removal takes effect immediately.
+Removing a grant ends that access immediately. Use this path when the card offers **Remove access**.
 
 1. Select **Remove access** on the intended card.
-2. Read **Remove agent access?**.
+2. Read **Remove agent access?** and its immediate-access warning.
+3. Select **Remove access** in the confirmation to proceed. Choose **Keep access** if you want to keep the grant.
+4. Wait for **Agent access was removed.** Check that the card shows **Access removed**.
 
-Select **Keep access** to leave the grant in place. To proceed:
-
-1. Select **Remove access** in the confirmation.
-2. Wait for the result.
-3. Look for **Agent access was removed.**
-4. Check the card's **Access removed** state.
-
-If the result is unclear or an error appears, use [Check an unclear result](#check-an-unclear-result).
+There is no linked recurring agent subscription on this grant, so this action removes access rather than canceling a renewal.
 
 ## Understand a later resubscription
 
-An ended subscription can offer **Re-subscribe** when the listing still permits purchases. That opens a new checkout at the current offer. It does not guarantee your older price or undo a scheduled cancellation before it ends.
+After access ends, an eligible card may offer **Re-subscribe**, **Subscribe** or **Retry checkout**. The action opens the agent's current listing, where you can review the offer before [subscribing again](/agenthub/subscribe-to-an-agent). The current price and terms may differ from your previous subscription.
 
-Read the current amount before paying. Follow [Subscribe to an agent](/agenthub/subscribe-to-an-agent) if you decide to buy access again.
+**Re-subscribe** is for eligible ended access. It does not undo a cancellation that is still scheduled for the end of the paid period.
 
 ## Check an unclear result
 
-1. Reopen [Billing](https://app.alysium.ai/spaces?settings=billing).
-2. Find the intended agent under **Agent Access and Subscriptions**.
-3. Read its current status and dates before repeating the action.
+If Billing shows an error or you cannot confirm the change, reopen [Billing](https://app.alysium.ai/spaces?settings=billing), wait for it to load and find the same agent under **Agent Access and Subscriptions**. Read its current status and dates before repeating the action.
 
-If you still cannot confirm the result, contact billing@alysium.ai with the agent and displayed state. See [Manage your agent subscriptions](/plans-and-billing/manage-your-agent-subscriptions) for the card's other meanings. Use [Cancel Pro](/plans-and-billing/cancel-pro) only if you also intend to stop the separate space plan.
+If the result is still unclear, email [billing@alysium.ai](mailto:billing@alysium.ai) with the agent and creator names, the displayed status and any error message.

@@ -4,58 +4,62 @@ description: "Read Analytics to understand agent activity and recorded answer fe
 keywords: ["Alysium", "Read your analytics dashboard", "Analytics"]
 ---
 
-Use Analytics to see how people are using your agents and choose which agent needs a closer look. The dashboard summarizes conversations and recorded answer feedback; it does not establish whether every answer was correct.
+<span id="read-your-analytics-dashboard" />
 
-Your space currently contains only you, its owner. You can review visitor conversations with its agents. Someone who can chat with an agent does not gain that same access to other people's messages.
+Use Analytics to see how visitors are using the agents in your current space and choose which conversations to review. Read questions and replies behind the numbers before deciding what to improve.
 
 ## Open the dashboard
 
-1. Open [Analytics](https://app.alysium.ai/analytics), or select **Analytics** in the app sidebar.
-2. Wait for the overview to finish loading.
-3. Find the summary above **Your Agents**.
+Open [Analytics](https://app.alysium.ai/analytics), or select **Analytics** in the app sidebar. Wait for the overview to load, then find the summary above **Your Agents**.
 
-The link opens the general Analytics overview. Choose an agent under **Your Agents** to inspect its activity. If the link asks you to sign in, sign in. Open Analytics again if needed.
+The summary covers the active space. **Your Agents** shows up to 20 agent cards, so the number of cards can be smaller than **Active Agents**. The displayed cards are not necessarily the 20 agents with the most visitor conversations.
 
 ## What the summary means
 
 | Label | How to read it |
 |---|---|
-| **Conversations Started** | The number of conversations. One person can start more than one conversation. |
-| **People** | People counted across the space's agents. Adding individual agents' People values can count the same person more than once. |
-| **Average Rating** | A summary of recorded helpful and unhelpful answer votes. It represents people who rated an answer, rather than everyone who chatted. |
-| **Active Agents** | The number of agents in the overview. It does not mean that each one is currently serving a visitor. |
+| **Conversations Started** | All-time visitor conversations with user activity across the space's agents. Deleted conversations and your own space's practice chats are excluded. One person can have several conversations. |
+| **People** / **Your agents talked with N people** | Distinct visitors across the space's agents, counted once across the space. The same person can still appear in more than one individual agent's People total. |
+| **Average Rating** / **Overall Helpfulness** | Current helpful answer votes as a percentage of helpful and unhelpful votes in the dashboard's feedback data. Cleared votes do not count. One person can rate several answers. |
+| **Active Agents** | Nondeleted agents in the space, including drafts and agents with no conversations. It does not show how many agents are online or serving someone now. |
 
-For example, six people might start ten conversations. That would not mean ten different people visited. If one of those people used two agents, they could appear in both agents' People values.
+For example, six visitors might have ten conversations. If one visitor used two agents, adding those agents' individual People totals could count that visitor twice.
 
-A dash means a value is unavailable; it is different from an observed zero. The overview can also show **0%** when there are no votes. Check an agent card's feedback information before interpreting that percentage as dissatisfaction.
+The overview shows **0%** when it has no answer votes. Check for **No Feedback** on the agent card before reading that percentage as dissatisfaction. A conversation count is activity, and a rating is recorded feedback; neither establishes that an answer was correct or that the visitor achieved their goal.
 
 ## What the agent cards tell you
 
-Cards under **Your Agents** show each agent's name, conversation count and recorded helpfulness or **No Feedback**. Activity indicators such as **Active today** or **No activity** help you choose an agent to inspect.
+Each displayed card shows an agent's name, all-time visitor conversation count and **Helpful** percentage or **No Feedback**. **No Feedback** means there are no answer votes in that card's feedback data. People may still have chatted with the agent.
 
-**No Feedback** means there is no rating evidence for that card. It does not mean that no one chatted, or that everyone was satisfied. A busy agent with no feedback is a useful place to read actual questions and replies.
+A dash (**—**) in the conversation count means the count is unavailable. Wait for loading placeholders to settle before interpreting a card.
+
+Activity badges describe conversation-start history. **Active today** means activity within the last elapsed day, rather than someone using the agent right now. Weekly growth compares the latest seven days with the preceding seven days. **New Agent** can mean there was activity in the latest window and none in the previous one; it does not establish when the agent was created.
+
+Activity badges, growth and feedback use a different basis from the visitor conversation totals, and those history-based fields may not cover every record for a very busy agent. Use them to choose what to inspect rather than treating every field as the same measure.
 
 ## Look behind a number
 
-1. Under **Your Agents**, select the intended agent's card.
+1. Under **Your Agents**, select a displayed agent card.
 2. Check the agent name at the top of the page that opens.
-3. Under **Recent Conversations**, select a conversation.
-4. Wait for its messages to appear.
-5. On a small screen, open **Msgs** if needed.
-6. Read the question and reply together.
+3. Under **Recent Conversations**, select a conversation and wait for its saved messages.
+4. Read the visitor's question and the agent's reply together. Scroll in the message viewer for the surrounding exchange.
 
-The card opens the agent's all-time conversation list. Its detailed summary can use a different period, so check that period before comparing summary numbers with the list. See [See one agent’s analytics](/analytics/see-one-agents-analytics) for those controls.
+On smaller screens, use **Conversations** or **Chats** to reach the list and **Messages** or **Msgs** to read the selected exchange. Selecting a conversation normally switches to its messages. On wide screens, the list and messages sit side by side.
 
-For a fictional Workshop FAQ agent, conversations about arrival time might reveal a question your reference document does not answer. Read the full exchange and compare the answer with your approved material before deciding what to change. The conversation count alone cannot identify the problem.
+The card opens an all-time visitor conversation list. The agent's summary usually starts with **Last 30 days**, or a retained **Period**, so it can cover less activity than that list. You can [compare the period, signs and conversations](/analytics/see-one-agents-analytics) on the agent's page.
+
+If a reply appears incomplete or wrong, compare its full wording with your approved information. The number that led you to the conversation does not identify the cause.
 
 ## If something is missing
 
-If a loading placeholder is still showing, wait for it to settle. Select **Retry conversation counts** when it appears to request those counts again.
+Select **Retry conversation counts** when it appears to request unavailable counts again. An unavailable count is different from an observed zero. If the whole overview shows **Error Loading Analytics**, reopen Analytics to try loading it again.
 
-If an expected agent is missing, open [Home](https://app.alysium.ai/spaces) to check the account and space you are using. Home opens your active space. A new agent may have no conversations yet, while a failed or unavailable count is not evidence of zero activity.
+If an expected card is missing, open [Home](https://app.alysium.ai/spaces) and check the active space. Remember that the dashboard displays up to 20 cards even when **Active Agents** is higher. If the card is still absent in the right space, contact [support@alysium.ai](mailto:support@alysium.ai) with the agent and space names.
 
-Viewing the dashboard needs no Save action. Opening a conversation can record that you have read it without changing its messages.
+**Ready for Action!** is the overview's empty state when there are no agents or data to show. A failed read or an unavailable value does not establish that no conversations exist.
+
+Viewing Analytics needs no **Save** action. Selecting a conversation yourself can record it as read after that update succeeds.
 
 ## Find usage and billing information
 
-Conversation counts and ratings do not show your credit balance, the cost of a chat or your payouts. Use [Check your usage](/plans-and-billing/check-your-usage) for platform usage. [Billing](https://app.alysium.ai/spaces?settings=billing) opens your active space's plan and payment controls. Selling and payout information belongs in the Creator dashboard when it is available to your account.
+Conversation counts and ratings do not show your credit balance or the cost of a chat. You can [check the space's usage and allowance](/plans-and-billing/check-your-usage) separately. [Billing](https://app.alysium.ai/spaces?settings=billing) opens the active space's plan and payment controls.

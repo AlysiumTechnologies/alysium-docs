@@ -4,164 +4,103 @@ description: "Collect readable pages from a public website as agent knowledge, c
 keywords: ["Alysium", "Add a website to your agent's knowledge", "Knowledge and Library"]
 ---
 
-Collect readable pages from a public website and save them as knowledge for your agent.
+<span id="add-a-website-to-your-agent’s-knowledge" />
 
-A scan finds pages. Saving their content to memory makes it available for answers. This does not install a chat widget, publish the agent or give it unrestricted live web browsing during conversations.
+Give your agent reference information from a public website. You supply the starting address, scan its pages, review what was collected and save the useful pages for answers.
 
-Use an agent you can edit and a website you own or are allowed to use. Choose a public starting page you can read without a customer login. For a first scan, a clear FAQ or service page is easier to check than a large site with unrelated material.
+Choose a website you own or are allowed to use. A public FAQ or service page is a manageable first source. The agent answers from the saved material; a scan collects that material ahead of the conversation.
+
+<span id="if-the-form-is-unavailable" />
 
 ## Open the website setup
 
-1. Open [Home](https://app.alysium.ai/spaces).
-2. Select the intended agent.
-3. Open **Build** → **Settings**.
-4. Find **Knowledge** → **Website**.
-5. Select **Add your website**.
+1. Open [Home](https://app.alysium.ai/spaces) and select your agent.
+2. Open **Build** and scroll down to **Knowledge**. If you are viewing Profile or Chat Preview, select **Settings** first.
+3. In the **Website** section of Knowledge, select **Add your website**.
 
-Home opens your current space; you choose the agent there. If the setup dialog is already open, continue with [Choose the address and scope](#choose-the-address-and-scope).
+If you already added a website to this agent, you will see its source card here instead. **Review pages** opens the collected material, and **Refresh** scans the saved address again. To keep that source and add another starting address, [collect the new website in Library](/knowledge-and-library/add-a-website-to-your-agents-knowledge#use-library-to-collect-a-website-for-reuse) and attach its folder to the agent.
 
-If the intended website is already attached, select **Review pages** on its source card and continue with [Review the page results](#review-the-page-results). To keep that source while adding another starting address, use [Add a website through Library](#add-a-website-through-library).
+<span id="choose-the-address-and-scope" />
+<span id="set-up-a-small-first-scan" />
+<span id="start-the-scan" />
 
-## If the form is unavailable
+## Enter the address and choose the scan scope
 
-If an upgrade explanation appears, review the offer before choosing **Upgrade to Pro**. **Not now** closes it. You do not need to buy a plan just to finish a practice example.
+For a new website, enter the full URL of the public page you want the scan to start from. Use a page that contains the information you need or links to it, rather than a page behind a customer login.
 
-You can use [Upload files to your agent](/knowledge-and-library/upload-files-to-your-agent) or [Paste text as knowledge](/knowledge-and-library/paste-text-as-knowledge) for approved document material instead.
+You can leave the optional settings unchanged for a first scan. Select **Crawl settings** if you want to adjust how much to collect or when to scan again:
 
-If **Add your website** is missing, check the intended agent's **Build** → **Settings** → **Knowledge** area. An existing website has a source card instead of a second new-source button. Use **Review pages**, then continue with [Review the page results](#review-the-page-results).
-
-If the Website section is absent entirely, use [Get help from a person](/help/get-help-from-a-person) to ask about availability for your account. Do not assume the site was added.
-
-## Choose the address and scope
-
-Paste the complete address of your own public starting page into the website-address field. It may be labelled **Your website address**. Use the page you actually want collected, rather than an example company's address.
-
-Select **Crawl settings** to reveal optional controls. A crawl is a scan that follows website links. These choices affect the collected material, not the agent's tone or intelligence.
-
-The offered fields, labels and bounds can vary. Follow your displayed form. These are the purposes of the controls you may see:
-
-| Field | What it controls |
+| Setting | What it controls |
 |---|---|
-| **How deep should we follow links?** | How far the scan follows links from the starting page. A higher value can reach pages farther away. |
-| **Maximum pages** | A cap on the number of collected pages. The scan may find fewer because of links, readable content or access restrictions. |
-| **Pages to skip** | Pages or sections to leave out of collection. |
-| **How often should we re-scan?** | When later scans should be requested. This is separate from whether the agent uses saved pages. |
+| Link depth | How far the scanner follows links from your starting page. A larger depth can reach pages farther away. |
+| Maximum pages | The most pages the scan should collect. It may find fewer. |
+| Pages to skip | Pages or sections you want to leave out. |
+| Re-scan schedule | When to request another scan for updated website information. |
 
-For **Pages to skip**, use paths from your own site. For example, enter **/blog** and press Enter or Space to make it a visible entry. This excludes that section and its pages. You can also paste a full link from the same site. Use an entry's small remove button to undo it. This changes collection, not the original website.
+Use the labels and values shown in the form. For **Pages to skip**, a path such as `/blog` excludes that section and its pages. Press Enter or Space after typing a path to add it as an entry; use its remove button to undo it.
 
-## Set up a small first scan
+Select **Scan website**. If the form marks a field, correct the value and submit again. Wait for the scan results; you can use **Stop scan** if you need to stop collection.
 
-The following are practice choices, not product defaults or a promised page count. Use them only where the fields and values are offered:
+<span id="review-the-page-results" />
+<span id="save-the-pages-to-memory" />
 
-1. Enter your public FAQ or service-page address.
-2. Open **Crawl settings**.
-3. Set link depth to **1**, if allowed.
-4. Set maximum pages to **10**, if allowed.
-5. Leave **Pages to skip** empty unless you know a section should be excluded.
-6. Choose **Never** for re-scanning, if offered.
+## Review and save the pages
 
-Never lets you refresh manually. A recurring option such as Weekly, when available, requests later scans. Neither a schedule nor a scan guarantees a website edit is available to answers the moment you publish it.
+The results show page names, addresses and how many pages were found. Expand a page to read the collected text. Check that it contains the facts you want the agent to use, and **Remove** any unwanted pages.
 
-## Start the scan
+On this first scan, **Scanned** means a page has been collected but has not yet been saved as answerable knowledge.
 
-1. Check the address and optional scope settings.
-2. Select **Scan website**.
-3. Wait for page results.
+1. Select **Save to Memory** to prepare the remaining unsaved pages for answers. For a single pending page, you can use its **Save** action.
+2. Wait for the intended pages to show **Saved**. **Saving…** means that work is still underway.
+3. Check the switch on the website source card. It should show **Active** when you want the agent to use this source; **Paused** turns that use off.
 
-Correct any marked field before selecting **Scan website** again. The source form does not use Design's **Save Changes**.
+If you close the results, **Review pages** on the source card opens them again. Pages already marked Saved have completed the saving step.
 
-## Review the page results
+<span id="check-active-and-try-a-question" />
+<span id="if-an-answer-misses-website-information" />
 
-Read the page names and addresses before saving them as knowledge. The header distinguishes pages found from pages saved to memory.
+## Check an answer against the source
 
-A page marked **Scanned** was found but is not yet saved knowledge. Expand a page to inspect its content when needed. Use **Remove** for a page you do not want included.
+Use the chat beside the Build settings, or select **Chat Preview** within Build on a smaller screen. Ask about a specific fact you just read on a Saved page. Select **Send message** or press Enter, then compare the reply with the collected text. The completion message's **Ask in the preview** action can send a suggested question for you.
 
-If you are back on the website source card, select **Review pages** to open the list, then continue with [Save the pages to memory](#save-the-pages-to-memory).
+For example, if the collected FAQ says a service is available on Saturdays, ask whether it is available on Saturdays. Use an actual fact from your source so you can tell whether the reply is supported.
 
-## Save the pages to memory
+If the answer misses the information, check that the relevant page is Saved and the source is Active. Then review **Agent Instructions** for a conflicting rule. The [knowledge troubleshooting guide](/knowledge-and-library/why-your-agent-cant-find-something) has further source and answer checks.
 
-**Save to Memory** handles eligible pending or failed pages; it is not a checkbox-selection step. Remove unwanted pages first.
+<span id="recover-an-empty-scan-or-failed-page" />
 
-1. Select **Save to Memory**.
-2. Wait for the pages to finish saving.
-3. Check that the intended pages show **Saved**, rather than only **Scanned**.
+## Update or retry the website source
 
-For one pending page, use its row's **Save** action, then check that it becomes Saved.
+When the website changes, select **Refresh** on its source card. Refresh uses the address you saved and processes changed pages. Review the collected result before relying on the new information in answers. The source's schedule requests later scans; **Active** controls whether its saved knowledge is used.
 
-The global button may be unavailable while other work runs or when no eligible content remains to save. If the intended pages already show Saved, continue with [Check Active and try a question](#check-active-and-try-a-question).
+Use the recovery offered for the state you see:
 
-## Check Active and try a question
+| What you see | What to do |
+|---|---|
+| A page shows **Failed** | Select that row's **Retry**, then check its status. |
+| The scan says **The last scan failed. Try again.** | Select **Try again**. On the source card, a failed refresh offers **Retry**. |
+| A message asks you to wait before retrying | Wait for the countdown and use the retry control when it becomes available. |
+| No useful pages were collected | Check that your starting page opens publicly and contains readable text, or links to the material within your chosen scope. For material the scanner cannot read, add its text as a document. |
 
-The website source stays attached to this agent after setup. On its source card, check the switch beside **Active** or **Paused**. Turn it on if you want the agent to use the saved pages; it should show **Active**.
+For information the scanner cannot collect, you can add an approved file with **Browse files** under Knowledge, or enter a passage in **Paste Text** and select **Add as Document**. Wait for the resulting document to become Ready. The [file upload guide](/knowledge-and-library/upload-files-to-your-agent) explains supported formats and limits.
 
-This switch controls use of the knowledge. It is separate from the re-scan schedule.
+If repeated attempts still fail, email [Alysium support](mailto:support@alysium.ai). Include the URL you tried to scan, the agent's name, the action you tried and any message the screen displayed. Say what happened when you retried.
 
-A success message may say **Your agent now knows your website — ask it something.** Select **Ask in the preview** to send its suggested question. To ask your own, use the chat beside the Build settings or select **Chat Preview** within Build on a narrow screen.
+<span id="add-a-website-through-library" />
+<span id="check-the-library-scan-and-pages" />
+<span id="recover-the-existing-library-website" />
+<span id="attach-the-library-material" />
 
-Enter a question about a fact you just checked on a Saved page, then select **Send message** or press Enter. Compare the reply with that actual page. Saved, active knowledge gives the agent material to consult; it does not guarantee every answer is correct.
+## Use Library to collect a website for reuse
 
-## Recover an empty scan or failed page
+Library is useful when you want to organize website material centrally or add another starting address while keeping an agent's existing source. Collection and attachment are separate steps here:
 
-- **No useful pages appear:** reopen the starting page in your browser and check its visible text. Some sites do not provide readable content to the scanner. Use approved uploaded or pasted material if needed.
-- **Useful content is several links away:** review the scope using [Change website scan settings](/knowledge-and-library/change-website-scan-settings) for an existing Library website.
-- **A page shows Failed:** read its message, correct the cause and use that page's **Retry** control.
-- **A page only shows Scanned:** complete **Save to Memory** or its row's **Save** action.
-- **The original site changed:** select **Refresh** on the source card, then review the new results and saved state before expecting the edit in answers.
+1. Open [Library](https://app.alysium.ai/library), then the project where you want to keep the website.
+2. Select **Add new**, then **Add your website**. Enter the starting URL, check the destination and adjust **Crawl settings** if needed.
+3. Select **Add website**. Open the resulting website entry and check its **Pages** list and collected text. Library processes those pages during collection. If the entry was saved but the scan could not start, read the displayed result and use **Scan again** from that existing entry when you can retry.
+4. Open your agent in Build, return to its Settings view if needed and scroll to Knowledge. Select **Add from Library**, expand the destination project and select the website's folder.
+5. Check the selection summary and select **Attach**. Confirm the folder appears in **Attached knowledge**, then try a question about one of its collected facts.
 
-**Refresh** uses the saved address. It does not choose a new starting page. To retain this source while adding another address, use the Library path below. Avoid repeatedly adding the same website because one page has not finished.
+Attaching that folder gives the agent access to eligible material already there and eligible pages added there later. You can [choose a different Library attachment scope](/knowledge-and-library/use-library-files-in-an-agent) if you want a narrower selection.
 
-## Add a website through Library
-
-Use Library to organize website material centrally. You need permission to add a website in the chosen Library project.
-
-1. Open [Library](https://app.alysium.ai/library).
-2. Select **Add new**.
-3. Select **Add your website**.
-4. Enter your public starting-page address.
-5. Select **Add website**.
-6. Read the result before continuing.
-
-This dialog uses **Add website**, while the direct-agent form uses **Scan website**.
-
-### Check the Library scan and pages
-
-When the scan starts, the dialog closes and Alysium explains that pages will appear as they arrive. A saved website entry alone does not mean its pages have been collected.
-
-If the website was saved but its scan could not start, the dialog stays open with a message explaining why. A plan refusal may offer **Upgrade**. Read that offer before deciding; you can keep the saved website without buying a plan. Continue with [Recover the existing Library website](#recover-the-existing-library-website).
-
-For a scan that started:
-
-1. Open the existing website entry in Library.
-2. Read the scan status beside its heading.
-3. Check the **Pages** list as results arrive.
-4. Open a relevant page to check the collected information.
-
-While the scan is running, wait for its page results. If it fails or finishes without the needed material, read its status and any displayed message, then continue with [Recover the existing Library website](#recover-the-existing-library-website). Once the needed pages are available, continue with [Attach the Library material](#attach-the-library-material).
-
-### Recover the existing Library website
-
-Read the scan refusal or error and correct its cause. If **Upgrade** is shown for a plan restriction, review the offer before choosing a purchase. [Uploaded files](/knowledge-and-library/upload-files-to-your-agent) or [pasted text](/knowledge-and-library/paste-text-as-knowledge) are alternatives for approved material.
-
-For missing pages, check that the original public page contains readable text. Use [Change website scan settings](/knowledge-and-library/change-website-scan-settings) if the collection scope needs to change.
-
-After correcting the cause:
-
-1. Close the add-website dialog if it is still open.
-2. Open the saved website entry in Library.
-3. Select **Scan again** beside its heading.
-4. Read the result.
-5. Return to [Check the Library scan and pages](#check-the-library-scan-and-pages).
-
-Recover the existing entry rather than adding the website again. If the restriction remains unclear, use [Get help from a person](/help/get-help-from-a-person) with the address and exact message.
-
-### Attach the Library material
-
-After checking the collected pages, follow [Use Library files in an agent](/knowledge-and-library/use-library-files-in-an-agent) to attach the material through **Add from Library**. Once attached, use the intended agent's Build preview to ask about a fact you checked. On a narrow screen, select **Chat Preview** within Build. Enter the question, then select **Send message** or press Enter.
-
-## If an answer misses website information
-
-Check the relevant page is listed and **Saved**, and the source is **Active**. Review **Knowledge** → **Behavior**, then ask a direct question about the page's actual contents.
-
-[Why your agent can't find something](/knowledge-and-library/why-your-agent-cant-find-something) supplies further checks. [Control how your agent uses its knowledge](/knowledge-and-library/control-how-your-agent-uses-its-knowledge) explains grounding and missing-answer choices.
-
-To put a chat window on the site, use [Put your agent on your website](/share-and-deploy/put-your-agent-on-your-website). That separate Deploy task requires access to the website's editing tools.
+For a saved Library website, its three-dot menu contains **Website settings**, where you can [change the collection scope and schedule](/knowledge-and-library/change-website-scan-settings).

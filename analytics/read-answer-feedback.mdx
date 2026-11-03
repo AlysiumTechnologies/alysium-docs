@@ -4,96 +4,76 @@ description: "Use an agent's Feedback tab, when available, to inspect a reported
 keywords: ["Alysium", "Read answer feedback", "Analytics"]
 ---
 
-Use an agent's **Feedback** tab, when available, to understand a reported answer problem and record how you handled it.
+<span id="read-answer-feedback" />
 
-Feedback brings together signals such as a thumbs-down on an answer, a **Not great** conversation check-in, or an answer that cut off. A check-in assesses the conversation overall. A report is a reason to investigate; it does not by itself establish which knowledge or setting caused the problem.
+Use an agent's **Feedback** tab to investigate a reported problem, decide what needs attention and record how you handled it.
 
-**Already on Feedback?** Continue with [Open a report](#open-a-report). **Already reading a report?** Continue with [Read the answer in context](#read-the-answer-in-context).
+Reports include negative answer ratings, **Not great** conversation check-ins and recorded answers that cut off. A check-in concerns the conversation overall. A reason or source reference helps you investigate; it does not establish what caused the problem.
 
 ## Open Feedback
 
-1. Open [Analytics](https://app.alysium.ai/analytics).
-2. Under **Your Agents**, select the intended agent.
-3. Select **Feedback** when it is available.
-4. Continue with [Open a report](#open-a-report).
+1. Open [Analytics](https://app.alysium.ai/analytics) and select the intended agent under **Your Agents**.
+2. Check the agent's name, then select **Feedback**.
+3. Under **Needs attention**, select **Open** and choose a report.
 
-The link opens the Analytics overview, where you choose your own agent. If it asks you to sign in, sign in. Open Analytics again if needed.
-
-Your space currently contains only you, its owner. If **Feedback** is absent, confirm that you opened the intended agent. Its absence alone does not mean that every answer was satisfactory; you can still [read its conversations](/analytics/see-one-agents-analytics).
+On a small screen, **Back to problems** returns from the report to the list. Scroll inside that list to load older reports.
 
 ## Open a report
 
-1. Under **Needs attention**, select **Open** to see unresolved reports.
-2. Select a report to open its details.
-3. Continue with [Read the answer in context](#read-the-answer-in-context).
+Use the list's controls to find the reports you want to review:
 
-On a small screen, use the back arrow labelled **Back to problems** to return from the report to the list.
-
-Use these controls to find the reports you need:
-
-| Control | What it shows or changes |
+| Control | What it changes |
 |---|---|
-| **Open** / **Resolved** | Outstanding reports or reports you have marked as handled. Their counts follow the report date range. |
-| **Filter by date range** | Narrows report dates. |
-| **Reason** | Narrows the list to one or more selected reasons. Choices apply immediately. |
-| **Clear reasons** | Removes the reason selection. |
+| **Open** / **Resolved** | Shows reports awaiting attention or reports marked as handled. |
+| **Filter by date range** | Filters by when the report was recorded, using inclusive local calendar days. Open the calendar, select a start and end day, then check both dates. Choices apply immediately; click outside or press Escape to close it. **Clear Date Filter**, or the X labelled **Clear date filter**, removes the range. |
+| **Reason** | Select one or more reasons to narrow the list. Choices apply immediately. **Clear reasons** removes the selection. |
 
-The Open and Resolved totals remain totals for the date range, so they can exceed a reason-filtered list. **Cut off** is offered only when the range has relevant recorded evidence.
+The reasons include **Wrong information**, **Didn't answer my question**, **Missing details**, **Hard to understand**, **Slow or buggy**, **Feature request**, **Unsafe**, **Something else** and **No reason given**. **Cut off** appears only when the chosen range has relevant recorded evidence.
+
+The Open and Resolved counts follow the report date range, without narrowing to selected reasons. The Feedback tab's badge counts all open reports across all time. Neither uses the header's **Period** as its date filter.
 
 ## Read the answer in context
 
-1. Read the user's question.
-2. Read the relevant answer and its pinned feedback.
-3. Read the visitor's note, if one is present.
-4. Expand the earlier or later messages if you need more context.
-5. Read the report's guidance before choosing a repair.
+Read the question, answer and pinned feedback together, including the visitor's note if one is present. Read **What to do** before choosing a change.
 
-A dot in the list means the report has not yet been viewed. Deliberately selecting a report can mark it read. Read status is separate from resolving the problem.
+Expand **N earlier messages** or **N later messages** to read the surrounding exchange. **Previous rated answer** and **Next rated answer** move between rated answers in that conversation. You may reach a helpful answer, which shows its rating without repair or resolution controls.
+
+An unread dot is separate from resolution. Deliberately selecting a report can mark it read; it does not mark the problem resolved.
+
+Visitor notes are shared with the owning space and Alysium for private review under the existing access rules. They are not included in conversation exports.
 
 ### Check what the answer used
 
-**Used for this answer** lists stored references for the rated answer. An available **Open** control can take you to a website page or the relevant Library search. If Open is absent, the entry does not provide that opening action or establish a public download link.
+**Used for this answer** shows references stored with the answer. Select **Open** beside a reference to visit its stored website page or find a readable document in Library. The section is hidden when there are no stored references.
 
-A document entry can show its current name and update information. That may differ from the version available when the answer was written. Compare the answer with the approved source material before deciding what needs to change.
-
-For example, a fictional Workshop FAQ agent might say no notebook is needed while the approved workshop document says to bring one. Check the complete exchange and source before deciding whether to correct the agent's knowledge or instructions.
+A document can show its current name and update information, which may postdate the answer. Compare the answer with the relevant source material and the surrounding question. These references do not provide a complete explanation of how the answer was produced or prove that a source was correct.
 
 ### Follow the repair guidance
 
-A report may offer **Edit knowledge**, **Edit instructions** or **Edit max length** when you can edit the agent. These actions open the corresponding builder area. They do not apply a repair automatically.
+Follow the report's **What to do** guidance. For an original agent you can edit, **Edit knowledge**, **Edit instructions** or **Edit max length** opens the corresponding builder area. An installed copy does not offer these edit buttons; follow the guidance shown for that report.
 
-If the creator maintains an installed marketplace agent, the guidance can direct you back to that creator instead of offering an edit button. Follow the displayed guidance. Use the builder's saving steps and check the result of a change before treating it as fixed.
-
-See [Give your agent knowledge](/knowledge-and-library/give-your-agent-knowledge) or [Write your agent's instructions](/build-your-agent/write-your-agents-instructions) when the report points to those issues.
+These buttons open a place to make a change. Complete that area's saving steps and check the result before treating the change as handled. If the issue concerns missing source material, you can [review how knowledge is attached](/knowledge-and-library/give-your-agent-knowledge). If the instructions need work, you can [revise what the agent is told to do](/build-your-agent/write-your-agents-instructions).
 
 ## Mark a report as resolved
 
-For a **Cut-off answer**, the helper can say that resolving it resolves all open cut-offs for this agent. Read that scope before selecting **Mark resolved**.
+After completing the appropriate change or follow-up:
 
-1. Complete the appropriate repair or follow-up work.
-2. Return to the report.
-3. Select **Mark resolved**.
-4. Wait for the state update to finish.
-5. On a small screen, select the back arrow labelled **Back to problems**.
-6. Select **Resolved** in the list.
-7. Check that the handled report appears there.
+1. Return to the report and read the scope beside **Mark resolved**. For a **Cut-off answer**, resolving it resolves all open cut-offs for this agent.
+2. Select **Mark resolved** and wait for the state update.
+3. Return to the list with **Back to problems** on a small screen, then select **Resolved**. Check that the report appears there.
 
-Resolving records your handling. It does not rewrite the previous answer or prove that future answers are correct. The action saves the report state without a separate Save button. A builder edit has its own saving behavior.
+The action saves the handling state without a separate Save button. It does not rewrite the recorded answer or establish that future answers will be correct.
 
 ## Reopen or recognize a withdrawn report
 
-Select **Reopen** when an eligible resolved report needs attention again. This action is available only while the report's negative condition still applies. Wait for the state update before treating it as open again.
+If a resolved report needs attention again and offers **Reopen**, select it, wait for the update and check that it returns to **Open**. A visible Reopen button can still be refused, including on a cut-off report. Follow the refreshed report and any error; a click alone does not confirm the change was saved.
 
-A withdrawn report is different: the visitor changed or cleared the negative vote, or changed their conversation check-in assessment. It does not offer the same repair and state controls. If the report changes while you are reading it, follow its refreshed state.
+A visitor can change or clear a negative vote, or change their check-in. That withdraws the report: it leaves the lists, and an already-open report shows the changed feedback without the repair and state controls. Follow that refreshed state rather than treating withdrawal as a resolution you saved.
 
 ## If reports are missing or a read fails
 
-1. Select **Clear reasons** if a reason filter is active.
-2. Clear the report date filter if you need to look outside that range.
-3. Check both **Open** and **Resolved**.
-4. Scroll inside **Needs attention** to find older reports.
-5. Select **Load older problems** if it is offered.
+Clear an unintended reason or date filter, check both **Open** and **Resolved**, and scroll inside **Needs attention** for older reports. If **Load older problems** is offered, it loads the next older results.
 
-An empty list is not proof that everyone was satisfied: only recorded reports appear here. If **Couldn't load problems.** or **Couldn't load this report.** offers **Retry**, select it to retry that failed read.
+Feedback records eligible ratings, sampled visitor check-ins and recorded cut-offs. It does not measure everyone's satisfaction, and older ranges can lack recorded evidence. An empty list or a missing **Cut off** reason does not establish that answers were correct. Your own builder preview and Analytics review do not offer visitor rating controls.
 
-If resolving or reopening fails, keep the report open and read the displayed message. Do not assume the change was saved until its state updates.
+If the problem list, selected report or expanded messages fail to load, use the **Retry** beside that failed read. For a resolution or reopening error, read the refreshed report first. **Couldn't update this report. Try again.** means you should check its current state before trying the action again. **This report changed since you opened it.** means the refreshed feedback may no longer support the action. Confirm the resulting Open or Resolved state before treating your change as saved.

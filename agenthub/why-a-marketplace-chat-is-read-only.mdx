@@ -4,53 +4,49 @@ description: "Understand why a marketplace conversation can show saved messages 
 keywords: ["Alysium", "Why a marketplace chat is read-only", "Agenthub buying"]
 ---
 
-A read-only marketplace conversation lets you inspect existing messages but prevents another turn through that agent. The visible history does not establish that the subscription or listing is still active.
+<span id="why-a-marketplace-chat-is-read-only" />
 
-Read the chat's notice first. Pending payment, ended access, an unavailable listing and a disabled agent need different responses. Deleting the history does not restore access.
+A read-only marketplace conversation keeps existing messages available but stops you from sending another message. Read the notice in the chat to understand whether payment, subscription access or agent availability is blocking it.
+
+A managed agent's locked setup is a different restriction: you can chat with an active managed agent even though you cannot edit its configuration. A managed installation keeps its purchased setup and uses the creator's current knowledge. An editable installation has its own setup and knowledge in your space.
 
 ## Find the affected conversation
 
-If you are already viewing its notice, continue with [Payment is pending](#payment-is-pending), [The subscription ended](#the-subscription-ended), or [The listing or agent is unavailable](#the-listing-or-agent-is-unavailable), according to what it says.
+Open [Chat](https://app.alysium.ai/chat). On a narrow screen, select **Conversations and agents** to open the navigation sidebar. Select the saved conversation you want to read from the list.
 
-To reopen it from elsewhere, use the navigation sidebar in Chat. It is available on the agent-selection screen as well as while a conversation is open.
-
-1. Open [Chat](https://app.alysium.ai/chat).
-2. On a narrow screen, select **Conversations and agents** to open the sidebar.
-3. Select **Conversations** in the sidebar.
-4. Select the affected saved conversation.
-5. Read the exact notice.
-
-You can select the saved conversation even when the agent's start action is unavailable. For other main-chat controls, see [Chat with your agents](/share-and-deploy/chat-with-your-agents).
+If you are already viewing an agent's chat, select the sidebar's **Conversations** tab if another tab is selected, then choose the saved conversation. You can reopen saved history even when starting a new chat with that agent is unavailable. Read the notice above the disabled message box; deleting the conversation will not restore access.
 
 ## Payment is pending
 
-A pending-payment notice means access has not been confirmed. **Return to checkout**, when offered, revisits the listing. Complete any requested payment verification, then wait for active confirmation.
+A notice that says **Your payment is still pending. Complete checkout to start chatting.** means access has not yet been confirmed.
 
-Check the existing purchase using [Check the agent's Billing record](#check-the-agent%E2%80%99s-billing-record) before starting another checkout. Entering card information alone does not prove that access is active. For a payment error, follow [Fix a failed payment](/plans-and-billing/fix-a-failed-payment).
+Check the existing purchase in Billing before making another payment. **Return to checkout**, when offered in the chat, takes you back to the agent's listing. Complete any payment verification requested, then wait for confirmed access before reopening the conversation. Entering card details alone does not establish active access.
+
+If payment was confirmed but the chat remains blocked, keep the confirmation reference for a billing enquiry.
 
 ## The subscription ended
 
-An ended-subscription notice means the access behind that conversation is no longer active. Existing messages can remain readable.
+The notice **This subscription is no longer active. Existing conversations are now read-only.** means the access associated with this conversation is no longer active. You can still read its existing messages.
 
-[Check the agent's Billing record](#check-the-agent%E2%80%99s-billing-record). If the listing still offers a new subscription, review its current offer before buying again. A new checkout does not guarantee the price of an older subscription. Follow [Subscribe to an agent](/agenthub/subscribe-to-an-agent) if you decide to proceed.
+Check the agent's Billing record. If it offers **Re-subscribe**, that action returns to the current listing. Review the current price and allowance before buying again; an older subscription's terms are not guaranteed. You can [review how subscribing works](/agenthub/subscribe-to-an-agent) before committing to the new offer.
 
 ## The listing or agent is unavailable
 
-A notice that the listing is unavailable or the creator disabled the agent concerns availability. Paying again is not a reliable remedy.
+The chat can say **This marketplace listing is no longer available. Existing conversations are now read-only.** or **This agent has been disabled by its creator. Existing conversations are now read-only.**
 
-Open [AgentHub](https://app.alysium.ai/agenthub) and look for the named agent's current page to check availability. If you already paid and need help, contact the creator through an available published contact route or contact billing@alysium.ai.
+These notices describe an availability restriction on the conversation you opened. Look for the named agent in [AgentHub](https://app.alysium.ai/agenthub) to check its current listing. Buying again is not a reliable way to resolve an unavailable agent. Keep the history, and contact billing if paid access appears to conflict with the notice.
+
+A more general notice can say **You no longer have access to chat with this agent. Your existing conversation remains available as read-only history.** Check the associated subscription record to understand its current access state.
+
+<span id="check-the-agents-billing-record" />
 
 ## Check the agent's Billing record
 
-Use the account that obtained the access.
+1. Open [Billing](https://app.alysium.ai/spaces?settings=billing). It shows your active space; use the space where you obtained the agent.
+2. Scroll to **Agent Access and Subscriptions** and match both the agent and creator names.
+3. Read the checkout or subscription status and use any relevant action offered on that record.
+4. After access is confirmed active, reopen the saved conversation in Chat and check whether you can send again.
 
-1. Open [Billing](https://app.alysium.ai/spaces?settings=billing).
-2. Find **Agent Access and Subscriptions**.
-3. Match both the agent and creator names.
-4. Read its current checkout/access status.
-5. Follow the notice's checkout or billing action when offered.
-6. Reopen the affected conversation after the access state is confirmed.
+For example, **Checkout pending** needs confirmation, while **Subscription ended** describes ended access. A **Re-subscribe**, **Subscribe** or **Retry checkout** action takes you to the current listing to review its offer. You can [read the subscription card's other details](/plans-and-billing/manage-your-agent-subscriptions) without starting another purchase.
 
-The Billing link opens your active space's settings. Check the account and space used at checkout if the record is missing. Use [Manage your agent subscriptions](/plans-and-billing/manage-your-agent-subscriptions) for the card's other meanings.
-
-A subscription-ended notice differs from a spent free preview. A creator-disabled notice differs from your space running out of credits. If active access still conflicts with the chat notice after reopening, report the agent, state and exact message to billing@alysium.ai.
+If active access still conflicts with the chat notice after reopening, email [billing@alysium.ai](mailto:billing@alysium.ai) with the agent and creator names, the Billing status, the exact chat notice and any payment confirmation reference.

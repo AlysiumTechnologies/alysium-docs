@@ -4,50 +4,50 @@ description: "Read Library or Attached knowledge status messages to distinguish 
 keywords: ["Alysium", "Upload and file messages", "Start here"]
 ---
 
-Use the status on a **Library** or **Attached knowledge** row to tell whether a document is waiting, uploading, ready or in need of recovery. A filename in a list does not mean that every stage succeeded.
+<span id="upload-and-file-messages" />
 
-For agent knowledge, open [Home](https://app.alysium.ai/spaces), select the agent, then open **Build → Settings → Knowledge**. [Library](https://app.alysium.ai/library) opens your stored files and other reference material. These messages concern stored knowledge documents, rather than visitor chat attachments.
+A stored document can finish uploading before it is ready for an agent to use. Read its status and check its attachment to understand which stage needs attention.
+
+For an agent's knowledge, open [Home](https://app.alysium.ai/spaces), select **Build** on that agent's card and select **Settings** if needed. Scroll down to **Knowledge**. [Library](https://app.alysium.ai/library) holds your stored reference material. These messages concern knowledge documents; visitor chat attachments have a separate upload flow.
 
 ## Document status
 
-| Status | Meaning | What to check next |
+| Status | What it means | What to do |
 |---|---|---|
-| **Queued** | The item is waiting. | Allow the operation to continue. |
-| **Uploading** | The file is transferring from your device. | Keep the original file available until the operation completes. |
-| **Processing** | Alysium is preparing readable contents for knowledge search. | Wait for preparation to finish before expecting the agent to use it. |
-| **Ready** | Preparation has finished. | Confirm that the document is also attached to the intended agent. |
-| **Failed** | A stage did not finish successfully. | Read the accompanying message and use the relevant recovery below. |
+| **Queued** | The item is waiting to start. | Let the operation continue. |
+| **Uploading** | The file is transferring from your device. | Keep the original file available while the transfer finishes. |
+| **Processing** | Alysium is preparing the contents for knowledge search. | Wait for preparation to finish before testing questions about it. |
+| **Ready** | Preparation has finished. | Check that the document is attached to the intended agent. |
+| **Failed** | A stage did not finish. | Read any displayed message and use the recovery for that stage. |
 
-Processing can take longer than the file transfer. Repeatedly uploading while it is processing does not complete that preparation.
+In Library's list view, a completed document shows **Ready**. A file's presence in Library alone does not attach it to an agent. For agent use, check **Attached knowledge** in that agent's Knowledge section.
 
 ## Saved in Library but not attached
 
-This warning means the document was saved, but its connection to the agent did not succeed. The saved document has not disappeared.
+This warning means the document was saved, but the connection to the agent failed.
 
-1. Select **Retry attachment** on the affected row.
-2. Wait for the attachment result.
-3. Check the source's row on the intended agent under **Build → Settings → Knowledge**.
+1. Select **Retry attachment** on the warning.
+2. Wait for the result, then check the intended agent's **Attached knowledge**.
+3. Confirm that the document is present and **Ready**.
 
-Re-uploading the same file creates another intentional document instead of silently fixing the first attachment. Use the attachment recovery when that is the failed stage.
+Retry attachment works on the connection to the agent; it does not upload the document again.
 
 ## Format, size and storage messages
 
-| Message concerns | Appropriate recovery |
+| The message concerns | What changes the result |
 |---|---|
-| File format | Export to a supported format. Changing the filename extension does not convert its contents. |
-| Individual file size | Reduce the file or split it into supported documents within the cap. |
-| Space storage | Review saved material and the space's plan. A model change or chat-credit top-up does not free document storage. |
+| **File format** | Export the contents to a supported document format. Renaming the extension does not convert a file. |
+| **File size** | Reduce the file or split it into useful documents, each within the **25 MiB** per-file limit. |
+| **Space storage** | Review the material stored in Library and the space's allowance. Changing the model or buying AI usage does not free document storage. |
 
-[File and storage limits](/help/file-and-storage-limits) lists the accepted formats and separate caps.
+You can [check the supported formats and storage allowances](/help/file-and-storage-limits) before preparing a replacement. Selecting a corrected or re-exported file starts a new upload.
 
 ## Retry a failed upload or processing step
 
-1. Read the affected row's message.
-2. Correct the cause it identifies, such as an unsupported format.
-3. Select **Retry** when offered.
-4. If asked to select the same file again, select the original local file.
-5. Read the resulting row status.
+Use the action offered for the affected item:
 
-Keep the original file available for a transfer retry. Check the result before deciding to delete a failed row.
+- **Retry on an upload row:** read the displayed cause, correct what you can and select **Retry** while that original attempt is still available. Read the result and check the new status.
+- **Try again in Library:** for a saved file that failed processing, open its three-dot menu and select **Try again** when offered. This requests processing of its saved contents. Check the result and, in list view, its status.
+- **Retry this file from its upload queue:** this result directs you back to the original upload attempt. Use that queue's **Retry** if the attempt is still available.
 
-[Fix a file that failed to process](/knowledge-and-library/fix-a-file-that-failed-to-process) provides the full recovery walkthrough. If the problem remains unclear, use [Get help from a person](/help/get-help-from-a-person) with the exact message, file type and screen name.
+If Retry reports that the original local file is unavailable, or the requested upload queue is no longer available, email [support@alysium.ai](mailto:support@alysium.ai) with the file name and type, screen, displayed status, action and result. The [file recovery guide](/knowledge-and-library/fix-a-file-that-failed-to-process) explains these recovery paths in more detail.

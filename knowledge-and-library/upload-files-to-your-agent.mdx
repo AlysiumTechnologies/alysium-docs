@@ -4,129 +4,91 @@ description: "Upload reference documents an agent can search for answers, then c
 keywords: ["Alysium", "Upload files to your agent", "Knowledge and Library"]
 ---
 
-Give your agent reference documents it can search when answering questions. Use these for a FAQ, product information, handbook or class notes.
+<span id="upload-files-to-your-agent" />
 
-Instructions describe how the agent should behave; knowledge supplies the information it should use. Describing your business during agent creation does not upload its facts.
+Add documents your agent can search when answering questions. A current FAQ, handbook or set of class notes gives it specific information to use alongside the instructions that describe its job.
 
-Choose a document you are allowed to share with the intended audience. Use an agent you can edit. For practice, start with a small, clear source and keep private customer records and passwords out of it.
+Choose material you are allowed to share with the agent's audience. Start with a clear document you can read yourself so you can compare its facts with the agent's replies.
 
 ## Choose a supported document
 
-Stored knowledge accepts:
+| Format | Accepted file extensions |
+|---|---|
+| PDF | `.pdf` |
+| Word | `.doc`, `.docx` |
+| Excel | `.xls`, `.xlsx` |
+| CSV | `.csv` |
+| Plain text | `.text`, `.txt` |
+| Markdown | `.md`, `.markdown` |
 
-- PDF
-- Word documents
-- Excel spreadsheets
-- CSV
-- Plain text
-- Markdown
-
-It does not accept pictures, HTML files or PowerPoint presentations as stored knowledge documents. Each file can be up to **25 MiB**, which the upload area may display as 25 MB. The space also needs enough available storage.
-
-[File and storage limits](/help/file-and-storage-limits) lists the accepted extensions.
+Each file can be up to **25 MiB**, and your space needs enough available storage for the selection. Review the document for outdated facts, unexplained abbreviations and conflicting versions before uploading it.
 
 ## Make a practice file if you need one
 
-You can use your own approved document or this fictional shop example.
+You can use your own document or copy this fictional example into a plain-text editor:
 
-1. Open a plain-text editor on your device.
-2. Copy the four lines below into a new document.
-3. Use the editor's save command.
-4. Save the file as **Customer questions.txt** somewhere you can find again.
-
-Choose plain text if the editor asks for a format.
-
-> Shop name: Ridge and River Outdoor Shop. This shop is fictional.
+> Ridge and River Outdoor Shop — fictional practice FAQ
 >
-> Returns: Customers should bring unused products and the purchase receipt to the shop. Staff review damaged items separately.
+> Returns: Bring the unused product and purchase receipt to the shop. Staff review damaged items separately.
 >
 > Boot fitting: Try both boots with the socks you expect to hike in. Ask staff for help if the fit is uncertain.
 >
-> Delivery: This note does not state delivery times.
+> Delivery times are not supplied in this FAQ.
 
-These are practice facts, not an Alysium policy or a real shop's policy. Replace them with approved information before using the agent for a real business.
+Save it as **Customer questions.txt** somewhere you can find again. Choose plain text if the editor asks for a format. Replace the fictional material with your approved information before using the agent with real customers.
 
 ## Find Upload Documents
 
-1. Open [Home](https://app.alysium.ai/spaces).
-2. Select the agent that should use the file.
-3. Open **Build**.
-4. Select **Settings**.
-5. Find **Knowledge** → **Upload Documents**.
-
-Home opens your current space; choose the intended agent there. If the upload area is already open, continue with [Select the file](#select-the-file). **Paste Text** beside it is a separate way to add a passage.
+Open [Home](https://app.alysium.ai/spaces) and select **Build** on the intended agent's card. Select **Settings** if the builder is showing Profile or Chat Preview, then scroll down to **Knowledge**. Find **Upload Documents**.
 
 ## Select the file
 
 1. Select **Browse files**.
-2. Select your document in the device's file picker.
-3. Confirm the selection in that picker.
-4. Continue with [Wait for Ready](#wait-for-ready).
+2. Choose one or more supported documents in your device's file picker.
+3. Confirm the selection in the picker. Uploading starts immediately.
 
-The selection starts uploading. There is no second Alysium Upload button.
-
-You can also drop the file onto **Drop files here**, then continue with [Wait for Ready](#wait-for-ready). Keep the page open while transfer and preparation finish.
+You can also drag files from your device onto **Drop files here**.
 
 ## Wait for Ready
 
-Find the file in **Attached knowledge**.
+Find each file in **Attached knowledge** and check its state:
 
-| State | Meaning |
+| State | What is happening |
 |---|---|
-| **Queued** | Waiting to start. |
-| **Uploading** | The file's bytes are transferring. |
-| **Processing** | Its contents are being prepared for knowledge search. |
+| **Queued** | The file is waiting to start. |
+| **Uploading** | Its contents are transferring. |
+| **Processing** | Alysium is preparing the contents for knowledge search. |
 | **Ready** | Preparation is complete. |
-| **Failed** | Read the message and choose the relevant recovery below. |
+| **Failed** | This attempt did not finish; the recovery depends on the actions shown. |
 
-A file appearing in the list does not prove it has finished processing.
-
-A successful builder upload saves the document and attaches it to this agent. You do not need Design's **Save Changes** or a second attachment from Library. Other agents do not automatically receive it, and this upload does not publish the agent.
-
-To reuse the saved document elsewhere, follow [Use Library files in an agent](/knowledge-and-library/use-library-files-in-an-agent).
+A successful builder upload saves the document in Library and attaches it to this agent as part of the submission. Wait for Ready before testing its contents. You can later [reuse the Library file in another agent](/knowledge-and-library/use-library-files-in-an-agent).
 
 ## Try a source question
 
-After Ready, use the chat beside the Build settings. On a narrow screen, select **Chat Preview** within Build.
+Use the chat beside the Build settings, or select **Chat Preview** within Build on a smaller screen.
 
-For the practice file, ask:
+For the practice file, enter **What should a customer bring when requesting a return?** Select **Send message** or press Enter. Compare the reply with the FAQ: it says the unused product and purchase receipt. Then ask **What are the delivery times?** The source does not supply those times, so check how the agent handles that gap.
 
-> What should a customer bring when requesting a return?
+For your own document, test a fact it contains and a question it leaves unanswered. You can [choose how the agent uses its knowledge and responds to missing information](/knowledge-and-library/control-how-your-agent-uses-its-knowledge) in Knowledge's **Behavior** section.
 
-Enter the question in the message box, then select **Send message** or press Enter. Compare the answer with the source: it says unused products and the purchase receipt. For your own document, ask about a fact it actually contains.
-
-A completion message may offer **Ask in the preview**. Selecting it sends the suggested question; it does not upload another file.
+A completion message may offer **Ask in the preview**. Selecting it sends the suggested question to the preview.
 
 ## If the file type is rejected
 
-Read the message naming the file and allowed types. Export to a supported format and select the new file. Renaming an extension does not convert the contents.
+Read the alert naming the rejected files and accepted types. An unsupported extension rejects the whole selection, so check all the selected files before trying again. Export unsupported material to one of the formats above; changing the filename's extension does not convert the document.
 
-One unsupported file can cause the whole selection to be rejected. Check the result rather than assuming the other files uploaded.
-
-For a short passage, use [Paste text as knowledge](/knowledge-and-library/paste-text-as-knowledge) instead.
+For a short passage, you can [paste the text into Knowledge](/knowledge-and-library/paste-text-as-knowledge) instead.
 
 ## If size or storage blocks the upload
 
-For a size refusal, reduce the file or split it into smaller supported documents. For a storage warning, review the space's Library usage rather than retrying the same selection.
-
-Files in Trash still use storage until erased. [Storage limits](/knowledge-and-library/storage-limits) explains storage and plan choices separately from chat credits.
+For a file above 25 MiB, reduce its size or split the material into smaller supported documents. For an alert that the selection exceeds available storage, resolve the space's storage use before resubmitting. You can check the space's allowance and Library usage in the [storage limits guide](/knowledge-and-library/storage-limits).
 
 ## If uploading or processing fails
 
-1. Read the message beside the **Failed** row.
-2. Correct the cause.
-3. Select **Retry** if that row offers it.
-4. Select the original file if Alysium asks for it again.
-5. Wait for **Ready**.
+During the current upload attempt, a **Failed** row can show an error message and **Retry**. Read that message, correct the cause and select Retry. If Alysium asks for the original file, select it again, then wait for Ready.
 
-Some saved document rows do not offer Retry. Use [Get help from a person](/help/get-help-from-a-person) if there is no recovery action. Include the file type and exact message without sending confidential contents unnecessarily.
-
-A document still showing **Processing** is not ready. [Fix a file that failed to process](/knowledge-and-library/fix-a-file-that-failed-to-process) explains the separate failure stages.
+If you return later to a saved document marked Failed, its row shows the status and **Remove**, without an error detail or Retry. [Get help with the failed document](/help/get-help-from-a-person) using the filename, file type and visible status. Include an error message if one was displayed during the attempt. The [failed-file guide](/knowledge-and-library/fix-a-file-that-failed-to-process) explains the different stages in more detail.
 
 ## If the file is saved but not attached
 
-Select **Retry attachment** beside that warning. The file is already saved; the unfinished step is connecting it to this agent.
-
-Do not upload another copy to resolve the warning. Confirm it appears in the intended agent's **Attached knowledge**.
-
-Once it is ready and attached, continue with [Control how your agent uses its knowledge](/knowledge-and-library/control-how-your-agent-uses-its-knowledge). For a missing answer, use [Why your agent can't find something](/knowledge-and-library/why-your-agent-cant-find-something).
+Select **Retry attachment** in the warning. The document is already saved in Library; this action retries its connection to the agent. Check **Attached knowledge** for the file and its Ready state before testing it. Uploading another copy repeats the saving step instead of retrying that connection.

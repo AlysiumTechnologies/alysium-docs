@@ -4,57 +4,60 @@ description: "Use Add from Library to connect saved files, folders or projects t
 keywords: ["Alysium", "Use Library files in an agent", "Knowledge and Library"]
 ---
 
-Connect saved files, folders or projects to an agent without uploading them again. Use **Add from Library** when you already know which agent needs the material.
+<span id="use-library-files-in-an-agent" />
 
-You need editing access to the intended agent and access to the selected Library material.
-
-**Already in the Add from Library picker?** Continue with [Choose the source scope](#choose-the-source-scope).
+Give an agent access to saved Library material without uploading it again. You can choose an individual file or connect a folder or project so eligible material added there later is included too.
 
 ## Open Add from Library
 
-1. Open [Home](https://app.alysium.ai/spaces).
-2. Select the intended agent.
-3. Open **Build**.
-4. Open **Settings**.
-5. Find **Knowledge**.
-6. Select **Add from Library**.
-7. Continue with [Choose the source scope](#choose-the-source-scope).
+1. Open [Home](https://app.alysium.ai/spaces) and select **Build** on the intended agent's card.
+2. In Build, select **Settings** if you are viewing another panel, then scroll to **Knowledge**.
+3. Review **Attached knowledge** for the sources the agent already uses, including attached folders and projects. Then select **Add from Library**.
 
-Home opens your active space, where you choose the agent. If it asks you to sign in, sign in. Open Home again if needed.
-
-The picker shows projects, folders and documents. Seeing a source there does not mean it is already attached. If the material is still only on your device, follow [Upload files to your agent](/knowledge-and-library/upload-files-to-your-agent), or upload it through [Library](https://app.alysium.ai/library) first.
+The dialog shows projects, folders and files. If the material is still only on your device, [upload it to the agent](/knowledge-and-library/upload-files-to-your-agent) first.
 
 ## Choose the source scope
 
-| Selection | What the agent can use |
+| Select | What the agent can use |
 |---|---|
-| File | That individual source. |
-| Folder or project | Its eligible contents now, including eligible material added there later. |
+| A file's checkbox | That individual source. |
+| A folder's or project's checkbox | Its eligible contents now and eligible material added there later. |
 
-For a first attachment, choose one well-understood file unless you deliberately want the ongoing scope of a folder or project.
+Choose a scope you want the agent to keep using. For example, a **Customer help** project might contain **Approved FAQ** and **Draft promotions** folders. Select the **Approved FAQ** folder or an exact file inside it if the agent should use only approved material. Selecting the whole project would also include eligible drafts and later additions.
 
-For example, a fictional **Customer help** project might contain **Approved FAQ** and **Draft promotions** folders. If the agent should only use approved FAQ material, choose that folder or an exact file inside it. Attaching the whole project could include drafts and future material you did not intend the agent to use. These are example names, rather than default folders.
+Click a project or folder's **name or chevron** to open it. Use its **checkbox** to select the whole container. Opening it alone does not select it.
+
+To find a source:
+
+- **Browse:** open its project and folder, then select the intended checkbox. With the search box cleared, use **Show more projects**, **Show more folders** or **Show more files** when offered to load more items.
+- **Search:** enter part of the name in **Search the library**. Use a more specific name if the results do not reveal the item you want. If it is still missing, clear the search and browse its project and folder, then select its checkbox.
+
+Search matches names rather than words inside documents. A matching folder name does not display every file beneath it; clear the query to browse its contents.
+
+**Attached** marks an individual file already attached directly to this agent. **included** marks an item covered by a parent folder or project you have selected in this dialog. Selecting a parent includes its eligible contents, so you do not need to select each child too.
+
+Check **Attached knowledge** when deciding whether another attachment is needed: material covered by an already attached folder or project may still be selectable in the picker.
 
 ## Attach the selection
 
-1. Expand the project containing the source.
-2. Expand a folder if needed.
-3. Use **Search the library** if the name is hard to find.
-4. Select the intended file, folder or project.
-5. Read the selection summary.
-6. Select **Attach**.
-7. Check the result in **Attached knowledge**.
+1. Read the selection summary and check that it includes only the intended files, folders or projects.
+2. Select **Attach** and wait for the request to finish. Read the result, including any items it could not attach.
+3. Check the selected source in **Attached knowledge**.
 
-An item already attached, or covered by another selected container, can be unavailable as an extra selection.
+A folder or project can be a useful selection even when the summary says **No new files right now**: the attachment still covers eligible material added there later. Its **Live** marker in Attached knowledge identifies this ongoing coverage.
 
-A successful attachment is saved without a second upload or a Design **Save Changes** action. Confirm that the actual file is **Ready** before asking about it. Attaching a processing file does not finish its preparation. Folder and project rows identify the wider coverage.
+Reusing Library material saves the attachment without another upload or a separate Design save. An individual file must show **Ready** before you test an answer from it; connecting a folder does not finish processing its files.
+
+To check a source, enter a self-contained question it answers in the chat beside Build, or open **Chat Preview** on a smaller screen. Select **Send message** or press Enter, then compare the answer with the source. Preview requests use your space's credits. You can [plan a broader set of preview checks](/build-your-agent/test-your-agent-while-you-build) as you refine the agent.
 
 ## If an item is missing or attachment fails
 
-Check the current space and project, then clear an unintended search. Check **Trash** if the source was deleted. A source already covered by an attached folder or project may not need another attachment.
+If a project or folder shows a loading error with **Retry**, use that control. If the dialog is empty or does not show material you know is saved, select **Cancel**, then reopen **Add from Library**. Clear any search and browse again. Check the current space and the source's location in [Library](https://app.alysium.ai/library) before concluding the file is absent.
 
-Visitor-upload material needs deliberate promotion before it is eligible as agent knowledge. [Files visitors send you](/widget-visitors/files-visitors-send-you) explains the distinction between a visitor attachment and a creator's knowledge source.
+A file in Trash needs to be [restored](/knowledge-and-library/restore-or-permanently-delete-from-trash) before you can choose it here. Visitor uploads also need deliberate promotion before they become agent knowledge; [files visitors send you](/widget-visitors/files-visitors-send-you) explains that distinction.
 
-If permission is refused, read the error. Selecting an item in the picker does not grant new access to it. After a failed action, check the actual **Attached knowledge** list before retrying.
+If attachment reports a failure, partial result or timeout, read the message and check **Attached knowledge** before repeating the action. Keep successful attachments and retry only what is still missing. A selectable file may already be covered by an attached folder or project.
 
-If you attached the wrong scope, use [Remove a file from your agent](/knowledge-and-library/remove-a-file-from-your-agent). Detaching it leaves the Library source saved. To start from a source and choose several agents instead, use [Attach Library items to an agent](/knowledge-and-library/attach-library-items-to-an-agent).
+If you attached the wrong scope, use **Remove** on that attachment in **Attached knowledge**, read any confirmation and wait for the result. Check the remaining attachments afterward; another folder or project may still cover the same file. [Removing an attachment](/knowledge-and-library/remove-a-file-from-your-agent) leaves the Library material saved.
+
+When you want to start from saved material and choose several agents, you can instead [attach Library items from Library](/knowledge-and-library/attach-library-items-to-an-agent).

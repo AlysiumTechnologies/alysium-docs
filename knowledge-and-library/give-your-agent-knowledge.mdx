@@ -4,64 +4,60 @@ description: "Add reference material for an agent to use when answering. Instruc
 keywords: ["Alysium", "Give your agent knowledge", "Knowledge and Library"]
 ---
 
-Add reference material that your agent should use when answering. Instructions tell it how to behave; knowledge supplies facts from sources you attach.
+<span id="give-your-agent-knowledge" />
 
-Use material you are allowed to share with the agent's audience. Start with a small, trustworthy source you can read yourself, such as a current FAQ. Describing a business during agent creation does not add its documents or establish its policies.
+Give your agent the reference information it should use when answering questions. Instructions describe its job and how to behave; knowledge supplies the facts, such as your menu, course notes or returns policy.
+
+Start with a small, current source you can check yourself. Choose information you are allowed to share with the agent's audience, and remove outdated or conflicting details before adding it.
 
 ## Find Knowledge
 
-1. Open [Home](https://app.alysium.ai/spaces).
-2. Select the agent you want to edit.
-3. Open **Build** → **Settings**.
-4. Find **Knowledge**.
-
-Home opens your current space; you choose the intended agent there. If its Knowledge card is already open, continue with [Choose a source](#choose-a-source).
+Open [Home](https://app.alysium.ai/spaces) and select **Build** on the card for the agent you want to edit. If the builder is showing Profile or Chat Preview, select **Settings**. Scroll down to **Knowledge**.
 
 ## Choose a source
 
-| What you have | Entry in Knowledge | Complete guide |
+| Your material | How to add it | When it is useful |
 |---|---|---|
-| A supported file on your device | **Upload Documents** | [Upload files to your agent](/knowledge-and-library/upload-files-to-your-agent) |
-| A short passage of approved text | **Paste Text** | [Paste text as knowledge](/knowledge-and-library/paste-text-as-knowledge) |
-| Files, folders or projects already in your space | **Add from Library** | [Use Library files in an agent](/knowledge-and-library/use-library-files-in-an-agent) |
-| Readable pages from a public website | **Add your website** | [Add a website to your agent's knowledge](/knowledge-and-library/add-a-website-to-your-agents-knowledge) |
+| A file on your device | **Upload Documents** | Use a PDF, Word document, spreadsheet, CSV, Markdown or plain-text file. [File uploads](/knowledge-and-library/upload-files-to-your-agent) support several formats, up to 25 MiB per file. |
+| A passage you can copy | **Paste Text** | Turn a FAQ or set of notes into a document with **Add as Document**. [Pasting text](/knowledge-and-library/paste-text-as-knowledge) is useful when you do not need to prepare a file first. |
+| Material already saved in your space | **Add from Library** | Reuse an existing file, folder or project. [Library attachments](/knowledge-and-library/use-library-files-in-an-agent) let you choose the scope this agent can use. |
+| Pages on a public website | **Add your website** | [Add the website as a source](/knowledge-and-library/add-a-website-to-your-agents-knowledge), then choose which pages to save for the agent. |
 
-Choose one main source first so you can check exactly what information you have supplied. You need permission to edit the agent and use the material.
+An upload or pasted submission in the builder saves a document in Library and attaches it to this agent. A document saved only in Library still needs an attachment before the agent can use it.
 
 ## Add one document
 
-For a first file upload:
+For a file on your device, select **Browse files** under **Upload Documents**. Choose the file and confirm the selection in your device's picker. Selecting it starts the upload.
 
-1. Under **Upload Documents**, select **Browse files**.
-2. Select your reference document on your device.
-3. Wait for its row in **Attached knowledge** to show **Ready**.
+For copied text, enter the passage in **Paste Text** and select **Add as Document**. Typing in the box alone does not submit it.
 
-The upload saves the document and attaches it to this agent. The [full upload guide](/knowledge-and-library/upload-files-to-your-agent) explains file formats, limits and failures.
+Wait for the document in **Attached knowledge** to show **Ready**. It may first show **Queued**, **Uploading** or **Processing** while Alysium transfers and prepares it. Ready means preparation has finished.
 
-If you chose a different method, follow its complete guide in the table. Once the source is attached and ready, continue with [Check what the attachment includes](#check-what-the-attachment-includes).
+To reuse a Library file instead, select **Add from Library**, expand its project and folder, select the file and choose **Attach**. Check that it appears in Attached knowledge and is Ready.
 
 ## Check what the attachment includes
 
-Sources attach to a particular agent. A file stored only in [Library](https://app.alysium.ai/library) is not automatically available to every agent.
+An individual-file attachment gives this agent access to that file. A folder or project attachment covers eligible contents already inside it and eligible material added there later. Choose that broader scope only when those contents suit the agent's job and audience.
 
-An individual-file attachment includes that file. A folder or project attachment covers its eligible contents, including eligible material added there later. Choose a container only when that whole scope suits this agent's audience.
-
-Uploads, pasted submissions and Library attachments have their own saving actions. You do not use Design's **Save Changes** to add knowledge.
+Folder and project rows show **Live**. Check the individual documents' readiness too: Live describes the continuing attachment, rather than the preparation of every file inside it.
 
 ## Choose how answers use it
 
-After a source is attached, open **Behavior** in Knowledge. The grounding choices serve different purposes:
+Open **Behavior** within Knowledge after adding a source. Choose the approach that fits the agent's job:
 
-- **Strict** directs answers to stay within supplied knowledge.
-- **Balanced** prefers that knowledge while identifying added general information.
-- **Open** allows the knowledge alongside general information.
+- **Strict** directs the agent to answer from its knowledge and use its not-found reply for questions the sources do not answer.
+- **Balanced** directs it to prefer your knowledge and say when it adds general information.
+- **Open** lets it use your knowledge alongside general information.
 
-**Always consult knowledge before answering** controls whether factual questions start with a search of the attached material. Follow [Control how your agent uses its knowledge](/knowledge-and-library/control-how-your-agent-uses-its-knowledge) to make those choices and save them.
+**Always consult knowledge before answering** directs the agent to search its sources first for factual questions. Changes save automatically; wait for saving to finish before testing. You can also [set a reply for missing information](/knowledge-and-library/control-how-your-agent-uses-its-knowledge) as you refine the agent.
 
-Then ask the preview a question your actual source answers. Compare the reply with the source. These settings guide behavior; they do not guarantee accurate answers.
+Try a question the source actually answers in the chat beside the Build settings. On a smaller screen, select **Chat Preview** within Build. Type the question and select **Send message** or press Enter, then compare the reply with the source. Ready and the behavior choices help you prepare the agent; check the answers themselves before relying on them.
 
 ## If the source is not usable yet
 
-If a file fails, follow [Fix a file that failed to process](/knowledge-and-library/fix-a-file-that-failed-to-process). Use **Retry** only when the row offers it. If the document was saved but not attached, use **Retry attachment** instead of adding another copy.
+- **An upload fails during this attempt:** read the displayed error and use **Retry** if the row offers it. Select the original file again if asked.
+- **A saved file shows Failed after you return:** its row can show only the status and **Remove**, without an error detail or Retry. If Retry is unavailable, [get help with the failed document](/help/get-help-from-a-person) using its filename and visible status.
+- **The document was saved in Library but not attached:** select **Retry attachment** in the warning. This connects the saved document; submitting another copy repeats the saving step.
+- **You added a website:** check that the pages are **Saved** and the source is **Active**. These are separate checks in the [website source setup](/knowledge-and-library/add-a-website-to-your-agents-knowledge).
 
-For website pages, check that they are **Saved** and the source is **Active** using the website guide. If the agent still misses information from an attached, ready source, use [Why your agent can't find something](/knowledge-and-library/why-your-agent-cant-find-something).
+If an attached, Ready source still does not supply an expected answer, [check the source and the agent's instructions](/knowledge-and-library/why-your-agent-cant-find-something).

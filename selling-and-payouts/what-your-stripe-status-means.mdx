@@ -4,49 +4,49 @@ description: "Read creator payment readiness for card subscriptions and payouts,
 keywords: ["Alysium", "What your Stripe status means", "Selling and payouts"]
 ---
 
-Payment readiness describes whether the creator account can support card subscriptions and payouts. It is separate from creator approval, listing review and website installation.
+<span id="what-your-stripe-status-means" />
 
-Open [Team settings](https://app.alysium.ai/spaces?settings=team), select **Creator**, then **Setup**. Wait for the payment check to finish before choosing an action. The link opens your active space's settings on Team; it is not a personalized Stripe account link.
+Your payment status tells you whether the Stripe account linked to your space is ready for card subscriptions and payouts. Use its message to decide whether to supply information, refresh the check or get help with the existing account.
 
-If Creator → Setup is already open, use the status explanations below.
+Open [Team settings](https://app.alysium.ai/spaces?settings=team), select **Creator**, then **Setup**. Scroll below the setup checklist to the payment-status message and wait for **Checking payment status…** to finish. If you are starting payment setup for the first time, use **Set up Stripe** in the checklist; you can [complete onboarding and check its result](/selling-and-payouts/set-up-stripe-to-get-paid).
 
 ## Requested, pending or more information needed
 
-| What the status tells you | What to do |
+| Message | What it means and what to do |
 |---|---|
-| Setup requested | Payment capabilities have been requested; Stripe may still need information. Use the action offered for that existing account. |
-| Pending | Stripe is reviewing the setup. Read any additional information request. |
-| More information needed | **Continue Stripe onboarding** opens the collection step. Supply real requested details in Stripe, then return to Creator → Setup and refresh the status. |
+| **Payment capabilities have been requested.** | Stripe has been asked to enable the payment services this account needs. Complete any information Stripe requests. |
+| **Stripe is reviewing your payment setup.** | The setup is awaiting review. Use **Refresh Stripe status** to check for a changed result. |
+| **Stripe needs more information for this existing account.** | Select **Continue Stripe onboarding** when offered. Supply the requested information in Stripe, return to **Creator → Setup**, then select **Refresh Stripe status**. |
 
-If **Request payment capabilities** appears, it requests the needed payment permissions for the existing account. Wait for its result, then follow any information request.
+If **Request payment capabilities** appears, select it to request the missing payment permissions for this account. Wait for the result and read the updated message. This action is separate from **Continue Stripe onboarding**, which opens Stripe's form for information it currently needs.
 
-An account with completed business details can still await capability review. Re-entering the same details does not guarantee faster review.
+When Stripe has no information to collect, the checklist directs you to refresh the status below it. Re-entering the same details does not complete a pending review.
 
 ## A fresh check is needed
 
-1. Select **Refresh Stripe status**.
-2. Wait for the check to finish.
-3. Read the new result.
-4. Use the matching explanation on this page.
+**Payment status needs a fresh check before you can sell.** means Alysium needs an up-to-date readiness result. Select **Refresh Stripe status**, wait for the action to finish and read the new message. A successful refresh can still return a pending or restricted result.
 
-A previous complete setup can remain recorded while current readiness needs refreshing. An old completion badge alone does not establish that paid selling is ready.
+Your earlier setup can remain marked complete while current paid-selling readiness needs checking. Use the payment-status message alongside that recorded progress.
+
+If you see **Payment status is unavailable. Try refreshing it.**, use **Refresh Stripe status** to try the check again. Read any resulting error before choosing another action.
 
 ## Restricted, rejected or support review
 
-A restricted account needs its requirements or Stripe support reviewed. Rejected, support-review and unreachable-account messages need help with the existing account; its payment history is preserved.
+| Message | What to do |
+|---|---|
+| **Stripe has restricted this account.** | Review the requirements. If **Continue Stripe onboarding** is offered, use it to provide the requested information, then return and refresh the status. |
+| **Stripe rejected this account.** | Contact billing support to review the existing account. |
+| **This account needs a support review.** | Contact billing support with the displayed message. |
+| **Alysium can no longer reach this Stripe account.** | Contact billing support about access to the existing account. |
 
-Follow the visible guidance and contact [billing@alysium.ai](mailto:billing@alysium.ai) if Alysium help is needed. Do not create a replacement account to work around the notice. A temporary read error does not establish that the account was deleted.
+Rejected, support-review and unreachable states retain the account's payment history. Work with that existing account rather than creating a replacement to bypass the notice.
 
 ## Ready for payments
 
-An active readiness message says card subscriptions and payouts are ready, subject to that current check.
+**Card subscriptions and payouts are ready.** confirms payment readiness for the current check. Your offer still needs its saved pricing and channel setup. Open the agent from [Home](https://app.alysium.ai/spaces), select **Deploy → Share & Sell**, and inspect the intended channel's readiness checklist if paid access remains blocked.
 
-A paid offer still has separate publication, pricing and channel requirements. If it remains blocked, inspect its readiness checklist rather than repeating onboarding without a requested field.
-
-Continue with [Price your agent](/selling-and-payouts/price-your-agent) or [List your agent on Agenthub](/selling-and-payouts/list-your-agent-on-agenthub) for those tasks.
+You can [set the subscription offer](/selling-and-payouts/price-your-agent) there. AgentHub application and listing review remain separate from payment readiness. Bank deposits also follow [their own payout timing](/selling-and-payouts/when-and-how-you-get-paid).
 
 ## Ask for help with the actual result
 
-Include the space, exact visible status, button used and resulting error when contacting billing support. Keep bank account details and identity documents out of the message or chat.
-
-No guide can approve an account, bypass Stripe review or promise a review completion time. [Set up Stripe to get paid](/selling-and-payouts/set-up-stripe-to-get-paid) explains onboarding; [When and how you get paid](/selling-and-payouts/when-and-how-you-get-paid) explains the separate payout timing.
+For an unresolved check or a message requiring support, email [billing@alysium.ai](mailto:billing@alysium.ai) with the space name, exact visible message, action you selected and resulting error. Keep bank details and identity documents in Stripe's secure collection process.

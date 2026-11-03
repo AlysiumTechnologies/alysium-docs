@@ -1,67 +1,72 @@
 ---
 title: "Test your agent while you build"
-description: "Try questions in the builder before sharing and after changes. The preview uses credits, and you can compare replies in a fresh conversation."
+description: "Use the builder preview to check answers against your sources, test task limits and style, then save a correction and try a self-contained question."
 keywords: ["Alysium", "Test your agent while you build", "Build your agent"]
 ---
 
-Try real questions in the builder before sharing your agent, and after changing its instructions, knowledge or skills. The builder preview is a working conversation and uses credits. You do not need to publish the agent to try it there.
+<span id="test-your-agent-while-you-build" />
 
-Keep a few actual source facts ready so you can compare the answer with what the agent should know. A successful test can reveal whether a particular answer is useful; it does not guarantee that every future answer will be correct.
+Use the builder preview to check your agent's answers before sharing it and after changing its instructions, knowledge or skills. Compare replies with the information and behavior you intended, then use any mismatch to choose a correction.
 
-**Already in the builder chat preview?** Continue with [Ask a question your source answers](#ask-a-question-your-source-answers).
+Preview messages use your space's credits. You can test a draft without publishing it.
 
 ## Open the preview
 
-1. Open [Home](https://app.alysium.ai/spaces).
-2. Select the intended agent.
-3. Open **Build**.
-4. Open **Settings**.
-5. On a narrow layout, select **Chat Preview**.
-6. Continue with [Ask a question your source answers](#ask-a-question-your-source-answers).
+Open [Home](https://app.alysium.ai/spaces). On the intended agent's card, select **Build**. Use the chat beside the settings on a wide screen, or select **Chat Preview** on a smaller screen.
 
-On a wide screen, the chat preview can appear beside the settings. Home opens your active space, where you choose the agent. If it asks you to sign in, sign in. Open Home again if needed.
+Before a knowledge test, select **Settings** if needed and scroll to **Knowledge**. Check that the source you want to test appears in **Attached knowledge** and shows **Ready**. Read the source so you know which facts the reply should contain. Add reference files through Knowledge; the builder preview has no file upload control.
 
-For colors, menus and visitor appearance, use [Preview your widget](/design-your-widget/preview-your-widget) to inspect the separate Design preview.
+Let any changes finish saving before sending a test.
 
 ## Ask a question your source answers
 
-Choose a question your real source material answers, and read the source first. For that knowledge test, confirm that the source is attached to the agent and shows **Ready**.
+Choose a question with an answer you can check in the attached source. If your café FAQ says the entrance is step-free, for example, ask “Is the café entrance step-free?” and compare the answer with that statement. Use facts from your own material for a real agent.
 
-For a fictional shop agent with `Customer questions.md` attached, you might ask: “What should I bring when asking about a return?” If your real source says unused products and a receipt, those are the facts to look for. The fictional example does not establish your shop's return policy.
+1. Enter the question in **Ask anything!**. Include any details needed to understand the request on its own, such as the customer question or the text you want the agent to work on.
+2. Select **Send message** or press Enter. Use Shift+Enter to insert a new line. A suggested conversation starter can also send a test question.
+3. Wait for the reply to finish, then read the whole answer and compare its important claims with the source.
 
-1. Enter the question in the preview's message box.
-2. Send the message.
-3. Wait for the reply.
-4. Read the full answer and any source details.
-5. Compare the answer with the source.
+Check whether the answer contains the fact you expected, adds unsupported details or leaves out something important. A fluent answer alone does not establish that it is supported by your material.
 
-The conversation does not need a separate Save action.
+<span id="try-a-gap-and-a-follow-up" />
 
-## Try a gap and a follow-up
+## Try gaps, task limits and response style
 
-Ask about a fact your notes do not contain, such as a delivery date when no delivery information was supplied. Check whether the agent follows the knowledge behavior and instructions you chose, rather than inventing a business promise.
+Use a separate, self-contained request for each check. Judge the result against the instructions you actually gave the agent.
 
-Then try a normal follow-up and check whether the wording is clear in context. For a clean comparison after changing the setup, [start a fresh conversation](#compare-in-a-fresh-conversation).
+| Check | What to try and look for |
+|---|---|
+| A gap in the sources | Ask about a detail the attached material does not contain, such as opening hours if none are supplied. Check whether the agent handles the gap as instructed, instead of inventing a business promise. |
+| A request outside the agent's job | Ask for an unrelated task, such as a workout plan from a café FAQ assistant. Check whether the reply follows the task boundary you set. |
+| Response style | Ask an ordinary question within the agent's job. Compare the answer's length, tone and organization with **Agent Instructions**. If you asked for brief, friendly answers, check both qualities. |
+| A skill's method | Send a task that fits an enabled skill's description, including the input the skill expects. Compare the reply's structure and method with the skill's instructions. An enabled skill is available for relevant work; it need not be used in every answer. |
 
-## Compare in a fresh conversation
+For example, a skill that organizes supplied notes needs the actual notes in the request or an appropriate attached source. Asking only for a greeting will not show whether that method works.
 
-Let any changed setting finish saving before you compare answers. **New conversation** is available when the preview has messages and the current reply has finished. If the preview is already empty, continue with [Ask a question your source answers](#ask-a-question-your-source-answers).
+<span id="compare-in-a-fresh-conversation" />
+
+## Compare one change at a time
+
+Choose one mismatch to investigate. Change the relevant instruction, source or skill, wait for the change to save, then repeat the same self-contained request. Compare the new answer with the expected result.
+
+To compare a skill's effect, return to **Settings**, scroll to **Skills** in **Agent Builder** and turn that skill's switch off. Repeat the same task in the preview. Turn the switch back on if you want to keep using the skill. Changing one skill at a time makes the comparison easier to interpret.
+
+To clear the displayed test messages:
 
 1. Wait for the current reply to finish.
-2. Open the plus menu in the preview's message box, labelled **Add context or attachments**.
-3. Select **New conversation**.
-4. Check that the preview has reset.
-5. Repeat the same test question using [Ask a question your source answers](#ask-a-question-your-source-answers).
+2. Open the **+** menu in the message box, labelled **Add context or attachments**.
+3. Select **New conversation** when offered.
+
+This clears the displayed test messages without changing your agent's settings. The greeting and suggested starters may remain. The action becomes available after the preview has messages and the reply has finished; if the preview is already empty, you can enter your next test directly.
 
 ## Use the result to choose a correction
 
-| What you see | What to check |
+| What you see | What to check or change |
 |---|---|
-| A missing source fact | **Attached knowledge** and the file's **Ready** state. See [Why your agent can't find something](/knowledge-and-library/why-your-agent-cant-find-something). |
-| Unsupported claims | **Behavior** and **Agent Instructions**. See [Control how your agent uses its knowledge](/knowledge-and-library/control-how-your-agent-uses-its-knowledge). |
-| An answer stopping halfway through | **Max Length**. |
-| A blocked chat with a plan or usage notice | Follow that notice before repeatedly resending. See [Billing and usage messages](/help/billing-and-usage-messages). |
+| A fact is missing despite being in your source | Return to **Knowledge** and check the attachment and **Ready** state. Read the actual source again; you can [investigate why the agent cannot find it](/knowledge-and-library/why-your-agent-cant-find-something) if it is still missed. |
+| The agent invents details or handles a source gap badly | Check the source and **Agent Instructions** for missing or conflicting guidance. You can also [adjust how the agent uses its knowledge](/knowledge-and-library/control-how-your-agent-uses-its-knowledge). |
+| The style or method is unsuitable | Review **Agent Instructions** and the enabled skills. Clarify the rule or disable a conflicting skill, then repeat the original task. |
 
-Change the relevant setting, let it save, then try the original question again. The useful result is an answer you compared with a source, or a specific correction to investigate. A friendly greeting alone does not confirm the knowledge is ready.
+If a usage or payment notice blocks the preview, follow the displayed notice before resending. Its action opens Billing for this agent's space. A notice that the preview is using a different model is a different situation: a Free space can use a fallback for a saved paid-tier choice while keeping the saved selection. Account for that model difference when comparing answers; [the model notice guide](/build-your-agent/when-your-agent-answers-with-a-different-model) explains the choice.
 
-When the agent explains its intended material clearly, [preview your widget](/design-your-widget/preview-your-widget) to inspect the visitor experience. Use [Make your agent live](/share-and-deploy/make-your-agent-live) when you are ready to publish.
+Keep the questions and expected answers that helped you find a problem, so you can repeat them after later edits. Use [the widget preview](/design-your-widget/preview-your-widget) to check colors, menus and visitor appearance separately. These builder checks cover the setup and requests you tried. Test conversations in the place visitors will use the agent as part of checking its readiness to share.

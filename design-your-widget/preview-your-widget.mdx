@@ -1,67 +1,51 @@
 ---
 title: "Preview your widget"
-description: "Inspect your agent's chat appearance, menus and enabled features in the interactive Design preview, which can also show unsaved changes."
+description: "Inspect your agent’s opening screen, chat, appearance and account menu in Design preview, which can show unsaved changes."
 keywords: ["Alysium", "Preview your widget", "Design your widget"]
 ---
 
-Inspect your agent's chat appearance, menus and enabled features before sharing it. The Design preview is interactive and can show unsaved edits.
+<span id="preview-your-widget" />
 
-Use an agent you can edit. If you try a conversation, it is a working chat and uses credits. A preview does not verify a website installation or guarantee the accuracy of the agent's answers.
+See your agent as a visitor would: inspect its opening screen, chat, appearance and account menu before sharing it. Design preview shows your current edits, including ones you have not saved yet.
+
+The preview can send real chat requests. Sending a message or selecting a starter question uses your space's credits.
 
 ## Open Widget Preview
 
-1. Open [Home](https://app.alysium.ai/spaces).
-2. Select the intended agent.
-3. Open **Design**.
-4. Find **Widget Preview** beside the controls.
+Open [Home](https://app.alysium.ai/spaces), select **Build** on the agent's card, then select the main **Design** tab.
 
-On a smaller screen, select the **Preview** subtab for step 4. Use the **Design** subtab when you want to change or save settings.
-
-If the widget preview is already open, continue with [Read it as a first-time visitor](#read-it-as-a-first-time-visitor).
+On a wide screen, **Widget Preview** is beside the controls. On a smaller screen, select the **Preview** subtab; return to **Design** when you want to edit settings. If you close the small-screen preview, select **Open widget preview** to reopen it. A floating desktop preview can be reopened with its launcher.
 
 ## Read it as a first-time visitor
 
-For a fictional shop helper, imagine you have never used the assistant. Use its actual configured content for these checks:
+Start on the widget's **Home** view. Check that the greeting and description explain what the agent helps with, and that any starter questions fit its job and sources. Read the title and check that the text is easy to see against the selected theme.
 
-| Check | What to look for |
-|---|---|
-| Title and greeting | Can a visitor tell what the agent helps with? |
-| Starter questions | Do the offered questions fit the supplied information and task? |
-| Message box | Is the typing hint useful? |
-| Appearance | Are text contrast and avatar visibility suitable? |
-| File upload, if enabled | Is the visitor attachment control present? |
-| Account and conversation menus | Are the available choices understandable? |
+Open **Chat** to inspect the empty message box and typing hint. To reach the account menu from Chat, select **Back to browse** in the header, then **Account**.
 
-Open **Account** in the preview. Inspect any help, about or contact entries you added, including their wording and destinations. Features vary with configuration; do not expect every possible menu entry.
+In Account, open **About This Agent** and **Help & Support** and check what visitors will find. These entries are built in. With a Help URL configured, Help & Support opens an external page; without one, Help & Support opens the widget's contact screen. **Terms & Privacy** appears when you have supplied a policy URL. Open it and check the destination if you use it.
 
-Use the widget's **Home** view for an opening-screen check rather than judging only an older conversation.
+Check the **Conversations** shortcut too if you have enabled it. You can [edit the menu's information and links](/design-your-widget/set-up-your-widget-menu) when a destination or description needs changing.
 
 ## Try a conversation if useful
 
-Choose a question answered by an actual attached source.
+Choose a question answered by an actual source attached to this agent. Include all the context needed to answer it in the question.
 
-1. Open **Chat** in the widget preview.
-2. Enter the question in the message box.
-3. Select **Send message**, or press Enter.
-4. Read the full reply.
-5. Compare it with the source.
+1. Open **Chat** in the preview and enter the question.
+2. Select **Send message**, or press Enter.
+3. Read the full reply and compare it with the source. Check both the facts and whether the answer helps with the request.
 
-A good-looking opening is separate from correct source facts. [Test your agent while you build](/build-your-agent/test-your-agent-while-you-build) gives a fuller answer-checking procedure.
+Selecting a starter question also sends a real request. If a request fails, read the displayed message before sending another one. You can [plan a broader set of preview checks](/build-your-agent/test-your-agent-while-you-build) to test source gaps, task limits and answer style.
 
 ## Save edits you want to keep
 
-If you changed Design:
+If you changed Design settings, return to the **Design** subtab on a smaller screen, scroll to the save card at the top of the controls and select **Save Changes**. Wait for **All Changes Saved**.
 
-1. Return to the **Design** subtab if needed on a small screen.
-2. Select **Save Changes**.
-3. Wait for **All Changes Saved**.
+If an error appears there, keep the page open, read it and retry **Save Changes** when available. A working preview conversation does not confirm that appearance changes were saved.
 
-If saving fails, keep the page open and read the error. The preview's appearance and a preview conversation do not confirm that Design changes were saved.
-
-Reopen the same agent from [Home](https://app.alysium.ai/spaces) and return to Design to check the saved choices. You have completed this preview task when you have inspected the intended visitor presentation and saved any Design edits you want to retain.
+Reopen the same agent from Home and return to Design to check that the choices you want to keep remain saved.
 
 ## Check deployment separately
 
-When ready to share, use **Deploy** and follow [Make your agent live](/share-and-deploy/make-your-agent-live), then [Put your agent on your website](/share-and-deploy/put-your-agent-on-your-website).
+The desktop preview's sample website background is a place to inspect the widget. To make it available to visitors, [make the agent live](/share-and-deploy/make-your-agent-live) and [install it on your website](/share-and-deploy/put-your-agent-on-your-website).
 
-Design preview does not install website code, change allowed websites or make the agent public. If an installed widget differs, confirm the intended agent and saved configuration, then follow the installation guide to check the published site.
+Check the saved widget on the actual website as well. If it differs from the preview, confirm that the site uses the intended agent and that the Design save succeeded, then check the installation settings.

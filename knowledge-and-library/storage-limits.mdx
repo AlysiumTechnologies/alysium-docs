@@ -4,38 +4,52 @@ description: "Understand saved-file storage separately from chat credits. Chat o
 keywords: ["Alysium", "Storage limits", "Knowledge and Library"]
 ---
 
-Storage is the space used by saved files. Chat credits measure a separate kind of usage. Turning on chat overages does not buy extra file storage, and shortening an answer does not erase documents.
+<span id="storage-limits" />
+
+Your space has one storage allowance for saved material such as reference files. Files can continue to use it after you remove an agent's attachment or move them to Trash.
+
+Storage and chat credits are separate allowances. Turning on paid chat overages does not buy more file storage.
 
 ## Space allowances
 
-| Plan | Storage allowance |
+| Plan | Storage per space |
 |---|---|
 | Free | 2 GB |
 | Pro | 100 GB |
 
-These allowances belong to the space, rather than to each agent. Open [Library](https://app.alysium.ai/library) to review your current space's material and actual storage display.
+The allowance belongs to the whole space, rather than to each agent. Reusing one saved Library source across several agents does not require another stored copy. Uploading a duplicate creates a separate document.
 
-Reusing one saved source in several agents does not require another stored copy. Uploading intentional duplicates creates separate stored material.
+Open [Library](https://app.alysium.ai/library) to review your current space's material. On a wide screen, the **Storage** meter sits below the projects in the left sidebar. It shows used storage and the allowance, warns when space is running low and shows **Storage full** when the allowance is reached. Use a wide screen to check this meter; it is not shown in the phone layout.
 
 ## What still uses storage
 
 | Material or action | Effect on storage |
 |---|---|
-| Files in **Trash** | Still count until permanently erased. |
-| Retained visitor uploads | Can consume the owning space's storage. |
-| Detaching a source from an agent | Leaves the document saved, so does not free its storage. |
-| Website-derived material | Can have different recorded sizes. Use the actual usage display rather than counting source rows. |
+| Saved files | Use the space's allowance according to their recorded size. |
+| Files in **Trash** | Continue to count until permanent erasure finishes. |
+| Retained visitor uploads | Can use the owning space's storage. |
+| Removing an agent's attachment | Leaves the material stored, so does not free storage. |
+| Website-derived material | Can have different recorded sizes; counting pages or rows does not tell you the storage used. |
 
-An empty agent attachment list does not mean the space's documents were deleted. Attachment controls determine what an agent uses; Library and Trash controls manage the saved material.
+Agent attachments control which sources an agent can use. They do not show everything saved in the space. An empty **Attached knowledge** list can therefore coexist with a full storage meter.
 
 ## If an upload is refused for storage
 
-Review which files are no longer needed and how agents use them. For example, a fictional space might have outdated manuals alongside the approved current manual. Remove and erase only the saved material you intend to discard, rather than deleting the current manual because it is large.
+Read the refusal before changing anything. It can apply to the complete upload selection, so review the total material you are trying to add.
 
-Use [Restore or permanently delete from Trash](/knowledge-and-library/restore-or-permanently-delete-from-trash) to understand recovery, **Remove from agents** and permanent erasure before choosing an action.
+First decide which saved files you no longer need, including whether agents still use them. Keep the approved current material; choose outdated copies or other files you intend to discard.
 
-Holds and pending deletion can keep files retained. After erasure completes, check the storage display before retrying the upload. A confirmation request alone does not prove that space was released.
+1. In [Library](https://app.alysium.ai/library), open an unwanted file's three-dot menu and select **Delete** to move it to Trash. Wait for the result.
+2. Open [Trash](https://app.alysium.ai/library?view=trash). Review the intended files and any **Still knowledge for** disclosure before erasing them. Moving a file to Trash can leave it available to agents that already use it.
+3. For an individual file, select **Delete forever**. To erase everything in Trash, choose **Empty Trash**. Read the confirmation's scope and confirm only the material you intend to erase.
+4. Wait for the result and read it. Check the remaining files and the **Storage** meter before submitting the upload again.
 
-Each uploaded file must also meet its format and individual-size limits, even when the space has room. See [File and storage limits](/help/file-and-storage-limits) for those separate rules.
+Completed permanent erasure cannot be undone. A retained file can still offer **Restore**; confirming a deletion request or closing its dialog does not establish that erasure finished.
 
-If you need to keep the material, [Billing](https://app.alysium.ai/spaces?settings=billing) opens your active space's plan and payment settings. Review the current allowance and displayed plan offer before deciding whether a plan change suits the need.
+If the result says some deletions are still finishing and will retry automatically, allow that work to finish and check again. If it says **More files remain in Trash. Run Empty Trash again to continue.**, run **Empty Trash** again for the next portion. A retained or held file still uses storage; repeating the action does not override its hold. Follow the reason shown for that file.
+
+**Remove from agents** changes knowledge access while leaving retained files in storage. You can [review restoration, agent use and permanent deletion](/knowledge-and-library/restore-or-permanently-delete-from-trash) before choosing a broader cleanup action.
+
+If you need to keep the material, open [Billing](https://app.alysium.ai/spaces?settings=billing) and review your space's current plan and displayed Pro offer. Library's **Upgrade to Pro** link also opens Billing.
+
+Each uploaded knowledge file must still meet the supported format and **25 MiB per-file** limit, even when your space has room. [Check the file limits](/help/file-and-storage-limits) if the refusal concerns an individual file rather than available storage.

@@ -4,67 +4,54 @@ description: "Read the consequences and export needed conversations before perma
 keywords: ["Alysium", "Delete an agent", "Share and deploy"]
 ---
 
-Use permanent deletion only when you want to remove the agent itself. If you only need to pause public chats, [unpublish it](/share-and-deploy/unpublish-your-agent) so you can keep editing it.
+<span id="delete-an-agent" />
 
-In your current space, deletion is an owner action. Being able to build or publish an agent is not the same as being able to delete it.
+Permanently deleting an agent removes the agent, its settings and its conversations. You cannot restore the agent from Trash.
 
-**Already in the deletion dialog?** Continue with [Read the consequences](#read-the-consequences) before exporting or confirming.
+If you want to pause public chats and keep the agent, open its **Deploy** tab, select **Launch settings**, then **Unpublish**. Wait for the status to save. You can [bring it back later](/share-and-deploy/unpublish-your-agent).
 
 ## Open the deletion panel
 
-1. Open [Home](https://app.alysium.ai/spaces).
-2. Select the intended agent.
-3. Open **Deploy**.
-4. Expand **Advanced**.
-5. Check the agent's name.
-6. Select **Delete Agent**.
+1. Open [Home](https://app.alysium.ai/spaces) and select **Build** on the agent you want to remove.
+2. Open **Deploy**. On a narrow screen, this navigation is at the bottom.
+3. Scroll down and expand **Advanced**.
+4. Find **Danger Zone** and select **Delete Agent**.
 
-Home opens your active space, where you choose the agent. If it asks you to sign in, sign in. Open Home again if needed.
-
-Similar names can make it easy to select the wrong agent. Check the name again in the confirmation before continuing.
+Check the agent’s name in the confirmation dialog before taking any further action.
 
 ## Read the consequences
 
-The confirmation explains what will be removed and what will be preserved. It lists the agent and its settings, past conversations, marketplace listing, and favorites/bookmarks as items affected by deletion. Reviews, ratings and marketplace history have separate preservation behavior described there.
+Deleting the agent stops its public link and website widgets from serving it. Its marketplace listing is withdrawn, while some reviews and marketplace history are preserved.
 
-The agent's widgets and links will stop working. Library documents are managed separately, so deleting an agent is not a way to clear every source file in your space. Other agents may still use those files.
+Files in your Library remain. If the agent received visitor uploads, their folder remains as an ordinary Library folder with **(agent deleted)** added to its name. Those files can still use storage. Review their other uses before removing them; [storage limits](/knowledge-and-library/storage-limits) explains what counts toward your allowance.
 
-If you need conversation records, continue with [Export conversations first](#export-conversations-first). Otherwise continue with [Confirm permanent removal](#confirm-permanent-removal).
+An agent with marketplace purchases cannot be permanently deleted. Unpublishing can stop public access to the source agent, but does not cancel purchases or subscriptions.
 
 ## Export conversations first
 
-Choose **Export as CSV** for a spreadsheet-friendly file, or **Export as Text** for a readable conversation archive. The deletion dialog exports the agent's conversations together.
+If you need to keep conversation records, check the actual downloaded content before deleting the agent. Exports can omit conversations or show **No content available** where Alysium displays readable messages. This can happen in both Text and CSV files.
 
-1. Find **Export conversations** in the deletion dialog.
-2. Select **Export Data**.
-3. Select **Export as CSV** or **Export as Text**.
-4. Wait for the download.
-5. Open the downloaded file.
-6. Check that it contains the records you intended to keep.
+1. In the dialog’s **Export conversations** section, select **Export Data**.
+2. Select **Export as CSV** for a spreadsheet file or **Export as Text** for a plain-text file.
+3. Wait for the download, then open the file from your browser’s Downloads.
+4. Compare the conversations and message text you need with the records shown in Alysium.
 
-Exporting does not delete the agent. For a missing file, check your browser's Downloads and confirm that it finished downloading.
+If needed records or text are missing, select **Cancel** to leave deletion. Email [support@alysium.ai](mailto:support@alysium.ai) with the agent’s name, the export action you tried and what is missing from the file. Changing formats or retrying is not a reliable way to restore missing message text.
 
-If export reports an error, read it before retrying the export. If you still cannot obtain records you need, select **Cancel** to leave deletion and use [Get help from a person](/help/get-help-from-a-person).
-
-Continue with [Confirm permanent removal](#confirm-permanent-removal) only after checking any records you intend to keep.
+If the download itself fails, read the export alert and check your browser’s Downloads. You can retry a failed download, but cancel deletion if you still cannot obtain the records you need.
 
 ## Confirm permanent removal
 
-1. Read the full deletion warning.
-2. Find the confirmation field labelled with the agent's name.
-3. Type that name into the field.
-4. Select **Delete Permanently**.
-5. Wait for deletion to finish.
-6. Follow the resulting navigation.
+1. Read the deletion warning and check the agent’s name again.
+2. Type the displayed name into the confirmation field. Avoid extra spaces; capitalization does not need to match.
+3. Select **Delete Permanently** and wait for the result.
 
-For example, if your fictional practice agent is named **Practice Café Helper**, type that name rather than your account name. Use the name shown in your own dialog.
-
-**Cancel** closes the dialog before deletion. The final button remains disabled until the confirmation name is accepted. Treat this as permanent removal, not a reversible Draft status.
+The final button stays disabled until the name is accepted. **Cancel** closes the dialog before deletion begins; it is unavailable while deletion is running.
 
 ## Check completion or recover from an error
 
-After successful deletion, the agent should no longer be available as an editable agent from Home.
+After a successful deletion, Alysium returns to Home. Check that the agent is no longer available there.
 
-If the final button is disabled, check the typed name and whether another action is still running. If an error appears, read it before retrying. If you are unsure whether deletion completed, return to [Home](https://app.alysium.ai/spaces) and check for the agent before repeating the action.
+If **Delete Permanently** remains disabled, check the typed name and whether deletion is already running. If the dialog reports an error, read that message before trying again. A message that the agent has marketplace purchases means it cannot be hard-deleted; use **Cancel**, then unpublish it if you want to stop its public delivery.
 
-Do not delete Library sources because the agent was removed. Review their other uses first. Use [Storage limits](/knowledge-and-library/storage-limits) if your original goal was to free file storage.
+If you are unsure whether deletion completed, check [Home](https://app.alysium.ai/spaces) for the agent before repeating the action.

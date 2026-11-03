@@ -4,87 +4,66 @@ description: "Set an editable agent's welcome message and starter questions so v
 keywords: ["Alysium", "Set a welcome message and starter prompts", "Build your agent"]
 ---
 
-Set an editable agent's greeting and starter questions to help visitors understand its job and begin a conversation.
+<span id="set-a-welcome-message-and-starter-prompts" />
 
-The welcome message is the opening greeting. Starter prompts are suggested questions visitors can choose to begin. They introduce the agent; its instructions and knowledge determine how it should answer.
+Help people understand what your agent can do and give them a useful first question. The welcome message is its opening greeting; starter prompts are questions people can select to begin a conversation.
+
+Choose a greeting and questions that match the agent's actual job. Its [instructions](/build-your-agent/write-your-agents-instructions) guide how it answers, and its knowledge supplies reference information.
 
 ## Find the fields
 
-1. Open [Home](https://app.alysium.ai/spaces).
-2. Select the intended agent.
-3. Open **Build** → **Settings**.
-4. Find **Welcome Message** and **Suggested Conversation Starters**.
-
-If those fields are already open, continue with [Write the welcome message](#write-the-welcome-message). Home opens your current space so you can choose the right agent.
+Open [Home](https://app.alysium.ai/spaces) and select **Build** on the intended agent's card. In the builder, select **Settings** if you are viewing Profile or Chat Preview. Find **Welcome Message** and **Suggested Conversation Starters**.
 
 ## Write the welcome message
 
-Keep the greeting to **50 words or fewer**. The field has a word counter and warns when the text is too long.
+Tell people what they can ask and, if useful, where to go for questions the agent cannot answer. Keep the greeting to **50 words or fewer**. The field's word counter shows your length, and an overlong greeting will not save.
 
-For a fictional shop assistant:
+For a fictional café assistant:
 
-> Hi, I help with our hiking-boot notes and shop FAQ. Tell me what you need, or choose a question below. If our notes do not cover it, I will point you to the shop team.
+> Hi, I can help with the café's menu and accessibility information. Ask a question or choose one below. If our FAQ does not cover your question, I will point you to a café team member.
 
-Replace the example with your agent's actual scope.
-
-1. Enter your greeting in **Welcome Message**.
-2. Wait for its automatic save.
-
-Correct any validation message before continuing. On a computer, hover over the builder's save indicator to check for **All changes saved**.
+Replace the example with your own agent's scope and contact route. Enter it in **Welcome Message**, then pause to let it save automatically. Correct any displayed validation message. On a computer, you can hover over the builder's save indicator, where shown, to check for **All changes saved**.
 
 ## Choose useful starter questions
 
-You can have **up to 5 prompts**. Choose questions supported by the agent's actual documents or instructions.
+You can have **up to five** starter prompts. Write specific questions that your agent's sources can answer. For a café FAQ covering its menu, accessibility and booking contact, suitable questions might be:
 
-For the fictional shop, examples include:
+- What food and drinks does the café serve?
+- Is the café entrance step-free?
+- How can I ask about a booking?
 
-- How should I compare hiking boots?
-- What should I bring when asking about a return?
-- What information do you have about this shop?
-
-Use these only if your agent can help with them. A question about live stock lookup or order placement would mislead visitors unless that capability exists.
+Check each question against your own information. A starter offers a task to the person choosing it, so use questions that the agent is equipped to handle.
 
 ### Edit an existing starter
 
-1. Replace the text in the starter's field.
-2. Click or tap outside the field to save it.
-
-Continue with [Show starters to visitors](#show-starters-to-visitors).
+Replace the text in its field, then click or tap outside the field to save the edit.
 
 ### Add a starter
 
-1. Select **Add prompt**.
-2. Enter a question.
-3. Click or tap outside the field to save the text.
-
-Repeat for other useful questions, within the five-prompt limit. Continue with [Show starters to visitors](#show-starters-to-visitors).
+Select **Add prompt**, enter a question in the new field, then click or tap outside it to save the text. You can add another entry while the list has fewer than five prompts.
 
 ### Remove an unwanted starter
 
-Use the entry's X button labelled **Remove prompt**. Adding or removing an entry saves immediately; edited text saves when you leave its field.
+Select the entry's X button, labelled **Remove prompt**. Adding or removing an entry starts saving that list change; edited text saves when you leave its field.
 
-After removing any unsupported questions, continue with [Show starters to visitors](#show-starters-to-visitors).
+After your edits, wait for saving to finish. To confirm the text was stored, return to [Home](https://app.alysium.ai/spaces), reopen the same agent and check the greeting and questions in **Build** → **Settings**.
 
 ## Show starters to visitors
 
-Writing the questions in Build and showing them in the widget are separate choices.
+Writing questions in Build and displaying them in the widget are separate choices. To show them:
 
-1. Open **Design**.
-2. Find **Features**.
-3. Turn on **Starter prompts**.
-4. Select **Save Changes**.
-5. Wait for **All Changes Saved**.
-6. Check the widget preview's opening screen.
+1. Open **Design** in the builder. If you are viewing its Preview subtab, select the **Design** view.
+2. Scroll to **Features** and turn on **Starter prompts**.
+3. Return to **Save Changes** near the top and select it.
+4. Wait for **All Changes Saved**.
+5. Check the greeting and questions on the widget preview's opening screen. On a narrow screen, select the **Preview** subtab within Design to see it.
 
-On a smaller screen, select the **Preview** subtab to inspect the widget. Use [Preview your widget](/design-your-widget/preview-your-widget) for the visitor-view checks.
-
-You are finished when the greeting and questions are saved and the intended opening appears in preview. For other display choices, use [Turn widget features on or off](/design-your-widget/turn-widget-features-on-or-off).
+The preview can reflect changes before they are saved, so use **All Changes Saved** to confirm the display setting was stored. You can [check the rest of the widget preview](/design-your-widget/preview-your-widget) before sharing the agent.
 
 ## If the greeting or starters are missing
 
-- **The greeting has a validation error:** shorten it to the counter's limit and let it save.
-- **A starter edit is missing:** return to **Suggested Conversation Starters**, enter the text and click outside its field.
-- **Saved starters do not appear:** check **Design** → **Features** → **Starter prompts**, then save Design changes.
-- **The opening looks unchanged:** confirm the intended agent and its opening screen. An existing conversation is different from a fresh opening.
+- **The greeting has a validation message:** shorten it to 50 words or fewer and let it save. Starter changes save separately, so saved questions do not confirm that the greeting saved.
+- **A starter edit did not remain after reopening:** enter it again in **Suggested Conversation Starters** and click or tap outside its field.
+- **The saved questions are absent from the widget opening:** check **Design** → **Features** → **Starter prompts**, turn it on, select **Save Changes** and wait for **All Changes Saved**.
 
-Greeting validation and prompt saving are separate. Fix an overlong greeting even if the prompts have saved.
+Check the intended agent and the widget's opening screen when comparing the result. A conversation already in progress is a different view from that opening.

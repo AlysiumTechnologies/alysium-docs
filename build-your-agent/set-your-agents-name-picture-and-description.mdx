@@ -4,91 +4,80 @@ description: "Change an editable agent's name, avatar, banner and description so
 keywords: ["Alysium", "Set your agent's name, picture and description", "Build your agent"]
 ---
 
-Give your agent an identity people can recognize. Its name, avatar, banner and description describe the assistant; they do not change your personal account name or photo.
+<span id="set-your-agent’s-name-picture-and-description" />
 
-Use images you have permission to show publicly. Some AgentHub agents cannot be edited, so use an agent you created or a copy that allows changes.
+Give your agent a name people can recognize, a description of its job and images that fit it. The avatar is its small identifying picture on cards and in chat; the banner is a wide header image.
 
 ## Find the right field
 
-Open [Home](https://app.alysium.ai/spaces) and select the agent you want to change. The text and image fields are in different places:
+Open [Home](https://app.alysium.ai/spaces) and select **Build** on the intended agent's card. The builder has separate **Settings** and **Profile** views:
 
-| Field | Location | Continue with |
-|---|---|---|
-| **Agent Name** | **Build** → **Settings** | [Change the name](#change-the-name) |
-| **Description** | **Build** → **Profile** | [Change the description](#change-the-description) |
-| **Avatar** | **Build** → **Profile** → **Agent Images** | [Upload an avatar](#upload-an-avatar) |
-| **Banner** | **Build** → **Profile** → **Agent Images** | [Upload or remove a banner](#upload-or-remove-a-banner) |
-
-Home opens your current space; select the intended agent there. If its builder is already open, use the table to find the field and follow its linked task.
-
-For behavior changes, use [Write your agent's instructions](/build-your-agent/write-your-agents-instructions). Public profile text does not replace instructions.
+| What you want to change | Where to find it |
+|---|---|
+| Name | **Settings** → **Agent Name** |
+| Description | **Profile**, then scroll to **Description** |
+| Avatar or banner | **Profile** → **Agent Images** |
 
 ## Choose a name and description
 
-For a fictional outdoor-shop assistant, an example name is **Ridge and River Guide**. Its description could be:
+Choose a name that suggests the agent's purpose. Use the description to explain what people can ask it to do. The description is shown on agent pages.
 
-> Helps customers understand our hiking-boot notes and shop FAQ, and points them to staff when a question is not covered.
+For a fictional café assistant, the name could be **Café Visitor Guide**, with this description:
 
-Replace the name and claims with your own. Describe what people can actually ask the agent to do.
+> Answers questions about our menu and accessibility from the café FAQ, and points visitors to the café team when a question is not covered.
+
+Replace the example with your own job and sources. Keep the claims specific to what the agent can help with. To change how it responds, edit its [Agent Instructions](/build-your-agent/write-your-agents-instructions).
 
 ## Change the name
 
-1. Open **Build** → **Settings**.
-2. Edit **Agent Name**.
-3. Pause to let the change save.
+In **Build**, select **Settings** and replace the text in **Agent Name**. Pause to let the change save automatically.
 
 ## Change the description
 
-1. Open **Build** → **Profile**.
-2. Edit **Description**.
-3. Pause to let it save.
+Select **Profile**, scroll to **Description** and enter your text in the field marked **Describe what your agent does**. Pause to let it save automatically.
 
-These text fields save automatically. There is no separate Publish or Design **Save Changes** step to store them.
+On a computer, the builder's save indicator, where shown, has a tooltip you can check for **All changes saved**. Reopening the agent lets you confirm the stored text on any screen size.
 
 ## Prepare an image
 
-An avatar is the small identifying picture; a banner is the wider image.
+Choose a **PNG, JPEG, WebP or GIF** file you have permission to use. The two images have different file limits:
 
-| Image | Maximum size |
+| Image | Maximum file size |
 |---|---|
-| Avatar | **2 MB** |
-| Banner | **5 MB** |
+| Avatar | **2 MiB** |
+| Banner | **5 MiB** |
 
-Use **PNG, JPG, GIF or WebP**. These limits apply to agent pictures, not knowledge documents.
+An image that works well as a wide banner may be difficult to recognize as a small avatar. Choose each for the space it will fill.
 
 ## Upload an avatar
 
 In **Build** → **Profile**, find **Agent Images** → **Avatar**.
 
-1. Select the current avatar picture, labelled **Upload avatar image**.
-2. Select an image on your device.
-3. Wait for **Image uploaded**.
-4. Check the resulting picture.
+1. Select the current avatar or image placeholder, labelled **Upload avatar image**.
+2. Choose the image file on your device. Selecting it starts the upload.
+3. Wait for **Image uploaded**, then check the resulting picture.
 
-Selecting the image starts the upload and saves it to the agent. You do not need to add the picture through Knowledge.
+Use the same upload control to replace an existing avatar.
 
 ## Upload or remove a banner
 
-In **Build** → **Profile**, find **Agent Images** → **Banner**.
+In **Agent Images** → **Banner**:
 
-1. Select **Browse images**.
-2. Select a banner image on your device.
-3. Wait for **Image uploaded**.
-4. Check the resulting banner.
+1. Select **Browse images** and choose a file, or drop it onto **Drop a banner image here**.
+2. Wait for **Image uploaded**.
+3. Check the resulting banner.
 
-You can also drop an image into **Drop a banner image here**, then continue from step 3.
-
-To remove the banner, select **Remove banner**. Wait for **Image removed**, then check that the banner is gone.
+If a banner is already present and you want to clear it, select **Remove banner** and check that the image disappears.
 
 ## Confirm the saved profile
 
-Return to [Home](https://app.alysium.ai/spaces) and reopen the same agent. Check **Agent Name** in **Build** → **Settings**, then the description and images in **Build** → **Profile**.
+Return to [Home](https://app.alysium.ai/spaces) and reopen the same agent. Check **Agent Name** in **Build** → **Settings**, then select **Profile** and check the description, avatar and banner.
 
-You are finished when the intended text and images remain after reopening. To write the first words visitors see, continue with [Set a welcome message and starter prompts](/build-your-agent/set-a-welcome-message-and-starter-prompts).
+The intended values should remain after reopening. This confirms the saved setup you are editing. When you are ready to share the agent, [make it live](/share-and-deploy/make-your-agent-live) and check the visitor-facing result there.
 
 ## If an image or edit fails
 
-- **The image type is rejected:** export it to one of the supported formats.
-- **The file is too large:** resize or compress it to fit the limit for that image.
-- **An upload reports an error:** read the message before trying again. A changed preview alone does not confirm the upload saved.
-- **The agent still behaves the same:** profile changes do not rewrite **Agent Instructions**. Use the instructions guide for behavior changes.
+- **The image type is rejected:** export the image as PNG, JPEG, WebP or GIF and select that file.
+- **The image is too large:** resize or compress it to fit the avatar's 2 MiB limit or banner's 5 MiB limit, then select it again.
+- **The upload reports an error:** read the message and correct the stated problem before trying the upload again. A changed preview alone does not confirm that the image was stored; check it after reopening the agent.
+- **A text change did not remain:** enter it again in its Settings or Profile field, wait for saving to finish and reopen the same agent to check.

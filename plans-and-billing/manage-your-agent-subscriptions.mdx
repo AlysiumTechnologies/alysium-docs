@@ -4,54 +4,77 @@ description: "Find an agent's access record in Billing, read its price, usage an
 keywords: ["Alysium", "Manage your agent subscriptions", "Plans credits and billing"]
 ---
 
-Find an agent's access record in Billing, understand its price, usage and renewal state, then choose the action that matches your intention. These records are separate from your space's Pro plan.
+<span id="manage-your-agent-subscriptions" />
+
+Use Billing to inspect an agent's price, included usage and renewal state, then manage that agent's subscription or access. These records belong to the space that obtained the agent and are separate from its Pro plan.
 
 ## Find the correct record
 
-Use the account that purchased or received access to the agent. The Billing link opens the current space's settings, so check the space used for that access.
-
-Already in Billing? Start at step 2. Already looking at the correct agent and creator's card? Continue with [Read the status, dates and usage](#read-the-status-dates-and-usage).
-
-1. Open [Billing](https://app.alysium.ai/spaces?settings=billing).
-2. Find **Agent Access and Subscriptions**.
-3. Locate the card by both agent name and creator name.
-4. Continue with [Read the status, dates and usage](#read-the-status-dates-and-usage).
+1. Open [Billing](https://app.alysium.ai/spaces?settings=billing) and check the space name above settings.
+2. Scroll to **Agent Access and Subscriptions** and wait for the records to load.
+3. Find the card by both **agent name** and **creator name**.
 
 ## Read the status, dates and usage
 
-A card can represent a paid subscription, access granted without a subscription or an incomplete checkout. Its presence alone does not prove there is an active recurring bill.
+Read the price or access description, any status shown, and the renewal or end date. A card can represent a paid subscription, access without a subscription, an incomplete checkout or an ended record.
 
-1. Read the card's price or access description.
-2. Check its status badge.
-3. Check the renewal or end date, where shown.
-4. Read the premium-usage meter and bundle reset information, where present.
-
-| Displayed state | What it tells you |
+| What you see | What it means |
 |---|---|
+| A subscription price and **Renews** date | The record shows its recurring rate and renewal date. The date can also be unavailable. |
+| **Ending** with a date or **Ending at period end** | Cancellation is scheduled. Included usage remains available while access is active. |
+| **Subscription ended** and **Previous rate** | The paid subscription has ended; the displayed rate describes that earlier subscription. |
+| **Access without a subscription** or **Legacy access** | There is no linked agent subscription. AI usage still depends on the applicable allowance. |
+| **Access removed** | Access without a linked subscription has been removed. |
 | **Checkout pending** | Payment has not activated access yet. |
-| **Checkout expired** | That checkout was not completed. |
-| **Access without a subscription** or **Legacy access** | The record does not describe a linked paid subscription. |
-| **Ending** | A subscription is scheduled to end. Read the displayed end date and remaining access. |
+| **Checkout expired** | That payment was not completed and access was not activated. |
+| **Status unavailable** or **Subscription price unavailable** | The missing detail cannot be confirmed from this card. |
 
-If the status or price is unavailable, do not infer an active charge from the agent's current listing price.
+The existing subscription rate can differ from the agent's current offer for a new purchase. Use the rate on the existing record when reviewing that bill.
 
-A renewal date concerns subscription billing. A bundle reset date concerns included usage; the dates can differ. An ending subscription can retain usage while access remains active. For example, an **Ending** card with unused included credits can still be usable until its displayed end. After a bundle is spent, further usage depends on the space plan and limits.
+Where shown, **Premium usage** displays credits consumed against the agent's included bundle. Its reset information concerns included usage; the renewal date concerns billing. These dates can differ. An ending subscription can show unused credits while access remains active, without promising another bundle reset.
+
+After the bundle is spent, additional usage depends on the space plan and limits. **View usage** opens the space's general **Consumption** tab. You can [check the usage views](/plans-and-billing/check-your-usage) for more detail.
 
 ## Choose the next action
 
-You do not need to save anything to inspect a card. To change access or billing, use the action actually offered on the correct card:
+### Stop a paid renewal
 
-| Your intention | Action and continuation |
-|---|---|
-| Stop a paid renewal | **Unsubscribe** opens a confirmation for ending at the period boundary. Follow [Cancel an agent subscription](/agenthub/cancel-an-agent-subscription), including its final confirmation and Ending-state check. |
-| End access that has no linked subscription | **Remove access** ends that grant immediately after confirmation. Follow the grant-removal steps in [Cancel an agent subscription](/agenthub/cancel-an-agent-subscription). |
-| Resolve a payment warning | **Fix billing**, when offered, opens payment management for that creator's subscription. Continue with [Fix a failed payment](/plans-and-billing/fix-a-failed-payment). |
-| Buy access again or complete an expired checkout | **Re-subscribe**, **Subscribe** or **Retry checkout**, when offered, starts checkout at the current available offer. Read the amount and terms before paying. Follow [Subscribe to an agent](/agenthub/subscribe-to-an-agent) for payment confirmation and the active-access check. |
+1. On the correct card, select **Unsubscribe**.
+2. Read **Cancel subscription?**, including the period end or date shown. Access continues until the end of that billing period.
+3. Select **Keep subscription** to leave it in place, or **Unsubscribe** to confirm cancellation.
+4. Wait for **Agent subscription will end after the current billing period.** The card changes to **Ending**. Reopen [Billing](https://app.alysium.ai/spaces?settings=billing) and check the same agent's resulting state and end date.
 
-A new checkout does not guarantee an older price or reverse a scheduled cancellation. Opening checkout or entering card information does not confirm an active subscription.
+### Remove access without a subscription
+
+1. On the correct card, select **Remove access**.
+2. Read **Remove agent access?** Access ends immediately when you confirm.
+3. Select **Keep access** to leave it in place, or **Remove access** to confirm.
+4. Wait for **Agent access was removed.** Reopen Billing and check that the card shows **Access removed**.
+
+Removing this access does not change the space's Pro plan. A later paid purchase requires reviewing the agent's current offer.
+
+### Resolve an agent payment warning
+
+When the card offers **Fix billing**, select it to open payment management for that creator's subscription.
+
+1. Check that the portal shows the intended agent subscription and read its payment issue or unpaid invoice.
+2. Update the payment method if needed, complete any offered payment or verification action, and check the payment result. Saving a new card alone does not confirm that an unpaid invoice was paid.
+3. Return to Alysium and reopen [Billing](https://app.alysium.ai/spaces?settings=billing). Check the agent's card, then reopen the affected chat to check its access notice.
+
+Agent access can remain temporarily available during a payment problem. Use the resulting status and chat notice to check recovery. The space's Pro bill has a separate portal; you can [resolve either kind of failed payment](/plans-and-billing/fix-a-failed-payment) through its own record.
+
+### Buy access again or retry an expired checkout
+
+An ended or expired record may offer **Re-subscribe**, **Subscribe** or **Retry checkout**. Selecting it opens the agent's AgentHub listing.
+
+Review the current price and included usage on that listing before choosing to subscribe. If you proceed to checkout, review the recurring amount, interval and terms, enter the requested payment information, confirm deliberately and complete any verification requests. Check the payment result, then reopen Billing and confirm that the intended agent's access is active. Opening checkout or entering a card alone does not confirm access.
+
+A new purchase uses the current offer; it does not guarantee the previous rate. An **Ending** record has no action here to undo its scheduled cancellation. The [agent purchase guide](/agenthub/subscribe-to-an-agent) explains the full checkout and installed-agent journey.
 
 ## If a purchase or result is missing
 
-Check the account and space used at checkout. Reopen Billing to inspect the existing record before trying another purchase or cancellation. If the purchase is still missing, or a confirmed action does not match the card, contact billing@alysium.ai with the agent and creator names, displayed state and confirmation reference.
+If an action reports an error, read the Billing alert near the plan controls. Reopen Billing and inspect the existing agent record before repeating a purchase or cancellation.
 
-For the space plan instead, use [Cancel Pro](/plans-and-billing/cancel-pro) or [Update your payment method or see invoices](/plans-and-billing/update-your-payment-method-or-see-invoices).
+For a missing purchase, check the space used at checkout. If the record is still missing, or a confirmed action does not match its resulting state, contact [billing@alysium.ai](mailto:billing@alysium.ai) with the space, agent and creator names, displayed state and confirmation reference. Keep full card details out of the message.
+
+For the space's plan, you can [cancel Pro](/plans-and-billing/cancel-pro) or [manage its payment method and invoices](/plans-and-billing/update-your-payment-method-or-see-invoices) separately.

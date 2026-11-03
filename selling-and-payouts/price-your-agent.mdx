@@ -4,73 +4,57 @@ description: "Set an agent's monthly access fee, included usage, free preview al
 keywords: ["Alysium", "Price your agent", "Selling and payouts"]
 ---
 
-Set a paid offer with a monthly access fee, included usage, free preview allowance and optional additional usage rate. Use an agent whose selling setup you can manage.
+<span id="price-your-agent" />
 
-Have your intended monthly USD price and included-credit amount ready. Check the cost and value of your offer rather than copying another agent's price. [Complete Stripe setup](/selling-and-payouts/set-up-stripe-to-get-paid) before expecting the offer to accept payments.
+Set the monthly subscription price, included AI usage and free preview for your agent. You can also choose a usage multiplier for eligible usage beyond the included allowance.
 
-## Decide what the offer includes
-
-| Choice | What it does |
-|---|---|
-| Monthly fee | Buys access; it does not promise unlimited conversations. |
-| **Premium Allowance** | Included AI usage for that agent. |
-| **Free preview messages** | A limited trial funded from your credits. |
-| **Usage revenue → Credit multiplier** | Changes the usage rate for eligible additional usage. |
-
-The included allowance must be positive and its dollar value must be less than the monthly fee. The form explains that **100 credits = $1** of usage value.
-
-For an illustrative valid example, a **$10** monthly access fee with **100** included credits gives **$1** of included usage value. This is an example, not a recommended or current offer.
-
-**Already in Pack pricing?** Continue with [Enter and save pricing](#enter-and-save-pricing).
+A monthly fee buys access to the agent. **Premium Allowance** is the AI usage included with that subscription; it does not promise a fixed number of messages, because different requests can use different amounts of credits.
 
 ## Open Pack pricing
 
-1. Open [Home](https://app.alysium.ai/spaces).
-2. Select the intended agent.
-3. Open **Deploy**.
-4. Select **Share & Sell**.
-5. Select **Edit subscription setup** under **Buyer access**.
-6. Continue with [Enter and save pricing](#enter-and-save-pricing).
+1. Open [Home](https://app.alysium.ai/spaces) and select the source agent you want to price.
+2. Select **Deploy**, then **Share & Sell**.
+3. In **Buyer access**, select **Edit subscription setup** to open **Pack pricing**.
 
-Home opens your active space, where you choose the agent. If it asks you to sign in, sign in and open Home again if needed.
+If the agent already has a live paid channel, saving a new price or allowance can apply the updated offer to new buyers immediately. Existing subscribers keep the pricing captured when they subscribed.
+
+<span id="decide-what-the-offer-includes" />
 
 ## Enter and save pricing
 
-On the **Credit multiplier** slider, **No markup** means standard usage rates. Moving right sets a higher rate. Read the displayed multiplier and percentage before saving. A higher multiplier consumes more buyer credits for the same work; it does not add included credits or change the monthly fee.
-
-Keep standard rates unless you deliberately intend a higher rate for eligible extra usage. [Understand usage and previews](#understand-usage-and-previews) before promising any extra earnings.
-
 1. Enter the recurring fee in **Monthly access price (USD)**.
-2. Enter the included credits in **Premium Allowance**.
-3. Expand **Free preview messages** if you want to change the trial.
-4. If you are changing the trial, set **Number of messages** to the intended count, including zero for no free messages.
-5. Expand **Usage revenue**.
-6. Review **Credit multiplier**.
-7. Adjust the slider only if you intend a different usage rate.
-8. Select **Save**.
-9. Wait for **Pricing saved**.
-10. Inspect the saved summary.
-
-## Activate the intended buyer-access mode
-
-Saving Pack pricing does not switch free access into paid access. Return to **Buyer access** in the same agent's **Deploy → Share & Sell** area.
-
-1. In **Buyer access**, select **Paid subscription**.
-2. Read the warning.
-3. Confirm **Switch to paid** if that is the intended outcome.
-4. Wait for the saved result.
-5. Check the displayed buyer-access mode.
-
-Choosing **Free access**, then confirming **Switch to free**, is a separate action. It stops asking new buyers to subscribe after saving; it does not erase a subscriber's prior bill.
+2. Enter a positive whole number of credits in **Premium Allowance**. The form shows their dollar value at **100 credits = \$1.00**. That value must be strictly less than the monthly fee. For example, a \$10 monthly fee with 100 included credits supplies \$1 of included usage value.
+3. Expand **Free preview messages** and set **Number of messages** to the number visitors can try before subscribing. Enter zero to offer no free preview messages. These messages use your credits, so choose a trial you are willing to fund.
+4. Expand **Usage revenue** and review **Credit multiplier**. **No markup** uses standard rates. Moving the slider right, up to 5×, makes eligible additional usage consume more buyer credits. It does not increase the included allowance or monthly fee.
+5. Select **Save**, wait for **Pricing saved** and check the saved Buyer access summary. Reopen **Edit subscription setup** to confirm the values if needed.
 
 ## Understand usage and previews
 
-Preview messages use your credits, not the visitor's. Included agent usage is used first. Additional buyer usage depends on the space plan and limits.
+Included agent usage is used before additional usage from the buyer's Alysium space. Creator usage-margin earnings apply only when a Pro buyer uses the agent beyond its included allowance. Bundled usage, free preview messages and Free-plan buyers do not earn that extra margin. A multiplier above standard therefore does not mean every interaction earns additional revenue.
 
-Creator usage-margin earnings apply to eligible Pro buyers after the agent allowance is spent. Preview and included usage do not earn that extra margin. A slider above standard does not mean every interaction earns extra revenue.
+The buyer's space plan and usage limits still govern additional usage. Setting a larger multiplier does not give the buyer more credits. You can [read how earnings reach you](/selling-and-payouts/when-and-how-you-get-paid) separately from choosing the offer's price.
+
+## Activate the intended buyer-access mode
+
+Saving Pack pricing does not change **Free access** to **Paid subscription**.
+
+1. Return to **Buyer access** in Share & Sell and select **Paid subscription**.
+2. Read the confirmation, then select **Switch to paid**.
+3. Wait for saving and check the selected buyer-access mode and the channel's displayed access.
+
+To stop asking new buyers to subscribe, choose **Free access** and confirm **Switch to free**. That choice does not erase existing subscription obligations or earlier charges.
+
+On an already-live channel, these confirmed mode changes can update live access as they save. For a new channel, complete its remaining readiness and activation:
+
+- **Embedded widget:** check its pricing, buyer highlights and payment requirements. Complete any named blocker, then use the offered publish or update action. **Current widget access** shows the resulting mode. Installing the widget on a website is a separate distribution step.
+- **AgentHub:** complete the listing and creator-application requirements, then use **Submit to AgentHub**, or the update/resubmit action shown for an existing submission. Check the resulting review state. AgentHub review is separate from selling through your own widget or standalone link.
+
+Paid readiness also needs buyer highlights and Stripe. On **Widget purchase modal**, select **Edit** and use three highlights. Use **Add highlight** or an expanded highlight's **Remove highlight** control to adjust the count. Expand each highlight, fill **Headline** and **Supporting text**, then select **Save**. For payment setup, open [Team settings](https://app.alysium.ai/spaces?settings=team) → **Creator** → **Setup**. Use the offered Stripe onboarding action, complete Stripe's requested information, return and scroll to **Refresh Stripe status**. Read the resulting status; a saved price alone does not confirm payment readiness. You can [finish payment setup](/selling-and-payouts/set-up-stripe-to-get-paid) or [prepare the AgentHub listing](/selling-and-payouts/list-your-agent-on-agenthub) when that is your chosen route.
 
 ## If pricing cannot save or selling is blocked
 
-Correct the field messages, especially an allowance value equal to or greater than the access price. **Cancel** is not Save; heed an unsaved-changes confirmation if you leave.
+Correct the displayed field message. In particular, the Premium Allowance must be positive and its value must be less than the monthly price; an equal value is invalid too.
 
-After saving, check the intended channel's readiness. Price, paid mode, publication, Stripe readiness and AgentHub review remain separate. Continue with [List your agent on Agenthub](/selling-and-payouts/list-your-agent-on-agenthub) or [Ways to share or sell your agent](/selling-and-payouts/ways-to-share-or-sell-your-agent) for your chosen channel. [When and how you get paid](/selling-and-payouts/when-and-how-you-get-paid) explains earnings and payout timing.
+If saving fails, reopen the setup and check the saved values before retrying. Closing without saving can show an unsaved-changes confirmation; discarding those edits does not save them.
+
+Read the intended channel's actual readiness and any **Channel update**, update or resubmit request. Address the named requirement and check the resulting status after the action. You can [compare the sharing and selling routes](/selling-and-payouts/ways-to-share-or-sell-your-agent) if you have not chosen how people will reach the offer.

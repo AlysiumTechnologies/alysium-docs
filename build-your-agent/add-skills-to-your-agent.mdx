@@ -4,57 +4,43 @@ description: "Add reusable skill guidance for a kind of work and check its attac
 keywords: ["Alysium", "Add skills to your agent", "Build your agent"]
 ---
 
-Give your agent reusable guidance for a kind of work, such as drafting or organizing an answer. A skill can guide a method; knowledge documents supply facts. Attaching a skill does not add an unavailable integration or make uploaded scripts run.
+<span id="add-skills-to-your-agent" />
 
-**Already in the agent's Skills area?** Continue with [Choose a skill](#choose-a-skill).
+A skill gives your agent reusable instructions for a kind of work, such as organizing an answer or following a writing method. Knowledge supplies the facts the agent should draw on. Choose a skill whose method supports your agent's job, then add it to your space and attach it to the agent.
 
 ## Open Skills
 
-1. Open [Home](https://app.alysium.ai/spaces).
-2. Select the intended agent.
-3. Open **Build**.
-4. Open **Settings**.
-5. Find **Skills**.
-6. Continue with [Choose a skill](#choose-a-skill).
+Open [Home](https://app.alysium.ai/spaces). On the intended agent's card, select **Build**. Select **Settings** if another builder view is open, then scroll to **Skills** in the **Agent Builder** section.
 
-Home opens your active space, where you choose the agent. If it asks you to sign in, sign in. Open Home again if needed.
+Use **Browse skill library** to choose from the catalog or your space's existing skills. The **Add skill** button in the Skills header opens the uploader for [a skill bundle of your own](/build-your-agent/upload-your-own-skill).
 
 ## Choose a skill
 
-The attached Skills list shows what this agent currently has. A suggestion, including one from guided creation, is a choice to consider rather than an attached skill.
+1. Select **Browse skill library**. Open **My Skills** to reuse something your space already holds, or browse a discovery category for other choices.
+2. Enter the work you want help with in **Search skills by intent…**, or browse without a search. The **All**, **Alysium**, **Free** and **Premium** filters and the tags narrow the choices. If a search or filter hides useful options, change or clear it. A search with no matching skill offers a way to browse the library.
+3. Select a skill's name or description to open its details. Read the description and **SKILL.md**, and use the file list to read any reference material that affects the task.
 
-1. Select **Browse skill library**.
-2. Search or browse for the task you need.
-3. Select a skill's name to open its details.
-4. Read its description and contents.
+Look for guidance that fits the information you will supply and the answer you want. A concise FAQ assistant may benefit from a clear answer structure; a method that always produces a long sales pitch could conflict with its job. You can [review the publisher, contents and trust setting](/build-your-agent/review-a-skill-before-adding-it) before deciding.
 
-The picker includes **My Skills** and available discovery categories. Add a skill when its method supports your agent's actual job. For a fictional FAQ assistant, guidance for organizing clear answers may fit better than a skill that writes long sales pitches. The example does not promise a particular catalog item is available.
-
-Use [Review a skill before adding it](/build-your-agent/review-a-skill-before-adding-it) to understand its contents and trust setting. Avoid attaching skills that give the agent conflicting instructions.
+If **Suggested** appears after Alysium drafted your agent, it contains suggestions that are not yet attached. Guided creation may already have attached other skills; the agent's Skills list shows those attachments.
 
 ## Add it to your space and attach it
 
-Adding a catalog skill to your space and attaching it to an agent are separate actions. Use the action that matches its state:
+Adding a catalog skill to your space makes it available in **My Skills**. Attaching it makes it available to this agent.
 
-| Offered action | What it means |
-|---|---|
-| **Add to my space** | Acquire an available free skill that your space does not yet hold. |
-| **Attach to agent** | Attach a skill your space already holds to this agent. |
-| **Purchase soon** | Paid purchase is not available. This does not complete a checkout. |
+1. For a free skill your space does not yet hold, select **Add to my space** in its details. Wait for the action to finish.
+2. When **Attach to agent** appears, select it. If your space already holds the skill, you can start with this action.
 
-Shorter list controls can say **Add** or **Attach**. Read the action actually offered. An unavailable skill cannot be acquired through a disabled button.
+In the picker, the shorter **Add** and **Attach** controls perform these same separate actions. After using **Add**, find the skill in **My Skills** and select **Attach**, or reopen its details and select **Attach to agent**.
 
-1. Select **Add to my space** if the available free skill is not yet in your space.
-2. Reopen the skill's details if needed.
-3. Select **Attach to agent** when the skill is in your space but not attached.
-4. Check that it appears in the agent's attached **Skills** list.
-
-Being able to read a public description does not mean the skill is already in your space. If it is already attached, you do not need to add it again.
+An unowned priced skill offers **Get** in the picker or a disabled **Purchase soon** in its details. **Get** shows that purchasing skills is coming soon; paid skill checkout is unavailable. **Premium** describes the skill's price, rather than your space's subscription plan.
 
 ## Check the result
 
-Skill actions save as you perform them; they do not wait for Design's **Save Changes**. Try a task the skill should help with and read whether its guidance fits. [Test your agent while you build](/build-your-agent/test-your-agent-while-you-build) explains the builder preview.
+Return to the agent's **Skills** list. The skill should have a row with its switch on. Attachment enables it, and the agent can load its guidance when a task is relevant. Check the switch for enablement: the section's active count also includes attached skills whose switch is off.
 
-If an action fails, read the message and check the attached list before retrying. If the skill is in your space but missing from the agent, reopen its details and select **Attach to agent** when offered.
+Skill actions save as you perform them. Wait for each action to finish before making another change. If an action reports an error, read the message and check both **My Skills** and the attached list before retrying. A skill in My Skills but missing from this agent needs **Attach**, rather than another **Add**.
 
-Removing a skill from one agent leaves its library entry in your space. See [Review a skill before adding it](/build-your-agent/review-a-skill-before-adding-it) for disabling and removal, or [Upload your own skill](/build-your-agent/upload-your-own-skill) if the needed guidance is not in the catalog.
+To pause a skill, turn its row's switch off, or use **Disable on this agent** in its details. Turn it back on to restore its use. **Remove** in the row, or **Remove from agent** in the details, removes the attachment and leaves the skill in your space's My Skills for reuse.
+
+For a first check, use the chat beside Settings, or select **Chat Preview** on a smaller screen. Enter a task that matches the skill's description and select **Send message**. Compare the reply's method with the skill's instructions. Preview conversations use your space's credits. You can [test more of the agent's behavior](/build-your-agent/test-your-agent-while-you-build) as you refine it.

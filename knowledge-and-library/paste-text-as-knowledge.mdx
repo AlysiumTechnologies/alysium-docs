@@ -4,68 +4,69 @@ description: "Turn a short FAQ, approved explanation or notes into a saved knowl
 keywords: ["Alysium", "Paste text as knowledge", "Knowledge and Library"]
 ---
 
-Turn a short FAQ, approved explanation or set of notes into a document your agent can search.
+<span id="paste-text-as-knowledge" />
 
-Pasted knowledge supplies reference facts. It is separate from sending a chat message or writing Agent Instructions. Use text you are allowed to share with this agent's audience and an agent you can edit.
+Turn a FAQ, approved explanation or set of notes into a document your agent can search. Pasted knowledge supplies reference facts; Agent Instructions describe how the agent should use them.
+
+Use the builder's **Paste Text** box to save a document and attach it to the agent in one submission. The Library route lets you give the document a chosen name and attach it afterward.
 
 ## Find Paste Text
 
-1. Open [Home](https://app.alysium.ai/spaces).
-2. Select the intended agent.
-3. Open **Build** → **Settings**.
-4. Find **Knowledge** → **Paste Text**, beside the upload area.
-
-If the box is already open for the right agent, continue with [Prepare the passage](#prepare-the-passage). Home opens your current space so you can select your own agent.
-
-This builder box saves and attaches the text to the agent you are editing. The [Library alternative](#save-in-library-with-a-chosen-name) saves a document in Library first.
+Open [Home](https://app.alysium.ai/spaces) and select **Build** on the intended agent's card. If the builder is showing Profile or Chat Preview, select **Settings**. Scroll down to **Knowledge** and find **Paste Text**. It sits beside Upload Documents on a wide screen and below it on a smaller screen.
 
 ## Prepare the passage
 
-Write direct facts the agent should be able to look up. For a fictional shop:
+Use clear, current facts you are allowed to share with the agent's audience. Give the passage a meaningful opening line so you can recognize its subject later. Include the actual information the agent needs to answer, rather than a list of unexplained links.
 
-> Ridge and River Outdoor Shop is fictional. Customers asking about a return should bring the unused product and purchase receipt to staff. This note does not state delivery times or live stock.
+For practice, you can use this fictional shop note:
 
-Replace this with your actual approved information. A meaningful opening line makes the saved source easier to recognize. Avoid an unexplained list of links, and keep passwords and confidential customer records out of practice material.
+> Ridge and River Outdoor Shop — fictional practice FAQ
+>
+> Customers requesting a return should bring the unused product and purchase receipt to staff at the shop. Staff review damaged items separately.
+>
+> This note does not supply delivery times or live stock information.
 
-The builder accepts up to **1,000,000 characters**. It creates the document without asking for a separate title in this box.
+Replace the example with approved information before using it with real customers.
+
+The builder accepts up to **1,000,000 characters**. The box shows character and word counts and creates a document without a separate title field.
 
 ## Submit it to this agent
 
-1. Enter the text in **Paste Text**.
-2. Check the character count and any validation message.
+1. Enter your passage in **Paste Text**.
+2. Check the text, counts and any validation message.
 3. Select **Add as Document**.
-4. Wait for the resulting source in **Attached knowledge** to show **Ready**.
+4. Wait for the document in **Attached knowledge** to show **Ready**.
 
-Typing alone does not submit the text. The box clears after a successful save; an error leaves the text available to correct.
+Typing alone does not submit the text. A successful save clears the box, saves a document in Library and attaches it to this agent. Ready means the contents have finished preparation for knowledge search.
 
-A second deliberate submission creates another document. It does not update the first one in place.
+An error leaves the text in the box so you can correct it. If the document was saved but its attachment failed, the box clears because saving succeeded; use the warning's **Retry attachment** action. Submitting the passage again creates another document rather than updating or attaching the saved one.
 
 ## Check an answer from the passage
 
-Use the chat beside the Build settings, or select **Chat Preview** within Build on a narrow screen.
+Use the chat beside the Build settings. On a smaller screen, select **Chat Preview** within Build.
 
-Ask a question the passage answers. For the fictional shop note, ask what to bring for a return. Enter it in the message box, then select **Send message** or press Enter. Compare the reply with the note: it says the unused product and purchase receipt.
+For the practice passage, enter **What should a customer bring for a return?** Select **Send message** or press Enter, then compare the reply with the note. It should name the unused product and purchase receipt. Ask about delivery times too, and check how the agent handles information the passage does not supply.
 
-After Ready, follow [Control how your agent uses its knowledge](/knowledge-and-library/control-how-your-agent-uses-its-knowledge) to choose how the agent should handle questions the passage does not answer.
+For your own passage, try a specific question it answers and one it leaves unanswered. Knowledge's **Behavior** section lets you [choose how the agent uses its sources and responds when information is missing](/knowledge-and-library/control-how-your-agent-uses-its-knowledge). Check the reply itself even when the source is Ready.
 
 ## Save in Library with a chosen name
 
-Use this route when organization or a chosen title matters more than the shortest direct-agent path. You need permission to add content in the chosen Library location.
+Use Library when you want to choose a document name or save the passage in a particular location first.
 
-1. Open [Library](https://app.alysium.ai/library).
-2. Select **Add new**.
-3. Select **Paste text**.
-4. Enter **Name (optional)** if you want a chosen title.
-5. Paste the passage.
-6. Select **Save to library**.
+1. Open [Library](https://app.alysium.ai/library) and navigate to the destination where you want the document.
+2. Select **Add new**, then **Paste text**.
+3. Enter a title in **Name (optional)** if you want to choose one.
+4. Paste the passage and check the destination shown in the dialog.
+5. Select **Save to library**.
 
-This saves a Library document. To let a particular agent use it, follow [Use Library files in an agent](/knowledge-and-library/use-library-files-in-an-agent) to attach it through **Add from Library**. Then return to [Check an answer from the passage](#check-an-answer-from-the-passage).
+This saves a `.txt` document in the displayed destination. To attach it, return to Home, select Build on the intended agent, select Settings if needed and scroll to Knowledge. Select **Add from Library**, expand the document's project and folder, select the document and choose **Attach**. Check that it appears in **Attached knowledge** and is Ready, then test a question in the preview.
+
+You can also [attach a whole Library folder or project](/knowledge-and-library/use-library-files-in-an-agent) when its eligible contents belong with this agent, including material added there later.
 
 ## If the paste fails
 
-- **The text is too long:** shorten it or divide it into useful separate documents.
-- **Storage is full:** resolve the space's storage issue before retrying. [Storage limits](/knowledge-and-library/storage-limits) explains what uses storage.
-- **The text remains with an error:** correct the problem and retry the existing submission instead of adding identical copies.
-- **The document is saved but not attached:** select **Retry attachment** instead of pasting another copy. Check that it appears in the intended agent's **Attached knowledge**.
-
-[File and storage limits](/help/file-and-storage-limits) explains the separate limits for other kinds of uploads.
+- **The passage is too long:** shorten it or split it into useful separate documents, then submit the corrected text.
+- **The form keeps your text and shows an error:** read the message, correct the cause and retry the existing submission.
+- **Storage is full:** resolve the space's storage use before retrying. In the Library dialog, the storage-full message can replace the form. The [storage limits guide](/knowledge-and-library/storage-limits) explains the space's allowance and Library usage.
+- **The document was saved but not attached:** use **Retry attachment** in the builder warning, then check Attached knowledge. Pasting another copy repeats the successful saving step.
+- **A saved document shows Failed:** a saved row can show the status and **Remove** without an error detail or Retry. If Retry is unavailable, [get help with the saved document](/help/get-help-from-a-person) using its name and visible status. Repeatedly submitting the passage creates extra documents.

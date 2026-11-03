@@ -4,81 +4,55 @@ description: "Use a widget's Account menu to sign in, return to saved conversati
 keywords: ["Alysium", "Visitor accounts and saved history", "Your widget visitors"]
 ---
 
-Use the widget's **Account** menu to sign in and manage whether future chat messages are saved. A visitor account helps you return to saved conversations. A connected guest can also change the conversation-history setting.
+<span id="visitor-accounts-and-saved-history" />
 
-This guide covers the visitor menu inside an agent's website widget. It is separate from the creator's Alysium workspace.
+Use a visitor account to return to saved conversations with an agent. In the website widget, you can also choose whether future messages are saved. Connected guests can change that choice too.
 
 ## Start in the right widget
 
-Open the agent on the website where you use it, then select **Account**. To use another agent's widget, open that agent's actual website or shared link. There is no single builder link that opens every visitor's saved history.
+Open the widget on the website where you use the agent. If a conversation is open, select **Back to browse** to return to the widget's navigation, then select **Account** at the bottom.
 
-From Account, choose the task you need:
-
-- [Create an account](#create-an-account) if you do not have one.
-- [Sign in](#sign-in-to-an-existing-account) if you already have an account.
-- [Choose future message saving](#choose-whether-future-messages-are-saved) to change Conversation history.
-- [Resume a conversation](#resume-a-saved-conversation) to look for an earlier chat.
-
-**Already on an account screen?** Continue with [Create an account](#create-an-account) or [Sign in to an existing account](#sign-in-to-an-existing-account), depending on your task. **Already signed in?** Go directly to [future message saving](#choose-whether-future-messages-are-saved) or [saved conversations](#resume-a-saved-conversation).
+These are the visitor controls for that agent, separate from the creator's Alysium workspace.
 
 ## Create an account
 
-Use an email inbox you can open: the account-creation flow sends a verification code there. Your password must contain at least 8 characters.
+1. In **Account**, select **Sign In**, then select **Sign up** on the sign-in form.
+2. On **Get started**, enter your **Email** and a **Password** of at least eight characters.
+3. Read the linked Terms of Service and Privacy Policy, then select **Continue**.
+4. If **Check your email** appears, check the displayed address. Enter the six-digit code sent there in **Verification code**, then select **Verify & Create Account**.
 
-1. Select **Sign up** from the available Account or sign-in screen.
-2. Enter your email address in **Email**.
-3. Enter a password in **Password**.
-4. Use **Show password** if you need to check what you typed.
-5. Read the Terms of Service and Privacy Policy linked beneath the form.
-6. Select **Continue**.
-7. On **Check your email**, check the displayed email address.
-8. Find the six-digit code in that inbox.
-9. Enter it in **Verification code**.
-10. Select **Verify & Create Account**.
-11. Wait for the signed-in experience.
+Account creation may finish after Continue without showing the code screen. When it succeeds, the widget returns to chat. Reopen Account to see your signed-in profile and **Sign Out**.
 
-If the email does not arrive, check your spam folder. Use **Resend code** when available. Follow any displayed error before trying another code. Never share your verification code or password in a chat.
-
-After the account connects, continue with [Choose whether future messages are saved](#choose-whether-future-messages-are-saved) or [Resume a saved conversation](#resume-a-saved-conversation).
+Correct any displayed field or submission error before trying again. On the code screen, use **Resend code** if you need another code, or use the back control to correct the email address.
 
 ## Sign in to an existing account
 
-1. Select **Sign in** from Account or the available account screen.
-2. Enter the account's **Email**.
-3. Enter its **Password**.
-4. Submit with **Sign in**.
-5. Wait for the account to connect.
-6. Continue with [Resume a saved conversation](#resume-a-saved-conversation), or [change future message saving](#choose-whether-future-messages-are-saved).
+1. In **Account**, select **Sign In**.
+2. Enter the account's **Email** and **Password**. Complete any verification shown in the form.
+3. Select **Sign in** and wait for the widget to return to chat.
 
-Use the password-recovery option if offered when you cannot sign in. Google sign-in appears only where supported and may be absent inside an embedded website widget. Use the options shown.
-
-Signing in and signing up are different flows. The email verification code in the previous section belongs to account creation.
+Reopen Account to check that your signed-in profile and **Sign Out** appear. If the form reports an error, correct the details or verification it identifies before submitting again.
 
 ## Choose whether future messages are saved
 
-Wait for the widget's chat session to connect. This control can be used by connected guests as well as signed-in visitors.
+The **Conversation history** switch applies to you and this agent:
 
-1. Open **Account**.
-2. Find **Conversation history**.
-3. Wait for the control to become available.
-4. Turn it on to save chats for later, or off to stop future messages being saved to history.
-5. Wait for the update to finish.
-6. Open **Data & Privacy**.
-7. Check the displayed **Conversation Retention** state.
+- Turn it **on** to save future messages to history so you can resume later.
+- Turn it **off** to stop future messages being added to that history.
 
-Turning history off does not erase earlier saved conversations or uploaded files.
+1. Open **Account** and find **Conversation history**.
+2. Wait for the preference to load, then set the switch to your choice.
+3. Wait for the small saving spinner to finish. The setting saves automatically; there is no separate Save button.
+4. Leave Account, then reopen it and wait for the preference to load again. Check that the switch still shows your choice.
 
-If **Sign in to change** appears, the required session is not available yet. Use the offered sign-in route or resolve the connection, then return to this section. For a widget that cannot connect, follow [When the widget will not load](/widget-visitors/when-the-widget-will-not-load).
+If it returns to its earlier state, check again after reloading the website widget and reopening Account. Treat the change as saved only when that fresh check confirms it.
+
+Turning history off does not erase earlier saved chats or uploaded files. Turning it back on does not recover messages that were not saved. You can [review the separate privacy and deletion choices](/widget-visitors/visitor-data-and-privacy) before deciding what to share.
 
 ## Resume a saved conversation
 
-1. Open **Account**.
-2. Select **View conversations**.
-3. Select an available conversation.
-4. Read its recent messages before continuing the discussion.
+1. Open **Account** and select **View conversations**.
+2. Select a conversation from the list.
+3. Wait for its messages to appear, then read them before continuing the discussion.
 
-If the chat is missing, check that you are using the same agent and account and that history was enabled when you used it. A different browser, different website or cleared browser data can change a guest session. Do not assume a guest chat will be available on another device.
-
-A saved history setting does not promise that every conversation from every website will appear together.
-
-Related: [Visitor data and privacy](/widget-visitors/visitor-data-and-privacy) or [Files visitors send you](/widget-visitors/files-visitors-send-you).
+If a conversation is missing, check that you are using the same agent and account. Guest history belongs to that browser, website and agent session; a different browser or website, or cleared browser data, may no longer have the same guest session. A visitor account helps you return across devices, but does not combine every agent's history into one list.

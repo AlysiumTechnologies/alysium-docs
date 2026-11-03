@@ -4,61 +4,44 @@ description: "Narrow one agent's conversation list to a date range, check the fi
 keywords: ["Alysium", "Filter conversations by date", "Analytics"]
 ---
 
-Narrow an agent's conversation list to the dates you want to review.
+<span id="filter-conversations-by-date" />
 
-The date control inside **Recent Conversations** changes the list. The summary's **Period** control changes its activity cards. These can show different ranges. Clear any keyword search before choosing list dates: an active search covers all time and can hide the calendar.
+Review an agent's conversations from the days you want to investigate. The list's dates follow user activity: a conversation started earlier can appear if the visitor returned during your chosen range.
 
-**Already on the right agent's Analytics page?** Continue with [Choose a date range](#choose-a-date-range).
+The date control in **Recent Conversations** filters the list. The header's **Period** controls its summary numbers separately. A keyword search covers all time, so clear it before choosing dates.
 
 ## Open the conversation list
 
-1. Open [Analytics](https://app.alysium.ai/analytics).
-2. Under **Your Agents**, select the intended agent.
-3. Open **Conversations**, or **Chats** on a smaller screen, if the list is hidden.
-4. Continue with [Choose a date range](#choose-a-date-range).
-
-The link opens the Analytics overview, where you choose your own agent. If it asks you to sign in, sign in. Open Analytics again if needed.
+1. Open [Analytics](https://app.alysium.ai/analytics) and select the intended agent under **Your Agents**. Check its name on the detail page.
+2. Open **Conversations**, or **Chats** on a smaller screen, to see **Recent Conversations**.
 
 ## Choose a date range
 
-1. Under **Recent Conversations**, clear any text in **Search conversations...** with its **Clear search** X control.
-2. Select **Filter by date range**, or the dates already shown in that control.
-3. Use the calendar's month navigation if your dates are not visible.
-4. Select the start day.
-5. Select the end day.
-6. Check that the control displays both intended dates.
-7. Click outside the calendar or press Escape to close it.
+1. If **Search conversations...** contains text, select its **Clear search** X. While a search is active, **Searching all conversations** replaces the calendar.
+2. Select **Filter by date range**, or the dates already displayed in that control.
+3. Use the calendar's month arrows to reach the month you need. Select your start day, then your end day.
+4. Check that the control shows both intended dates. Click outside the calendar or press Escape to close it.
 
-The dates apply as you select them; there is no Apply or Save step. The list can update after the first day, so check both endpoints before reading the results.
+The dates apply immediately; there is no Apply or Save step. The list can change after the first selection, so confirm both endpoints before reading it.
 
-For example, to review a fictional workshop held on October 10 and 11, select October 10 as the start and October 11 as the end in the relevant year. Use your own event dates when following these steps.
+Both selected days are included, using your local calendar days. Matching follows the latest user message before the range ends, rather than the date the conversation was created. Results stop at the page's current activity snapshot.
 
 ## Read the filtered list
 
-Select a matching conversation to read its messages. On a small screen, open **Msgs** if needed. Read the question and reply together to confirm that you found the exchange you wanted.
+Select a matching row to read that conversation's messages. Changing the list's dates can leave the previously selected conversation open, so select a result even if messages are already visible. On a smaller screen, selection switches to **Messages** or **Msgs**; **Back to conversations** returns to the list. Scroll inside the list to load older matching rows.
 
-If **Show teammate conversations** is available, turn it on to include your own practice chats. This setting includes you as the space owner; your space currently has no other members. It changes the conversation list, while the summary metrics continue to describe visitors.
+To include your own practice chats, turn on **Show teammate conversations**. In your current space this includes you, its owner. It changes the list and search results; the summary metrics still describe visitors.
 
-The summary cards can still show **Last 7 days**, **Last 30 days** or **Last 90 days**. Choosing a custom list range does not change those cards. Selecting the summary's Conversations **View** action or changing its period can return the list to that summary period.
+Custom list dates do not change the summary cards. The header's **Period** offers **Last 7 days**, **Last 30 days** and **Last 90 days**, which are rolling windows. Changing Period restores the list to that period and clears a custom range, although typed search can still cover all time. The **View** action on the header's **Conversations** card clears search and restores the list to the selected Period.
+
+To keep only the matching conversations, [export each conversation individually](/analytics/export-conversations). **Bulk Download** ignores the list's dates and search.
 
 ## Clear the date range
 
-1. Open the date-range control.
-2. Select **Clear Date Filter** in the calendar.
-3. Check that the custom range disappears and the list refreshes.
-
-The X beside an active date control, labelled **Clear date filter**, performs the same action. Clearing the custom range returns the list to all time.
-
-Filtering changes a view of existing messages. It does not delete or rewrite them. The range can be retained when you navigate within the page.
+Open the date control and select **Clear Date Filter** in the calendar. You can also select the X labelled **Clear date filter** beside the active range. Check that the dates disappear and the list refreshes: clearing the range returns the list to all time.
 
 ## If the list is empty or the dates seem ignored
 
-1. Check that **Search conversations...** is empty.
-2. Check that both intended dates appear in the date control.
-3. Check the selected agent's name.
-4. Turn on **Show teammate conversations**, if available, when looking for your own practice chat.
-5. [Clear the date range](#clear-the-date-range) to check for conversations outside it.
+Check the selected agent's name and both dates. If **Searching all conversations** is showing, clear the search to return to the dated list. For your own practice chat, turn on **Show teammate conversations**. Clear the date range to look for activity outside those days.
 
-An empty range can mean there are no matching chats. If a failed-read message offers **Retry**, select it to retry that read.
-
-To keep copies of matching chats, use [Export conversations](/analytics/export-conversations). **Bulk Download** does not use the date or search filter: download conversations individually when you need only the ones in your chosen range.
+An empty result can mean no conversations match. If the list instead says **Couldn't load these conversations.**, select its **Retry** to retry that read. If an older page of results fails while scrolling, use the Retry beside that failure.

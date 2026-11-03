@@ -4,36 +4,48 @@ description: "Explore agents that explain reference information or guide a struc
 keywords: ["Alysium", "What you can build with Alysium", "About Alysium"]
 ---
 
-You can build an agent that explains reference information or guides a structured conversation. Start with one audience and one job so you can check whether it helps.
+<span id="what-you-can-build-with-alysium" />
 
-An agent combines instructions, an AI model and attached knowledge. The examples below are fictional project ideas; you supply the real information for your own agent.
+You can build an agent that explains information you supply or guides a focused conversation. Start with one audience and one useful job, such as answering workshop questions or helping someone think through a plan.
+
+An agent's **instructions** describe its job and behavior. Its **knowledge** supplies reference information, and its **AI model** produces the replies. The projects below are fictional examples you can adapt to your own material.
 
 ## An information helper
 
-A workshop FAQ agent could explain what attendees should bring and where to find class notes, using approved documents or readable website pages.
+A workshop FAQ agent could explain what attendees should bring, where to find class notes and whom to contact about a booking. Give it the approved preparation notes and policies as knowledge. Its instructions could ask it to identify the relevant class, answer briefly and refer unanswered questions to the workshop team.
 
-Put factual reference material in **Knowledge** and behavior rules in **Agent Instructions**. For example, ask the agent to check which class a visitor means and to say when a requested policy is missing. The source needs to contain the actual policy before the agent can explain it reliably.
+Those two parts serve different purposes. The preparation note contains the actual equipment list; the instructions tell the agent how to explain it. Describing the workshop during creation does not add its real policies automatically.
 
-Use [Upload files to your agent](/knowledge-and-library/upload-files-to-your-agent) for a document or [Paste text as knowledge](/knowledge-and-library/paste-text-as-knowledge) for a short note.
+To find the source controls, open [Home](https://app.alysium.ai/spaces), select **Build** on the intended agent's card, open **Settings** if needed and scroll to **Knowledge**. You can upload a supported document, use **Paste Text** for a short note, attach existing Library material, or add saved website content. A source stored in Library still needs to be attached to the agent. You can [choose the right knowledge source](/knowledge-and-library/give-your-agent-knowledge) as the material grows.
 
 ## A guided conversation
 
-An agent can ask questions and provide a structured discussion using instructions and skills. Official examples include **Business Idea Validator**, **Product Positioning Coach** and **Product Roadmap Coach**. Explore [AgentHub](https://app.alysium.ai/agenthub) and inspect the individual offer.
+An agent can ask questions and organize a discussion. For example, a planning helper could ask what you want to achieve, help you compare possible approaches and turn the discussion into a draft plan for you to review.
 
-These agents illustrate conversational assistance. Their names do not establish that they research the live web or perform business actions for you.
+Use **Agent Instructions** in Build's **Agent Builder** section to describe the questions, approach and answer style you want. Reusable skills can supply methods and reference material for a type of work. Attaching a skill does not guarantee it will be used in every reply, so try requests that show whether the agent follows the intended approach.
+
+This kind of helper is useful when the conversation itself is the work. An instruction to book an appointment or update a customer account does not give the agent access to the service needed to perform that action.
 
 ## A chat people can reach
 
-From [Home](https://app.alysium.ai/spaces), open your agent. Use **Build** to develop it, **Design** to adjust its visitor appearance and **Deploy** to choose a sharing method.
+The builder separates developing an agent from preparing it for visitors:
 
-A [standalone link and QR code](/share-and-deploy/share-your-agent-with-a-link-and-qr-code) let people open its chat directly. A [website widget](/share-and-deploy/put-your-agent-on-your-website) puts the chat window on a site you manage. [Selling agents with Alysium](/about-alysium/selling-agents-with-alysium) introduces paid offers and marketplace listings.
+| Area | What you do there |
+|---|---|
+| **Build** | Set the job, model and knowledge, then try replies. |
+| **Design** | Adjust the visitor chat's appearance and features. Select **Save Changes** after editing and wait for **All Changes Saved**. |
+| **Deploy** | Make the agent live and set up a delivery method. |
 
-Each route has its own setup. Designing the widget does not install it on a website, and making an agent live does not automatically create a marketplace listing.
+A [standalone link and QR code](/share-and-deploy/share-your-agent-with-a-link-and-qr-code) let people open the chat directly. A [website widget](/share-and-deploy/put-your-agent-on-your-website) puts it on a site you manage. You can also [prepare a paid offer](/about-alysium/selling-agents-with-alysium).
+
+Each method has its own setup. Making an agent live saves its Published status and Public access; a standalone chat also needs **Direct link** enabled. Designing a widget does not install it on a website, and making the agent live does not create an AgentHub listing.
 
 ## Keep the job within the available capabilities
 
-Describing an online shop does not import its catalog. Uploading a guide does not authorize order changes. Choose a first job that uses information and conversation you can test. [What Alysium cannot do yet](/help/what-alysium-cannot-do-yet) explains the current limits.
+Choose a first task whose important results you can check. For the workshop FAQ, try a question answered by the notes, a question the notes leave unanswered and a request to change a booking. Compare the replies with the source and the agent's instructions.
 
-To build a first version, follow [Create your first agent](/build-your-agent/create-your-first-agent) and attach a small source. Ask one question the source answers and one it does not. [Test your agent while you build](/build-your-agent/test-your-agent-while-you-build) explains that workflow.
+Use the Build preview beside the settings on a wide screen, or select **Chat Preview** within Build on a smaller screen. Include the context each request needs. Preview messages use the space's credits. If a document-based answer is wrong, check that the intended file is attached and Ready, then save one correction to the source setup or instructions before trying the same request again. You can [plan a broader set of checks](/build-your-agent/test-your-agent-while-you-build) as the agent develops.
 
-For a complete worked project, use [How to get started](/about-alysium/how-to-get-started).
+Saved website knowledge gives the agent reference content; it does not provide unrestricted live browsing or a way to change another service's records. [Current capability limits](/help/what-alysium-cannot-do-yet) help you assess projects that depend on those actions.
+
+For a complete first project, [build and check a practice café agent](/about-alysium/how-to-get-started).

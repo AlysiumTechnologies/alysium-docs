@@ -1,67 +1,67 @@
 ---
 title: "Unpublish your agent"
-description: "Take an agent offline while retaining it for editing, or turn off only its direct link, then check which public routes are still available."
+description: "Pause new requests through your agent’s public link and website embed while keeping the agent available to edit, then restore public delivery when ready."
 keywords: ["Alysium", "Unpublish your agent", "Share and deploy"]
 ---
 
-Take an agent offline while keeping it available to edit. Use this when you need to pause a public release, change its setup or stop accepting public chats. Use an agent whose deployment settings you can edit.
+<span id="unpublish-your-agent" />
 
-Unpublishing is different from [permanently deleting an agent](/share-and-deploy/delete-an-agent).
+Pause new requests through your agent's public link and website embed while you revise it. Unpublishing keeps the agent available to edit, along with its settings, existing conversations and Library materials. You can make it live again when you are ready.
 
-**Already in Launch settings?** Continue with [Choose the change you need](#choose-the-change-you-need).
+[Permanent deletion](/share-and-deploy/delete-an-agent) removes the agent irreversibly and is a separate action.
 
 ## Find the controls
 
-1. Open [Home](https://app.alysium.ai/spaces).
-2. Select the intended agent.
-3. Open **Deploy**.
-4. Expand **Launch settings**.
-5. Read the development status and public-access state.
-6. Continue with [Choose the change you need](#choose-the-change-you-need).
-
-Home opens your active space, where you choose the agent. If it asks you to sign in, sign in. Open Home again if needed.
+1. Open [Home](https://app.alysium.ai/spaces) and select **Build** on the intended agent's card.
+2. Open the main **Deploy** tab. On a narrow screen, the main tabs are at the bottom.
+3. Expand **Launch settings** in the launch card above the sharing choices. Read **Development status** and **Public access**.
 
 ## Choose the change you need
 
-| Control | Effect |
+A public link or website embed needs both **Published** status and **Public access on**. Choose how much you want to pause:
+
+| What you want | Control and effect |
 |---|---|
-| **Unpublish** | Changes a Published agent back to Draft. |
-| **Make private** | Turns public access off while leaving development status separate. |
-| **Direct link**, under **Share link + QR** | Controls only the standalone sharing link and its QR destination. |
-| **Allowed websites**, under **Embed on a website** | Controls which websites may load the embed. |
+| Return the agent to a draft while you edit | **Unpublish** changes Development status to **Draft**, closing its public link and embed. Public access remains a separate setting. |
+| Keep Published status but close public access | **Make private** turns Public access off, closing its public link and embed. |
+| Close only the standalone link and its QR destination | Turn **Direct link** off under **Share link + QR**. Website embeds keep their own access settings. |
+| Keep the agent available on certain websites | Use **Allowed websites** under **Embed on a website**. These rules do not restrict the standalone link. |
 
-For a fictional café assistant, use Unpublish or Make private if you need to stop all public use while revising it. Continue with [Stop public use](#stop-public-use).
+If Development status is already **Draft**, or Public access is already off, that field already prevents new public requests to this agent. A previously downloaded or printed QR code cannot bypass those settings.
 
-If you only want to stop the link/QR destination while keeping your website widget, continue with [Turn off only the direct link](#turn-off-only-the-direct-link). To change embed hosts, follow [Limit which websites can show your agent](/share-and-deploy/limit-which-websites-can-show-your-agent).
-
-## Stop public use
-
-1. Select **Unpublish** to return to Draft, or **Make private** to turn off public access.
-2. Wait for the action to finish saving.
-3. Check that the summary shows the intended development status or public-access state.
-4. Check that the launch card no longer describes the agent as a live public agent.
-
-There is no separate Save button. If saving fails, read the displayed error and retry rather than assuming the agent is offline.
-
-## Turn off only the direct link
-
-1. Open **Share link + QR** in the same agent's **Deploy** area.
-2. Turn **Direct link** off.
-3. Wait for the setting to save.
-4. Check that the switch remains off.
-
-This turns off the standalone destination without changing embed access. The website widget still depends on publication, public access and any saved website restrictions.
+You can [limit the websites that show your agent](/share-and-deploy/limit-which-websites-can-show-your-agent) without pausing every installation. Removing every allowed website does not block all embeds; use **Unpublish** or **Make private** to pause them all.
 
 ## What happens to other sharing
 
-Public access affects both external links and website embeds. A printed QR code cannot keep an offline agent accessible.
+An AgentHub listing requires a published, public source agent, so unpublishing or making the source private can make it unavailable there. Marketplace listing, channel and version settings remain separate under **Share & Sell**.
 
-An AgentHub listing also requires a published, public source agent, so taking the source offline can make its listing unavailable. Listing visibility and paid-access arrangements have their own controls under **Share & Sell**. Unpublishing does not confirm that a subscription has been cancelled or refunded.
+Purchased marketplace copies live in buyers’ own spaces. Unpublishing your source does not take every purchased copy offline, cancel a subscription or issue a refund.
 
-The agent remains available to edit.
+## Stop public use
+
+1. In **Launch settings**, select **Unpublish**, or **Make private** if you want to keep Published status.
+2. Wait for the action to finish. There is no separate Save button.
+3. Check the saved summary: **Unpublish** should leave Development status at **Draft**; **Make private** should leave **Public access off**.
+
+The overall badge may say **Needs attention** because one launch setting is still on. Check the individual setting you changed to confirm the pause.
+
+If you see **Development status did not save. Try again.** or **Public access did not save. Try again.**, reopen the same agent's **Deploy → Launch settings** and check the saved fields before retrying the intended action. A value changing on screen before saving finishes is not confirmation.
+
+## Turn off only the direct link
+
+1. In **Deploy**, select **Share link + QR**.
+2. Wait for the settings to load, then turn **Direct link** off.
+3. Wait for saving to finish and check that the switch remains off. The sharing address and QR disappear once the change is confirmed.
+
+This closes the standalone link and QR destination while leaving website embed access separate. You do not need to change your website's embed code for this action.
+
+If the settings fail to load, select the displayed **Retry**. If saving fails, the switch returns to its saved value and the message says **That change did not save — the link is unchanged.** Check that value before trying again.
 
 ## Bring it back
 
-After completing changes in Build and Design, return to Deploy and follow [Make your agent live](/share-and-deploy/make-your-agent-live). Confirm **Live**, then check the sharing method you intend to use.
+1. Finish your changes in **Build** and wait for them to save. For changes in **Design**, select **Save Changes** and wait for **All Changes Saved**.
+2. Return to **Deploy**. If **Finish in Build** lists missing items, open the main **Build** tab, complete those items and return to **Deploy**.
+3. If the card already shows **Live**, Published status and Public access are already on. Otherwise, select **Make agent live** to restore both settings together. Wait for the action to finish and check **Live**, **Published** and **Public access on**.
+4. For the standalone link, select **Share link + QR**, turn **Direct link** on if needed and wait for it to save. Use **Try your live agent** to check the actual destination.
 
-A standalone link also needs Direct link on. A website embed has its own allowed-website rules; follow [Put your agent on your website](/share-and-deploy/put-your-agent-on-your-website) to check that installation.
+For an existing website embed, open your published website and check the agent there. Its installation and allowed-website rules still apply; you can [check the website setup](/share-and-deploy/put-your-agent-on-your-website) if needed. Making the agent live again does not publish a marketplace version or reactivate every paid channel.

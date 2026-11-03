@@ -4,53 +4,61 @@ description: "Check document limits for Knowledge and Library, while distinguish
 keywords: ["Alysium", "File and storage limits", "Start here"]
 ---
 
-Use this reference for documents added through **Knowledge** or **Library**. Visitor chat attachments, agent pictures and skill bundles have separate rules.
+<span id="file-and-storage-limits" />
 
-To add knowledge, open [Home](https://app.alysium.ai/spaces), select your agent, then open **Build → Settings → Knowledge**. [Library](https://app.alysium.ai/library) opens the area for storing and organizing your reference material.
+These limits apply to documents added through an agent's **Knowledge** section or stored in **Library**. Chat attachments, agent pictures and skill bundles have separate rules.
+
+To find agent knowledge, open [Home](https://app.alysium.ai/spaces), select **Build** on the intended agent's card, open **Settings** if needed and scroll down to **Knowledge**. [Library](https://app.alysium.ai/library) holds your reusable reference material.
 
 ## Supported knowledge formats
 
 | Document type | Accepted extensions |
 |---|---|
-| PDF | `.pdf` |
-| Word | `.doc`, `.docx` |
-| Excel | `.xls`, `.xlsx` |
-| CSV | `.csv` |
-| Text | `.txt`, `.text` |
-| Markdown | `.md`, `.markdown` |
+| PDF | .pdf |
+| Word | .doc, .docx |
+| Excel | .xls, .xlsx |
+| CSV | .csv |
+| Plain text | .txt, .text |
+| Markdown | .md, .markdown |
 
-The actual contents must match the format. Renaming an extension does not convert a file. HTML files, PowerPoint presentations and image files are not accepted as stored knowledge documents.
+The contents must match a supported format. Changing a filename's extension does not convert it. HTML files, PowerPoint presentations and images are not accepted as stored knowledge documents.
 
-For a short first FAQ, a clear text or Word document is often easier to inspect than a complex export.
+For a short FAQ, a clear text or Word file is an easy starting point because you can inspect the facts you expect the agent to use.
 
 ## Document, pasted-text and space limits
 
-| Limit | Amount | What it applies to |
+| Limit | Amount | Scope |
 |---|---|---|
-| Individual document | 25 MiB | Each stored knowledge document. The upload area may label this binary limit as 25 MB. |
-| Pasted text | 1,000,000 characters | One pasted-text submission, which also needs storage space. |
-| Free storage | 2 GB | Stored material across the space. |
-| Pro storage | 100 GB | Stored material across the space. |
+| Individual document | **25 MiB** | Each file; the upload area may call this 25 MB. |
+| Pasted text | **1,000,000 characters** | One pasted-text submission, which also needs available storage. |
+| Free storage | **2 GB** | Stored material across the space. |
+| Pro storage | **100 GB** | Stored material across the space. |
 
-The storage allowances are per space, rather than per agent. A whole file selection needs enough available space even when each file is individually below 25 MiB.
+The storage allowance belongs to the space, rather than each agent. A multiple-file selection needs enough available storage for the selection as a whole, even when each file is below the individual limit.
 
-Files in **Trash** still count toward storage until erased. Chat-credit overages do not increase document storage.
+Files in **Trash** and retained chat files can still use storage. Removing a knowledge attachment does not erase its saved file, and moving a file to Trash does not free its bytes. Storage is released after erasure finishes. AI-credit overages pay for additional AI usage; they do not add file storage.
 
 ## Match the remedy to the limit
 
-| Problem | What to do |
+| Message or problem | What to change |
 |---|---|
-| Unsupported format | Export the contents to an accepted format. Changing the extension alone will not help. |
-| Individual file too large | Reduce it or split it into useful topic documents. Each resulting file must meet the format and size rules. |
-| Space storage full | Review stored material, including Trash, and your space's plan. Read [Storage limits](/knowledge-and-library/storage-limits) before erasing material to make room. |
+| Unsupported format | Export the contents to one of the accepted formats, then select that exported file. |
+| File too large | Reduce the file or split it into useful topic documents. Each resulting file must meet the format and size rules. |
+| Pasted text too long | Shorten it or divide it into separate, meaningful notes within the character limit. |
+| Space storage full | Review the stored material and Trash, or consider Pro's larger allowance. Check the storage result before trying the upload again. |
 
-For example, split a large handbook into understandable topic files rather than arbitrary fragments. This helps you inspect the material as well as meet the individual-file cap.
+For example, divide a large handbook into understandable topics rather than arbitrary fragments. Each document should make sense when used as a reference.
+
+Before permanently erasing material, decide what you need to keep and read the confirmation. You can [review storage and the effect of Trash](/knowledge-and-library/storage-limits) or [restore and permanently delete trashed files](/knowledge-and-library/restore-or-permanently-delete-from-trash). Wait for erasure to finish and check the storage meter; moving files to Trash alone leaves them counted.
+
+A reduced or re-exported document is a new file selection. If the original attempt failed for another reason, [use the recovery offered for that file's state](/help/upload-and-file-messages).
 
 ## Other upload types and next steps
 
-Use the guide for the upload you are making:
+For agent knowledge, you can [upload a supported file](/knowledge-and-library/upload-files-to-your-agent) or [save pasted text as a document](/knowledge-and-library/paste-text-as-knowledge). A successful builder upload saves the document in Library and attaches it to that agent; check **Attached knowledge** for the file and its **Ready** status.
 
-- [Upload files to your agent](/knowledge-and-library/upload-files-to-your-agent) or [Paste text as knowledge](/knowledge-and-library/paste-text-as-knowledge) for the complete stored-knowledge procedure.
-- [Attach files in a chat](/share-and-deploy/attach-files-in-a-chat) for conversation attachments.
-- [Set your agent's name, picture and description](/build-your-agent/set-your-agents-name-picture-and-description) for agent images.
-- [Upload your own skill](/build-your-agent/upload-your-own-skill) for skill bundles.
+Other uploads serve different purposes:
+
+- [Conversation attachments](/share-and-deploy/attach-files-in-a-chat) supply material for a chat.
+- [Agent pictures](/build-your-agent/set-your-agents-name-picture-and-description) change how the agent is presented.
+- [Skill bundles](/build-your-agent/upload-your-own-skill) supply reusable guidance and references.

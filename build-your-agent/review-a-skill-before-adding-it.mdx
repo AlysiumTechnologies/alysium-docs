@@ -4,65 +4,68 @@ description: "Read a skill's description and contents before adding its guidance
 keywords: ["Alysium", "Review a skill before adding it", "Build your agent"]
 ---
 
-Read a skill's description and contents before deciding whether its guidance fits your agent. Use this process for a new catalog skill, an imported bundle or a skill already attached to an agent.
+<span id="review-a-skill-before-adding-it" />
 
-**Already reading the skill's details?** Continue with [Read its guidance](#read-its-guidance).
+Read a skill's instructions before deciding whether to use it. Check who published it, what it asks the agent to do and how it fits with the agent's existing rules. You can review a public catalog skill before adding it, or inspect a skill your space already holds.
 
 ## Open the skill details
 
-1. Open [Home](https://app.alysium.ai/spaces).
-2. Select the intended agent.
-3. Open **Build**.
-4. Open **Settings**.
-5. Find **Skills**.
-6. Select **Browse skill library** if the skill is not already in the attached list.
-7. Select the skill's name in the attached list or picker.
-8. Continue with [Read its guidance](#read-its-guidance).
+Open [Home](https://app.alysium.ai/spaces). On the intended agent's card, select **Build**. Select **Settings** if another builder view is open, then scroll to **Skills** in the **Agent Builder** section.
 
-Home opens your active space, where you choose the agent. If it asks you to sign in, sign in. Open Home again if needed.
-
-You can review an available public skill before your space acquires it. The details viewer does not grant access to another creator's private material.
+Select a skill's name in the attached list to inspect it. For another skill, select **Browse skill library**, find it in **My Skills** or a discovery category, then select its name or description. Reading the details does not add the skill to your space or attach it to the agent.
 
 ## Read its guidance
 
-1. Check **Added by**.
-2. Check **Version**.
-3. Read the description and displayed availability terms.
-4. Open the available content files.
-5. Compare their instructions with your agent's job.
+Start with the description and the information shown in the details:
 
-A short catalog title is not enough to decide whether the skill fits. For a fictional customer-help assistant, look for sensible clarifying questions, use of supplied facts and a useful answer structure. Guidance that always calls for a long sales pitch may conflict with a concise FAQ role.
+| Detail | What to check |
+|---|---|
+| **Added by** | The space that published the skill. Decide whether you recognize and want guidance from that publisher. |
+| **Version** and **Last updated** | Which version you are reviewing and when it changed. |
+| **Price** and **Visibility** | The skill's listed price and how it is offered. Paid skill checkout is not yet available. |
+| **Access**, when shown | How your space holds the skill. **Purchased** can also appear for a free catalog addition; it does not by itself mean you paid. |
 
-Check how the skill works with the agent's other instructions and skills. Competing guidance can make the agent's job less clear.
+Categories, tags and **Featured** help you discover skills. The **Alysium** filter identifies the Alysium publisher, and the Premium crown identifies a priced skill. These labels do not certify that you should trust all of its instructions.
+
+The viewer opens **SKILL.md**, which contains the skill's instructions. Read it, then select relevant reference files in the file list on the left. On a phone, select **Browse skills** to open the list, choose a file and close the list to read it. **Formatted preview** and **Markdown source** offer two ways to read the same content.
+
+Compare the guidance with your agent's actual work:
+
+- Does it expect information you can supply?
+- Does its method produce the kind of answer you want?
+- Does it respect the agent's limits and work with its other instructions and skills?
+
+For a concise customer FAQ assistant, look for guidance that uses the supplied facts and handles unanswered questions sensibly. Instructions that require a sales pitch in every answer could conflict with that role.
+
+The **Uses** badges list tool names declared by the skill. Alysium can provide only its supported capabilities; naming another tool does not make that tool available. Script files can be read, but Alysium stores them for portability and does not execute them.
 
 ## Decide whether to trust it
 
-**Trust this skill** is a deliberate setting for your space, rather than a preference for one conversation.
+After your space holds a skill, its details show **Trust this skill**. This setting applies to your space's use of that skill across agents, rather than just this agent or conversation.
 
-| State | How the guidance is treated |
+| Setting | How Alysium presents the loaded guidance to the agent |
 |---|---|
-| **Untrusted** | The default. The skill is applied cautiously within the agent's rules. |
-| **Trusted** | The skill's guidance is treated as authoritative. |
+| **Untrusted** | The default. The skill is treated as guarded guidance within the agent's rules. |
+| **Trusted** | The skill's instructions are treated as authoritative guidance. |
 
-Leave it untrusted while deciding whether you accept all its guidance. Trust does not give a skill unavailable tools or make stored scripts execute.
+Leave **Trust this skill** off while you are deciding whether you accept its instructions. Turn it on only when you want the guidance treated as trusted throughout your space. Trust changes how the instructions are treated; it does not grant arbitrary tools, outside integrations, private data or script execution.
 
 ## Choose what to do with it
 
-| Action | Result |
-|---|---|
-| **Add to my space** | Acquires an available free skill your space does not hold. Attachment is a separate action. |
-| **Attach to agent** | Uses a skill already held by your space in this agent. |
-| **Disable on this agent** | Stops using the skill while keeping its attachment. |
-| **Enable on this agent** | Turns an attached skill back on. |
-| **Remove from agent** | Removes this agent's attachment while leaving the skill in your space's library. |
-| **Purchase soon** | Does not complete a paid purchase; checkout is unavailable. |
+If the skill fits, add and attach it from the details:
 
-To acquire and attach a skill, continue with [Add skills to your agent](/build-your-agent/add-skills-to-your-agent). These actions save without a separate Design **Save Changes** step. Check the agent's Skills list after an attachment change.
+1. For an available free skill your space does not hold, select **Add to my space** and wait for it to finish. This puts the skill in **My Skills**.
+2. Select **Attach to agent** when it appears. If your space already holds the skill, start here.
+3. Return to **Skills** and check that the skill has a row with its switch on.
 
-To compare the agent with and without one skill, select **Disable on this agent** before testing it again. You do not need to retire the whole skill for that comparison.
+The picker uses **Add** and **Attach** for these same actions. A disabled **Purchase soon**, or **Get** showing the coming-soon message, means a priced skill cannot yet be purchased. If you decide against a skill, close its details without adding it.
+
+For an attached skill, use **Disable on this agent** to stop using it while preserving the attachment. Use **Enable on this agent** to restore it. **Remove from agent** removes this agent's attachment and leaves the skill in My Skills. These actions save as you perform them; wait for the result and check the attached list after a change.
 
 ## If a skill is unavailable or the result is unexpected
 
-A skill you cannot view may be private or no longer offered. A failed load does not establish access to its contents.
+If loading or changing a skill reports an error, read the message and check its current state before retrying. If an addition succeeded but the skill is absent from the attached list, use **Attach to agent**.
 
-If the guidance makes the agent worse, disable it and review the actual instructions before changing trust. If **Update** or retirement controls are missing, check whether your space authored the skill. Acquiring someone else's skill does not let you replace their original. Use [Update or retire a skill you created](/build-your-agent/update-or-retire-a-skill-you-created) for authored versions.
+If the guidance makes the agent's answers worse, disable the skill and reread its instructions for a conflict. Raising trust changes the weight of its guidance; it does not correct unsuitable instructions.
+
+An attached catalog skill keeps its acquired version until you accept an update. An **Update** action on its row adopts a newer published version. This differs from uploading a replacement bundle for a skill your space authored; you can [maintain or retire a skill you created](/build-your-agent/update-or-retire-a-skill-you-created) from its details.

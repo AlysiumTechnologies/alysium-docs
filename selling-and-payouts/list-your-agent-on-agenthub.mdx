@@ -4,75 +4,75 @@ description: "Prepare and save public listing details, check an agent's selling 
 keywords: ["Alysium", "List your agent on Agenthub", "Selling and payouts"]
 ---
 
-Prepare public listing details and submit an agent for AgentHub discovery. Use a source agent whose selling setup you can manage, with [creator application approval](/selling-and-payouts/apply-to-sell-on-agenthub) where required.
+<span id="list-your-agent-on-agenthub" />
 
-An AgentHub review is separate from [making the source agent live](/share-and-deploy/make-your-agent-live).
-
-## Gather the listing material
-
-Prepare a public title, one-sentence tagline, short description and an image you may publish. The agent needs a clear purpose, saved instructions and suitable reference facts. Your visible creator profile needs a name and username.
-
-Paid offers also need [saved pricing](/selling-and-payouts/price-your-agent) and [ready Stripe payments](/selling-and-payouts/set-up-stripe-to-get-paid).
-
-**Already in Listing details?** Continue with [Fill the public copy](#fill-the-public-copy). If the details are already saved, continue with [Check readiness and submit](#check-readiness-and-submit).
+Write the public details for your agent and submit it for AgentHub review. A listing tells people what the agent helps with; publishing the source agent controls whether they can reach it. These are separate steps.
 
 ## Open the listing editor
 
-1. Open [Home](https://app.alysium.ai/spaces).
-2. Select the intended source agent.
-3. Open **Deploy**.
-4. Select **Share & Sell**.
-5. Select **Edit listing** on the **AgentHub** card.
-6. Check that **Listing details** is open.
+1. Open [Home](https://app.alysium.ai/spaces) and select the source agent you want to offer.
+2. Select **Deploy**, then **Share & Sell**. On a phone, Deploy is in the bottom dock.
+3. On the **AgentHub** card, select **Edit listing** to open **Listing details**.
 
-Home opens your active space, where you choose the source agent. If it asks you to sign in, sign in and open Home again if needed.
+<span id="gather-the-listing-material" />
 
 ## Fill the public copy
 
+Complete the three required text fields with claims the agent can fulfil:
+
 | Field | What to write |
 |---|---|
-| **Listing header** | The public title. |
-| **Tagline** | The short sentence beneath the title. |
-| **Short description** | What the agent does and who it serves. |
+| **Listing header** | A public title, up to 60 characters. |
+| **Tagline** | A sentence describing the main benefit, up to 100 characters. |
+| **Short description** | Who the agent helps, what it does and any important limits, up to 300 characters. |
 
-Complete all three for AgentHub. Use the displayed length counters and describe help the agent can actually provide.
+For a café FAQ assistant, a title could be **Café visitor guide**, with the tagline **Clear answers from the café FAQ**. Its short description could explain that it answers from the café's menu and accessibility notes and directs booking changes to staff.
 
-For a fictional café FAQ assistant, a header could be **Café visitor guide**, with the tagline **Clear answers from the café FAQ**. A short description could explain that it answers from the attached menu and accessibility notes, and directs booking changes to staff. Adapt the example to facts and behavior you have actually supplied.
+Expand **Full description** and fill **Detailed sales copy** for a longer explanation. You can use Markdown to format it. Keep the description consistent with the agent's actual instructions and reference information.
 
 ## Complete discovery and media
 
-Describe an actual task in a capability row. Use **Add capability** for another row. Remove an unwanted row with its removal control. Choose relevant available tags in the tag selector; use a selected tag's X to remove it. Expand **Category** to choose the **Listing category**.
+Use **Capabilities** for specific tasks the agent can help with. Enter one task per row; **Add capability** adds another and the row's X removes it. You can include up to six capabilities, each up to 80 characters.
 
-Expand **Full description** and fill **Detailed sales copy** if you need a longer About this agent explanation. **Internal notes → Notes** is for your reference rather than buyer copy.
+Open the **Tags** selector and choose up to five relevant tags from **Select Tags**. A selected tag's X removes it. Expand **Category** and choose the closest **Listing category**.
 
-At least one image is required; the first is the preview image. Gallery upload/removal saves as you perform it. **Cancel** does not undo an uploaded image.
+To add the required listing image:
 
-For the listing image:
+1. Expand **Media** and select the upload tile.
+2. Choose a PNG, JPEG, WebP or GIF image you may publish.
+3. Wait for the image to appear in the gallery. You can add up to five; the first is marked **Main** and serves as the preview image.
 
-1. Expand **Media**.
-2. Select its upload tile.
-3. Choose an image you may publish.
-4. Check the gallery result.
-
-Continue with [Save the listing details](#save-the-listing-details).
+Gallery uploads and removals save as you perform them, including changes to the source agent's gallery. **Cancel** or discarding text changes does not undo saved media.
 
 ## Save the listing details
 
-1. Select **Save** in Listing details.
-2. Check the saved summary.
-3. Continue with [Check readiness and submit](#check-readiness-and-submit).
+Select **Save** in Listing details and wait for **Listing details saved**. Reopen **Edit listing** to check the saved copy and images.
 
-If Save is disabled, check the required copy and Media before retrying.
+If Save is disabled, complete Listing header, Tagline and Short description and add at least one gallery image. Text changes need Save; they do not save just because you uploaded an image.
+
+## Prepare paid access
+
+For a free offer, choose **Free access** in **Buyer access** and confirm **Switch to free** if you are changing the existing mode.
+
+For a paid offer, complete these settings in Share & Sell:
+
+1. In **Buyer access**, select **Edit subscription setup**. Enter a **Monthly access price (USD)** and a positive number of included credits in **Premium Allowance**. The allowance's value must be less than the monthly price; the form shows **100 credits = \$1.00**. Review **Free preview messages** and **Usage revenue**, then select **Save** and wait for **Pricing saved**. You can [choose the allowance, trial and usage rate](/selling-and-payouts/price-your-agent) in more detail.
+2. Select **Paid subscription**, read the confirmation and select **Switch to paid**. On an existing live channel, saving pricing or confirming an access change can affect what new buyers see immediately.
+3. On **Widget purchase modal**, select **Edit**. In **What buyers see**, use three highlights. Use **Add highlight** or an expanded highlight's **Remove highlight** control to adjust the count. Expand each highlight and fill **Headline** and **Supporting text** with a useful benefit and explanation, then select **Save**. Wait for **Highlights saved**.
+4. Complete Stripe payment setup. Open [Team settings](https://app.alysium.ai/spaces?settings=team), select **Creator**, then **Setup**. Use **Set up Stripe**, or **Continue Stripe onboarding** when offered, and complete the information Stripe requests. Back in Setup, scroll to **Refresh Stripe status** and read the result. **Card subscriptions and payouts are ready.** confirms payment readiness. You can [complete Stripe setup and resolve its status](/selling-and-payouts/set-up-stripe-to-get-paid) before returning to the agent's Deploy → Share & Sell.
 
 ## Check readiness and submit
 
-Read the AgentHub readiness checklist. Complete the named requirement before submitting: publication/public access, visible creator profile, active version, pricing or payment readiness are separate conditions.
+Read the **AgentHub** card's checklist. Submission requires an [approved creator application](/selling-and-payouts/apply-to-sell-on-agenthub), completed listing details and, for paid access, the pricing, highlights and payment readiness above. Use the action named by a blocked item to correct it.
 
-Use [Publish a new version](/selling-and-payouts/publish-a-new-version) if an active version is missing. The linked launch, pricing and Stripe guides above cover those requirements.
+Select **Submit to AgentHub** when offered. Submission saves the offer, publishes a version and sends the listing for review. Check that the card shows **In review**. You do not need to publish a separate first version before submitting.
 
-1. Select **Submit to AgentHub** when offered.
-2. Check for **In review**.
+For a previously submitted listing, read its current status and any feedback. Use an offered update or resubmit action when the card asks you to apply your saved setup to AgentHub.
 
-Submission is not immediate storefront visibility. An approved listing still needs a published/public source, visible creator profile, active version and active discovery. Paid listings also need ready payments.
+## Check storefront visibility
 
-Later changes can require the card's update or resubmit action so review uses the saved offer. Read that action and resulting status. If blocked, address the named checklist item instead of resubmitting the unchanged setup.
+**Approved** means the listing passed review. To appear in the storefront, it also needs a published, public source agent, a visible creator profile with a name and username, an active version and an active listing enabled for discovery. Paid listings need ready Stripe payments too.
+
+In the agent's Deploy launch summary, use **Make agent live** after saving its name and instructions. Wait for **Live**; **Launch settings** should show **Published** and **Public access on**. If **Finish in Build** appears, complete the listed name or instruction requirement first. You can [review the launch controls](/share-and-deploy/make-your-agent-live) for more detail.
+
+If saving or submitting fails, read the displayed error and reopen Share & Sell to check the saved details and review state before trying again. For an approved listing that still does not appear after meeting its displayed requirements, contact [support@alysium.ai](mailto:support@alysium.ai) with the agent name, current status and the requirement or error shown.

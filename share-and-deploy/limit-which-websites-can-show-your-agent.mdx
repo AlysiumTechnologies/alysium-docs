@@ -4,70 +4,63 @@ description: "Save Allowed websites hostnames for an embedded widget, then check
 keywords: ["Alysium", "Limit which websites can show your agent", "Share and deploy"]
 ---
 
-Use **Allowed websites** when you want your embedded widget to load on specified websites. This controls website installation; it does not restrict the separate public chat link.
+<span id="limit-which-websites-can-show-your-agent" />
 
-Use an agent whose deployment settings you can edit. Have the address of every website where you intend to install the widget. You can save rules before installation, but checking them requires the widget on your published website.
+Use **Allowed websites** to choose which website hostnames can load your embedded agent. A hostname identifies the website, such as `www.example.com`; it does not identify a particular page.
 
-**Already at Allowed websites?** Continue with [Choose the hostnames](#choose-the-hostnames).
+These rules apply to website embeds. Your agent’s separate direct link has its own switch.
 
 ## Open Allowed websites
 
-1. Open [Home](https://app.alysium.ai/spaces).
-2. Select the intended agent.
-3. Open **Deploy**.
-4. Select **Embed on a website**.
-5. Find **Allowed websites**.
-6. Continue with [Choose the hostnames](#choose-the-hostnames).
+1. Open [Home](https://app.alysium.ai/spaces) and select **Build** on the intended agent’s card.
+2. Open **Deploy**. On a narrow screen, this navigation is at the bottom.
+3. Select **Embed on a website** and scroll to **Allowed websites**.
 
-Home opens your active space, where you choose the agent. If it asks you to sign in, sign in. Open Home again if needed.
+You can prepare the saved list before making the agent live or installing it on a website.
 
 ## Choose the hostnames
 
-The hostname is the part of a website address before any page path. For the illustrative address `www.example.com/help`, the hostname is `www.example.com`.
+Enter a hostname alone, without `https://` or a page path. For `https://www.example.com/help`, enter `www.example.com`.
 
-**Add a website** accepts a hostname, such as `example.com`. Enter the hostname alone, without `https://` or a page path.
+Choose entries that cover the websites you intend to use:
 
-A wildcard such as `*.example.com` can cover subdomains. Add the base `example.com` separately if you also use that address. A separate www hostname may need its own entry. Use the narrowest set of hostnames that covers your intended installation.
+| Entry | Websites it covers |
+|---|---|
+| `example.com` | Exactly `example.com`. Add `www.example.com` separately if you use that address. |
+| `www.example.com` | Exactly `www.example.com`. |
+| `*.example.com` | `example.com` and its subdomains, including `www.example.com` and `help.example.com`. |
 
-**Restrict embedding to allowed websites** switches between restricted embedding and any-website embedding. A restriction needs at least one saved hostname. An empty list does not enforce a restriction even if the switch is on.
-
-Continue with [Save a restriction](#save-a-restriction) when you know which hostnames you need.
+Use the narrowest list that covers your installation. These rules cannot limit the widget to a particular page path.
 
 ## Save a restriction
 
-1. Enter a hostname in **Add a website**.
-2. Select **Add website**.
-3. Wait for the hostname to appear in the saved list.
-4. Repeat those actions for each other hostname you use.
-5. Turn on **Restrict embedding to allowed websites** if it is off.
-6. Wait for the setting to save.
-7. Open your published website.
-8. Check that the widget can load there.
+1. Turn on **Restrict embedding to allowed websites**, changing **Any website** to **Restricted**. This reveals the website input.
+2. Enter a hostname in **Add a website**, then select **Add website**.
+3. Wait for the success feedback and check that the hostname appears in the saved list.
+4. Repeat for the other hostnames you need.
 
-Do not rely on a hostname that is still only typed into the input. It must be in the saved list. If the widget is not installed yet, follow [Put your agent on your website](/share-and-deploy/put-your-agent-on-your-website), then check the published page.
+Each addition and switch change saves automatically. A hostname still typed in the input has not been added. **Restricted** needs a nonempty saved list: an empty list allows embedding on any website even while the switch is on.
+
+If the widget is already installed, open the published website and check that it loads the intended agent. If you have not installed it yet, make the agent live using **Make agent live** in the launch card, completing any missing name or Agent Instructions in Build first. Then copy the generated embed code from **Embed on a website**, paste the entire snippet once into your website’s custom-code facility before the closing body tag, and save and publish the website. Open the published page and check that it loads the intended agent. The [website installation guide](/share-and-deploy/put-your-agent-on-your-website) explains that separate task in more detail.
 
 ## Change or remove a rule
 
-1. Use the remove control beside the saved hostname.
-2. Wait for the change to save.
-3. Check the remaining saved list.
+Use the remove control beside a hostname and wait for the change to save. Check the remaining list before leaving it. Removing the last entry allows any website; it does not block every website.
 
-Removing the last entry leaves an empty list; it is not a way to block every website.
-
-To allow embedding on any website, turn **Restrict embedding to allowed websites** off. Wait for the setting to save and confirm its state.
-
-To stop all public use, [unpublish the agent or make it private](/share-and-deploy/unpublish-your-agent).
+To allow any website while keeping the list for later, switch **Restricted** back to **Any website** and wait for saving to finish.
 
 ## Keep direct-link access separate
 
-The saved list and restriction switch define where the embedded widget can load. They do not make the standalone direct link private.
+To stop sharing the standalone chat page, select **Share link + QR** in Deploy, turn **Direct link** off and wait for the change to save. Website embedding has separate controls and can remain available.
 
-If you do not want to offer that separate chat page, open **Deploy → Share link + QR**. Turn **Direct link** off, wait for the setting to save and check that it remains off. That switch does not control website embedding.
+To stop this agent’s public link and website embeds together, select **Launch settings** and **Unpublish** or **Make private**. Wait for the saved status to change. You can [restore public delivery later](/share-and-deploy/unpublish-your-agent).
 
 ## Fix a rejected website or failed save
 
-If the hostname is rejected, remove the protocol, slash and page path, then check the spelling. If adding fails, read the local error and retry. A failed value can remain in the field without being saved.
+If a hostname is rejected, read the validation message. Check the spelling and remove the protocol, slashes and page path. For a duplicate, check whether the hostname is already in the saved list.
 
-If your legitimate website is blocked, compare the browser's actual hostname with the saved list, including www and other subdomains.
+If adding a hostname fails, its text can remain in the input. Read the error, retry the addition and check for the saved row. For another save failure, reopen the panel to check the saved switch and list before repeating the change.
 
-If an unintended website still loads the embed, confirm that the switch is on and a nonempty list has saved. An empty list is not a restriction.
+If your website is blocked, compare the hostname in its browser address with the saved entries, including `www` and other subdomains. If an unintended website can still load the widget, check that **Restricted** is saved and that the list is not empty.
+
+If **Website settings could not be loaded** appears, select **Retry** and follow any connection guidance shown after another failure.

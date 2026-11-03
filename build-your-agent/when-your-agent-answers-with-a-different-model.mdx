@@ -4,30 +4,40 @@ description: "Understand why the answering model can differ from your saved choi
 keywords: ["Alysium", "When your agent answers with a different model", "Build your agent"]
 ---
 
-Your saved model choice and the model answering a question can differ. Alysium can keep the saved choice while using a model allowed by the current space plan. In the builder, **Running as** names the model actually answering.
+<span id="when-your-agent-answers-with-a-different-model" />
 
-That notice does not mean your saved model was deleted. It explains the difference between the saved preference and the model the current plan can use for that response.
+A Free space can retain a saved model that requires Pro while using an included model for chat. The saved choice stays in your agent's settings. In the builder, **Running as** explains this plan-related substitution.
+
+The notice helps you compare the saved model with the one available under the space's plan. It is not a record of the model used for every individual answer.
 
 ## Compare the saved choice with Running as
 
-Open [Home](https://app.alysium.ai/spaces), select the intended agent, then open **Build → Settings**. Home opens your active space; you choose the agent there.
+1. Open [Home](https://app.alysium.ai/spaces) and select **Build** on the intended agent's card.
+2. Select **Settings** if needed. Scroll to **Agent Builder** and find **AI Models**.
+3. Read the control showing the saved model name. If it says **Select a model...**, open it to choose an available model.
+4. In the chat beside Settings, look for **Running as** above the message box. On a smaller screen, select **Chat Preview** to see the chat. Expand the notice's chevron to read the saved-versus-running explanation.
 
-Read the model in **Choose Your AI Model**. Then read **Running as** above the preview when the notice appears. Expand it to see the explanation.
-
-For example, an agent can retain a Pro-only model while its space is on Free. The preview can then use an included model for the reply. Reselecting the saved Pro-only model does not change the space's plan, so the same notice can appear again.
+For example, an agent may still have a Pro model saved after its space moves to Free. Alysium can use an included model for its chat turns without replacing that saved preference. Selecting a Pro model again does not change the space's plan.
 
 ## Choose how to continue
 
-You can select a model included in the current plan, or review the Pro upgrade. [Choose your agent's AI model](/build-your-agent/choose-your-agents-ai-model) explains the model controls.
+You can keep using the included model, choose an included model as the agent's saved setting, or review an upgrade if you want access to the saved Pro model. For a short FAQ, try a question your source answers and compare the result with that source before deciding whether you need a different model.
 
-If you change the model, let the builder save finish, then ask a new question. Check the new reply rather than treating an unsaved selection as the result.
+To save an included model:
 
-If you are considering Pro, [Billing](https://app.alysium.ai/spaces?settings=billing) opens your active space's plan and payment settings. Review the displayed offer and confirm the resulting account state before assuming model access changed.
+1. In **AI Models**, open the model-name or **Select a model...** control.
+2. Browse the available categories and model descriptions, then select a model without the Pro crown. The `$` symbols compare credit use; they are not dollar prices, and `$` does not mean free.
+3. Wait for saving to finish. Reopen this agent from Home and check that **AI Models** retains the selected name.
+4. Enter a fresh question in the builder chat and select **Send message** or press Enter. Compare the answer with your sources and the agent's intended job.
 
-For a short FAQ, you might first try an included model and compare its answer with your approved source. The notice alone does not establish that an upgrade is necessary for your task.
+Selecting a Pro-only row in a Free space displays an upgrade message instead of saving that model. You can [compare model choices](/build-your-agent/choose-your-agents-ai-model) when deciding which available description fits your task.
+
+To consider Pro, select **Upgrade** in the notice and review the space's offer. You can also open [Billing](https://app.alysium.ai/spaces?settings=billing) to check the current space's plan. Review the displayed price and terms, and confirm Billing shows the resulting subscription status after any purchase. The [upgrade guide](/plans-and-billing/upgrade-to-pro) explains that purchase and its usage choices.
 
 ## If the notice does not match your expectation
 
-Check the agent and space you are editing. Then check the space's plan in Billing. Resolve an unexpected billing state before repeatedly changing the model.
+Check that you opened the intended agent in the intended space, then check its plan in Billing. If you recently changed the model, reopen Build and confirm the saved name before testing again.
 
-A builder preview notice does not establish every visitor's funding or access state. Brandy can explain the controls, but cannot inspect or change your account for you.
+Follow any blocking usage or payment notice and its action. Model substitution does not guarantee chat can continue when access or credits are exhausted. The **Running as** notice explains a plan restriction; it does not establish automatic fallback during a model-provider outage.
+
+A builder notice describes this preview's plan context. It does not establish every visitor's funding or access state. Brandy can explain these controls, but cannot inspect or change your account for you.

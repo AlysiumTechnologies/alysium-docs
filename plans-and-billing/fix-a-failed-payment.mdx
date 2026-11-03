@@ -4,60 +4,39 @@ description: "Resolve the payment issue on the affected subscription and check s
 keywords: ["Alysium", "Fix a failed payment", "Plans credits and billing"]
 ---
 
-Resolve the payment issue on the affected subscription, then check its resulting status and access in Alysium. Changing a card alone does not prove an unpaid invoice was paid.
+<span id="fix-a-failed-payment" />
 
-First read whether the warning names **Alysium Pro** or a **creator's agent**. These have separate bills and payment-management paths. Updating one does not necessarily update the other.
+Resolve the payment issue on the affected subscription, then check its status in Alysium. Saving a replacement card is one step; also confirm the result of any unpaid invoice or payment action.
 
-- For the space's Pro plan, continue with [Resolve a Pro payment problem](#resolve-a-pro-payment-problem).
-- For a purchased agent, continue with [Find the affected agent](#find-the-affected-agent).
-- If you already used **Fix billing** on that agent's warning and its portal opened, continue with [Check the creator-agent payment in its portal](#check-the-creator-agent-payment-in-its-portal).
+Read whether the warning concerns your space's **Alysium Pro** plan or a **creator's agent**. They have separate bills and payment-management paths. An active Pro plan does not settle an agent's unpaid bill, and an agent payment does not settle Pro.
 
 ## Resolve a Pro payment problem
 
-You manage the Pro payment for the space you own. The Billing link opens the current space, so confirm its name before using the portal.
+1. Open [Billing](https://app.alysium.ai/spaces?settings=billing) and check the space name above the settings content.
+2. Wait for the subscription details to load, then read the plan and status under **Billing & Subscription**.
+3. Select **Manage Subscription & Billing**. For an existing plan that is no longer active, use **View Billing & Invoices**. If the page says **Subscription Details Unavailable**, use **Open Billing Portal** when offered.
+4. In the portal, confirm the intended Pro subscription and open the payment issue or unpaid invoice shown there.
+5. Update the payment method if needed, save or confirm the change, and complete any payment or verification action the portal offers. Check its payment result and keep the confirmation.
+6. Return to Alysium and reopen [Billing](https://app.alysium.ai/spaces?settings=billing). Check the resulting Pro status.
 
-1. Open [Billing](https://app.alysium.ai/spaces?settings=billing).
-2. Check the affected space's name and plan status.
-3. Select **Manage Subscription & Billing**. If details are unavailable, use **Open Billing Portal** when offered.
-4. Confirm the intended Pro subscription in the portal.
-5. Open the unpaid invoice or payment issue shown there.
-6. Update the payment method if needed.
-7. Follow any payment action the portal offers.
-8. Check the portal's payment result.
-9. Return to Alysium.
-10. Reopen [Billing](https://app.alysium.ai/spaces?settings=billing).
-11. Check the resulting plan status.
-
-Portal options vary by subscription. Use the options actually shown; merely opening the portal or saving a replacement card does not establish payment success.
+A Pro payment issue can pause space-funded usage even when credits remain. Changing an on-demand limit does not resolve an unpaid bill.
 
 ## Find the affected agent
 
-Use the account that purchased the agent. If you are already in Billing, start at step 2.
-
-1. Open [Billing](https://app.alysium.ai/spaces?settings=billing).
-2. Find **Agent Access and Subscriptions**.
-3. Locate the agent and creator named in the warning.
-4. Select **Fix billing**, when offered.
-5. Continue with [Check the creator-agent payment in its portal](#check-the-creator-agent-payment-in-its-portal).
+1. Open [Billing](https://app.alysium.ai/spaces?settings=billing) for the space that obtained the agent.
+2. Scroll to **Agent Access and Subscriptions** and find the card by both agent and creator name.
+3. Select **Fix billing** when the card shows a payment warning. It opens billing for that creator's subscription.
 
 ## Check the creator-agent payment in its portal
 
-1. Confirm that the portal shows the affected creator's subscription.
-2. Read its payment issue or unpaid invoice.
-3. Update the payment details if needed.
-4. Follow any payment action the portal offers.
-5. Check the payment result.
-6. Return to Alysium.
-7. Reopen [Billing](https://app.alysium.ai/spaces?settings=billing).
-8. Check the named agent's card.
-9. Reopen the affected chat to check its access notice.
+1. Confirm that the portal shows the affected creator's subscription, then open its payment issue or unpaid invoice.
+2. Update the payment details if needed and confirm the change. Complete any payment or verification action offered, then check the result and keep its confirmation.
+3. Return to Alysium and reopen [Billing](https://app.alysium.ai/spaces?settings=billing). Check the named agent's card, then reopen the affected chat to inspect its access notice.
 
-A payment warning can leave agent access temporarily available while payment is retried. A blocked warning means messaging is paused. Pro has separate payment checks; do not assume it has the same grace behavior. Remaining credits do not override a payment block.
-
-For example, if one purchased agent reports a failed payment while Pro is active, work on that agent's subscription. If space-funded chats stop and Pro shows a payment issue, resolve the Pro bill. Use the displayed state to identify the affected subscription.
+An agent payment warning may leave access temporarily available while payment is retried. If chat is paused because of payment, remaining bundle credits do not remove that block. The space's Pro plan has separate payment checks.
 
 ## If the warning remains
 
-If a portal will not open, read its error and retry from the existing Billing record. If a payment option is missing, payment is processing, or a warning remains after confirmed payment, contact billing@alysium.ai. Include the space or agent name, displayed status and payment confirmation reference. Do not send full card details.
+If the portal fails to open, read the error shown in Billing and retry from the existing record. If it offers no way to resolve the issue, or a confirmed payment still does not match Alysium's status after reopening Billing, contact [billing@alysium.ai](mailto:billing@alysium.ai). Include the space or agent and creator names, displayed status and payment confirmation reference. Do not send full card details.
 
-Keep using the existing subscription record while the issue is checked. Another checkout can create a separate purchase. For other causes of locked messaging, see [Why a marketplace chat is read-only](/agenthub/why-a-marketplace-chat-is-read-only). For invoices and payment-method changes without a warning, see [Update your payment method or see invoices](/plans-and-billing/update-your-payment-method-or-see-invoices).
+Keep the existing subscription record while the issue is checked; another checkout can create a separate purchase. If the notice concerns ended access or pending checkout instead of a failed payment, [check what is making the marketplace chat read-only](/agenthub/why-a-marketplace-chat-is-read-only). For routine card changes or invoice history, you can [manage payment details without a warning](/plans-and-billing/update-your-payment-method-or-see-invoices).

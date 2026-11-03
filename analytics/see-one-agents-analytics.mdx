@@ -4,70 +4,106 @@ description: "Open one agent's activity page to connect its summary numbers with
 keywords: ["Alysium", "See one agent’s analytics", "Analytics"]
 ---
 
-Open an agent's activity page to connect its summary numbers with the conversations behind them. Use it to read visitor questions, inspect replies or investigate recorded answer problems.
+<span id="see-one-agent’s-analytics" />
 
-**Already on the right agent's Analytics page?** Continue with [Read a conversation](#read-a-conversation), or [Understand the summary](#understand-the-summary) to interpret its numbers.
+Connect an agent's visitor activity with saved questions, replies and recorded signs of usefulness. Use the numbers to choose what to read, then inspect the exchange before deciding what needs to change.
 
-## Open the agent's page
+<span id="open-the-agent’s-page" />
+<span id="open-the-agents-page" />
+
+## Open the agent page
 
 1. Open [Analytics](https://app.alysium.ai/analytics).
 2. Under **Your Agents**, select the intended agent's card.
 3. Check the agent name at the top of the page that opens.
-4. Continue with [Read a conversation](#read-a-conversation).
 
-The link opens the Analytics overview, where you choose your own agent. If it asks you to sign in, sign in. Open Analytics again if needed.
+The overview displays up to 20 cards. If the intended card is missing, check the active space in [Home](https://app.alysium.ai/spaces). If it is still absent in the right space, contact [support@alysium.ai](mailto:support@alysium.ai) with the agent and space names.
 
-An overview card opens the agent's all-time conversation list. You are viewing existing activity here; use Chat to ask a new question.
+An overview card opens the agent's all-time visitor conversation list. The summary initially uses **Last 30 days**, unless another **Period** has been retained.
 
 ## Read a conversation
 
-1. Under **Recent Conversations**, select the intended conversation.
-2. Wait for its messages to load.
-3. On a small screen, open **Msgs** if needed.
-4. Read the user's question and the agent's reply together.
-5. Scroll in the message viewer to read the surrounding exchange.
+1. Under **Recent Conversations**, select a conversation and wait for its saved messages.
+2. Read the question and reply together. Scroll inside the message viewer to read the surrounding exchange.
+3. Scroll inside the conversation list when you want to load older rows.
 
-A list preview shows only part of a chat. Check the full wording before deciding what needs improvement. For example, if a fictional workshop assistant omits a required notebook from its answer, compare that reply with the workshop's approved reference document before changing the agent.
+On wide screens, the list and messages appear side by side. On smaller screens, selecting a row switches from **Conversations** to **Messages**, shortened to **Chats** and **Msgs** on the smallest screens. Messages is disabled until a conversation is selected. Use the **Back to conversations** arrow or the Conversations/Chats tab to return to the list.
 
-On a smaller screen, **Conversations** may be shortened to **Chats** and **Messages** to **Msgs**. Messages is disabled until you select a conversation. Use **Chats** or the back arrow to return to the list. On a wide screen, the list and messages can appear side by side.
+A row preview shows only part of an exchange. If a reply seems wrong, compare the full wording with your approved information before changing the agent.
 
 ## Understand the summary
 
-The summary cards show **People**, **Conversations** and **Helpfulness** for the selected **Period**: **Last 7 days**, **Last 30 days** or **Last 90 days**. The **Talked with** total is all time, so it can be larger than a period's People value. A dash when there are no ratings is different from a negative rating.
+Check **Period**, then choose **Last 7 days**, **Last 30 days** or **Last 90 days**. These are rolling activity windows ending when the numbers were loaded. Previous numbers dim while the new period loads.
 
-| Control | What it does |
+The large **Talked with N people** total is all time. The cards below it describe visitor activity for the selected period:
+
+| Card | What it measures |
 |---|---|
-| People **Details** | Explains available signs of usefulness and where people came from. Select it again to close the panel. |
-| Helpfulness **Details** | Explains recorded ratings, changes and available problem guidance. Select it again to close the panel. |
-| Conversations **View** | Changes the conversation list to the selected summary period. This can replace the all-time list opened from the overview. |
+| **People** | Distinct visitors with user activity during the period. **Came back** records people active on multiple local days. |
+| **Conversations** | Conversations with visitor activity in the period, including chats that started earlier. The **answers** count records replies during the period. |
+| **Helpfulness** | Current helpful votes as a percentage of current helpful and unhelpful votes on eligible answers from the period. Answers are included by their answer time, rather than when someone voted. One visitor can rate several answers. |
 
-These controls help you inspect activity without editing the agent. To investigate a reported answer problem, continue with [Read answer feedback](/analytics/read-answer-feedback) when **Feedback** is available.
+**—** with **No ratings yet** means there are no ratings for that measure. It is different from **0%**, where observed ratings were unhelpful. Comparisons need enough earlier history and rating evidence; a missing comparison is not evidence of no change. Read any low-rating or missing-coverage note alongside the numbers.
 
-## Understand the list's scope
+Your own practice chats are excluded from these visitor metrics, even when you include them in the conversation list.
 
-The list and summary can cover different activity:
+## Read the signs behind People
 
-- **Search conversations...** searches accessible messages across all time. See [Search conversations](/analytics/search-conversations).
-- **Filter by date range** changes the conversation list separately from the summary period. See [Filter conversations by date](/analytics/filter-conversations-by-date).
-- **Show teammate conversations**, when available, includes your own practice chats. Your space currently contains only you, its owner. This setting changes the list without changing visitor summary metrics.
+Select **Details** on the People card to open **Did they get what they came for?** It groups visitors by the recorded signs:
 
-Check these controls before treating differing counts as missing conversations.
+- **Showed it helped** can include a helpful answer vote, copying an answer, opening a source, returning to the agent or a positive conversation check-in.
+- **Showed it didn't** can include an unhelpful vote, a negative check-in, asking again, or a recorded cut-off or failed answer. When both kinds occur, the negative sign takes priority.
+- **No clear sign** means there is no clear recorded sign either way. This does not mean the visit failed.
+
+These signs are clues about the experience, not proof of a successful outcome or a correct answer. Check the coverage notes. Copies and source opens may only count from a stated date, and cut-offs or failures may only have been recorded for some answers. When those problems were not recorded, affected visits can appear under **No clear sign**.
+
+To investigate the negative signs, select **View the N** in that panel. The conversation list changes to the selected period's conversations with negative signs. Select a row and read the exchange. Use **Clear filter** beside **Showed it didn't** to return to the period list.
+
+**Where do people find {Agent}?** groups visitors by where their earliest active conversation in the period came from, such as a widget domain, Phone link or chat page. It describes the recorded arrival source for that period.
+
+## Compare changes and open problems
+
+Select **Details** on Helpfulness to open two views of what may need attention:
+
+- **Did my changes help?** compares recorded knowledge and instruction changes with ratings from the two weeks before and up to two weeks after each change. **Looks like it helped**, **Looks worse**, **No change** and **Too early to tell** describe the available comparison. Overlapping changes, missing earlier records or too little feedback can limit what it tells you. A change followed by better ratings does not prove it caused the improvement.
+- **What's dragging it down?** shows the agent's all-time open problems. It is not limited to the summary's selected period.
+
+Only one Details panel is open at a time. Select its **Details** control again, or press Escape while in the panel, to close it.
+
+Open **Feedback** to read reported problems. Select a report under **Needs attention**, then read its question, answer, reason or note and **What to do** guidance. You can [inspect the sources and handle a report](/analytics/read-answer-feedback) in more detail there. For an installed marketplace copy, the creator maintains its knowledge and instructions, and repair buttons are not offered.
+
+<span id="understand-the-list’s-scope" />
+<span id="understand-the-lists-scope" />
+
+## Understand the list scope
+
+The conversation list can cover different activity from the summary. Choose the view that answers your question:
+
+| Choice | Action and result |
+|---|---|
+| Conversations **View** | Sets the list to the summary's selected period and clears typed search and a custom date range. |
+| **Filter by date range**, or the displayed dates | Opens a calendar. Select the start and end days to update the list immediately. Both days are included, using local dates. The X labelled **Clear date filter** returns to all time. |
+| **Search conversations...** | Type a word to search this agent's saved questions and replies across all time. **Searching all conversations** replaces the calendar. Search ignores Period, custom dates and the **Showed it didn't** filter. Use **Clear search** to return to the retained ordinary list. |
+| **Show teammate conversations** | Starts off. Turn it on to include your own practice chats in the list and search. Your space currently contains only you, its owner. Visitor metric cards remain unchanged. |
+
+List dates follow user activity, so a conversation can match a period even if it started earlier. Changing **Period** resets a custom date range and the **Showed it didn't** filter; an active typed search still searches all time until you clear it. Check these choices before treating different counts as missing conversations.
+
+Filtering can leave an earlier transcript open. Select a row from the resulting list to read a conversation that matches the new view. You can [narrow by words](/analytics/search-conversations) or [inspect a date range](/analytics/filter-conversations-by-date) when you need a more specific exchange.
 
 ## Read status and saved changes
 
-A dot can identify an unread conversation. Selecting a conversation yourself or selecting **Mark as read** records it as read after the update succeeds. Viewing messages needs no separate Save action and does not rewrite them.
+**Needs a look**, **Doing well** and **Too early to tell** help prioritize review. **Needs a look** can reflect unread open reports or a drop in comparable helpfulness. **Doing well** relies on recorded activity and ratings; it does not certify that every answer is correct. The status can offer **Review problems** or **Show helpfulness details** to investigate.
 
-An improvement to knowledge or instructions has its own saving steps in the builder. Reading an answer in Analytics does not change future answers.
+An unread conversation can have a dot. Selecting a conversation yourself, or selecting **Mark as read**, records it as read after the update succeeds. An automatically selected first conversation does not mark itself as read.
+
+Reading Analytics needs no **Save** action. Knowledge and instruction changes have their own saving steps in the builder; reading a recorded answer does not improve future replies.
 
 ## If messages or conversations are missing
 
-1. Select a conversation before opening **Messages** or **Msgs**.
-2. Select **Retry** if a loading error offers it.
-3. Return to **Chats** on a small screen to see the list controls.
-4. Clear any unintended keyword search.
-5. Clear any unintended custom date filter.
-6. Turn on **Show teammate conversations**, if available, when looking for your own practice chat.
+If the summary shows **Couldn't load these numbers.**, select its **Retry**. If the list shows **Couldn't load these conversations.**, use that list's **Retry**. A failed attempt to load older rows can offer its own Retry.
 
-Scroll within the conversation list to find older rows. Select **Load older conversations** if it is offered. If the list is still empty, check the agent name and the account and space you are using in [Home](https://app.alysium.ai/spaces).
+If a conversation's saved messages fail to appear, reload or reopen the agent's page and select the conversation. Alternatively, select a different conversation, then select the intended row again and wait for its messages.
 
-Use **Performance Overview**, shortened to **Back** on smaller screens, to return to the dashboard. Use [Export conversations](/analytics/export-conversations) if you want to keep a local copy of the exchange you read.
+For an unexpectedly empty list, check the agent name, clear an unintended search or date filter, and check **Showed it didn't**. Turn on **Show teammate conversations** when looking for your own practice chat. On smaller screens, return to Conversations/Chats to reach those controls.
+
+Use **Performance Overview**, shortened to **Back** on smaller screens, to return to the dashboard.

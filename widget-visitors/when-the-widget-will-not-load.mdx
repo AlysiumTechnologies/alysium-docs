@@ -4,83 +4,77 @@ description: "Start with the visible symptom to investigate a missing widget lau
 keywords: ["Alysium", "When the widget will not load", "Your widget visitors"]
 ---
 
-A missing launcher, a chat connection error and an unavailable agent can have different causes. Start with the symptom you can see.
+<span id="when-the-widget-will-not-load" />
 
-| Your situation | Continue with |
-|---|---|
-| You are visiting a website and cannot use its chat | [Check as a visitor](#check-as-a-visitor) |
-| You created the agent | [Check public availability](#check-public-availability) |
-| The agent is live but its launcher is missing | [Check website installation](#check-website-installation) |
-| The widget reports that the site is blocked | [Check allowed websites](#check-allowed-websites) |
+A website widget can appear as a floating chat button, a chat box within the page or a full-page chat. If the expected chat does not appear or will not connect, the checks depend on whether you are visiting the website or managing its agent.
 
-## Check as a visitor
+<span id="check-as-a-visitor" />
 
-1. Confirm the website itself loaded.
-2. Check that your connection is working.
-3. Open the widget if its launcher is visible.
-4. Read any displayed error.
-5. Select **Retry** if offered.
-6. If it still fails, try the same website in another normal browser.
+## If you are visiting the website
 
-If the launcher is absent, tell the website owner it is missing. Otherwise report the exact error and whether the issue affects only one browser or other visitors too. Use [Prepare a useful report](#prepare-a-useful-report) for the details.
+1. Reload the page. If it has a chat button, select it to open the widget.
+2. Read any message in the chat. Select **Retry** if the message offers it.
+3. If the problem continues, try the same page in another browser.
 
-The widget can report trouble establishing its chat session when cookies, privacy tools or a network filter interfere. Review whether the site is permitted under your browser or network's normal settings. On a managed device, ask its administrator for help.
+If it works in one browser, check whether the other browser's privacy tools or your network settings are blocking the chat. On a managed device, its administrator may need to help.
 
-Keep passwords, verification codes and payment details out of a problem report.
+For a missing widget or an **Access Denied** message, contact the website owner. Send them the page address, the message you saw and whether it also happened in the other browser. They can check the agent's availability and website settings.
 
-## Check public availability
+<span id="check-public-availability" />
 
-For an agent you manage:
+## Check that your agent is live
 
-1. Open [Home](https://app.alysium.ai/spaces).
-2. Select the intended agent.
-3. Open **Deploy**.
-4. Read the launch card.
+If you manage the agent, open [Home](https://app.alysium.ai/spaces), select it and open **Deploy**.
 
-If it is not **Live**, inspect **Launch settings**. Public use requires the agent to be Published and public access to be on. Resolve any missing name or instruction requirement in **Build** → **Settings**, then wait for changes to save.
+The launch card shows **Live** when the agent has its required name and instructions, is published and has public access enabled. If it is not Live:
 
-[Make your agent live](/share-and-deploy/make-your-agent-live) gives the full launch procedure.
+1. Complete any requirements listed under **Finish in Build**. In **Build**, fill in the missing **Agent Name** or **Agent Instructions**, wait for your changes to save, then return to **Deploy**.
+2. If **Make agent live** is still shown after completing the requirements, select it. The card can say **Ready to go live** or **Needs attention** before this action. Making it live publishes the agent and enables public access together.
+3. Wait for the card to show **Live**. If the save fails, use the displayed error to retry and check the resulting status.
 
-**Direct link** controls the separate standalone destination. It does not need to be on for the embedded website widget.
+For an agent that is already Published with public access off, you can also expand **Launch settings** and select **Enable public access**. The [launch guide](/share-and-deploy/make-your-agent-live) explains these controls in more detail.
 
-Once availability is correct, continue with [Check website installation](#check-website-installation) for a missing launcher or [Check allowed websites](#check-allowed-websites) for a site restriction.
+The **Direct link** switch controls the standalone chat page. Website embedding has its own settings under **Embed on a website**.
 
-## Check website installation
+<span id="check-website-installation" />
 
-If you are elsewhere, open [Home](https://app.alysium.ai/spaces), select the intended agent and open **Deploy**. Then continue below.
+## Check the website installation
 
-1. In the intended agent's **Deploy** area, open **Embed on a website**.
-2. Select **Copy code** for the current embed code.
-3. Have the website manager confirm that code is in the intended code location.
-4. Confirm the website change was published.
-5. Open the published site again.
-6. Open the widget if its launcher appears.
+With the agent Live, select **Embed on a website** in Deploy.
 
-An unpublished website draft can contain the code while the public page does not. [Put your agent on your website](/share-and-deploy/put-your-agent-on-your-website) explains placement and publication.
+1. Wait for its saved settings to load. If you see **Website settings could not be loaded**, select **Retry** before copying code or changing the website restrictions.
+2. Select **Copy code**. **Copied!** confirms the copy. If copying fails, retry or select the displayed code and copy it manually.
+3. In your website editor's custom-code or script facility, replace the old Alysium snippet with the code you copied. If the widget has not been installed yet, add the code once. Place it before the closing body tag where the editor supports that placement. If someone else manages the website, give them the generated code to update or install.
+4. Save and publish the website change, then open the published page and check that the intended agent appears and connects.
 
-If the launcher remains missing, prepare the report below. If it appears but reports a website restriction, continue with [Check allowed websites](#check-allowed-websites).
+Use the code generated for this agent and its chosen placement. An inline chat appears within the page rather than behind a floating button. The [website installation guide](/share-and-deploy/put-your-agent-on-your-website) has more detail about placing the code.
 
-## Check allowed websites
+<span id="check-allowed-websites" />
 
-From [Home](https://app.alysium.ai/spaces), select the intended agent and open **Deploy** → **Embed on a website**. Inspect **Allowed websites**. If that panel is already open, start with this list check.
+## Check a website restriction
 
-When restrictions are enabled with saved entries, the actual website hostname must match an allowed rule. Check www and other subdomains.
+If the widget says the website is blocked, find **Allowed websites** under **Deploy**, within **Embed on a website**.
 
-Wait for the hostname to appear in the saved list before relying on it. An enabled switch with an empty list does not establish a restricted list.
+Restrictions apply when the switch shows **Restricted** and the list contains at least one saved website. Compare those entries with the hostname in the published page's address. For example, the hostname in `https://www.example.com/help` is `www.example.com`; `www` and other subdomains matter.
 
-[Limit which websites can show your agent](/share-and-deploy/limit-which-websites-can-show-your-agent) explains the rule choices and saving. Then reopen the published website and check the widget again.
+To allow another hostname while keeping your restrictions:
 
-## Prepare a useful report
+1. Turn on the switch beside **Any website** if it is off. Its label changes to **Restricted**, revealing the **Add a website** field.
+2. Enter the hostname, such as `www.example.com`, without `https://` or a page path.
+3. Select **Add website** and wait for it to appear in the saved list. Correct any displayed validation error before trying again.
+4. Reload the published page and open the chat again.
 
-Include:
+These changes save automatically. Check the saved list after an error; text left in the input has not been added. An empty list allows all websites, even with restrictions switched on. These restrictions apply to embedded chat; the standalone direct link has separate access controls. You can [allow several subdomains with a wildcard](/share-and-deploy/limit-which-websites-can-show-your-agent) when that fits your website setup.
 
-- Website address and agent name.
-- Device and browser.
-- Exact message, if shown.
-- Whether the launcher appears.
-- Whether the same problem affects other visitors.
-- Which checks above you completed.
+<span id="prepare-a-useful-report" />
 
-Visitors can give this to the website owner. Creators can use [Get help from a person](/help/get-help-from-a-person) if the cause remains unclear.
+## If you still need help
 
-The working result is the intended widget opening and connecting on the published website. A copied snippet, saved hostname or Retry click alone does not establish that result.
+Visitors should send the website owner the page address and the error they saw. If you manage the agent, email [Alysium support](mailto:support@alysium.ai) with:
+
+- The published page's URL and the agent's name.
+- Your browser and device.
+- Whether the widget is missing, fails to open or shows an error, including the exact message.
+- The checks you tried and what happened.
+
+This gives the person helping you a specific installation and symptom to investigate. Keep passwords and verification codes out of the message.

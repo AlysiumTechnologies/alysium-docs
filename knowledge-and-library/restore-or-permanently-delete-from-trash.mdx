@@ -4,68 +4,60 @@ description: "Use Trash to recover a deleted Library document, stop remaining ag
 keywords: ["Alysium", "Restore or permanently delete from Trash", "Knowledge and Library"]
 ---
 
-Use Trash to recover a deleted Library document, stop its remaining use by agents or request permanent erasure. These are separate outcomes.
+<span id="restore-or-permanently-delete-from-trash" />
+
+Use Trash to recover a saved file, remove its remaining use by agents or request permanent erasure. Each action has a different result.
 
 | Your goal | Action |
 |---|---|
-| Recover a saved document | **Restore**. |
-| Stop the file supplying knowledge while it remains retained | **Remove from agents**. |
-| Erase selected files permanently | **Delete forever**. |
-| Request erasure across the whole Trash | **Empty Trash**, available to the space owner. |
-
-You need permission for the affected files. Read the item's retention, agent-use and hold information before choosing a permanent action. Permanently erased files have no Trash restore action.
-
-**Already in Trash?** Continue with the action you need: [Restore a file](#restore-a-file), [Stop remaining use by agents](#stop-remaining-use-by-agents) or [Request permanent deletion](#request-permanent-deletion).
+| Bring a saved file back into Library | **Restore** |
+| Stop agents using a file that remains retained | **Remove from agents** |
+| Permanently erase selected files | **Delete forever** |
+| Request permanent erasure across the whole Trash | **Empty Trash** |
 
 ## Open Trash
 
-1. Open [Library](https://app.alysium.ai/library).
-2. Open **Trash**.
-3. Find the intended document by name.
-4. Read its retention, agent-use and hold notes.
+Open [Trash](https://app.alysium.ai/library?view=trash) and find the intended file by name. If Library's left navigation is visible, you can also select **Trash** there.
 
-Library opens your current space's material. If it asks you to sign in, sign in. Open Library again if needed.
-
-Files are normally kept for 30 days before automatic deletion. They use storage while retained. A hold can keep a file beyond that ordinary window.
+Read the file's retention and hold notes, and any **Still knowledge for** disclosure naming agents. Files are normally kept for **30 days** before automatic deletion, but a hold or pending deletion can keep them longer. Trashed files continue to use storage. Agents with existing access can still use them until that access is removed or erasure completes.
 
 ## Restore a file
 
-1. Find the file in **Trash**.
-2. Select **Restore**.
-3. Return to the normal Library view.
-4. Check that the file is present where it can be used.
+1. Select **Restore** on the intended file's row. To restore several files together, select their checkboxes and choose **Restore**.
+2. Wait for the result and read any notice about the restore location.
+3. Open [Library](https://app.alysium.ai/library) and check that the file is present in that location.
 
-For an accidentally deleted FAQ, restore the saved document instead of immediately creating a differently named copy. Restore is a recovery action, rather than another upload.
+Restoring recovers the saved file. Its surviving location is kept where possible. If its folder or project was deleted, the file may be in the surviving project's root or in **General**; follow the location reported by the result. Permanently erased files cannot be restored from Trash.
 
 ## Stop remaining use by agents
 
-Moving a file to Trash does not stop agents that still have access to it. The Trash row can disclose that use and offer **Remove from agents**.
+Use **Remove from agents** when the trashed file should stop supplying knowledge across agents in your space. For a change to just one agent's attachment, [remove it in that agent's Build settings](/knowledge-and-library/remove-a-file-from-your-agent).
 
-This is broader than detaching a row from just one agent. Use [Remove a file from your agent](/knowledge-and-library/remove-a-file-from-your-agent) for the narrower action.
+1. Find **Still knowledge for** on the intended file's Trash row and select **Remove from agents**.
+2. Wait for the action to finish and read the result.
+3. Check the refreshed row. If **Still knowledge for** remains, access has not been fully removed.
 
-1. Select **Remove from agents** on the intended file's row.
-2. Wait for the action to finish.
-3. Read the result notice.
-4. Check the refreshed Trash row: **Still knowledge for** should no longer appear when no agent uses that file.
+This action removes direct attachments and takes the file out of folders or projects that supplied it to agents. Read the result's restore-location guidance. Putting the restored file back into an attached folder or project can make it available to agents again. The retained file still uses storage after agent access is removed.
 
-The result can confirm that the file will no longer reach your agents and stays in Trash, or that it was not used by any agent. Read any additional guidance about where the file will be placed if you restore it later. Removing agent access leaves the file retained, so it continues to use storage until erased.
-
-If the action fails or the result names a refused file, read the reason. Check the current agent-use notice before treating removal as complete. If **Still knowledge for** remains on a refreshed row, access has not been fully removed. Address the stated reason before retrying, or use [Get help from a person](/help/get-help-from-a-person) if you cannot resolve it.
-
-Old replies are not rewritten when source access changes. Do not use the disappearance of an earlier answer as the test of whether future access was removed.
+If you see **The document changed before the command completed. Refresh and try again.**, refresh Trash and check the current **Still knowledge for** disclosure before retrying. If the same message persists, email [Alysium support](mailto:support@alysium.ai) with the filename, **Remove from agents** action and exact message. Treat the current disclosure as the access check while the problem remains unresolved.
 
 ## Request permanent deletion
 
-A file retained for a stated reason can remain after the request, and deletion work can be pending. Storage is released when erasure actually completes.
+Completed erasure is irreversible. Before confirming, check the filenames and scope. A retained or held file can remain after a request, and deletion work may still be finishing. Storage is released when erasure actually completes.
 
-1. Select the intended file or files in **Trash**.
-2. Select **Delete forever**.
-3. Read the confirmation and its scope.
-4. Confirm if you intend permanent erasure.
-5. Review the result and any items that remain.
+For selected files:
 
-For the whole Trash, the space owner can use **Empty Trash** instead. Read its confirmation and review its result just as carefully. Opening a confirmation does not complete erasure.
+1. Select **Delete forever** on the intended row, or select several files' checkboxes and choose **Delete forever**.
+2. Read the **Delete forever?** confirmation. Select **Delete forever** if you want permanent erasure, or **Cancel** to keep the material.
+3. Wait for the request's result, then check any remaining files and their notes. The confirmation closing does not establish that erasure finished.
 
-If a file remains, read the explanation. Repeatedly selecting Empty Trash does not resolve a hold. If the wrong file was only trashed, Restore may still help; after permanent erasure, it cannot.
+For the whole Trash, select **Empty Trash**, read its confirmation and select **Empty Trash** to request erasure of that scope. Use **Cancel** if you do not want to proceed. Wait for its result and check what remains.
 
-Use [Storage limits](/knowledge-and-library/storage-limits) to check the allowance and confirm that completed erasure made room before retrying an upload.
+Follow the returned status:
+
+- **Deletion completed:** the erased files cannot be recovered from Trash. Their storage has been released.
+- **A file is retained or held:** read the stated reason. Repeating the request does not remove a hold.
+- **Some deletions are still finishing and will retry automatically:** let that work continue, then check Trash again. The message does not give a completion time.
+- **More files remain in Trash. Run Empty Trash again to continue.** Run **Empty Trash** again to process the next portion, reviewing its confirmation and result each time.
+
+For an unresolved deletion failure, email [Alysium support](mailto:support@alysium.ai) with the filename, displayed state, action and result. You can [check the storage allowance](/knowledge-and-library/storage-limits) before retrying an upload once erasure has completed.

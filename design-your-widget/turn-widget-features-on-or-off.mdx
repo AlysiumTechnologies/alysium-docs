@@ -4,72 +4,54 @@ description: "Choose the conversation controls visitors see in an editable agent
 keywords: ["Alysium", "Turn widget features on or off", "Design your widget"]
 ---
 
-Choose the conversation controls visitors see in an agent you can edit. Use features that help the visitor's task and decide deliberately whether you need any visitor material.
+<span id="turn-widget-features-on-or-off" />
 
-Most choices use Design's **Save Changes**. **Visitor file drop bucket** is different: it saves immediately through its own control.
+Choose whether visitors see starter questions, can attach files or can rate answers. These choices change the conversation experience; keeping copies of visitor files is a separate decision.
 
 ## Open the feature controls
 
-1. Open [Home](https://app.alysium.ai/spaces).
-2. Select the intended agent.
-3. Open **Design**.
-4. Find **Features** and **Conversation Management**.
+Open [Home](https://app.alysium.ai/spaces), select **Build** on the intended agent's card, then open the main **Design** tab. Scroll to **Features** and **Conversation Management**.
 
-If those controls are already open, continue with [Choose the conversation features](#choose-the-conversation-features).
-
-On a smaller screen, use the **Design** subtab for controls and **Preview** to inspect the widget. Return to Design to save ordinary feature changes.
+On a smaller screen, use the **Design** subtab for controls and **Preview** to inspect the widget.
 
 ## Choose the conversation features
 
-| Control | What it changes |
+| Switch | When to use it |
 |---|---|
-| **Starter prompts** | Shows or hides the questions written in Build's **Suggested Conversation Starters**. It does not generate questions. |
-| **File upload** | Shows the visitor attachment interface. It does not add your own reference documents to Knowledge. Image understanding also depends on the model and input support. |
-| **Answer feedback** | Enables visitor feedback requests in the widget and direct-link experience, with rating or comment controls where offered. Turning it off does not rewrite an answer or erase earlier feedback. |
+| **Starter prompts** | Show the opening questions you have written for the agent. Turn it off for an opening without those questions. |
+| **File upload** | Let visitors attach material to a website widget conversation. Useful when the agent's job involves a visitor's own document or image. |
+| **Answer feedback** | Let visitors rate eligible answers and provide comments where offered. This setting also applies to the separate chat-link experience. |
 
-For a fictional FAQ widget using approved notes, a starting choice is starter prompts on, answer feedback on and file upload off. These are examples, not product defaults.
+Write the questions in **Build → Settings**, under **Suggested Conversation Starters**. The Starter prompts switch controls their display. You can [edit the greeting and starter questions](/build-your-agent/set-a-welcome-message-and-starter-prompts) to match the help your agent provides.
 
-[Set a welcome message and starter prompts](/build-your-agent/set-a-welcome-message-and-starter-prompts) explains the questions that the display switch uses.
+For file uploads, choose a model that supports the type of input your visitors need. The agent’s ability to read an image or document depends on its model and supported inputs. Uploads are also hidden when a visitor turns off conversation history or cannot currently use the chat. The separate chat-link page has no attachment control, even when this switch is on.
 
 ## Choose the conversation shortcut
 
-In **Conversation Management**, **Conversation history** is shown as **Always on** in the creator configuration.
+In **Conversation Management**, turn on **Conversations in nav bar** if you want returning visitors to have a direct shortcut to their conversation list. With it off, they can still open **Account → View conversations**.
 
-**Conversations in nav bar** controls the visible Conversations shortcut in the widget's main navigation. The account menu still provides a conversation entry. This is a navigation choice, not a switch that deletes or disables all history.
-
-Use the shortcut when returning visitors commonly resume chats.
+The creator settings show **Conversation history — Always on**, but visitors have their own **Conversation history** preference in Account. A visitor who turns it off uses a temporary conversation whose messages are not saved and cannot attach files. Hiding the navigation shortcut does not change that preference or delete existing history.
 
 ## Save the ordinary feature choices
 
-After deciding which controls suit your agent:
+Set the switches you want, then scroll back to the top of the Design controls and select **Save Changes**. Wait for **All Changes Saved**. If you were in small-screen Preview, return to **Design** to save.
 
-1. Set **Starter prompts** to the intended state.
-2. Set **File upload** to the intended state.
-3. Set **Answer feedback** to the intended state.
-4. Set **Conversations in nav bar** to the intended state.
-5. Inspect the live preview's opening screen and menus.
-6. Return to **Design** if you used the small-screen Preview subtab.
-7. Select **Save Changes**.
-8. Wait for **All Changes Saved**.
+Reopen the same agent from Home and check that the switches kept their saved values. You can inspect the opening questions and navigation in the preview. When the agent is already shared, also check the widget on the published website.
 
-The preview can show changes before they are saved. Reopen the same agent from [Home](https://app.alysium.ai/spaces) and check the saved switches. If already shared, inspect that agent's visitor widget too.
-
-If saving fails, keep the page open and read the error before leaving.
+The preview can show unsaved changes. It also does not display actual answer-feedback controls, so use the saved **Answer feedback** switch to check that choice rather than expecting a rating to appear in the preview.
 
 ## Decide separately about retained visitor files
 
-**Visitor file drop bucket** keeps a shared copy of visitor uploads in a special Library folder after visitors are told about that sharing. This is separate from allowing a conversation attachment.
+**Visitor file drop bucket** keeps a shared copy of visitor uploads in a special Library folder after visitors are told about the sharing. Leave it off unless you need those retained copies. Allowing an attachment for a conversation and retaining a copy for yourself are separate choices.
 
-Keep it off unless you need and intend that retained copy. For the simple FAQ example above, leave it off. Retained visitor files do not automatically become general agent knowledge; promotion is a deliberate later step.
+Changing this toggle saves immediately through its own action; it does not wait for **Save Changes**. Reopen the same agent's Design controls and check the toggle to confirm the stored choice. Files retained this way do not automatically become the agent's general knowledge.
 
-If you change this toggle, it saves through its own action immediately. It does not wait for **Save Changes**. Read any result or error, then reopen the same agent's Design controls to check the retained-file choice.
-
-[Files visitors send you](/widget-visitors/files-visitors-send-you) explains the visitor's file and sharing experience.
+The [visitor file guide](/widget-visitors/files-visitors-send-you) explains the visitor's upload and sharing experience.
 
 ## If the expected control does not appear
 
-Check the intended agent, the saved feature state and the relevant opening screen or menu. Feedback and other controls appear where offered; every visitor does not necessarily use them.
+For missing opening questions, check both **Starter prompts** in Design and the written questions in Build settings. For a missing Conversations shortcut, check **Conversations in nav bar**; the visitor can still use **Account → View conversations**.
 
-If uploads fail, read the actual attachment message and check model/input capability. Repeatedly toggling retention does not solve an unsupported upload.
+For a missing attachment control, check the saved **File upload** switch, whether the visitor's conversation history is on, and whether they are using the website widget rather than the separate chat link. If an attempted upload reports an error, use its actual message to guide the next step.
 
-Continue with [Preview your widget](/design-your-widget/preview-your-widget) to inspect the overall visitor experience.
+If an ordinary Design save fails, keep the editor open, read the error and retry **Save Changes** when available. Reopen the agent to verify the stored switches after saving.

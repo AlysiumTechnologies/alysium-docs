@@ -4,69 +4,89 @@ description: "Upload a prepared skill bundle to your space and check its agent a
 keywords: ["Alysium", "Upload your own skill", "Build your agent"]
 ---
 
-Add a prepared skill bundle to your space, then check that the intended agent has it. A skill supplies reusable task guidance. Put business facts and ordinary reference documents into **Knowledge** instead.
+<span id="upload-your-own-skill" />
+
+Create a bundle of reusable task guidance, upload it to your space and enable it on an agent. Use a skill for a method, such as how to draft a customer reply. Put the actual business policies and other reference information into **Knowledge**.
 
 ## Prepare the bundle
 
-Use a `.skill` or `.zip` bundle in the Agent Skills format, prepared by you or someone you trust. Know where it came from and read any description supplied by its author. Renaming a PDF or Word file to `.skill` does not convert it.
+A bundle is a ZIP archive containing one folder, with a file named **SKILL.md** directly inside that folder. You can upload it with a `.zip` or `.skill` extension.
+
+For a small first skill:
+
+1. Create a folder named **customer-answer** on your device.
+2. In a plain-text editor, create **SKILL.md** inside that folder. Copy in this example:
+
+   ```markdown
+   ---
+   name: customer-answer
+   description: Help draft clear customer replies when someone asks a question or describes a problem.
+   ---
+
+   # Customer answers
+
+   - Identify the customer's question and the outcome they want.
+   - If an essential detail is missing, ask one short clarifying question.
+   - Use the agent's reference information for policies and business facts.
+   - Draft a brief, friendly reply that answers the question first.
+   - Do not invent a policy, promise or fact that the references do not supply.
+   ```
+
+3. Save it as plain text with the exact filename **SKILL.md**.
+4. Create a ZIP archive of the **customer-answer** folder. Open the archive to check that its contents start with **customer-answer/SKILL.md**. Compress the containing folder, rather than only the file inside it.
+
+The name and description between `---` lines form the file's YAML header. For your own skill, change the folder and `name` together. The name must match the folder exactly, use lowercase letters or numbers separated by single hyphens, and be no longer than 64 characters. It cannot start or end with a hyphen, contain consecutive hyphens, or be exactly `anthropic` or `claude`. The required `description` must explain the skill and when to use it, with no more than 1,024 characters. Write the actual guidance after the closing `---`.
+
+You can add supporting files in folders such as **references** or **assets** within the same top-level folder. A **scripts** folder can also be stored and read, but Alysium never executes those scripts.
 
 | Package limit | Maximum |
 |---|---|
-| Before upload | 5 MB |
-| When unpacked | 25 MB |
-| Files in the bundle | 30 |
+| Compressed archive | 5 MiB, or 5,242,880 bytes; the uploader calls this 5 MB |
+| Total unpacked contents | 25 MiB, or 26,214,400 bytes |
+| Files | 30; folder entries do not count |
 
-Stored scripts can be included in a bundle, but they never execute in Alysium.
-
-For example, a fictional `customer-answer-guide.skill` might describe how to ask clarifying questions and structure answers. That filename is an illustration, rather than a supplied download. Use a bundle you have permission to use, and attach the agent's actual policy documents separately.
-
-**Already in the Add a skill dialog?** Continue with [Upload the bundle](#upload-the-bundle).
+Keep only this one skill folder at the top level of the archive. Renaming a PDF or Word document to `.skill` does not make it a bundle.
 
 ## Open the uploader
 
-1. Open [Home](https://app.alysium.ai/spaces).
-2. Select the intended agent.
-3. Open **Build**.
-4. Open **Settings**.
-5. Find **Skills**.
-6. Select **Add skill**.
-7. Continue with [Upload the bundle](#upload-the-bundle).
+1. Open [Home](https://app.alysium.ai/spaces) and select **Build** on the intended agent's card.
+2. Select **Settings** if another Build view is open, then scroll to **Skills** in the **Agent Builder** section.
+3. Select **Add skill** to open **Add a skill**.
 
-Home opens your active space, where you choose the agent. If it asks you to sign in, sign in. Open Home again if needed.
-
-The dialog is labelled **Add a skill**. This bundle-upload path is separate from **Browse skill library** and from Knowledge's **Browse files**.
+**Browse skill library** is for skills already available in the library; **Add skill** opens the bundle uploader.
 
 ## Upload the bundle
 
-1. Select **Browse bundles**.
-2. Select the prepared `.skill` or `.zip` file.
-3. Wait while it is checked and uploaded.
+1. Select **Browse bundles** and choose your `.zip` or `.skill` archive. You can also drag the archive into the upload area.
+2. Wait while **Uploading…** is shown. Selecting the file starts the upload immediately.
+3. If **Tag “name”** appears, choose up to six relevant tags from the supplied choices. The starred tag is the primary one. Select **Save tags**, or **Skip for now** to leave a new skill untagged.
 
-Selecting the bundle starts intake. Tags help people and agents find the skill; they do not replace its instructions.
+Tags describe the skill for discovery. You can change them later by opening the skill's details and using **Edit** or **Add tags** in Tags, then **Save tags**.
 
-If validation rejects the package, read the specific message. Ask the bundle author to correct it if you do not know how to prepare skills. Changing extensions to bypass a format error will not fix the bundle.
+A new upload is saved as **Private** in this space's skill library. Alysium then attempts to attach and enable it on the agent you are editing. These actions save as part of the upload; you do not need Design's **Save Changes**.
 
-If a tag step appears:
+If this space already has an active skill with the same name, uploading through **Add skill** can update that skill instead of creating a second one. Existing tags remain if you skip tagging. For a deliberate revision, [use the authored skill's Update action](/build-your-agent/update-or-retire-a-skill-you-created).
 
-1. Add relevant tags if you want them.
-2. Select **Save tags**, or **Skip for now** to leave tagging for later.
-
-Continue with [Confirm the attachment](#confirm-the-attachment) after upload and any tag step.
+If the upload area shows a validation message, correct the named problem in the archive. Check the folder structure, **SKILL.md**, required fields and package limits. If an error appears after uploading, check **My Skills** before selecting the file again: the library save may have finished even if attachment failed.
 
 ## Confirm the attachment
 
-The upload attempts to attach the skill to the agent. Check the attached **Skills** list when it finishes, rather than assuming both upload and attachment succeeded.
+Check that the skill appears in the agent's attached **Skills** list and that its switch is on. A library entry alone does not enable it for this agent.
 
-If it is in your space's skill library but not on the agent:
+If it is missing from the attached list:
 
-1. Open the skill's details.
-2. Select **Attach to agent** when offered.
-3. Check the agent's attached **Skills** list again.
+1. Select **Browse skill library**, then **My Skills**.
+2. Find the skill and select **Attach**, or open its name and select **Attach to agent**.
+3. Wait for the action to finish, then check its row and enabled switch in **Skills**.
 
-Upload and attachment actions do not need Design's **Save Changes**.
+If an action reports an error, read the message and check the library and attached list before retrying the action that failed.
 
 ## Review and try it
 
-Open the skill's name and read its contents. Leave it untrusted unless you deliberately want its guidance treated as authoritative. Then [test your agent](/build-your-agent/test-your-agent-while-you-build) with a task the skill should help with.
+Open the attached skill's name and read **SKILL.md** and any relevant supporting files. **Added by** identifies the publishing space. A name or author claim written inside a bundle does not establish its publisher.
 
-[Review a skill before adding it](/build-your-agent/review-a-skill-before-adding-it) explains trust, disabling and attachment removal. If you imported the wrong bundle, removing it from the agent differs from retiring it from your space. Use [Update or retire a skill you created](/build-your-agent/update-or-retire-a-skill-you-created) for the latter task.
+Skills start **Untrusted**, which keeps their guidance within the agent's rules. Turn on **Trust this skill** only if you want its loaded instructions treated as authoritative. That trust choice applies across this space's uses of the skill. You can [review what trust and the file viewer mean](/build-your-agent/review-a-skill-before-adding-it) in more detail.
+
+Use the chat beside Settings, or select **Chat Preview** on a smaller screen. Enter a task that matches the skill, then select **Send message** or press Enter. For the example, ask it to draft a reply to a customer whose question lacks an essential detail, and check whether it asks a useful clarifying question instead of inventing an answer. Preview messages use your space's credits.
+
+Compare the response with the skill's guidance and your reference information. Attachment makes the guidance available when relevant; it does not mean every reply will load it. If you need to revise the method, edit your saved bundle and [upload a new version](/build-your-agent/update-or-retire-a-skill-you-created).

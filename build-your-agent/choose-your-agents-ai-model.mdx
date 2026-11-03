@@ -4,64 +4,51 @@ description: "Choose an available AI model for an agent you can edit, save the c
 keywords: ["Alysium", "Choose your agent's AI model", "Build your agent"]
 ---
 
-Choose the AI model that produces replies for an agent you can edit. The agent is the assistant you configure; the model is the AI option that writes its responses.
+<span id="choose-your-agent’s-ai-model" />
 
-Changing the model keeps the agent's existing instructions and attached knowledge. Use this choice when you want to compare how models handle your task or balance useful responses with credit use.
+The AI model writes your agent's replies. Choose one that suits the work you want the agent to do, then try it with a question your sources can answer. Changing the model keeps the agent's instructions and attached knowledge.
+
+Different models use credits at different rates. A model that uses more credits may be useful for a demanding task, but a simpler option may handle short FAQ answers well.
 
 ## Open the model picker
 
-If **Choose Your AI Model** is already open for the intended agent, continue with [Choose from the available options](#choose-from-the-available-options).
+1. Open [Home](https://app.alysium.ai/spaces) and select **Build** on your agent's card.
+2. Select **Settings** if it is not already selected.
+3. Scroll past the name, welcome message and conversation starters to the **Agent Builder** section.
+4. Under **AI Models**, select the control showing the current model's name or **Select a model...**.
 
-1. Open [Home](https://app.alysium.ai/spaces).
-2. Select the agent you want to edit.
-3. Open **Build** → **Settings**.
-4. In **Agent Builder**, select **Choose Your AI Model**.
-
-Home opens your current space; you choose the agent there. If the link asks you to sign in, complete sign-in and reopen Home.
+The picker is titled **Choose Your AI Model**. Note the current model's name before changing it so you can return to it after comparing replies.
 
 ## Choose from the available options
 
-The picker lets you browse models or describe the job you need help with. Its options and plan requirements can change, so use the choices shown to your account.
+You can browse the groups shown in the picker, such as **Fast & Affordable**, **Balanced & Versatile**, **Maximum Capability** and **All Models**. Read each model's description for the sort of work it suits. Use **All Providers** or the provider chips to narrow the choices by provider.
 
-For a fictional shop assistant, a task description could be:
+To find choices for your task, type into **What do you plan to use this model for?** For example:
 
-> Answers short factual questions using a small set of product and shop-policy documents; asks for clarification when needed.
+> Answer short factual questions using my shop's product and returns documents. Ask for clarification when a question is unclear.
 
-This describes the work you want the model to handle. Replace it with your own task. A model name that mentions reasoning does not give the agent access to your account or outside applications.
+The picker updates its suggestions after a pause. Press Enter to submit your description immediately.
 
-To search by task:
-
-1. Enter your description in the picker's search box.
-2. Press Enter.
-3. Wait for the relevant choices to appear.
-4. Continue with [Select and save the model](#select-and-save-the-model).
-
-If you prefer to browse, review the available choices, then continue below.
+Each row shows the model's name, provider, description and a relative cost from **\$** to **\$\$\$\$**. These symbols compare credit use; they are not dollar prices, and **\$** does not mean free. A crown marks a model included with Pro.
 
 ## Select and save the model
 
-Note the current model's name if you may want to return to it.
+Select the model you want to use. Its name appears in the control, and the choice saves automatically. Let saving finish before leaving the builder. Where the save indicator is shown, you can hover over it to check for **All changes saved**.
 
-1. Review the option you want and any plan indication.
-2. Select that model.
-3. Wait for the builder's save operation to finish.
-
-Selection saves directly. You do not need **Save Changes** in Design for this choice.
-
-A model may require Pro. If Free blocks your selection, read the plan explanation and choose an included option or review the current upgrade offer. Do not assume a blocked selection became active. Different models can use credits at different rates; a more expensive model is not automatically the better choice for your task.
+If you select a Pro model in a Free space, Alysium shows **This model is included with Pro. Upgrade to unlock all models.** Choose an included model, or use **Upgrade** if you want to review the Pro offer. The blocked choice has not replaced your current model.
 
 ## Check the saved choice and try it
 
-Reopen the same agent from [Home](https://app.alysium.ai/spaces). Open **Build** → **Settings** → **Choose Your AI Model** and check the selection.
+Return to [Home](https://app.alysium.ai/spaces) and select **Build** on the same agent's card. Select **Settings** if needed, then scroll to **Agent Builder** and check the model under **AI Models**. This confirms the saved choice, rather than just the change you saw when selecting it.
 
-Then try a question your own sources answer in the builder preview. On a wide screen, use the chat beside the settings; on a narrow screen, select **Chat Preview** within **Build**. Compare the full reply with your source and instructions. [Test your agent while you build](/build-your-agent/test-your-agent-while-you-build) explains that check.
+Try a question that matters to the agent's job. Use the chat beside the settings on a wide screen, or select **Chat Preview** within Build on a smaller screen. Type the question, then select **Send message** or press Enter. Preview conversations use your space's credits.
 
-For the fictional shop example, ask about a product or returns fact present in the attached document. A greeting alone does not show how well the model handles that job.
+For the shop example, ask a returns question answered in the attached document. Compare the full reply with that source and the agent's instructions. You can [plan a broader set of preview checks](/build-your-agent/test-your-agent-while-you-build) for a fuller comparison.
 
 ## If the result is unexpected
 
-- **The picker is still loading:** wait for its options before selecting a model.
-- **A Running as notice appears:** the preview is using a different model from the saved choice because of the current plan. Read [When your agent answers with a different model](/build-your-agent/when-your-agent-answers-with-a-different-model) before treating the saved setting as lost.
-- **A reply misses a fact:** check that the right knowledge is attached and shows **Ready** before changing models again.
-- **A reply stops partway through:** check **Max Length** using [Fine-tune how your agent answers](/build-your-agent/fine-tune-how-your-agent-answers).
-- **The new model handles the task poorly:** reopen **Choose Your AI Model** and select the previous model you noted. Wait for its save, then try the same representative question again.
+- **The preview shows Running as:** a Free space can use the free fallback for a saved Pro model while keeping that Pro model as the saved choice. Read the notice, choose an included model in the picker or review **Upgrade**. The guide to [replies from a different model](/build-your-agent/when-your-agent-answers-with-a-different-model) explains this distinction.
+- **The reopened model is different from the one you selected:** select your intended model again, wait for saving to finish and reopen the agent to check it.
+- **The answer misses or changes a fact:** compare the attached source and instructions before choosing another model. A different model still needs the right information.
+- **The reply stops partway through:** check **Max Length** in the [response settings](/build-your-agent/fine-tune-how-your-agent-answers).
+- **The model handles your task poorly:** select the previous model you noted, let it save and try the same question again.

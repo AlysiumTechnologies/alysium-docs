@@ -4,72 +4,74 @@ description: "Look up Alysium terms used while building and sharing agents, incl
 keywords: ["Alysium", "Alysium glossary", "Start here"]
 ---
 
-Use this reference to understand the terms you see while building and sharing an agent. [Home](https://app.alysium.ai/spaces) opens your current space, where you can choose an agent to work on.
+<span id="alysium-glossary" />
+
+Use these terms to understand how an agent's setup, knowledge and visitor chat fit together. [Home](https://app.alysium.ai/spaces) opens your current space, where you choose an agent to work on.
 
 ## Account, space and agent
 
-Your **account** is how you sign in. A **space** is the workspace that holds agents, files and the space's plan. An **agent** is an assistant configured for a particular job.
+Your **account** is your sign-in identity. A **space** holds agents, reusable knowledge, the space's plan and its usage allowance. An **agent** is an AI assistant configured for a particular job.
 
-For example, you might sign in to your account, open your personal space and build a café information agent inside it. Creating an agent does not create another login.
+For example, you can open your space and build a café information agent inside it. That agent has its own setup, but shares the space's plan and storage allowance.
 
 ## Instructions and prompt
 
-**Agent Instructions** explain the agent's job, who it helps, its style and its boundaries. People also call these instructions a **prompt** or a **system prompt**.
+**Agent Instructions** describe the agent's job, audience, answer style and limits. In this context, **prompt** can mean those instructions. In a conversation, a prompt can also mean the request someone sends to the agent.
 
-For a café helper, an instruction might tell it to answer from the café FAQ and refer people with booking-change questions to a staff member. Instructions guide behavior; they do not supply every fact about your café. Telling the agent to refer someone to staff does not give it a tool to contact staff.
+For a café helper, the instructions might say to answer briefly from the café FAQ and refer booking changes to a staff member. The FAQ supplies the facts; the instructions explain how to use them. Describing an action, such as changing a booking, does not give the agent a way to perform it.
 
 ## Knowledge and source
 
-**Knowledge** is reference material you add for an agent to use, such as a document, pasted text or saved website content. A **source** is one item of that material.
+**Knowledge** is reference material you give an agent: documents, pasted text or saved website content. A **source** is one item of that material.
 
-The café FAQ is a source; the instruction to use that FAQ is a different part of setup. A file must be attached to the intended agent and ready before that agent can use it for knowledge answers.
+A stored file must be attached to the intended agent and **Ready** before it can supply knowledge answers. Website content has a separate scan-and-save process. Adding a source gives the agent material to consult; you still need to check its replies against that material.
 
 ## Library, folder and attachment
 
-[Library](https://app.alysium.ai/library) stores and organizes files and other knowledge items. A **folder** groups items. **Attaching** a file connects that source to an agent; attaching a folder covers its eligible contents, including later additions.
+[Library](https://app.alysium.ai/library) stores reusable knowledge. **Projects** and **folders** organize it. An **attachment** connects material to an agent: a file attachment covers that file, while a folder or project attachment covers its eligible contents, including later additions.
 
-Merely saving a file in Library does not attach it to every agent. Choose a folder attachment only when the covered material belongs in that agent's knowledge.
+Saving a file in Library does not attach it to every agent. Choose a folder or project attachment when all the covered material belongs in that agent's knowledge. You can [attach existing Library material without uploading it again](/knowledge-and-library/use-library-files-in-an-agent).
 
 ## Model and fine tuning
 
-The **model** is the AI that produces an agent's replies. The model picker chooses among the available options.
+The **AI model** produces the agent's replies. In Build settings, **AI Models** lets you choose an available model. If the picker says **Select a model...**, open it and choose one; a model name should then appear.
 
-**Fine tuning** here means changing response settings, such as answer length or wording variation. It does not mean uploading facts or creating a newly trained model. You can begin with the draft's model choice and learn these controls when you have a specific reason to change them.
+**Fine Tuning Settings** or **Fine Tune Agent** refers to response settings, such as answer length and wording variation. These controls adjust how the selected model responds; they do not train a new model or add reference facts.
 
 ## Welcome message and starter prompt
 
-A **welcome message** greets someone opening a chat. A **starter prompt** is a suggested question the visitor can select. Neither is the same as the agent's instructions.
+A **Welcome Message** greets someone opening the chat. **Suggested Conversation Starters** are requests a visitor can select to begin. **Agent Instructions** tell the agent how to respond.
 
-For example, the welcome might invite a café question, a starter might ask about the menu, and the instructions tell the agent how to answer using the FAQ.
+For example, a café welcome might invite menu questions, a starter might ask about accessibility, and the instructions tell the agent to answer from the FAQ.
 
 ## Preview and saved change
 
-A **preview** lets you see or try the current setup. The builder chat preview is a working conversation. Design's appearance preview can reflect edits before you select **Save Changes**.
+A **preview** lets you see or try a setup while editing. Build's chat preview generates real replies and uses the space's credits. Design's appearance preview can show edits before they are saved.
 
-Check the save behavior for the particular control. Seeing a preview is not a universal save confirmation.
+Build fields generally save automatically after valid edits, with some controls saving when you leave the field. Design uses **Save Changes**; **All Changes Saved** confirms completion. Check the control's save result before leaving rather than treating its preview as confirmation.
 
 ## Widget, embed and direct link
 
-A **widget** is the chat window a visitor opens on a website. **Embedding** means adding the generated installation code to that website. A **direct link** opens the agent's standalone chat without requiring your own website.
+A **widget** is visitor chat on a website. **Embedding** means installing the generated code on that website. A **direct link** opens standalone chat without needing your own website.
 
-The same agent can use more than one sharing method, but the methods have their own access settings.
+An agent can have more than one delivery method, with separate settings for each. Designing the chat's appearance and installing it on a website are separate tasks.
 
 ## Draft, published, public and live
 
-A **draft** is an agent you can continue preparing. **Publishing** and **public access** are separate controls. The shared launch card calls the agent **Live** when both are in the required state.
+A **draft** is an agent you are preparing. **Published** is its publication status; **Public access** controls public availability. The launch card shows **Live** when the agent has its required name and instructions, is Published and has Public access on.
 
-A public sharing method also needs its own prerequisites, such as **Direct link** for a standalone link. Saving instructions does not publish the agent or create a marketplace listing.
+A delivery method can have an additional setting, such as **Direct link** for standalone chat. Saving the agent's instructions does not publish it, and making it live does not create an AgentHub listing or paid offer.
 
 ## Plan, credits and agent subscription
 
-A **plan** belongs to a space. **Credits** measure usage, rather than representing a fixed number of messages. An **agent subscription** is a separate purchase for access to an individual paid agent.
+A **plan** belongs to a space. **Credits** measure AI usage, so they do not represent a fixed number of messages. An **agent subscription** is a separate purchase for access to a creator's paid agent, with its own price and included usage bundle.
 
-Upgrading the space to Pro is different from subscribing to a creator's agent. [Billing](https://app.alysium.ai/spaces?settings=billing) opens your active space's billing settings. Check the displayed checkout information to understand the particular purchase.
+**Overages**, shown as **On-Demand Usage**, are paid AI usage beyond an allowance, subject to the space's saved settings. They do not increase file storage. In [Billing](https://app.alysium.ai/spaces?settings=billing), check whether you are viewing the space plan or an individual agent subscription before changing a purchase.
 
 ## Owner and permissions
 
-The **owner** controls the space. A space currently contains only its owner; inviting other members and assigning roles are not available.
+The **owner** controls the space. Spaces currently contain only their owner; invitations and member-role changes are unavailable.
 
-Being able to chat with an agent does not give someone permission to edit it or inspect other visitors' conversations. See [Who can see which conversations](/analytics/who-can-see-which-conversations) for Analytics access.
+Permission to chat with an agent is separate from permission to edit it or inspect other people's conversations. [Conversation visibility depends on the chat and Analytics access](/analytics/who-can-see-which-conversations).
 
-Use [How to get started](/about-alysium/how-to-get-started) to connect these concepts in a first-agent journey, or [Where things are in Alysium](/help/where-things-are-in-alysium) to locate a screen.
+You can [put these parts together in a first-agent project](/about-alysium/how-to-get-started), or [find the relevant screen](/help/where-things-are-in-alysium) when you already know what you want to change.

@@ -4,32 +4,46 @@ description: "Understand Alysium credits as units of AI usage: one credit repres
 keywords: ["Alysium", "How credits work", "Plans credits and billing"]
 ---
 
-A credit is a unit of Alysium AI usage. One credit represents **$0.01 of usage**. It does not represent a fixed number of messages.
+<span id="how-credits-work" />
+
+A credit measures Alysium AI usage. One credit represents **\$0.01 of usage**, rather than a fixed number of messages.
+
+Your space has a plan allowance. A purchased agent can also have its own included bundle, so the balance that matters depends on which agent you are using.
 
 ## Why messages use different amounts
 
-The model producing a reply and the amount of information it processes affect the cost. A short question and a long conversation with documents can consume different amounts. An allowance of 100 credits therefore does not promise 100 replies.
+The model producing a reply and the amount of information it processes affect the credits used. A short question and a request involving lengthy reference material can cost different amounts. An allowance of 100 credits therefore does not promise 100 replies.
 
-Tokens and credits describe different things. **Tokens** are pieces of text processed by a model. **Credits** describe the usage charged to the applicable allowance. Do not read a token counter as your remaining credit balance.
+**Tokens** are pieces of text processed by a model. **Credits** measure the resulting usage charged to an allowance. Consumption can show both: a token count helps explain how much text was processed, while a credit amount tells you the usage recorded.
 
 ## Which allowance pays for an interaction
 
-Your space has its own plan allowance. A purchased agent can also include a **Premium Allowance** in its monthly offer. That included agent usage is used first for that agent. Once it is exhausted, further usage depends on your space's plan and limits.
+For an agent funded by your space, usage draws on the space's plan allowance. A purchased agent with an included bundle uses that bundle first. After the bundle is spent, further usage depends on the space's plan and limits.
 
-The agent subscription fee and the space subscription are separate. Buying an agent does not upgrade your space to Pro, and having Pro does not buy every paid agent.
+For example, suppose a fictional agent offer includes 100 credits. Those credits cover usage for that agent. Once they are spent, the chat may still continue using the space's available allowance. If the space has also spent its included credits, active Pro needs paid on-demand usage enabled and room within any saved cap to continue. Free pauses at its allowance.
 
-For example, suppose a fictional agent offer includes 100 credits. Those credits cover usage for that agent; they are not 100 guaranteed replies or a Pro upgrade. When they are spent, check the space's remaining allowance and on-demand setting before expecting the chat to continue. Buying the same agent again is not a credit-reset action.
+The agent's recurring fee pays for that agent subscription; it does not upgrade the space to Pro. The space's Pro subscription and its on-demand settings are separate. Buying the same agent again is not a way to reset its bundle.
 
 ## Where to see the recorded amounts
 
-For space usage, open [Profile Settings](https://app.alysium.ai/spaces?settings=team) and select **Consumption**. The link initially opens the current space's Team settings; confirm the space before reading usage. Check the displayed period, used credits and remaining allowance. **By Source** shows attribution between purchased-agent usage and the platform plan where available.
+Open [Billing](https://app.alysium.ai/spaces?settings=billing) and check the space name above settings. Select **Consumption** to open **Usage & Consumption**.
 
-For an agent's own bundle, open [Billing](https://app.alysium.ai/spaces?settings=billing). Under **Agent Access and Subscriptions**, find the card by agent and creator name. Read the included-usage meter and dates shown there. [Check your usage](/plans-and-billing/check-your-usage) provides the full paths and explains the available views.
+Check the displayed period, then choose the view that answers your question:
+
+| View | What to read |
+|---|---|
+| **Summary** | Used credits, the space's included allowance and the remaining amount. |
+| **Detailed View** | Model usage, with input/output token and credit details where available. |
+| **By Source** | Recorded usage grouped under purchased agents and **Your platform plan**. |
+
+By Source helps identify the source associated with usage. To check an agent's remaining bundle, return to **Billing**, scroll to **Agent Access and Subscriptions**, and find its card by both agent and creator name. Read **Premium usage** and the bundle reset information where shown. **View usage** opens the space's general Consumption view.
+
+A zero remaining amount in Summary can mean the included space allowance is spent while paid on-demand usage is still available. Check the saved **On-Demand Usage** setting in Billing to understand additional spending. You can [inspect the usage views and period controls](/plans-and-billing/check-your-usage) in more detail.
 
 ## Resets, renewals and payment warnings
 
-Use the period shown in Consumption for the space allowance. On an agent card, the subscription renewal date concerns billing; the bundle reset date concerns included usage. They are separate pieces of information and can differ. If a date is unavailable, do not calculate one from when you last sent a message.
+Use Consumption's displayed period when reading the space allowance. An agent card's **Renews** date concerns its recurring bill; **Bundle reset scheduled for** concerns its included usage. Those dates can differ. If the card says the reset date is unavailable, use that state rather than calculating a date from the last message or renewal.
 
-Spending an agent bundle does not itself cancel that subscription. Likewise, remaining credits do not resolve a failed payment or establish active access. Read the specific allowance, payment or access warning before choosing a remedy.
+Spending a bundle does not cancel the agent subscription. Remaining credits also do not settle an unpaid bill or prove that access is active. A payment warning may allow agent access temporarily while payment is retried, or the affected chat may be paused.
 
-Use [What happens when you run out of credits](/plans-and-billing/what-happens-when-you-run-out-of-credits) for a usage limit, [Fix a failed payment](/plans-and-billing/fix-a-failed-payment) for a payment warning, or [Manage your agent subscriptions](/plans-and-billing/manage-your-agent-subscriptions) to inspect an agent's access and renewal state.
+For an allowance limit, [check the space balance and agent bundle](/plans-and-billing/what-happens-when-you-run-out-of-credits). For a payment warning, [resolve the affected subscription's payment](/plans-and-billing/fix-a-failed-payment). You can also [inspect an agent's access and renewal state](/plans-and-billing/manage-your-agent-subscriptions) without changing its subscription.

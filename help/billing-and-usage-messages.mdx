@@ -4,44 +4,63 @@ description: "Match a billing notice to the affected space or agent, then distin
 keywords: ["Alysium", "Billing and usage messages", "Start here"]
 ---
 
-Match the notice to the affected space or agent before changing a plan or payment. Your space's Pro plan and a subscription to an individual agent are separate purchases. Usage exhaustion, a payment issue and unavailable subscription details need different actions.
+<span id="billing-and-usage-messages" />
 
-[Billing](https://app.alysium.ai/spaces?settings=billing) opens your active space's billing settings. To check usage, [open settings](https://app.alysium.ai/spaces?settings=team), then select **Consumption**. That settings link opens **Team** first; it does not open Consumption directly.
+Match the notice to the affected space or agent before changing a plan or payment. A space's Pro plan and a subscription to a creator's agent are separate purchases. Running out of usage, a payment problem and unavailable subscription details need different actions.
+
+[Billing](https://app.alysium.ai/spaces?settings=billing) opens your current space's settings; check the space name there. To inspect usage, [open Profile Settings](https://app.alysium.ai/spaces?settings=team), then select **Consumption** and the relevant period.
 
 ## Subscription Details Unavailable
 
-This notice means Alysium could not confirm the plan details. It does not establish that you are on Free, canceled or unpaid.
+Alysium could not confirm the plan details. This message does not establish that the plan is Free, canceled or unpaid. Plan changes are paused while the details are unavailable.
 
-Use **Open Billing Portal** when offered, or reopen Billing to retry the read. Check the existing subscription before starting another one because its summary is missing.
+Use **Open Billing Portal** to inspect the existing subscription, or reopen Billing to retry loading its details. Check that subscription before starting another purchase because its summary is missing.
 
 ## Included credits or an on-demand limit reached
 
-Check **Consumption** for the affected space and period. Then check the plan and **On-Demand Usage** in Billing.
+Check the affected space's allowance and recorded usage in **Consumption**, then open **Billing**.
 
-Free stops at its allowance. Pro can also stop when extra usage is disabled or its fixed additional-spending cap has been reached. Follow [Check your usage](/plans-and-billing/check-your-usage) to identify the usage, then [Turn on overages and set a cap](/plans-and-billing/turn-on-overages-and-set-a-cap) if that is the change you intend.
+- **Free:** usage stops when the included allowance is spent. You can [compare the plan allowances](/plans-and-billing/free-and-pro-plans-compared) before deciding whether to upgrade.
+- **Pro:** usage can stop because additional usage is disabled or the saved spending cap has been reached. Check **On-Demand Usage** beneath the plan controls.
 
-A changed but unsaved menu selection does not confirm a higher limit. Check the saved result before returning to the blocked task.
+For an active Pro subscription, the menu beside **Billing Period Limit** offers:
 
-## An agent's included bundle is exhausted
+| Mode | What it allows |
+|---|---|
+| **Fixed** | Paid additional usage up to the USD amount you enter for the billing period. |
+| **Unlimited** | Paid additional usage without a fixed dollar cap. |
+| **Disabled** | No paid additional usage after the included credits are spent. |
 
-Find the affected agent under **Agent Access and Subscriptions** in Billing. Its premium-usage meter describes that agent's included bundle.
+Choose a mode and, for Fixed, enter a valid nonnegative dollar amount. Select **Save**, wait for the success message, then reopen Billing and check the saved mode and amount. Changing the menu or field alone does not save it. Additional usage is billed after use; lowering its limit does not erase charges already incurred.
 
-Continued usage after the bundle is spent depends on your space's plan and limits. This is a different condition from a free preview ending or a paid subscription being canceled. See [Manage your agent subscriptions](/plans-and-billing/manage-your-agent-subscriptions).
+You can [review the usage-cap choices in more detail](/plans-and-billing/turn-on-overages-and-set-a-cap). If a setting fails to save, reload Billing to check its current value, then correct any displayed field error before trying again.
+
+<span id="an-agent’s-included-bundle-is-exhausted" />
+<span id="an-agents-included-bundle-is-exhausted" />
+
+## Agent bundle exhausted
+
+In Billing, find the affected agent under **Agent Access and Subscriptions**. Its **Premium usage** meter shows the included bundle. When it is spent, the card explains: **Bundle exhausted. Additional usage depends on your workspace plan and limits.**
+
+Check the space's plan and On-Demand Usage before expecting more usage. The agent subscription's status and any displayed bundle-reset date are separate details; a spent bundle does not itself mean the subscription was canceled or a free preview ended. You can [inspect that agent's access, payment status and usage together](/plans-and-billing/manage-your-agent-subscriptions).
 
 ## A payment needs attention
 
-For the space's Pro subscription, use **Manage Subscription & Billing**. An agent payment-warning card can instead offer **Fix billing**, which opens that creator's payment management.
+For the space's Pro subscription, use **Manage Subscription & Billing** in Billing. An individual agent's payment-warning card can offer **Fix billing** for that subscription instead.
 
-Update the payment for the subscription named in the warning, then check its resulting status. Another subscription being active does not clear this warning. [Fix a failed payment](/plans-and-billing/fix-a-failed-payment) explains the recovery.
+Open the action for the subscription named in the warning, follow its payment or verification request, then return to Alysium and check the resulting status. An active Pro plan does not confirm that a separate creator-agent payment has recovered. You can [work through a failed payment](/plans-and-billing/fix-a-failed-payment) without starting another purchase to replace it.
 
-## A visitor sees the creator's message limit
+<span id="a-visitor-sees-the-creator’s-message-limit" />
+<span id="a-visitor-sees-the-creators-message-limit" />
 
-The creator needs to check the space that owns the agent. A visitor cannot increase that creator's credits from the chat.
+## Creator message limit in a visitor chat
 
-For example, when several visitors see the same message-limit notice, the creator should inspect the owning space's allowance. Asking each visitor to buy again does not address that limit.
+A message saying the agent has reached its monthly limit concerns the space that owns the agent. The creator needs to check that space's **Consumption** and **Billing**. A visitor cannot increase the creator's allowance from the chat.
+
+As a visitor, buying another subscription does not increase the creator's space allowance.
 
 ## The notice still conflicts with the account status
 
-Reopen the relevant Billing or Consumption page and compare its status with the exact notice. If they still conflict, contact [billing@alysium.ai](mailto:billing@alysium.ai) with the space, agent, period and message. [Get help from a person](/help/get-help-from-a-person) explains what to include.
+Reopen the relevant Billing or Consumption page and compare its status with the notice. If the same problem remains, email [billing@alysium.ai](mailto:billing@alysium.ai) with the space or agent name, exact message, relevant period or payment reference, and the action you tried. Keep passwords and full card details out of the request.
 
-For a trial, checkout or access notice, use [Free preview and paywall messages](/help/free-preview-and-paywall-messages). Dismissing a notice does not complete a billing change.
+A free-preview, checkout or purchased-access notice has [its own explanation and recovery](/help/free-preview-and-paywall-messages). Dismissing a notice does not complete a billing change.

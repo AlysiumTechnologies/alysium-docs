@@ -4,35 +4,47 @@ description: "Choose where people reach your agent and whether they need a paid 
 keywords: ["Alysium", "Ways to share or sell your agent", "Selling and payouts"]
 ---
 
-Choose two things: where people reach your agent, and whether they need a paid subscription. Distribution and buyer access are separate.
+<span id="ways-to-share-or-sell-your-agent" />
 
-Saving a price does not install a website widget or make an AgentHub listing discoverable. Use an agent whose selling setup you can manage.
+Choose where people will reach your agent, then decide whether they need a paid subscription. You can share an agent with your own audience through a link or website widget, offer it through AgentHub, or use more than one route.
 
 ## Choose a distribution route
 
-Open [Home](https://app.alysium.ai/spaces), select the intended agent and open **Deploy**. Home opens your active space; choose your own agent there.
+Open [Home](https://app.alysium.ai/spaces), select your agent and open **Deploy**. Choose the method that fits how you want people to find it:
 
-| Route | Use it when | Continue with |
-|---|---|---|
-| **Share link + QR** | You can send people directly to the standalone chat. | [Share your agent with a link and QR code](/share-and-deploy/share-your-agent-with-a-link-and-qr-code). |
-| **Embed on a website** | You own or manage a website and can install and publish its code. | [Put your agent on your website](/share-and-deploy/put-your-agent-on-your-website). |
-| **Share & Sell → AgentHub** | You want the agent considered for the discoverable storefront. | [Apply to sell on Agenthub](/selling-and-payouts/apply-to-sell-on-agenthub) if needed, then [List your agent on Agenthub](/selling-and-payouts/list-your-agent-on-agenthub). |
+| Method | What it gives you |
+|---|---|
+| **Share link + QR** | A standalone chat destination you can send directly to people or share as a QR code. Use the generated destination when [sharing a link or QR image](/share-and-deploy/share-your-agent-with-a-link-and-qr-code). |
+| **Embed on a website** | A widget people open on your website. Copy the generated snippet, install it on the site and publish the website change. The [website installation steps](/share-and-deploy/put-your-agent-on-your-website) include checking the installed result. |
+| **Share & Sell** | Buyer-access setup and the **Embedded widget** and **AgentHub** channel cards. Use AgentHub when you want the agent considered for the discoverable storefront. |
 
-AgentHub creator/listing review is separate from selling through a link or widget. **Share & Sell** also contains buyer-access and selling setup for your offer.
+Selling through your own link or widget does not require AgentHub creator or listing approval. AgentHub discovery and its storefront page do require review. Its [creator application](/selling-and-payouts/apply-to-sell-on-agenthub) and [individual listing](/selling-and-payouts/list-your-agent-on-agenthub) are separate steps.
+
+The two channel cards work together: preparing a website offer does not prevent you from also submitting it to AgentHub.
 
 ## Choose free or paid buyer access
 
-Under **Share & Sell → Buyer access**, **Free access** and **Paid subscription** determine whether people are asked to subscribe. Switching opens a confirmation; read it before changing an agent people already use.
+In **Deploy**, select **Share & Sell** and find **Buyer access**.
 
-- **Switch to free** stops asking new buyers to subscribe after the change saves. It does not establish that earlier bills were erased.
-- **Switch to paid** requires completed saved subscription setup before paid access can work. Follow [Price your agent](/selling-and-payouts/price-your-agent), including the separate mode confirmation and result check.
+- Choose **Free access** to let people use the agent without a subscription. Free access does not mean unlimited AI usage.
+- Choose **Paid subscription** to ask buyers to subscribe. Complete the monthly price, included premium usage and free-preview setup through **Edit subscription setup**, and [connect Stripe for payments](/selling-and-payouts/set-up-stripe-to-get-paid).
 
-For example, a fictional business could keep a FAQ agent free for website visitors and make a separate specialist coaching agent a paid offer. These are two example purposes, not a recommendation that every agent should charge.
+Selecting a different access mode opens a confirmation. Read it, then select **Switch to free** or **Switch to paid** to save that choice, or **Cancel** to keep the current mode. Wait for saving to finish and check which access mode is shown.
 
-## Complete the readiness for your route
+For an existing live channel, a successful **Switch to free** stops asking new buyers to subscribe. Switching a live channel to paid can apply when its subscription setup is already saved; saving an updated live paid offer can also apply its pricing. Review changes before confirming them. The [pricing steps](/selling-and-payouts/price-your-agent) explain the offer fields and completion checks.
 
-Review the agent's real facts and instructions before sharing it. [Make your agent live](/share-and-deploy/make-your-agent-live) handles publication and public access.
+For example, a café could share a free FAQ agent on its website and offer a separate specialist coaching agent by subscription. The useful question is what access you want to offer, as well as where people will find it.
 
-For paid subscriptions, complete [Stripe setup](/selling-and-payouts/set-up-stripe-to-get-paid) and [pricing](/selling-and-payouts/price-your-agent), then check the intended channel's saved readiness. Finish the chosen distribution guide and check its actual generated destination or installed widget.
+<span id="complete-the-readiness-for-your-route" />
 
-Payment readiness, publication and AgentHub approval remain separate. If a channel shows a blocker, follow its named requirement. Changing another channel does not clear it automatically.
+## Check the chosen channel
+
+For a new offer, saving buyer-access setup is one part of launch. Check the intended channel card for its current access, readiness requirements and offered action. If it shows a setup requirement, complete that requirement. If it asks you to update or resubmit the channel, finish that action and check the resulting state.
+
+The **Embedded widget** card shows **Current widget access** once deployed. **Open Deploy tab** takes you to the website embed method; **Manage widget** opens Design. Installing the snippet on a website remains a separate action from saving an offer.
+
+For **AgentHub**, complete the listing and submission steps and check its review state. **Approved** means the listing passed review. Appearing in the storefront also requires a published, public agent, an active published version, a visible creator profile with a name and username, and an active discovery listing. Paid listings additionally need ready Stripe payments.
+
+[Make the agent live](/share-and-deploy/make-your-agent-live) when its content is ready for visitors. Then check the actual shared destination or installed widget for the route you chose. Publication, buyer access, payment readiness and AgentHub review each answer a different part of the launch.
+
+If saving an access choice reports an error, reopen **Share & Sell** and check which mode remains before making another change. For a channel blocker, use the requirement and action shown on that channel's card.

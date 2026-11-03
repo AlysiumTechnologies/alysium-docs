@@ -4,56 +4,54 @@ description: "Choose saved sources in Library and attach them to the intended ag
 keywords: ["Alysium", "Attach Library items to an agent", "Knowledge and Library"]
 ---
 
-Choose a saved source in Library, then choose which agent or agents should use it. This is useful when the material is already organized and you want to attach it without opening each builder first.
+<span id="attach-library-items-to-an-agent" />
 
-Attaching knowledge does not publish an agent or make Library public. You need access to the material and permission to edit each selected agent.
-
-**Already in the agent chooser?** Continue with [Choose the agents](#choose-the-agents).
+Choose saved material in Library, then choose the agents that should use it for answers. You can reuse the same source across several agents without uploading it again.
 
 ## Choose the material
 
-1. Open [Library](https://app.alysium.ai/library).
-2. Find the intended file, folder or project.
-3. Open its **Attach to agent** action.
-4. Continue with [Choose the agents](#choose-the-agents).
+Open [Library](https://app.alysium.ai/library), which contains your current space's saved material. Choose the scope before attaching it:
 
-For several files, select the files first. Use the bulk attachment action. Continue with [Choose the agents](#choose-the-agents).
+- A **file** gives the agent that file.
+- A **folder or project** gives the agent its eligible contents, including eligible material added there later.
 
-Library opens your current space's saved material. If the link asks you to sign in, sign in. Open Library again if needed.
+For example, attach an **Approved FAQ** folder when everything you will put there belongs in the agent's knowledge. Choose individual files if the wider project also contains drafts.
 
-Attaching a file includes that file. A folder or project covers its eligible contents, including eligible material added there later.
+Use the action for the material you chose:
 
-For example, choose a fictional **Approved FAQ** folder only when its ongoing contents belong in the selected agents' knowledge. Avoid attaching an entire project containing private drafts just for convenience.
+| Material | How to open the agent chooser |
+|---|---|
+| One ordinary file | Open its three-dot menu and select **Attach to agent**. This works on the Library landing and inside a project or folder. |
+| A project or folder from its card | Select the **Projects** breadcrumb to return to the Library landing. Find its card, open its three-dot menu and select **Attach to agent**. |
+| Several ordinary files, or an ordinary child folder inside a project or folder | Select their checkboxes, then select **Attach to agent** in the selection bar. |
+
+Visitor uploads need approval through their separate workflow before becoming agent knowledge.
 
 ## Choose the agents
 
-1. Read the summary of material being attached.
-2. Use **Search agents** if needed.
-3. Select the intended agents with their checkboxes.
-4. Review the selected count.
-5. Select **Attach** for one agent, or the button naming the selected number of agents.
-6. Wait for the operation to finish.
-7. Read the result.
+1. Read the material summary in the chooser.
+2. Choose agents from the unfiltered list, using **Show more** to load more of the roster, or enter a name in **Search agents** to work with one search's results.
+3. Select the intended agents' checkboxes within that list. Finish this attachment before changing the search to choose a different set of agents.
+4. Select **Attach** for one agent, or **Attach to N agents** for several.
+5. Wait for the result and read the message. It can report new attachments, material already attached, refusals or a partial result.
 
-The chooser supports multiple agents. Check the selection rather than assuming the first visible row is the only target. If the action only partly succeeds, inspect each returned outcome before retrying.
+An already attached source is reused. For a partial result, check the named agents before retrying only the missing attachment.
 
 ## Verify an attachment
 
-1. Open [Home](https://app.alysium.ai/spaces).
-2. Select one of the agents you chose.
-3. Open **Build**.
-4. Open **Settings**.
-5. Find **Knowledge**.
-6. Check the source in **Attached knowledge**.
+1. Open [Home](https://app.alysium.ai/spaces) and select **Build** on one of the chosen agents' cards.
+2. Select **Settings** if another Build view is open, then scroll down to **Knowledge**.
+3. Check the source in **Attached knowledge**. Wait for the file you want to test to show **Ready**.
+4. Ask a self-contained question that the source actually answers in the chat beside the settings. On a smaller screen, select **Chat Preview** within Build. Compare the answer with the source.
 
-Home opens your active space, where you choose the agent. Repeat this check for any target whose result is uncertain.
+A folder or project marked **Live** remains connected to its ongoing contents; check individual files for **Ready** before testing them. Preview messages use your space's credits.
 
-No second upload or Design **Save Changes** action is required. A file that is still processing must become **Ready** before useful knowledge questions. Try a question answered by the source, and use [Control how your agent uses its knowledge](/knowledge-and-library/control-how-your-agent-uses-its-knowledge) for its Behavior choices.
+Repeat the attachment check for any agent whose result was uncertain. Once the intended sources are attached, you can [choose how closely answers follow the knowledge](/knowledge-and-library/control-how-your-agent-uses-its-knowledge).
 
 ## If an agent is missing or an outcome is unclear
 
-Clear the agent search and check the current space. An agent you cannot edit may not be offered. If the space has no agents yet, follow [Create your first agent](/build-your-agent/create-your-first-agent), then return to this attachment task.
+Clear a mistaken **Search agents** query and use **Show more** to inspect the unfiltered roster. If loading fails, select **Try again**. If the chooser says **No agents yet**, [create an agent](/build-your-agent/create-your-first-agent), then return to Library.
 
-For an uncertain or partial result, check the actual attachments rather than assuming every target changed. You can instead start from a particular builder using [Use Library files in an agent](/knowledge-and-library/use-library-files-in-an-agent).
+If an attachment is refused, read the result before retrying. If it times out or only partly succeeds, inspect **Attached knowledge** in the affected agents first; an unclear result does not establish which attachments changed.
 
-If you chose the wrong agent or source scope, follow [Remove a file from your agent](/knowledge-and-library/remove-a-file-from-your-agent). Removing one agent's attachment leaves the Library material saved.
+If you chose the wrong source or agent, you can [remove the attachment](/knowledge-and-library/remove-a-file-from-your-agent) while leaving the material saved in Library. When you are already editing one agent, you can instead [choose saved material through Add from Library](/knowledge-and-library/use-library-files-in-an-agent).

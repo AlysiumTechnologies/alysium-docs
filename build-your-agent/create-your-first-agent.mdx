@@ -4,138 +4,120 @@ description: "Create an agent for a clear job, review its drafted setup, add a s
 keywords: ["Alysium", "Create your first agent", "Build your agent"]
 ---
 
-Create an agent for a clear job, add a small reference source and try a question before sharing it.
+<span id="create-your-first-agent" />
 
-An agent is a chat assistant you set up. Its instructions tell it how to behave; its knowledge supplies the facts it should use. Giving it a name and description does not upload your files or provide your business policies.
+Create an assistant for one useful job, give it the information it needs and try a conversation before sharing it. You can start with a blank agent or describe what you want and let Alysium draft its setup.
 
-Use a space you own for the drafting method in this guide. A space holds your agents and resources. Creating the draft and trying preview questions use that space's credits.
+Two parts of the setup work together: **instructions** tell the agent how to behave, and **knowledge** supplies reference information. A café assistant's instructions might ask for short, friendly answers; its knowledge would contain the café's actual menu and accessibility details.
 
-## Choose one useful job
+AI-assisted drafting, instruction refinements and preview conversations use your space's credits.
 
-Start with one audience and one task, such as answering common questions from a short FAQ. Decide which questions the agent should handle and which should go to a person.
+<span id="choose-one-useful-job" />
+<span id="create-the-draft" />
 
-Gather the document or notes containing the real answers. You can create a draft before uploading them, but it will need those facts before it can use them. The fictional café example below supplies a description and a small source if you want to practice first.
+## Choose how to start
 
-## Prepare your description and source
+Open [Home](https://app.alysium.ai/spaces) and select **Create New Agent**.
 
-Describe who will use the agent, what help they need, which information it should use and how it should respond. Use ordinary language. Include a limit, such as sending booking changes to a person.
+<span id="prepare-your-description-and-source" />
+<span id="example-description" />
 
-### Example description
+### Have Alysium draft the setup
 
-This is a fictional café, not a real business:
+In the description box, explain who the agent will help, what it should do and any limits. For example:
 
-> Create a friendly assistant for people visiting my café. It should explain the menu, opening hours and accessibility information using the café FAQ that I will upload. Keep answers short and easy to understand. If the FAQ does not contain the answer, say so and ask the visitor to contact the café. Do not take bookings or invent prices.
+> Create a friendly assistant for visitors to my café. Use the café FAQ that I will add to answer questions about the menu and accessibility. Keep replies short. If the FAQ does not contain an answer, ask the visitor to speak to the café team. Do not make bookings or invent prices.
 
-Replace the audience, job and source with your own if you are building a real agent. You add the source separately after creation.
+Select **Draft my agent**. Alysium creates the agent and opens its builder with a drafted name, instructions, greeting and suggested questions for you to review. You will add the FAQ as knowledge separately.
 
-### Practice source file
+### Start from scratch
 
-To follow the café example, copy the following into a plain-text document and save it on your device as **Practice café FAQ.txt**:
+Below the description box, find **or pick a starting point**. On the **Create Your AI Agent** card, which describes starting with a blank canvas, select **Create Agent**.
+
+The builder opens with a basic name for you to change. If you stay on Home after creating the agent, open its new card. You supply the instructions, greeting and suggested questions. You can use the Agent Builder helper inside the editor if you want help writing the instructions later.
+
+<span id="review-the-drafted-setup" />
+<span id="let-your-edits-save" />
+
+## Review or write the setup
+
+The builder opens in **Build**. Its **Settings** view contains the fields below. If you are viewing Profile or Chat Preview, select **Settings** to return to them. On a phone, the main Build, Design and Deploy tabs are in the bottom dock.
+
+| Field | What to put there |
+|---|---|
+| **Agent Name** | A name that tells people what the agent helps with. |
+| **Welcome Message** | A greeting that explains what visitors can ask. |
+| **Suggested Conversation Starters** | A few questions the agent's sources can answer. |
+| **Agent Instructions**, in the **Agent Builder** section | Whom to help, the task, answer style, sources to use and limits. |
+
+In **Agent Builder**, check **AI Models**. The model produces the agent's replies. If the selector says **Select a model...**, open it, browse the categories and choose an available model whose description fits your task. Its name should appear in the selector. If a model name is already shown, you can keep it for the first test.
+
+If Alysium drafted these fields, read them and correct any invented facts or promises. If you started blank, fill them in yourself. For the café example, the instructions should use the FAQ, give brief answers and send booking requests or unanswered questions to a café team member.
+
+For help writing a blank agent's instructions:
+
+1. In **Agent Builder**, select **Generate Agent Prompt**.
+2. Describe the job, source and limits, then select **Draft prompt**.
+3. Read the proposed instructions. To change them, describe the change in the box and select **Refine**.
+4. Select **Insert instructions** to use them. If instructions already exist, the action is **Replace instructions**. Use **Discard** to reject the proposal.
+
+This helper drafts the instructions; the greeting and suggested questions are separate fields. You can [use it for later refinements](/build-your-agent/let-ai-draft-or-refine-your-instructions) as the agent's job develops.
+
+The agent's name, valid greeting and instructions save automatically. Starter text saves when you click or tap outside its field. Use **Add prompt** for another starter or its **Remove prompt** button to remove one. Wait for saving to finish before leaving, and resolve any displayed validation or save error. On a computer, the save indicator's tooltip can confirm **All changes saved**.
+
+<span id="practice-source-file" />
+<span id="attach-the-reference-file" />
+
+## Add a reference file
+
+Scroll down in the Build settings to **Knowledge**. This is where you add the information the agent should use for its answers.
+
+You can use your own short FAQ or practice with this fictional example. Copy it into a plain-text editor and save it as **Practice café FAQ.txt**:
 
 > Practice café FAQ — fictional example
 >
-> Menu: The practice café serves coffee, tea and sandwiches.
+> Menu: Coffee, tea and sandwiches.
 >
 > Accessibility: The entrance is step-free.
 >
 > Contact and bookings: Speak to a café team member at the counter. The chat assistant cannot make or change bookings.
 >
-> Opening hours are not included in this FAQ.
+> Opening hours are not supplied in this FAQ.
 
-These facts are for practice. For a real business, use verified information and a contact route visitors can actually use, such as a published email address or phone number.
+For real users, choose information you are allowed to share with them and give them a real contact route.
 
-## Create the draft
+1. Under **Upload Documents**, select **Browse files**.
+2. Choose your file on your device and confirm the selection. Uploading starts when you select it.
+3. Wait for the file to show **Ready** in **Attached knowledge**.
 
-If the creation window is already open, enter your description and continue from step 4. If you already created this agent, open it from [Home](https://app.alysium.ai/spaces) and continue with [Review the drafted setup](#review-the-drafted-setup).
+A successful builder upload saves the file in Library and attaches it to this agent. PDF, Word and plain-text files are useful starting choices; the limit is **25 MiB per file**, with enough available storage needed in your space. You can [check other supported formats](/knowledge-and-library/upload-files-to-your-agent) when choosing more sources.
 
-1. Open [Home](https://app.alysium.ai/spaces).
-2. Select **Create New Agent**.
-3. Enter your description in the large box.
-4. Select **Draft my agent**.
-5. Wait for Alysium to finish and open the new agent's builder.
+If the material is already in Library, select **Add from Library** in Knowledge, expand its project and folder, select the file and choose **Attach**. Check it in Attached knowledge. You can also [attach a whole folder or project](/knowledge-and-library/use-library-files-in-an-agent); that includes eligible material added there later.
 
-If Home asks you to sign in, complete sign-in and reopen Home. If you need an account, follow [Create an Alysium account](/getting-started/create-an-alysium-account), then return to step 1.
+<span id="try-a-question" />
+<span id="reopen-the-agent-to-check-your-work" />
 
-The creation window also offers a blank starting point. This guide uses the description box to draft the agent. There is no separate proposal-acceptance screen in this flow: the agent is created before its builder opens. Avoid starting another creation while the first is running.
+## Try a conversation
 
-## Review the drafted setup
+Use the chat beside the Build settings on a wide screen. On a smaller screen, select **Chat Preview** within Build.
 
-Open **Build** → **Settings**. On a phone, the main builder tabs are at the bottom of the screen.
+Enter a question, then select **Send message** or press Enter. For the practice café, try:
 
-Read each field before editing:
+- **Is the entrance step-free?** Compare the reply with the FAQ: it should say yes.
+- **Can you change my booking?** The reply should direct you to a café team member at the counter.
+- **What time does the café open?** The FAQ has no opening hours, so the agent should acknowledge the gap and give the contact route.
 
-| Field | What to check |
-|---|---|
-| **Agent Name** | Does the name fit the job? |
-| **Agent Instructions** | Are the audience, tasks, answer style and limits right? |
-| **Welcome Message** | Does the greeting explain what visitors can ask? |
-| **Suggested Conversation Starters** | Do the suggested questions fit the intended task? |
+For your own material, test a question it answers and a request outside the agent's job. If a reply is wrong, check that the source is attached and Ready, then review the instructions for a conflicting or missing rule. Save any correction before testing again. You can [plan a broader set of preview checks](/build-your-agent/test-your-agent-while-you-build) as you refine it.
 
-Correct invented facts or unsupported promises. The welcome text greets a visitor; instructions guide how the agent answers.
+Return to [Home](https://app.alysium.ai/spaces) and reopen this agent's card. Check that your setup and reference attachment remain. You now have a draft you can edit and test; [making it live](/share-and-deploy/make-your-agent-live) is the next step when it is ready for visitors. Replace the fictional information before using the café example with real customers.
 
-You can keep the suggested model—the AI that produces replies—and leave fine tuning and extra skills alone while learning this workflow. **Design** changes the visitor chat's appearance and features; **Deploy** contains publishing and sharing.
+<span id="if-drafting-is-unavailable-or-fails" />
 
-## Let your edits save
+## If a step fails
 
-**Agent Name**, **Agent Instructions** and valid **Welcome Message** changes save automatically. There is no separate Save button for those fields. Correct any validation message before continuing.
+- **Drafting credits are unavailable:** you can use the blank starting-point card instead and write the setup yourself. Preview messages still use credits.
+- **Creation reports an error:** read the message before retrying. If Alysium says it created the agent but could not open its builder, find that agent on Home and open its card.
+- **An upload row shows Failed:** use its **Retry** action if offered and read the result. If the attempt cannot continue, [check the available file-recovery actions](/knowledge-and-library/fix-a-file-that-failed-to-process).
+- **The file was saved in Library but not attached:** select **Retry attachment**, then check Attached knowledge.
 
-Starter text saves when you click or tap outside its field. Edit an existing starter if one fits. To add one:
-
-1. Select **Add prompt**.
-2. Enter the question.
-3. Click or tap outside its text box.
-
-For this practice source, a useful question is **Is the café entrance step-free?** Remove an unwanted entry with its X button labelled **Remove prompt**. Adding and removing entries save immediately.
-
-Wait for the save indicator near the top of the builder to stop animating before leaving. On a computer, hover over it to check for **All changes saved**. Preserve your text if an error appears.
-
-## Attach the reference file
-
-1. In **Build** → **Settings**, find **Knowledge**.
-2. Under **Upload Documents**, select **Browse files**.
-3. Select your reference document on your device.
-4. Wait for the file to show **Ready** in **Attached knowledge**.
-
-Selecting the file starts its upload; there is no second Upload button. [Upload files to your agent](/knowledge-and-library/upload-files-to-your-agent) explains processing and attachment recovery.
-
-If your facts are already in Library, follow [Use Library files in an agent](/knowledge-and-library/use-library-files-in-an-agent) instead of uploading another copy. Once the source is attached and Ready, continue with [Try a question](#try-a-question).
-
-## Try a question
-
-Use the chat beside the Build settings on a wide screen. On a phone or narrower screen, select **Chat Preview** within **Build**.
-
-If you used the practice FAQ:
-
-1. Enter **Is the café entrance step-free?** in the message box.
-2. Select the arrow button labelled **Send message**, or press Enter.
-3. Compare the reply with the FAQ: it says the entrance is step-free.
-4. Enter **Can you change my booking?**
-5. Send the question.
-6. Check that the reply explains the limit and points to a café team member at the counter.
-
-If you used your own source, choose one question it answers and one request outside the agent's job. Compare the replies with the source and instructions.
-
-For a wrong or unsupported answer, return to **Build** → **Settings**. Check the attached source and instructions, then try again. [Test your agent while you build](/build-your-agent/test-your-agent-while-you-build) explains further checks.
-
-## Reopen the agent to check your work
-
-1. Return to [Home](https://app.alysium.ai/spaces).
-2. Select the card with your agent's name.
-3. Open **Build** → **Settings**.
-4. Check the name, instructions and any starter edits.
-5. Confirm that the reference remains in **Attached knowledge**.
-
-If something did not remain, preserve the text you intended to use and resolve the save error before continuing.
-
-Your first creation task is complete when you can reopen the agent, identify its instructions and attached source, and try a question in its preview. The agent is still a draft until you choose to make it live.
-
-To improve its behavior, use [Write your agent's instructions](/build-your-agent/write-your-agents-instructions). For visitors, follow [Make your agent live](/share-and-deploy/make-your-agent-live), then [Share your agent with a link and QR code](/share-and-deploy/share-your-agent-with-a-link-and-qr-code) or [Put your agent on your website](/share-and-deploy/put-your-agent-on-your-website). Design changes have their own save action.
-
-## If drafting is unavailable or fails
-
-- **Draft my agent is unavailable:** enter a description and read the message shown. Guided creation requires an active space you own.
-- **A drafting-credit message appears:** open [Billing](https://app.alysium.ai/spaces?settings=billing) to review the current space's plan and usage choices. Return to creation after resolving the message.
-- **Creation reports an error:** read it before retrying.
-- **Alysium says the agent was created but its builder could not open:** return to Home and find that agent. Open it and continue with [Review the drafted setup](#review-the-drafted-setup), rather than creating another copy.
-
-Spaces currently contain only their owner; invitations and member-role workflows are unavailable. You do not need to arrange team access to follow this guide.
+For an unresolved problem, email [Alysium support](mailto:support@alysium.ai) with the agent's name, the step you tried and any message displayed.

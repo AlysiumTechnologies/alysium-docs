@@ -4,54 +4,47 @@ description: "Review a subscriber payment, request an eligible refund and check 
 keywords: ["Alysium", "Refund a subscriber", "Selling and payouts"]
 ---
 
-Review one subscriber payment, request an eligible refund and check the resulting payment and access states. In the current owner-only space, this is the selling space owner's task.
+<span id="refund-a-subscriber" />
 
-Have the buyer, agent, payment date and amount ready. Refunds are chosen per payment, rather than by entering an arbitrary subscription-level amount.
+Choose one subscriber payment, request its eligible refund and check both the payment result and the subscriber's access afterward.
 
 ## Choose cancellation or refund
 
-Ordinary cancellation stops the next renewal and keeps access until the current period ends. A refund returns an eligible charge.
+Use **Cancel subscription** when you want to stop renewal while keeping access through the paid period. This action is in **Manage** on the subscriber's detail page; review the period-end date in its confirmation before confirming cancellation.
 
-If the refunded charge funds the current access period, the subscription is cancelled and access ends once Stripe confirms. A historical charge can have a different access consequence. Read the actual confirmation before acting.
+A refund returns a payment. If a successful full refund covers the payment funding the current access period, the subscription ends immediately once Stripe confirms cancellation. Refunding an older payment does not necessarily end current access.
 
-The in-app action requires a successful eligible charge within the **30-day self-service window**. This is an action-eligibility window, not the timing of bank settlement. Failed charges have nothing to refund.
-
-Already refunded payments, an in-flight action and previously submitted refunds can disable the button. Older payments direct you to support. There is no arbitrary partial-refund amount entry.
-
-If the intended payment or amount cannot be handled by the offered action, contact [billing@alysium.ai](mailto:billing@alysium.ai). Do not use another charge as a substitute.
-
-**Already at the intended subscriber's payment history?** Continue with [Review the intended charge](#review-the-intended-charge).
+The in-app **Refund** action is for successful payments within the **30-day self-service window**. This window determines which payments you can refund here; it is separate from payout and bank timing. The action requests the payment's remaining refundable amount, with no amount field for choosing an arbitrary partial refund.
 
 ## Open the subscriber
 
-1. Open [Team settings](https://app.alysium.ai/spaces?settings=team).
-2. Select **Creator**.
-3. Select **Subscribers**.
-4. Open the intended subscriber.
-5. Confirm the buyer and agent names.
-6. Find **Payment history**.
-7. Continue with [Review the intended charge](#review-the-intended-charge).
+1. Open [Team settings](https://app.alysium.ai/spaces?settings=team), which opens the current space's settings.
+2. Select **Creator**, then **Subscribers**.
+3. Open the intended subscriber and check the buyer and agent names.
+4. Scroll to **Payment history**.
 
-The link opens the active space's settings on Team; select Creator there. If it asks you to sign in, sign in and reopen the link if needed. Use [Use your Creator Dashboard](/selling-and-payouts/use-your-creator-dashboard) if business navigation is unavailable.
+Payment history shows recent payments, rather than a complete billing archive. Use the payment's date, amount and status to identify the charge you intend to return. For example, return the current month's payment by choosing that month's charge, even if an older charge has the same amount.
 
 ## Review the intended charge
 
-Confirm the buyer and agent names before choosing a charge. For example, to return the current month's payment, select that month's successful charge rather than a similarly sized historical charge.
+1. Select **Refund** beside the intended payment.
+2. In **Refund and end access?**, check the amount, charge date and buyer. Read the condition about ending current-period access.
+3. Select **Refund & end access** to submit, or **Keep as-is** to leave the payment unchanged.
+4. Wait for the action to finish, then read the refreshed payment history and the message near **Manage**.
 
-1. Match the payment's date, amount and status.
-2. Select **Refund** on that payment when available.
-3. Read the confirmation's charge details.
-4. Read its access consequence and earnings effect.
-5. Select **Refund & end access** only if that is the intended charge and outcome.
-6. Wait for the action to finish.
-7. Inspect the refreshed payment and subscription states.
-
-Select **Keep as-is** instead of the refund confirmation to cancel the request.
+A failed charge has nothing to refund. **Refund** is also disabled for an already refunded payment, a refund already submitted in this view, or while another action is running. Older payments direct you to support. If the intended payment or amount cannot be handled by this action, contact [billing@alysium.ai](mailto:billing@alysium.ai) with its reference, date and amount.
 
 ## Recognize a confirmed or pending result
 
-Read the resulting status and any verification message. Pending or verifying means the process is still being reconciled. Do not issue another refund for the same charge; reload the subscriber detail to see the latest state when needed.
+Read the result message together with the payment and subscription statuses:
 
-Current-period access ends when Stripe confirms the refund/cancellation, not when you open the confirmation. A refund affects subscription earnings; earned usage margin is treated separately. Review the actual updated record.
+| Result | What to do |
+|---|---|
+| The refund and cancellation are confirmed | Check that the payment is refunded and the message confirms access has ended. |
+| The refund or cancellation is still being verified | Reload the subscriber detail when you need the latest result. Do not submit another refund for the same charge while verification continues. |
+| The refund did not complete | Check the payment status. The subscription remains unchanged. |
+| Cancellation needs review, or the payment and access results disagree | Keep the payment reference and displayed message, and contact billing@alysium.ai before taking another action. |
 
-If the action errors or refund/access results disagree, preserve the payment reference and contact [billing@alysium.ai](mailto:billing@alysium.ai). Do not promise the buyer an unverified bank-arrival date. [When and how you get paid](/selling-and-payouts/when-and-how-you-get-paid) explains the separate earnings and payout clocks.
+A payment can still display **Paid** while a submitted refund is being verified. That is not a reason to send a second request. If the action reports an error, check the refreshed records before deciding what to do next.
+
+The refund concerns subscription earnings; already-earned usage margin remains separate. Refund confirmation also does not establish when the buyer's bank will show the money. Your own [earnings and payout timing](/selling-and-payouts/when-and-how-you-get-paid) follows separate stages.

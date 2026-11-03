@@ -4,47 +4,49 @@ description: "Search and filter material already saved in your space's Library b
 keywords: ["Alysium", "Find files in your Library", "Knowledge and Library"]
 ---
 
-Search and filter material already saved in your space before uploading another copy. Finding a document is separate from checking which agents have it attached.
+<span id="find-files-in-your-library" />
+
+Search your space's saved material by name, narrow the file results and preview the source before using it. Finding a file in Library lets you check its contents; its attachment to an agent is a separate choice.
 
 ## Search by name
 
-1. Open [Library](https://app.alysium.ai/library).
-2. Enter a recognizable part of the name in **Search files and folders**.
-3. Open a matching result, or use its **Preview** action.
-4. Check that it has the intended version and contents.
+1. Open [Library](https://app.alysium.ai/library). If you are inside a project or folder, select the **Projects** breadcrumb to return to the landing.
+2. In **Search files, folders and projects**, enter a recognisable part of the name, such as **customer** for **Customer questions.md**. File search ignores capitalisation and matches part of the filename, rather than words inside the document.
+3. Open a matching file using its thumbnail or its three-dot menu's **Preview** action.
+4. Read the contents and check the file's status to confirm you found the source you intended.
 
-Library opens your current space's material. If the link asks you to sign in, sign in. Open Library again if needed.
+The landing searches across locations in your current space. Inside a project, **Search project** searches files at that project's root. Inside a folder, **Search folder** searches files directly in that folder. These scoped fields do not search files nested in subfolders. Open a subfolder to search there, or use **Projects** to return to the search across locations.
 
-For example, search **customer** rather than the full fictional filename `Customer questions.md`. If nothing matches, shorten the query and check the active project or location. Search does not reveal material you are not allowed to read.
+Subfolder cards remain visible during a scoped file search. Their presence does not mean the query searched their contents.
+
+You can switch the display with **View as list** or **View as grid**. Inspect the actual source before choosing it: a familiar name or a recent date does not establish that it is the latest approved version.
 
 ## Narrow the results
 
-Type choices narrow the families of items shown. Usage filters help you find material by how it is used:
+Use **Type** to narrow the file families shown. Use **Usage** to choose how files are being used:
 
-| Usage choice | Use it for |
+| Usage choice | What it shows |
 |---|---|
-| **All** | Removing an unintended usage restriction from the results. |
-| **Attached** | Material used as agent knowledge. |
-| **Unused** | Material not attached. |
-| **Visitor uploads** | The separate category of files sent by visitors. These are not automatically approved agent knowledge. |
+| **All** | Files regardless of usage. |
+| **Attached** | Files used by at least one agent. |
+| **Unused** | Files used by no agents. |
+| **Visitor uploads** | Files sent by visitors. These still need approval before becoming agent knowledge. |
 
-A forgotten filter can hide a file that still exists. Clear filters you do not need before deciding a source is missing.
+If a file disappears from the results, clear any unintended **Type** filter and set **Usage** to **All** before deciding it is missing.
 
 ## Choose a sort order
 
-Use **Newest** for a file added recently, or **Oldest** for earlier material. **A–Z** and **Z–A** help when you know the name. **Most relevant** is available for relevance-based searching.
+Open **Sort**, which shows the current choice. Choose **Newest** for recently added files, **Oldest** for earlier ones, or **A–Z** or **Z–A** to order names alphabetically. **Most relevant** is also available; for files, it currently uses the same order as **Newest**.
 
-Sorting changes the view without changing file contents or the agent's answer behavior. A familiar filename alone does not establish that a document is the latest approved version; inspect the result.
+Sorting and filtering change the view. They leave file contents and agent answer settings unchanged.
 
 ## If the file is still missing
 
-1. Check the account and space you are using.
-2. Check the destination chosen during upload.
-3. Clear unintended search text and filters.
-4. Check **Trash**.
+1. Select **Projects** to search across the current space rather than only the open location.
+2. Shorten or clear the name query, clear an unintended **Type** filter and choose **Usage → All**.
+3. Check the project or folder chosen when the file was saved.
+4. Check [Trash](https://app.alysium.ai/library?view=trash) for a deleted file. You can [restore recoverable files](/knowledge-and-library/restore-or-permanently-delete-from-trash) from there.
 
-Deleted files are hidden from ordinary Library views but can still be recoverable in Trash. Use [Restore or permanently delete from Trash](/knowledge-and-library/restore-or-permanently-delete-from-trash) if that is where you find the source.
+If an upload is still processing or has failed, inspect the existing attempt's status before uploading another copy. The [upload and file messages](/help/upload-and-file-messages) explain those states and the recovery actions available for that attempt.
 
-If an upload is processing or failed, inspect its status instead of uploading another copy because search did not show it. [Upload and file messages](/help/upload-and-file-messages) explains those states.
-
-Once you find the correct source, use [Organise your Library](/knowledge-and-library/organise-your-library) to move or rename it, or [Attach Library items to an agent](/knowledge-and-library/attach-library-items-to-an-agent) to choose which agents should use it.
+Once you find the right material, you can [move or rename it](/knowledge-and-library/organise-your-library), or [choose the agents that should use it](/knowledge-and-library/attach-library-items-to-an-agent).

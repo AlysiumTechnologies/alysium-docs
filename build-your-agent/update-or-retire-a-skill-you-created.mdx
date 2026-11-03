@@ -4,69 +4,58 @@ description: "Upload a revised version of a skill your space authored, or retire
 keywords: ["Alysium", "Update or retire a skill you created", "Build your agent"]
 ---
 
-Publish a revised version of a skill your space authored, or retire it when you no longer want to offer it. Acquiring another creator's skill does not give your space the right to replace or retire their original.
+<span id="update-or-retire-a-skill-you-created" />
 
-Choose the change that matches your goal:
+Upload revised guidance to a skill your space created, or retire the skill when you want to stop offering it. Updating keeps the skill's identity; retirement removes it from your library and new discovery.
 
-| Your goal | Use |
-|---|---|
-| Improve your skill's guidance while keeping the same skill | [Upload a revised version](#upload-a-revised-version). |
-| Stop one agent using a skill | **Disable on this agent** or **Remove from agent**. See [Review a skill before adding it](/build-your-agent/review-a-skill-before-adding-it). |
-| Stop offering your authored skill | [Retire the skill](#retire-the-skill). |
-
-If you have not opened the skill yet, start with [Open your authored skill](#open-your-authored-skill).
-
-**Already reading your authored skill's details?** Continue with [Upload a revised version](#upload-a-revised-version) or [Retire the skill](#retire-the-skill).
+If you only want one agent to stop using a skill, turn off its switch in **Skills**. You can also open its details and select **Remove from agent** to detach it while keeping the library entry for reuse.
 
 ## Open your authored skill
 
-1. Open [Home](https://app.alysium.ai/spaces).
-2. Select the intended agent.
-3. Open **Build**.
-4. Open **Settings**.
-5. Find **Skills**.
-6. Select the skill's name.
-7. Read its current **Version** and contents.
-8. Continue with [Upload a revised version](#upload-a-revised-version) or [Retire the skill](#retire-the-skill).
+1. Open [Home](https://app.alysium.ai/spaces) and select **Build** on the intended agent's card.
+2. Select **Settings** if needed, then scroll to **Skills** in the **Agent Builder** section.
+3. Open the attached skill's name. If it is not attached, select **Browse skill library**, then **My Skills**, and open it there.
+4. Read the current **Version** and **SKILL.md** contents. Use the file list to read any supporting files you plan to change.
 
-Home opens your active space, where you choose the agent. If it asks you to sign in, sign in. Open Home again if needed.
-
-A skill authored by your space can offer **Update** and **More actions** in its details. If those controls are missing, check whether you are looking at your own skill or one acquired from another creator.
+Your space's authored skills offer **Update** and **More actions** in their details. Acquiring another creator's skill lets you use it, while its original remains theirs to maintain.
 
 ## Upload a revised version
 
-Prepare the revision in the actual skill bundle you authored. Keep its skill name the same: a bundle with a different name is not a supported rename update. Keep the previous bundle yourself if you need a record. [Upload your own skill](/build-your-agent/upload-your-own-skill) lists the package formats and limits.
+Edit the files in your saved bundle and keep a copy of the previous bundle for your own records. For example, you could change a customer-answer method to ask for missing details before drafting a reply.
 
-For example, you might revise a customer-answer skill to ask for missing context before proposing an answer. This is an edit to your guidance, rather than an automatic change made by Alysium.
+Keep the same top-level folder and matching `name` in **SKILL.md**. Update does not rename a skill. The archive still needs **SKILL.md** directly inside that one folder, starting with `---`, its required `name` and nonempty `description`, and a closing `---` before the guidance. The name uses lowercase letters or numbers separated by single hyphens and has at most 64 characters; the description has at most 1,024 characters.
 
-Ordinary attachments to your space's authored skill follow its current version. Updating the skill can therefore change the guidance used by those agents.
+Create a revised `.zip` or `.skill` archive of the whole folder. It must be at most **5 MiB compressed** and **25 MiB unpacked**, with no more than **30 files**. These byte limits are 5,242,880 and 26,214,400 bytes respectively. You can [see a complete SKILL.md and packaging example](/build-your-agent/upload-your-own-skill) when preparing a new bundle.
 
-1. In the skill's details, select **Update**.
-2. Select the revised bundle.
-3. Wait for checking and upload.
-4. Reopen the skill's details.
-5. Review the resulting version and contents.
-6. Try a relevant task with an affected agent.
+Ordinary attachments to a skill authored by your space follow its current version. An update can therefore change the guidance used by other agents in your space. Uploading also attempts to attach and enable it on the agent currently open, even if you had removed or disabled it there.
 
-Selecting and uploading the bundle applies the update. There is no separate Design **Save Changes** step. If the bundle name does not match, correct the prepared bundle before submitting it again.
+1. In the skill's details, select **Update**. The uploader is labelled **Update “name”**.
+2. Select **Browse bundles** and choose the revised archive. Selection starts the upload immediately.
+3. Wait for uploading to finish. Correct any displayed validation message before trying again.
+4. Open the skill's details and inspect **Version** and the revised contents. If they still show the previous version after upload finishes, reload Build and check them again.
+5. Check the agent's attached row and enabled switch, then try a task matching the revised guidance in the chat beside Settings or in **Chat Preview**. Enter the task and select **Send message** or press Enter; preview messages use credits.
 
-### An acquired skill's Update is different
+Alysium assigns the numbered versions, such as v1 and v2. A `metadata.version` value inside the bundle is only descriptive. Uploading identical archive bytes returns the existing version rather than creating another number. The skill's existing tags, visibility and price remain with it; this Update flow skips the tag step.
 
-Skills acquired from other creators normally stay on the version accepted when attached. A list-row **Update** offered for an older acquired version moves that agent's attachment to the latest version.
+The upload saves the revision directly. If the skill is in **My Skills** but is missing from this agent, select **Browse skill library → My Skills** and use **Attach**, or open the skill and select **Attach to agent**. Check the enabled switch afterward. Check this state before repeating an upload after an error.
 
-Read the changes before accepting another creator's new version. This list action updates an attachment; it does not upload a replacement to the creator's original skill.
+<span id="an-acquired-skill’s-update-is-different" />
+<span id="an-acquired-skills-update-is-different" />
+
+### Update a skill acquired from another creator
+
+An acquired skill stays on the version accepted for that agent. When a newer version is available, its attached list row offers **Update**. This action immediately accepts the current published version for this agent; other agents' acquired attachments keep their accepted versions.
+
+Opening the attached skill's details shows the version already accepted for this agent. After choosing the row's **Update**, wait for the action, inspect the resulting **Version** and contents, and test a relevant task. This changes the agent's attachment, rather than uploading a replacement to the creator's original skill.
 
 ## Retire the skill
 
-Retirement removes your authored skill from your library and new discovery. People who already acquired it keep access. Retirement does not take their copies back.
+Retirement removes the authored skill from your library and new discovery, and automatically detaches it from agents in your space. People in other spaces who already acquired it keep their access and attachments.
 
-There is no undo control. Uploading the same name afterward creates a fresh skill instead of restoring the retired one. If you only want to compare one agent without the guidance, disable its attachment instead.
+Retirement cannot be undone. Uploading the same name later creates a fresh skill rather than restoring this one. Keep any bundle you want to retain before deleting.
 
-1. In the skill's details, open **More actions**.
-2. Select **Delete skill**.
-3. Read the confirmation.
-4. Select **Delete skill** again if you intend to retire it.
-5. Check your space's agents for remaining attachments to the skill.
-6. For each remaining attachment, select **Remove from agent**.
+1. In the authored skill's details, open **More actions** and select **Delete skill**.
+2. Read the inline confirmation. Select **Cancel** to keep the skill, or **Delete skill** again to retire it.
+3. Wait for the request to finish and check that the skill is gone from the refreshed library and Skills list. The details close as soon as you confirm, so their closing alone does not establish completion.
 
-An incomplete attachment-removal step does not necessarily undo retirement. If a retirement or update message is unclear, check the skill's actual current state before repeating the action.
+If a deletion error appears, read it and check the library's current state before trying the action again.

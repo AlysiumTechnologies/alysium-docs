@@ -4,77 +4,80 @@ description: "Adjust an editable agent's response settings for different wording
 keywords: ["Alysium", "Fine-tune how your agent answers", "Build your agent"]
 ---
 
-Adjust an editable agent's response settings when its replies need different wording or length. Fine tuning here changes how the model generates replies; it does not train a new model or supply facts.
+<span id="fine-tune-how-your-agent-answers" />
 
-Start with clear instructions and useful knowledge. If the problem is a missing business fact, check the source in **Knowledge** before changing response settings.
+Adjust your agent's response settings when you want more predictable wording, more variety or a different reply length. Fine tuning here changes how the model produces answers. It does not train the model or add facts to it.
+
+If the agent gives the wrong business information, correct its instructions or knowledge first. For replies that are simply too long, start by asking for a concise style in the [agent's instructions](/build-your-agent/write-your-agents-instructions), then adjust the response budget if needed.
 
 ## Find the response settings
 
-1. Open [Home](https://app.alysium.ai/spaces).
-2. Select the intended agent.
-3. Open **Build** → **Settings**.
-4. In **Agent Builder**, select **Fine Tune Agent** under **Fine Tuning Settings**.
+1. Open [Home](https://app.alysium.ai/spaces) and select **Build** on your agent's card.
+2. Select **Settings** if it is not already selected.
+3. Scroll past the name, welcome message and conversation starters to **Agent Builder**.
+4. Under **Fine Tuning Settings**, select **Fine Tune Agent**.
 
-If the menu is already open, continue with [Choose a starting point](#choose-a-starting-point). Home opens your current space so you can select your own agent.
+Note the current values before changing them. You can restore those values if a change makes the answers less useful.
 
 ## Choose a starting point
 
-The **Presets** menu applies a group of settings:
+The **Presets** menu offers these starting points:
 
-| Preset | When to consider it |
+| Preset | When to use it |
 |---|---|
-| **General Use** | A balanced starting point for ordinary tasks. |
-| **Creative** | When you want more varied responses. |
-| **Precise** | When you want more focused responses. |
-| **Custom** | Indicates individually adjusted settings. |
+| **General Use** | A balanced starting point for everyday questions. |
+| **Creative** | When you want more varied wording and ideas. |
+| **Precise** | When you want more focused, predictable wording. |
+| **Custom** | Keep the current values and adjust individual controls yourself. |
 
-For a first FAQ assistant, begin with General Use or try Precise. Note the current preset and values before changing them. A preset changes multiple controls together; an individual slider lets you compare one change at a time.
+Selecting General Use, Creative or Precise changes several values and saves them immediately. Selecting Custom leaves the values as they are. For a first FAQ agent, General Use or Precise is a useful place to begin.
+
+Check the individual values when comparing changes. Slider edits do not automatically change the label to Custom, and the preset label is not saved when you reopen the builder.
 
 ## Understand the main controls
 
-| Control | Effect and useful limit |
+| Control | What it changes |
 |---|---|
-| **Temperature** | Lower values generally make wording more predictable. Higher values allow more variety. This does not make an unsupported claim true. |
-| **Max Length** | Sets the response budget. A lower value can shorten replies but may cut off a useful answer. The upper limit follows the selected model. |
-| **Top P** | Narrows or widens the likely wording choices. Leave it alone while comparing a different setting. |
+| **Temperature** | A value from 0 to 1. Lower values make wording more predictable; higher values allow more variety. A lower value does not make an unsupported answer accurate. |
+| **Max Length** | The maximum response budget, measured in tokens: small pieces of text rather than whole words. The minimum is 50, and the upper limit depends on the model and output limiter. A low budget can cut an answer off. |
+| **Top P** | A value from 0 to 1 that narrows or widens the set of likely wording choices. Lower values narrow the choices; higher values allow a broader range. Leave it unchanged while comparing Temperature. |
 
-Use instructions to request a concise style and leave enough response budget for the agent to finish the task.
+A response budget gives the model room to finish; it does not ask the model to use all that room. Use instructions to describe the length you want, such as “Answer ordinary FAQ questions in two or three sentences.”
 
 ## Make one adjustment and compare
 
-For a fictional shop helper whose answers are too long, first try an instruction such as “Keep ordinary FAQ answers concise.” Use [Write your agent's instructions](/build-your-agent/write-your-agents-instructions) for that change.
-
-If you still need a firmer response budget:
+To try a smaller response budget:
 
 1. Note the current **Max Length** value.
-2. Move the **Max Length** slider to a modestly lower value.
-3. Pause to let the change save.
-4. Close the menu.
-5. Ask the same representative question in a fresh preview conversation.
-6. Check that the reply is useful and finishes its answer.
+2. Move its slider to a modestly lower value.
+3. Pause for at least a second to let the change save, then click outside the menu to close it.
+4. In the chat beside the settings, ask a representative question. On a smaller screen, select **Chat Preview** within Build first. Select **Send message** or press Enter to submit it.
+5. Check that the reply answers the question accurately and reaches a useful ending.
 
-Use the chat beside the Build settings, or select **Chat Preview** within Build on a narrow screen. [Test your agent while you build](/build-your-agent/test-your-agent-while-you-build) explains how to compare replies with your sources.
+Preview conversations use credits. Compare the same kind of question before and after the change; the guide to [testing your agent while you build](/build-your-agent/test-your-agent-while-you-build) can help you plan the comparison.
 
-Change one setting at a time. If the new budget cuts off the reply, return to **Fine Tune Agent** and increase **Max Length**, then try the question again.
+Change one setting at a time so you can tell which change helped. If the reply now stops before it finishes, reopen **Fine Tune Agent** and increase **Max Length** or restore the previous value.
 
 ## Use advanced settings only for a specific need
 
-**Show Advanced Settings** reveals more controls:
+Select **Show Advanced Settings** to reveal more controls.
 
-| Control | What to know before changing it |
+| Control | When it matters |
 |---|---|
-| **Top K** | Also limits the possible wording choices. Leave it alone for a first agent unless you have a reason to adjust it. |
-| **Stop Sequences** | Stops generation when a listed text sequence appears. A common word entered here can cut answers off. Keep it empty unless your output format needs a specific stopping sequence. |
-| **Output Limiter (10K max)** | Appears for some models. It bounds the available output budget. Disabling it can permit much longer and more expensive answers. |
+| **Top K** | Limits the number of likely wording choices the model considers, from 1 to 100. Keep the existing value unless you have a specific reason to narrow or widen that choice. |
+| **Stop Sequences** | Comma-separated text sequences that end a reply when they appear. Use these only when your output format needs a particular stopping point. A common word entered here can end an otherwise useful answer early. |
+| **Output Limiter (10K max)** | Appears when the model allows more than 10,000 output tokens. When checked, it limits the Max Length slider to 10,000. |
 
-For a first FAQ-style agent, keep the output limiter enabled when it is shown unless you need the model's full output length. It is not offered for every model.
+Some models do not use every sampling control, so changing a visible control may have little effect with your chosen model.
+
+For ordinary questions, keep **Output Limiter (10K max)** checked when it appears. If you need a larger response budget, clear it, then increase **Max Length** separately. Clearing the checkbox only expands the slider's range.
+
+The limiter checkbox is temporary: it starts checked again when you reopen the builder. If you saved a Max Length above 10,000, reopening the builder can reduce it to 10,000 and save that lower value. Recheck Max Length after reopening before relying on a larger budget.
 
 ## Confirm the saved settings
 
-Parameter changes save after a brief pause; closing the menu also sends any pending changes. There is no separate Design **Save Changes** step for this menu.
+Individual edits save after a one-second pause. Clicking outside the menu to close it also sends pending changes. Let saving finish before leaving; where the save indicator is shown, its hover text can confirm **All changes saved**.
 
-To check the changed value, return to [Home](https://app.alysium.ai/spaces), reopen the same agent and open **Build** → **Settings** → **Fine Tune Agent**. Confirm the value you changed remains.
+Return to [Home](https://app.alysium.ai/spaces) and select **Build** on the same agent's card. Select **Settings** if needed, then scroll to **Agent Builder**. Open **Fine Tune Agent** and check the values you changed. Use those values to confirm the result rather than relying on the preset label.
 
-If replies become too varied, restore the prior settings you noted or try **Precise**. If replies stop unexpectedly, check **Max Length** and unintended **Stop Sequences**.
-
-These controls do not enable extended thinking or outside-app actions. If the underlying model does not suit the job, use [Choose your agent's AI model](/build-your-agent/choose-your-agents-ai-model).
+If replies have become too varied, restore your noted values or apply Precise. If replies stop unexpectedly, check Max Length and any Stop Sequences. If the settings still do not give useful answers, compare [another model for the same task](/build-your-agent/choose-your-agents-ai-model).

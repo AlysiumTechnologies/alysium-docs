@@ -4,45 +4,44 @@ description: "Use Creator to inspect your space's offers and paid subscribers, t
 keywords: ["Alysium", "Use your Creator Dashboard", "Selling and payouts"]
 ---
 
-Creator is the business view for your space's offers and paid subscribers. It is separate from [Analytics](/analytics/read-your-analytics-dashboard), which focuses on conversations and feedback.
+<span id="use-your-creator-dashboard" />
 
-Use the current space's owner account. AgentHub application approval is not required simply to view Creator.
-
-**Already in Creator?** Continue with [Choose the view for your question](#choose-the-view-for-your-question).
+Use **Creator** to follow your space's selling activity, find a paid subscriber, review an offer or check payment setup. [Analytics](/analytics/read-your-analytics-dashboard) is the separate view for conversations and feedback.
 
 ## Open the dashboard
 
-1. Open [Team settings](https://app.alysium.ai/spaces?settings=team).
-2. Select **Creator**.
-3. Check that this is the intended space.
-4. Continue with [Choose the view for your question](#choose-the-view-for-your-question).
+Open [Team settings](https://app.alysium.ai/spaces?settings=team), which opens your active space's settings, then select **Creator**. Check the space name before opening its business records. You do not need AgentHub application approval to use Creator.
 
-The link opens your active space's settings on Team. If it asks you to sign in, sign in and reopen it if needed.
+Choose a view beneath the Creator heading. On a narrow screen, scroll that row sideways to reach the other views.
 
 ## Choose the view for your question
 
-| View | What to inspect | Next task |
-|---|---|---|
-| **Overview** | Selling activity; read the period before comparing revenue. | Choose the relevant detail view below for a specific record. |
-| **Subscribers** | Individual paid subscriptions and their status; open the relevant buyer. | [Refund a subscriber](/selling-and-payouts/refund-a-subscriber) explains payment history and per-charge refund/access effects. |
-| **Listings** | Your offers and their performance; open the intended listing. | [List your agent on Agenthub](/selling-and-payouts/list-your-agent-on-agenthub) or [Price your agent](/selling-and-payouts/price-your-agent). |
-| **Payouts** | Next and past payout information. | [When and how you get paid](/selling-and-payouts/when-and-how-you-get-paid). |
-| **Setup** | Stripe readiness and remaining onboarding. | [Set up Stripe to get paid](/selling-and-payouts/set-up-stripe-to-get-paid). |
+| View | What you can find there |
+|---|---|
+| **Overview** | Revenue, active subscribers, pending payout information, top listings and recent activity. Use the period selector on **Revenue** to compare **Last 7 days**, **Last 30 days**, **Month to date** or **Previous month**. |
+| **Subscribers** | Paid subscriptions across your listings. Search by name, email or agent, or filter to **All**, **Active**, **Canceling** or **Canceled**. Select a buyer's row to open the subscription and payment history. |
+| **Listings** | Your offers and their performance. Select a listing to inspect its subscribers, pricing and usage information. |
+| **Payouts** | Pending Alysium usage-earnings transfers and their history. Subscription payments and bank payouts are separate records in Stripe. |
+| **Setup** | Stripe payment readiness, bank and tax setup progress, and the first-listing step. |
 
-If only Overview and Setup appear, select Setup and follow its named action. Business navigation is limited when payment setup is missing or genuinely unready. If setup was previously complete but its latest check is out of date, navigation can remain available while payment readiness still needs refreshing.
+In Overview, use **View** on **Active subscribers** or **Pending payout** to open the corresponding view. You can also select a listing under **Top listings** or a buyer under **Top buyers** to open that record.
 
-For example, investigate one buyer's failed charge in Subscribers rather than guessing from an Overview total. Use Payouts and Stripe Express for bank timing rather than treating subscription revenue as money already received.
+If Creator shows only **Overview** and **Setup**, open Setup and complete its payment-setup actions. If a previously completed setup needs a fresh payment check, the business views can remain available with a notice directing you to refresh Stripe status in Setup.
 
 ## Act from the right record
 
-Check the agent name and buyer before changing a subscription. Cancellation and refund have different access effects; follow the complete [refund procedure](/selling-and-payouts/refund-a-subscriber) before choosing that action.
+For a subscription question, open **Subscribers** and select the buyer. Check both the buyer and agent name. The status and date show whether the subscription is **Active** and renews, **Canceling** and ends at the period boundary, or **Canceled** and has ended. Check **Payment history** for the individual charge rather than using the subscription label as proof that a payment succeeded.
 
-A revenue chart is not an offer editor. Open the intended listing and follow its listing or pricing guide for changes.
+**Cancel subscription** stops renewal while keeping access through the paid period. A refund is an action on a particular payment and can end current access sooner. [Review the charge and its access effect](/selling-and-payouts/refund-a-subscriber) before requesting a refund.
 
-**Open Stripe Express**, when available, opens the linked payment account for bank, tax and payout details. Those are managed in Stripe, rather than a dashboard text field.
+For an offer change, open **Listings**, select the agent and choose **Edit agent** or **Edit pricing**. Edit agent opens its builder. Edit pricing opens **Deploy**; select **Share & Sell** there to reach the [subscription setup](/selling-and-payouts/price-your-agent).
 
-## If information or navigation is missing
+For bank, tax or bank-payout details, open **Setup** and use **Open Stripe Express** when offered for your linked Express account. Use the actual Stripe payout record to check expected bank arrival; an Overview revenue total or dashboard date is not a bank receipt. You can [check the separate payment stages and waiting periods](/selling-and-payouts/when-and-how-you-get-paid) when comparing those records.
 
-Check the current space and account. For incomplete payment setup, follow Setup's named action. If loading fails, read the error and reopen the section; an empty loading placeholder does not confirm zero revenue.
+<span id="if-information-or-navigation-is-missing" />
 
-This navigation task is complete when you can find the section and record you need. Viewing Creator does not itself publish or change an agent.
+## If a view does not load
+
+If a section says **Couldn't load overview**, **Couldn't load subscribers**, **Couldn't load listings** or **Couldn't load payouts**, reopen or reload that section and read the resulting message. A loading placeholder or an empty section beside a load error does not confirm zero activity.
+
+For an unfinished payment setup, open **Setup**, complete the action offered and check the resulting status. The [Stripe setup steps](/selling-and-payouts/set-up-stripe-to-get-paid) explain how to return from Stripe and refresh that result.

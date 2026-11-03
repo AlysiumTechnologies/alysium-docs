@@ -4,57 +4,49 @@ description: "Change the header title and typing hint in an editable agent's vis
 keywords: ["Alysium", "Change the widget's title and message box text", "Design your widget"]
 ---
 
-Change the header title and typing hint in an editable agent's visitor chat.
+<span id="change-the-widget’s-title-and-message-box-text" />
 
-**Widget Title** labels the chat window. **Input text** is the hint inside the empty message box. They are separate from the agent's welcome message, name and instructions.
+Give your visitor chat a clear title and a useful hint for writing a first message. **Widget Title** appears in the chat header. **Input text** appears inside the empty message box.
 
 ## Open Chat Window
 
-1. Open [Home](https://app.alysium.ai/spaces).
-2. Select the intended agent.
-3. Open **Design**.
-4. Find **Chat Window**.
+Open [Home](https://app.alysium.ai/spaces), select **Build** on the agent's card, then select the main **Design** tab. Scroll the controls to **Chat Window**.
 
-If Chat Window is already open for the right agent, continue with [Choose the words](#choose-the-words). These are widget controls, separate from your personal account settings.
-
-On a smaller screen, use the **Design** subtab for the fields and **Preview** to inspect the widget. Return to Design to save.
+On a wide screen, the widget preview is beside the controls. On a smaller screen, use the **Design** subtab to edit and **Preview** to inspect the result.
 
 ## Choose the words
 
-For a fictional shop helper:
+Keep the title short and use the typing hint to suggest something the agent can help with. For an agent that answers questions from a café FAQ, you might use:
 
 | Field | Example |
 |---|---|
-| **Widget Title** | Ridge and River Guide |
-| **Input text** | Ask about our boot notes or shop FAQ |
+| **Widget Title** | Café guide |
+| **Input text** | Ask about our menu or accessibility |
 
-Replace these with your own wording. A short hint helps visitors choose a first message. Avoid promising an action, such as order tracking, that the agent cannot perform.
+Match the wording to your agent's actual job and information. A hint such as “Track your order” would be misleading if the agent cannot look up orders.
 
 ## Enter and save the text
 
-1. Edit **Widget Title** if you want a different header.
-2. Edit **Input text** if you want a different typing hint.
-3. Inspect the title and empty message box in the preview.
-4. Return to **Design** if you used the small-screen Preview subtab.
-5. Select **Save Changes**.
-6. Wait for **All Changes Saved**.
+1. Enter your title in **Widget Title** and your typing hint in **Input text**.
+2. Read the header in the preview. Open **Chat** to see the hint in an empty message box. Check the wording at the width visitors will use, and shorten it if it is clipped.
+3. On a smaller screen, return to the **Design** subtab. Scroll to the save card at the top of the Design controls and select **Save Changes**.
+4. Wait for **All Changes Saved**.
 
-The preview can show these changes before they are saved for visitors. If saving fails, keep the page open and read the error.
+Clearing either field can make the widget display fallback wording rather than an empty label.
+
+If the save card shows an error, keep the page open, read it and retry **Save Changes** when available. The preview can show text that has not yet been saved.
 
 ## Check the intended field changed
 
-Reopen the same agent from [Home](https://app.alysium.ai/spaces) and check **Design** → **Chat Window**. If already shared, inspect that agent's actual visitor widget too.
+Reopen the same agent from [Home](https://app.alysium.ai/spaces), return to **Design** and scroll to **Chat Window**. Check that both fields retain your wording. If the widget is already on your website, inspect that agent's visitor widget too.
 
-For other wording problems, use the corresponding Build field:
+For other text, use **Build** → **Settings**:
 
-| What needs to change | Where to change it |
+| What you want to change | Field |
 |---|---|
-| Opening greeting | **Build** → **Settings** → **Welcome Message** |
-| Answer style or behavior | **Build** → **Settings** → **Agent Instructions** |
-| Agent's name elsewhere | **Build** → **Settings** → **Agent Name** |
+| The agent's name | **Agent Name** |
+| Its opening greeting | **Welcome Message** |
+| Questions offered to start a conversation | **Suggested Conversation Starters** |
+| How it answers and behaves | **Agent Instructions**, in **Agent Builder** |
 
-Changing Input text only changes the typing hint. It does not send a message or add knowledge.
-
-If wording is clipped, shorten it and preview it again before saving. If visitors still see old text, confirm the saved state and the intended agent before changing another field.
-
-[Set a welcome message and starter prompts](/build-your-agent/set-a-welcome-message-and-starter-prompts) covers the opening conversation. [Preview your widget](/design-your-widget/preview-your-widget) covers the overall visitor experience.
+Changing the widget title does not rename the agent. The typing hint guides what visitors enter; use [the agent's instructions](/build-your-agent/write-your-agents-instructions) to change how it responds, or [edit its greeting and starters](/build-your-agent/set-a-welcome-message-and-starter-prompts) to change the opening conversation.

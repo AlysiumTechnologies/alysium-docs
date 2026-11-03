@@ -4,56 +4,37 @@ description: "Detach a saved file, folder or project from one agent while keepin
 keywords: ["Alysium", "Remove a file from your agent", "Knowledge and Library"]
 ---
 
-Remove an attachment when one agent should stop using a saved file, folder or project. Detaching it leaves the underlying material in Library. It does not delete earlier replies or remove another agent's attachment.
+<span id="remove-a-file-from-your-agent" />
 
-You need editing access to the intended agent.
-
-Decide whether you want to change one agent's knowledge or remove the saved document itself. This guide starts with the one-agent action. [Trash controls](#when-you-need-a-broader-action) have different scope.
-
-**Already at Attached knowledge?** Continue with [Remove the intended attachment](#remove-the-intended-attachment).
+Remove an attachment when you want to change the sources one agent can use. The file, folder or project stays in Library; its saved files continue to use storage. Other agents keep their own attachments to it.
 
 ## Open Attached knowledge
 
-1. Open [Home](https://app.alysium.ai/spaces).
-2. Select the intended agent.
-3. Open **Build**.
-4. Open **Settings**.
-5. Find **Knowledge**.
-6. Find **Attached knowledge**.
-7. Continue with [Remove the intended attachment](#remove-the-intended-attachment).
-
-Home opens your active space, where you choose the agent. If it asks you to sign in, sign in. Open Home again if needed.
+1. Open [Home](https://app.alysium.ai/spaces) and select **Build** on the intended agent's card.
+2. In Build, select **Settings** if you are viewing Profile or Chat Preview.
+3. Scroll down to **Knowledge** and find **Attached knowledge**.
 
 ## Remove the intended attachment
 
-Read the name and identify whether the row is a file, folder or project. A file removal acts directly. A folder or project removal covers more material and asks for confirmation.
+Read the row's name and check whether it is a file, folder or project. Removing a folder or project attachment changes access to its covered material, so choose the smallest scope that matches your goal.
 
-For example, if a fictional shop FAQ agent was accidentally given a **Draft promotions** folder, detach that folder from the agent. You do not need to delete the folder's documents.
+- **For a file:** select its **Remove** control. Removal starts immediately, without a confirmation. Wait for the result; the row disappears after removal succeeds. If removal fails, read the displayed alert and check the attachment before retrying.
+- **For a folder or project:** select **Remove** to open **Remove [name]?**. Read the covered-file count and check the agent named in the confirmation. Select **Remove** to confirm, or **Cancel** to keep the attachment. Wait for the result message. The row can disappear while the request is still running; if the action is refused, it returns with an error message.
 
-1. Find the intended row in **Attached knowledge**.
-2. Select its **Remove** control.
-3. If a folder or project confirmation appears, read the scope of covered material.
-4. If a confirmation is shown, select **Remove** only when its scope is correct.
-5. Check that the attachment is no longer listed.
-
-If the action fails, check the row's actual state and read the error before retrying.
+Removal saves through the action itself. Reopen the agent's Build settings and check **Attached knowledge** to confirm the intended attachment is gone. For a failed folder or project removal, use the displayed reason and the current row state before trying again.
 
 ## Check other routes to the same file
 
-The file, folder or project remains saved in Library after detachment. If the same file is also covered by another attached folder or project, that remaining attachment can still supply it. Review the other attachments before assuming the agent has no route to the material.
+A file can reach an agent through more than one attachment. For example, removing a directly attached FAQ still leaves it available if the agent also has the FAQ's folder attached. Review the remaining file, folder and project rows before treating access to that file as removed.
 
-Earlier replies can still contain facts quoted from the source. Ask a new question to check the current setup; an old reply is not proof that the source remains attached.
+Earlier replies can still contain facts quoted from the source. Check the attachments to confirm the change; an old answer does not show which sources the agent can currently use.
 
-If you removed the wrong attachment, follow [Use Library files in an agent](/knowledge-and-library/use-library-files-in-an-agent) to reattach the saved material with **Add from Library**.
+If you removed the wrong attachment, select **Add from Library** in Knowledge. Expand the source's project and folder, select the intended file, folder or project, and select **Attach**. Wait for the result and check its row in **Attached knowledge**. A file should reach **Ready** before you use it for a source question; a folder or project's **Live** label describes its ongoing scope. You can [review how Library attachments work](/knowledge-and-library/use-library-files-in-an-agent) when choosing that scope.
 
 ## When you need a broader action
 
-Moving a file to Trash does not itself stop agents using it.
+Moving a file to Trash leaves existing agent access in place. In [Trash](https://app.alysium.ai/library?view=trash), **Remove from agents** removes the file's remaining access across agents in your space while leaving it retained. **Delete forever** requests permanent erasure; storage is released when erasure completes.
 
-| Action | Scope |
-|---|---|
-| Remove a row from one agent's **Attached knowledge** | Removes that attachment from that agent. The saved source and other attachments remain. |
-| **Remove from agents** in **Library → Trash** | Removes the file's remaining access through agents. The file can remain saved or retained. |
-| **Delete forever** in Trash | Requests permanent erasure of the saved file. Holds or pending work can affect completion. |
+The [Trash recovery and deletion guide](/knowledge-and-library/restore-or-permanently-delete-from-trash) explains those broader actions, including held files and deletion work still finishing. Use them when your goal concerns the saved file rather than one selected attachment.
 
-Use [Restore or permanently delete from Trash](/knowledge-and-library/restore-or-permanently-delete-from-trash) when your task concerns the saved document itself. Choose the intended scope before taking a deletion action.
+If removal keeps failing, email [Alysium support](mailto:support@alysium.ai) with the agent name, attachment name, action and exact message shown.

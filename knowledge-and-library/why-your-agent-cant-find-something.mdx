@@ -4,66 +4,81 @@ description: "Check whether missing information is attached, readable and ready 
 keywords: ["Alysium", "Why your agent can't find something", "Knowledge and Library"]
 ---
 
-Check the source before repeatedly uploading files or changing models. An agent can miss information because it is attached elsewhere, still processing, paused or absent from the readable source.
+<span id="why-your-agent-can’t-find-something" />
 
-Use these checks on an agent you can edit. The goal is to identify the missing connection or information, then make a targeted correction.
+An agent can miss information because the source is attached to another agent, still processing, paused or missing the answer in its readable contents. Check the connection and the saved facts, make one correction, then ask the same question again.
 
-## Open the intended agent's knowledge
+<span id="open-the-intended-agent’s-knowledge" />
+<span id="open-the-intended-agents-knowledge" />
 
-1. Open [Home](https://app.alysium.ai/spaces).
-2. Select the agent whose answer you are checking.
-3. Open **Build** → **Settings**.
-4. Find **Knowledge**.
+## Open Knowledge on the intended agent
 
-If the right Knowledge card is already open, continue with [Check attachment and readiness](#check-attachment-and-readiness).
+Open [Home](https://app.alysium.ai/spaces) and select **Build** on the card for the agent whose answer you are checking. Select **Settings** if needed, then scroll down to **Knowledge**.
 
 ## Check attachment and readiness
 
-Read **Attached knowledge** on this agent. A document stored only in [Library](https://app.alysium.ai/library) is not automatically attached.
+Read **Attached knowledge** on this agent. A file stored in [Library](https://app.alysium.ai/library) is not automatically available to every agent.
 
-- **The file is absent:** attach it with [Use Library files in an agent](/knowledge-and-library/use-library-files-in-an-agent), or use the upload/paste guide if it has not been saved yet.
-- **It shows Queued, Uploading or Processing:** preparation is not finished. Wait for **Ready**.
-- **It shows Failed:** follow [Fix a file that failed to process](/knowledge-and-library/fix-a-file-that-failed-to-process).
-- **A folder or project is attached:** confirm the file is inside that covered location. Moving a file can change whether the attachment covers it.
+If the intended file is missing:
 
-After fixing an attachment or readiness issue, continue with [Ask a direct question again](#ask-a-direct-question-again).
+1. Select **Add from Library**.
+2. Expand the relevant project or folder and select the file. Select a folder or project only if you want to include its eligible contents, including material added there later.
+3. Select **Attach**, then check for its entry in **Attached knowledge**.
+
+Check the source's state before testing:
+
+| What you see | What to do |
+|---|---|
+| **Queued**, **Uploading** or **Processing** | Wait for **Ready**. Being listed does not mean preparation has finished. |
+| **Failed** | Use **Retry** on the current failed attempt when offered. For a saved file, open Library, find the same file and choose **Try again** from its three-dot menu when offered. Read the result and wait for **Ready**. If told to retry from its upload queue, use that queue’s **Retry** only if the original attempt is still available. The [file-processing guide](/knowledge-and-library/fix-a-file-that-failed-to-process) explains other failure messages and recovery limits. |
+| A warning that the file was saved in Library but not attached | Select **Retry attachment**, then check the attachment. This retries the connection to the saved file. |
+
+For an attached folder or project, check that the file is still inside that location and has finished processing. An empty folder supplies no searchable text. Moving a file changes which folder or project attachments cover it; an individual attachment to that file remains in place.
 
 ## Check website knowledge separately
 
-1. Open **Review pages** on the website source.
-2. Check that the relevant page is listed.
-3. Check that it shows **Saved**.
+For a website added directly to the agent, scroll to **Website** in the settings and find its source card.
 
-**Scanned** alone means the page has not yet been saved as knowledge. Follow [Add a website to your agent's knowledge](/knowledge-and-library/add-a-website-to-your-agents-knowledge) for the saving actions.
+1. Select **Review pages** and expand the relevant page to read the collected text.
+2. Check for **Saved**. If the page is only **Scanned**, select its **Save** action, or use **Save to Memory** to process pending and failed pages, and wait for saving to finish.
+3. Check that the source is **Active**. If it is **Paused**, switch it to **Active** to let the agent use it.
 
-On the source card, check **Active** rather than **Paused**. If the original site changed after collection, use **Refresh** and check the new result.
+If the public website has changed, select **Refresh** on the source. This uses its saved address to collect changes. Check the resulting page status and saved text before testing; the agent does not browse the current website for every question.
 
-Writing a website address in instructions does not give the agent automatic live browsing. Once the needed page is saved and active, continue with [Ask a direct question again](#ask-a-direct-question-again).
+For website material collected through Library, check that the saved pages or their Library folder are attached to this agent. Collection processes the pages into that folder without the direct-agent source's initial **Save to Memory** step. You can [review both ways of adding website knowledge](/knowledge-and-library/add-a-website-to-your-agents-knowledge) for more detail.
 
 ## Read the actual source
 
-Open the saved material and look for the answer in its text. A poorly extracted document or an image of a page may not supply the readable information you expect.
+For a Library file, open [Library](https://app.alysium.ai/library) and select its thumbnail, or open its three-dot menu and choose **Preview**. For an agent Website source, read the expanded page in **Review pages**.
 
-For a fictional shop, suppose the agent cannot explain delivery times. If the source contains only fitting and returns advice, supply the approved delivery information. Do not ask the agent to guess it.
+Look for the passage that answers your question. Check the actual contents and version, not just the filename. If the text is missing or unreadable, compare it with the approved original; the appearance of a page or screenshot does not establish that its words are available to search.
 
-Use [Paste text as knowledge](/knowledge-and-library/paste-text-as-knowledge) for a short approved note or [Upload files to your agent](/knowledge-and-library/upload-files-to-your-agent) for a document. Then continue with [Ask a direct question again](#ask-a-direct-question-again).
+For example, a returns FAQ cannot answer a delivery-times question if it contains no delivery information. Add the approved delivery facts:
+
+1. Return to the agent's **Settings** and scroll to **Knowledge**.
+2. In **Paste Text**, paste the approved passage and select **Add as Document**.
+3. Wait for the new document to show **Ready** in **Attached knowledge**.
+
+The submission saves the passage in Library and attaches it to this agent. For a new file instead, select **Browse files** under **Upload Documents**, choose it on your device and confirm the selection. Uploading starts immediately; wait for **Ready**. You can [check supported file types and upload limits](/knowledge-and-library/upload-files-to-your-agent) when choosing a document.
 
 ## Check answer behavior and instructions
 
-In **Knowledge** → **Behavior**, check the intended grounding and **Always consult knowledge before answering**. For a factual FAQ, Strict plus search-first can suit the job. These settings guide answers; they do not guarantee them.
+Once the agent has knowledge attached or a website source, open **Behavior** in **Knowledge**. **Answer grounding** controls how answers use the sources: **Strict** asks the agent to stay within its knowledge, **Balanced** prefers that knowledge while allowing identified general knowledge, and **Open** uses both as inputs.
 
-Read **Agent Instructions** in **Build** → **Settings** for a conflicting rule, such as ignoring sources or always inventing an answer. Let any correction save.
+For a factual FAQ, select **Strict** and turn on **Always consult knowledge before answering** to have the agent search first. In **When the answer isn’t in my knowledge…**, write how it should handle gaps, such as acknowledging that the FAQ has no answer and giving your real contact route. These settings guide answers; they do not guarantee correctness.
 
-[Control how your agent uses its knowledge](/knowledge-and-library/control-how-your-agent-uses-its-knowledge) explains those settings. After correcting them, continue with [Ask a direct question again](#ask-a-direct-question-again).
+Scroll to **Agent Builder** within Settings and read **Agent Instructions**. Correct any conflicting rule, such as an instruction to invent an answer when the source is silent. Behavior changes and instructions save automatically; wait for saving to finish before testing. The [knowledge behavior guide](/knowledge-and-library/control-how-your-agent-uses-its-knowledge) explains these choices in more depth.
 
 ## Ask a direct question again
 
-Use the preview beside the Build settings, or select **Chat Preview** within Build on a narrow screen. Enter a direct question using terms from the actual source, then select **Send message** or press Enter.
+Use the chat beside the Build settings on a wide screen, or select **Chat Preview** within Build on a smaller screen. Preview conversations use your space's credits.
 
-Compare the reply with the relevant passage. If the answer is still missing, give [support](/help/get-help-from-a-person) the source name, visible state and exact question. Avoid disclosing unnecessary private contents.
+Enter the same direct question, including the subject and any details needed to understand it without earlier messages. Use terms from the relevant passage, then select **Send message** or press Enter. Compare the answer with that passage, including its conditions and exceptions.
+
+If the source is attached, **Ready** or **Saved** and **Active** as appropriate, contains the answer and is still missed, email [support@alysium.ai](mailto:support@alysium.ai). Include the agent name, source title or website page address, exact question, visible source state and the answer you received.
 
 ## Avoid changes that obscure the cause
 
-Uploading the same file again creates another document; it is not an in-place replacement. Moving an old file to Trash does not automatically remove it from agents. Use [Remove a file from your agent](/knowledge-and-library/remove-a-file-from-your-agent) for that task.
+Correct one attachment, source or behavior issue at a time so you can tell what helped. Deliberately uploading the same file again creates another document; it does not replace the first one. Use [the attachment removal steps](/knowledge-and-library/remove-a-file-from-your-agent) when an old source should no longer be used.
 
-A different model cannot supply a private business fact that was never added. Correct one source, attachment or behavior issue at a time, then ask again.
+A different model cannot supply a private business fact that you have not added. Put the approved fact in a usable source, finish saving or processing, then test it again.

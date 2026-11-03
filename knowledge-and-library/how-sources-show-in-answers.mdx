@@ -4,35 +4,41 @@ description: "Understand source references returned by an agent's knowledge sear
 keywords: ["Alysium", "How sources show in answers", "Knowledge and Library"]
 ---
 
-Source references identify material returned by a search of an agent's knowledge. Use them to find the source and check an important fact against the actual answer.
+<span id="how-sources-show-in-answers" />
 
-A listed source is not proof that it answers the whole question or that every sentence in the reply is correct.
+Source references identify material returned by a search of an agent's knowledge. They help you find the source and check whether it supports the answer. A listed source does not prove that every sentence in the reply is correct.
 
 ## Where the references appear
 
-When **Searched the knowledge base** appears in a conversation, open that activity row to inspect its source details. A reply that did not use that search does not have to show the same panel.
+Look for **Searched the knowledge base** in the conversation's activity. When that row has source details, select it to expand the references. You can see the source count, titles and, when supplied, the search text. A row without references is plain text and cannot be expanded.
 
-To try this with an available agent, open [Chat](https://app.alysium.ai/chat), choose the agent and ask a question about its attached material. To check an agent you can edit, open it from [Home](https://app.alysium.ai/spaces) and use the preview in **Build**. On a narrow screen, select **Chat Preview** within Build.
+To inspect an answer, open [Chat](https://app.alysium.ai/chat), choose an available agent and ask about its knowledge. For your own agent, open [Home](https://app.alysium.ai/spaces) and select **Build** on its card. Use the chat beside the settings on a wide screen, or select **Chat Preview** within Build on a smaller screen. Preview conversations use your space's credits.
 
-These links open general app areas. Choose the agent whose reply you want to check.
+Not every reply includes this activity, and older saved conversations may lack detailed activity. An absent panel alone does not tell you why an answer missed a fact.
 
 ## What a document or website reference gives you
 
-| Reference | What you can inspect |
+| Reference | What it tells you |
 |---|---|
-| Uploaded document | Its name identifies the document. The reference is not a public download link. |
-| Website page | The reference can open the original page in a new tab. |
+| Uploaded or pasted document | The title identifies the document, with **documents** shown beneath it. This row is not a download link. |
+| Website page | The title, website host and page path identify the page. Select the reference to open the original page in a new tab. |
 
-For a document you own and can access, open [Library](https://app.alysium.ai/library) to inspect the saved material. A visitor seeing a source row does not gain general access to your Library.
+The original website may have changed since Alysium collected it. When checking an outdated answer, compare it with the saved page text as well as the current website.
+
+For a document in your Library, open [Library](https://app.alysium.ai/library) and select the file's thumbnail, or open its three-dot menu and choose **Preview**. Seeing a document reference in a conversation does not give a visitor access to your Library.
 
 ## Check the fact as well as the source name
 
-For a fictional shop assistant, ask a returns question that its approved FAQ answers. Open **Searched the knowledge base** and check whether the expected FAQ is listed. Then compare the actual reply with that FAQ's text.
+Suppose a shop's approved FAQ says returns are accepted within 14 days. A reply promising 30 days is not supported by that passage, even if the FAQ appears among its references.
 
-A familiar filename may identify an older or wrong version. Related search results may also leave part of the question unanswered. Check the relevant passage rather than stopping when you see a source row.
+Find the passage that answers the question and compare it with the actual reply. Check the conditions too: an answer might get the number right while leaving out an exception. A familiar filename can also identify an older version, so check the contents rather than stopping at the title.
+
+Previews vary by file type. Read the relevant saved material and compare it with your approved original if its text or formatting is unclear. For a website added directly to an agent, open **Review pages** on its Website source and expand the relevant page to read the collected text.
 
 ## When a source or fact looks wrong
 
-For an agent you can edit, check its attached knowledge and the named source's contents. Correct an outdated attachment or add missing approved information. Asking for a citation cannot create a source that was never supplied.
+In the agent's **Build** settings, select **Settings** if needed and scroll to **Knowledge**. Check **Attached knowledge** for the intended source. If a file is already in Library but missing here, select **Add from Library**, expand its project or folder, select the file and choose **Attach**. Check that it appears and reaches **Ready**.
 
-Use [Why your agent can't find something](/knowledge-and-library/why-your-agent-cant-find-something) to diagnose a missing fact. If an old attachment should be removed, follow [Remove a file from your agent](/knowledge-and-library/remove-a-file-from-your-agent). To add reference material, start with [Give your agent knowledge](/knowledge-and-library/give-your-agent-knowledge).
+If the source lacks the answer, add the approved facts. For a short passage, use **Paste Text** in Knowledge, paste the text and select **Add as Document**. This saves a document in Library and attaches it to this agent; wait for **Ready** before asking again. Asking for a citation cannot supply a fact that is absent from the sources.
+
+You can [diagnose attachment, website and answer-behavior problems](/knowledge-and-library/why-your-agent-cant-find-something) when the saved material contains the answer but the agent still misses it. If an outdated attachment should no longer be used, [remove that attachment](/knowledge-and-library/remove-a-file-from-your-agent).

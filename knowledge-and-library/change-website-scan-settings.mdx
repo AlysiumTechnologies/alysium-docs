@@ -4,72 +4,68 @@ description: "Change which pages an existing Library website collects and when i
 keywords: ["Alysium", "Change website scan settings", "Knowledge and Library"]
 ---
 
-Change which pages an existing Library website collects and when it refreshes. Use this when a scan is too broad, misses useful linked pages or needs a different schedule.
+<span id="change-website-scan-settings" />
 
-These settings change collection. They do not edit the original site or rewrite the agent's instructions. Use a website in a space you own for this Library settings task.
+Change how far an existing website scan follows links, which pages it skips and how often it collects updates. Use Library to change the collection settings. For a website already attached directly to an agent, you can also change its refresh schedule in the agent's settings.
 
 ## Open Website settings
 
-1. Open [Library](https://app.alysium.ai/library).
-2. Open the intended website entry.
-3. Open the three-dot menu beside its heading.
-4. Select **Website settings**.
-5. Confirm the website name and address.
+1. Open [Library](https://app.alysium.ai/library) and open the website entry you want to change.
+2. Open the three-dot menu beside the website's heading and select **Website settings**.
+3. Check the website name and address. The dialog shows the saved settings.
 
-If the dialog is already open, continue with [Choose the change](#choose-the-change).
-
-This guide covers an existing Library source. For first setup directly in an agent, use [Add a website to your agent's knowledge](/knowledge-and-library/add-a-website-to-your-agents-knowledge).
+The website address is locked. To start from a different address, [add a new website](/knowledge-and-library/add-a-website-to-your-agents-knowledge).
 
 ## Choose the change
 
-The website address is read-only in this dialog. To use a different starting address, add a new website.
+Use the options and limits displayed in the form.
 
-The available crawl fields may vary with the offered website source. Follow the displayed labels and bounds.
-
-| Your goal | Setting to review |
+| Setting | When to change it |
 |---|---|
-| Reach useful pages farther from the starting page | Link depth |
-| Allow more pages in the result | Maximum pages |
-| Exclude an unrelated section | Pages to skip |
-| Request updates on a different schedule | Re-scan frequency |
+| **How deep should we follow links?** | Increase the depth when useful pages are several links away from the starting page. Reduce it to keep collection closer to that page. |
+| **Maximum pages** | Set a ceiling for how many pages to collect. A higher ceiling allows more pages; it does not guarantee that many will be found. |
+| **Pages to skip** | Exclude sections you do not want in the collected knowledge. |
+| **How often should we re-scan?** | Choose how often to request automatic updates. Use the schedule options offered for this source. |
 
-For a fictional shop FAQ collecting unrelated blog pages, add the site's actual blog section to **Pages to skip**. For example:
+For example, if your site's blog should be excluded:
 
-1. Enter **/blog** in **Pages to skip**.
+1. Enter its actual section path, such as **/blog**, in **Pages to skip**.
 2. Press Enter or Space.
-3. Check that it appears as a visible exclusion.
+3. Check that the path appears as a chip. Select its **×** to remove the exclusion if needed.
 
-Use its remove button to undo the entry. Use paths from your own site, rather than a fabricated tutorial domain.
+Use a path from the website you are collecting. A link to another website or an exclusion covering only the homepage is refused with validation in the form.
 
-If information is stale, consider a different schedule or a scan now. Widening the scope does not by itself request fresher information.
+Changing the scope affects what the next scan can collect. If your goal is to update stale information now, request a scan when saving.
 
 ## Save the settings
 
-Choose one of these actions:
+Choose the action that matches your goal:
 
-| Action | Result requested |
+| Action | What happens |
 |---|---|
-| **Save** | Keep the settings without an immediate scan. |
-| **Save & scan now** | Keep the settings and request fresh collection now. |
+| **Save** | Stores the settings without starting a scan. |
+| **Save & scan now** | Stores the settings and requests a scan now. |
 
-1. Change the relevant crawl or schedule fields.
-2. Select the action that matches your goal.
-3. Read the result.
+Select one button, then read the result. Pressing Enter submits **Save**.
 
-These buttons are alternatives. You do not need to select both.
+On success, the dialog closes and shows **Website settings saved.** or **Settings saved — re-scanning now.** A result beginning **Settings saved.** can also warn that the scan could not start: your settings and the scan request have separate outcomes.
 
 ## Check settings and scan outcomes separately
 
-After a rescan, return to the website's page list and inspect the results and statuses before relying on changed information.
+Reopen **Website settings** to confirm the saved values. After a scan, inspect the website's page results and statuses to check that the useful pages were collected and the excluded section was left out. A schedule requests future scans; a website edit will not necessarily appear in knowledge immediately.
 
-A schedule requests future updates; it does not promise that each website edit is immediately known. Saving settings also does not prove a requested scan started.
+If you collected the website in Library, its folder must be attached to the agent that should use it. From [Home](https://app.alysium.ai/spaces), select **Build** on that agent's card, select **Settings** if needed and scroll down to **Knowledge**. Check for the folder in **Attached knowledge**. To attach it, select **Add from Library**, expand the website's project, select its folder and choose **Attach**. The attachment includes eligible pages collected into that folder later. You can [review the scope of folder and project attachments](/knowledge-and-library/use-library-files-in-an-agent) when choosing how much to share with an agent.
 
-If the settings saved but the scan could not start, read that separate result. Correct the cause, then select **Scan again** in the website view. You do not need to assume the settings were lost.
+For a website added directly in the agent, open **Review pages** in its **Website** section and check that the intended pages are **Saved** and the source is **Active**.
 
-For the intended agent to use the Library material, check its attachment using [Use Library files in an agent](/knowledge-and-library/use-library-files-in-an-agent).
+Preview messages use your space’s credits. To check the changed knowledge, ask a specific question answered by one of the collected pages. Use the chat beside the Build settings, or select **Chat Preview** within Build on a narrow screen. Enter the question, select **Send message** or press Enter, and compare the full reply with the collected page.
+
+## Change the schedule from the agent
+
+For a website already shown in an agent's **Website** section, the **Refresh schedule** selector saves a schedule change immediately. Select **Refresh** separately when you want an update now. These controls are separate from Library's **Website settings** dialog and its save buttons.
 
 ## If you cannot make the change
 
-- **A field is refused:** read its validation message and use the displayed bounds.
-- **A permission message appears:** confirm you are editing the intended website in your own space. Use [Get help from a person](/help/get-help-from-a-person) if the restriction is unexpected.
-- **The address needs to change:** add a new source; do not try to force a value into the read-only field.
+If a field is refused, correct its displayed validation message and try saving again. A validation or save failure keeps the dialog open with your edits.
+
+If the settings saved but the scan could not start, read the scan result and address any visible refusal. Use **Scan again** in the Library website view to request another scan, then check its page results.

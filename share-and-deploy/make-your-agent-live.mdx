@@ -4,73 +4,78 @@ description: "Check an agent's readiness and make it available through a public 
 keywords: ["Alysium", "Make your agent live", "Share and deploy"]
 ---
 
-Publishing lets people use the agent you have built. Use this guide after trying the agent in the builder, when you are ready to offer it through a public link or website widget. Use an agent whose builder you can edit.
+<span id="make-your-agent-live" />
+
+Make your agent available to visitors, then choose whether they will open it through a link, a QR code or your website.
 
 ## Before you launch
 
-Give the agent a name and fill **Agent Instructions** in **Build → Settings**. Instructions tell it its role and how to help. Add knowledge if it needs your own facts; readiness to publish does not mean those facts have been added.
+Open [Home](https://app.alysium.ai/spaces) and select **Build** on the intended agent's card. In **Build → Settings**, give it an **Agent Name** and fill **Agent Instructions** with its job, answer style and limits. These fields save automatically; wait for saving to finish and resolve any displayed validation message.
 
-For a fictional practice café assistant, ask about a fact you supplied and then a fact you left out. Review **Welcome Message** in **Build → Settings**, then review visitor appearance in **Design**. Replace fictional practice information before offering the agent to customers.
+Add the reference material it needs in **Knowledge**, reached by scrolling down in Settings. Before sharing, use the chat beside the settings on a wide screen, or **Chat Preview** within Build on a narrow screen:
 
-Use [Test your agent while you build](/build-your-agent/test-your-agent-while-you-build) if you still need to check its answers.
+- Ask a question your sources answer and compare the reply with the source.
+- Ask about something the sources do not contain, and check that the agent handles the gap appropriately.
+- Try a request outside its job and check its response style.
 
-**Already on Deploy?** Continue with [Check readiness](#check-readiness).
+Give each test question the context it needs. Preview messages use your space's credits. Save a correction before testing again; you can [plan a broader set of preview checks](/build-your-agent/test-your-agent-while-you-build) as you refine the agent.
+
+Review **Welcome Message** in Settings for the greeting visitors will read. To change appearance or enabled features, open **Design**, make the changes and select **Save Changes** near the top. Wait for **All Changes Saved**. Replace any fictional practice information before offering the agent to real visitors.
 
 ## Open the launch controls
 
-1. Open [Home](https://app.alysium.ai/spaces).
-2. Select the intended agent.
-3. Open **Deploy**.
-4. Continue with [Check readiness](#check-readiness).
+Select the main **Deploy** tab. On a narrow screen, the main Build, Design and Deploy tabs are at the bottom.
 
-Home opens your active space, where you choose the agent. If it asks you to sign in, sign in. Open Home again if needed. On a narrow screen, the builder's main tabs may appear along the bottom.
+The launch card appears above the distribution choices: **Share link + QR**, **Embed on a website** and, for agents that offer it, **Share & Sell**.
 
 ## Check readiness
 
-Read the launch card before publishing:
+The launch card checks the name and Agent Instructions. It does not check whether your knowledge is complete or your answers are correct.
 
-- **Draft** means the agent is not currently published.
-- **Ready to go live** means the required fields are present.
+| Status | What to do |
+|---|---|
+| **Draft** | Read **Finish in Build** for the missing name or instructions. |
+| **Ready to go live** | The required fields are present and **Make agent live** is available. |
+| **Needs attention** | Check the listed requirements and the Published/Public access summary. One launch setting may be on while the other is off, or required Build fields may be missing. |
+| **Live** | The agent is Published, public access is on and the required fields are present. Choose a distribution method. |
 
-If the card already shows **Live**, this launch task is complete. Continue with [Choose where people will open it](#choose-where-people-will-open-it).
+If **Finish in Build** lists a missing item, select **Build → Settings**, complete it, wait for the field to save and return to **Deploy**. **Finish in Build** is guidance rather than a button.
 
-If **Finish in Build** lists something missing:
-
-1. Select **Build**.
-2. Fill in each missing item.
-3. Wait for the builder to finish saving.
-4. Return to **Deploy**.
-
-Once the required fields are present, continue with [Make the agent available](#make-the-agent-available).
+A **Needs attention** agent can still use **Make agent live** once its required fields are present. If it is already Published with public access on, that button is absent; finish any listed Build fields instead.
 
 ## Make the agent available
 
-1. Select **Make agent live**.
-2. Wait for the action to finish.
-3. Check that the launch card shows **Live**.
+1. Select **Make agent live** when it is available.
+2. Wait while the button says **Making live…**.
+3. Check the confirmed launch summary: **Published** and **Public access on**. With the required fields present, the badge shows **Live**.
 
-The make-live action publishes the agent and enables public access together. There is no separate final Save button.
-
-This launch task is complete when the card shows the saved Live state. Distribution is the next task: finish one of the sharing guides below before sending a link or relying on an installed widget.
+This action saves publication and public access together. **Direct link** has its own setting, so choose how visitors will reach the agent before distributing it.
 
 ## Choose where people will open it
 
-| Method | Continue with |
+| Method | What it needs |
 |---|---|
-| **Share link + QR** | [Share your agent with a link and QR code](/share-and-deploy/share-your-agent-with-a-link-and-qr-code). A standalone address also needs **Direct link** on. |
-| **Embed on a website** | [Put your agent on your website](/share-and-deploy/put-your-agent-on-your-website). You need permission to edit and publish that website. |
-| **Share & Sell** | [List your agent on Agenthub](/selling-and-payouts/list-your-agent-on-agenthub), which has separate requirements. |
+| **Share link + QR** | Turn on **Direct link**, wait for the actual address and QR, then open the visitor page to check it. You can [copy the link and save a QR image](/share-and-deploy/share-your-agent-with-a-link-and-qr-code) for email, profiles or printed material. |
+| **Embed on a website** | Copy the generated installation code into your website's custom-script facility, publish the website change and check the agent on the published page. The [website installation guide](/share-and-deploy/put-your-agent-on-your-website) covers placement and allowed websites. Direct link is independent of this method. |
+| **Share & Sell** | Complete the separate listing and selling requirements. Going live does not create an AgentHub listing or publish a marketplace version; you can [prepare a listing](/selling-and-payouts/list-your-agent-on-agenthub) separately. |
 
-Going live does not create an AgentHub listing. Use the actual link or installed widget to check the destination when you finish its sharing guide.
+The saved launch state completes this task. Check the actual visitor destination when you finish setting up your chosen method.
 
 ## Understand Launch settings
 
-Expand **Launch settings** when you need the individual controls. **Development status** describes whether the agent is Draft or Published. **Publish only** changes that status; it does not by itself enable public access.
+Expand **Launch settings** to change publication and public access separately:
 
-**Public access** controls whether external share links and website embeds can be used. The button is **Enable public access** or **Make private**, depending on the current state. A published agent with public access off is not a live public experience.
+- Under **Development status**, **Publish only** changes Draft to Published; **Unpublish** changes it back to Draft.
+- Under **Public access**, **Enable public access** allows public delivery; **Make private** turns that access off.
+
+Public delivery requires both Published and public access on. For example, if an existing agent is Published but private, **Enable public access** completes those two settings. **Publish only** alone leaves public access unchanged.
+
+Wait for each change to finish and check the saved summary. Unpublishing or making the agent private prevents new public link and embed requests from using it.
 
 ## If the status or link is not ready
 
-If the button is disabled, resolve the missing requirements or wait for a pending save. If saving fails, read the error and retry; do not assume the status changed.
+If **Make agent live** is disabled, complete the items listed under **Finish in Build**, or wait for a pending save. If making it live fails, read the launch-card message, check the saved fields and retry the action.
 
-If a public link is missing despite Live, check **Direct link** under **Share link + QR**. Continue with [Share your agent with a link and QR code](/share-and-deploy/share-your-agent-with-a-link-and-qr-code) to save that setting and check the real destination.
+An individual Launch settings action can show **Development status did not save. Try again.** or **Public access did not save. Try again.** Check the resulting summary before retrying that action.
+
+If the summary confirms public delivery but a link is missing, select **Share link + QR**, turn **Direct link** on and wait for its settings to finish loading and saving. Use **Retry** if loading fails. The [link and QR guide](/share-and-deploy/share-your-agent-with-a-link-and-qr-code) includes copying, testing and recovery for that destination.

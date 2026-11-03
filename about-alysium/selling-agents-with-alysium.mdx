@@ -4,44 +4,58 @@ description: "Understand the separate requirements for public access, paid offer
 keywords: ["Alysium", "Selling agents with Alysium", "About Alysium"]
 ---
 
-You can prepare an Alysium agent for a paid offer, but creating the agent is only the first part. Public access, the way you offer it and payment readiness each have their own requirements.
+<span id="selling-agents-with-alysium" />
 
-Start by building an agent with reliable instructions and knowledge, then check its behavior. Use this page to choose the detailed selling guides for your intended offer.
+You can offer an agent through a monthly subscription, choose how much usage it includes and let people try a limited preview before subscribing. The agent's setup, payment readiness and delivery channel each need attention before you offer it to customers.
+
+Start with a clear job the agent can perform and information you can check. For example, a workshop helper could explain preparation materials and guide a planning conversation. Test its answers and its handling of missing information before charging for access.
 
 ## Decide how people will reach the agent
 
-From [Home](https://app.alysium.ai/spaces), open the intended agent and select **Deploy**. A direct link, a website widget and an AgentHub listing are different ways to reach people.
+Open [Home](https://app.alysium.ai/spaces), select **Build** on the intended agent's card, then select **Deploy**. The delivery choices serve different audiences:
 
-[Ways to share or sell your agent](/selling-and-payouts/ways-to-share-or-sell-your-agent) explains the choices. Use [List your agent on Agenthub](/selling-and-payouts/list-your-agent-on-agenthub) when you want a storefront listing.
+| Choice | When to use it |
+|---|---|
+| **Share link + QR** | Give your audience a link to standalone chat, or a QR code that opens it. |
+| **Embed on a website** | Put the visitor chat on a website you can edit. |
+| **Share & Sell** | Prepare the agent's offer and manage its selling channels. |
 
-For example, a fictional workshop could share a free FAQ link while preparing a separate paid training-agent offer. Making the FAQ live would not complete the paid offer's setup.
+Select **Share & Sell** to find **Buyer access**, subscription setup and the channel cards. Selling to your own audience through a widget or standalone link is separate from AgentHub's curated storefront. AgentHub has creator and listing review requirements; that review is not required simply to set up payments for your own audience.
+
+You can [compare the sharing and selling routes](/selling-and-payouts/ways-to-share-or-sell-your-agent) before choosing a channel. For discovery in the storefront, [prepare an AgentHub listing](/selling-and-payouts/list-your-agent-on-agenthub).
 
 ## Find your creator setup
 
-Your space currently contains only you, its owner. Invitations and member-role workflows are unavailable.
+Open [Profile Settings](https://app.alysium.ai/spaces?settings=team), select **Creator**, then **Setup**. This area shows the steps completed and what still needs attention for payments and payouts.
 
-To find the creator area:
+When Stripe needs information, use the offered **Set up Stripe** or **Continue Stripe onboarding** action. Complete the requested details with Stripe, return to Alysium and check the resulting readiness status. An existing Express account can also offer **Open Stripe Express** for managing its details. If the page reports that Stripe has nothing to collect, read the readiness message and refresh its status instead of restarting onboarding.
 
-1. Open [Team settings](https://app.alysium.ai/spaces?settings=team).
-2. Select **Creator** in **Profile Settings**.
-3. Read the setup state shown there.
-
-If Profile Settings is already open, select **Creator** and continue with step 3. The setup state determines which actions are available. [Use your Creator Dashboard](/selling-and-payouts/use-your-creator-dashboard) explains those screens. [Set your public creator handle](/spaces/set-your-public-creator-handle) covers your space's public identity.
+Payment setup has its own requirements, so opening onboarding is only the start. You can [complete the Stripe setup](/selling-and-payouts/set-up-stripe-to-get-paid) with more detail on the states shown there. The [Creator Dashboard](/selling-and-payouts/use-your-creator-dashboard) also holds your listings, subscribers and payout information.
 
 ## Prepare the paid offer
 
-Use the guides that apply to your chosen channel:
+In the agent's **Deploy → Share & Sell** area, **Buyer access** lets you choose **Free access** or **Paid subscription**. Free access lets people chat without an agent subscription. A paid subscription asks them to complete checkout for the offer.
 
-- [Set up Stripe to get paid](/selling-and-payouts/set-up-stripe-to-get-paid) explains payment setup.
-- [Price your agent](/selling-and-payouts/price-your-agent) explains the offer's price and included usage.
-- [Apply to sell on Agenthub](/selling-and-payouts/apply-to-sell-on-agenthub) covers the marketplace application.
+To prepare subscription terms:
 
-Follow the readiness messages shown for your account. Available setup controls do not mean every account can activate paid selling immediately.
+1. Select **Edit subscription setup** in **Buyer access**.
+2. Enter **Monthly access price (USD)**. This is the recurring fee for the agent.
+3. Choose the included premium usage in credits. This gives the buyer a usage bundle with the subscription; its dollar value must be less than the monthly access price.
+4. Expand **Free preview messages** and choose how many messages people can try before subscribing.
+5. Select **Save** and wait for **Pricing saved**. Check the resulting price, included usage and preview summary.
 
-## Know what is ready before offering it to customers
+Choose **Paid subscription** when that is the access you want. If a confirmation appears, read the effect and select **Switch to paid** to confirm; **Cancel** keeps the current choice. A later change to free access can similarly ask you to confirm **Switch to free**.
 
-A **Live** state confirms the agent's publication and public access. A marketplace listing and paid offer have their own readiness checks. Receiving earnings also has separate payout rules, explained in [When and how you get paid](/selling-and-payouts/when-and-how-you-get-paid).
+Describe what buyers receive in the offer's highlights: the job, the information it uses and the boundaries they should expect. You can [work through the pricing choices](/selling-and-payouts/price-your-agent) in more detail. Saving these terms prepares the offer; activating or updating a selling channel is a separate action.
 
-Check that the intended channel and paid offer are available before promising access to customers.
+<span id="know-what-is-ready-before-offering-it-to-customers" />
 
-If setup is blocked, read the specific readiness message and follow its named guide. If **Creator** is missing or a paid activation or listing problem continues, use [Get help from a person](/help/get-help-from-a-person). Include the agent, intended channel and exact message. Keep payment credentials out of the request.
+## Check the offer and channel before sharing
+
+The launch card's **Live** state means the agent is published with public access. Check the intended selling channel's own readiness and saved state as well. A live agent alone does not confirm that a paid channel is active or that an AgentHub listing is available.
+
+Read the remaining requirements on the channel card and complete its activation or update action. When you change an existing offer, check whether the channel still has pending changes to apply. A new price or access summary is not proof that buyers already see the change. AgentHub's **Approved** review state also has separate publication and payment-readiness requirements.
+
+Once the intended channel confirms its saved state, check what visitors can open through the link, installed widget or listing you intend to offer. Earnings follow a separate [payout process](/selling-and-payouts/when-and-how-you-get-paid).
+
+If a setup action fails, keep the exact message and check the resulting saved state before trying again. For an unresolved blocker, [contact Alysium support](/help/get-help-from-a-person) with the agent name, intended channel, action and result.

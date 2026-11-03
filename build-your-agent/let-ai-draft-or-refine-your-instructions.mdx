@@ -4,104 +4,89 @@ description: "Ask Alysium to propose instructions for an existing agent, review 
 keywords: ["Alysium", "Let AI draft or refine your instructions", "Build your agent"]
 ---
 
-Ask Alysium to propose instructions for an agent you already have. You can review and refine the proposal before applying it.
+<span id="let-ai-draft-or-refine-your-instructions" />
 
-Use an agent you can edit in a space you own. Drafting and each refinement use credits. If you prefer to write directly, use [Write your agent's instructions](/build-your-agent/write-your-agents-instructions).
+Use the instruction helper to turn a description of your agent's job into proposed instructions. Read the proposal, ask for changes and choose when to put it into **Agent Instructions**.
 
-This flow changes instructions for an existing agent. Creating a new agent is a separate task. Reference documents still belong in Knowledge.
+Each draft and refinement uses your space's credits, including a refinement started by a suggestion chip. You can also [write the instructions directly](/build-your-agent/write-your-agents-instructions).
 
 ## Open the instruction helper
 
-1. Open [Home](https://app.alysium.ai/spaces).
-2. Select the intended agent.
-3. Open **Build** → **Settings**.
-4. In **Agent Builder**, select **Generate Agent Prompt** above **Agent Instructions**.
+1. Open [Home](https://app.alysium.ai/spaces) and select **Build** on your agent's card.
+2. Select **Settings** if it is not already selected.
+3. Scroll past the name, welcome message and conversation starters to **Agent Builder**.
+4. Select **Generate Agent Prompt** above **Agent Instructions**.
 
-Home opens your current space; choose the agent whose instructions you want to change. Keep a copy of existing instructions you want to preserve before replacing them.
+Keep a copy of any current instructions you want to preserve before replacing them.
 
-If the helper's request box is already open, continue with [Request a proposal](#request-a-proposal). If it instead shows a continuing conversation from guided creation, follow [Refine instructions already in the editor](#refine-instructions-already-in-the-editor).
+A fresh request uses the description you type. Include the audience, job, style, rules and limits you want; the helper does not read the current instructions, agent name or description for you. To revise existing instructions in a fresh helper request, copy the current text into your request and explain the change you want.
+
+If you arrived here after guided agent creation, the helper may already show its drafting conversation with **Refine** and **Dismiss**. That conversation carries the earlier draft, so you can give it a follow-up request.
 
 ## Request a proposal
 
-Describe the audience, task, answer style and limits. For a fictional shop, you could ask:
+Describe the behavior you want in enough detail for the helper to write it. For a fictional shop assistant:
 
-> Help customers understand our hiking-boot notes. Ask about their terrain and fit needs. Use plain language. Do not invent stock or return policies; say when the supplied notes do not answer the question.
+> Draft instructions for an assistant that answers visitors' questions about our hiking shop. It should use the shop FAQ I will attach as knowledge. Keep answers short and friendly. Ask one question at a time when a visitor's request is unclear. If the FAQ does not answer a question, tell the visitor to contact the shop team. Do not invent prices, stock availability or returns policies.
 
-Replace this with your real task. Describe the desired behavior without including private account details.
+Replace this with your agent's real job and rules. Include the actual wording of any policy you want in the instructions. Reference documents that the finished agent should use belong in **Knowledge** separately.
 
 1. Enter your request in the helper's text box.
-2. Select **Draft prompt**.
-3. Wait for the proposed instructions to appear.
-4. Read the entire proposal, including its limits and assumptions.
+2. Select **Draft prompt** and wait for the proposal.
+3. Read the entire proposal, scrolling through it to check the task, rules and assumptions.
 
-A visible proposal has not yet been applied to the editor. Use [Refine the proposal](#refine-the-proposal) to correct invented features or policies before applying it.
+The proposal is ready for your review. Applying it is a separate action.
 
 ## Refine the proposal
 
-If the proposal needs a change, give a specific follow-up. For the fictional shop:
+Describe a specific change in the follow-up box and select **Refine**. For example:
 
-> Keep the same job, but ask only one question at a time and make the suggested next step a short sentence.
+> Keep the same job and source rules. Ask only one clarification question at a time, and make the suggested next step one short sentence.
 
-1. Enter your follow-up request.
-2. Select **Refine**.
-3. Wait for the revised proposal.
-4. Read it before deciding whether to apply it.
+Wait for the revised proposal and read it again. Check that it keeps any rules you still need and removes invented policies or promises.
 
-If suggestion chips appear, selecting one starts a refinement immediately. Each refinement uses credits.
-
-A suggested skill is separate from the instruction text. Add it only if you want that extra guidance; [Add skills to your agent](/build-your-agent/add-skills-to-your-agent) explains that task.
-
-Continue with [Apply or discard the proposal](#apply-or-discard-the-proposal).
+Selecting a suggestion chip starts a refinement immediately and uses credits. A suggested skill has its own separate chip action; use that action if you want to [add the skill to your agent](/build-your-agent/add-skills-to-your-agent).
 
 ## Apply or discard the proposal
 
-Choose the control that matches the editor's state:
+Choose the action that matches what you want:
 
-| Control | What it does |
+| Control | Result |
 |---|---|
-| **Insert instructions** | Applies the proposal when the editor is empty. |
-| **Replace instructions** | Replaces instructions already in the editor. |
-| **Discard** | Dismisses the proposal without applying it. |
+| **Insert instructions** | Puts the proposal into an empty instructions editor. |
+| **Replace instructions** | Replaces the text already in the editor. |
+| **Discard** | Rejects the proposal and leaves the editor's instructions as they were. |
 
-To apply your chosen proposal:
+To use the proposal, select **Insert instructions** or **Replace instructions**, then check the text in **Agent Instructions**. Applying starts the normal automatic save for instructions. Let saving finish before leaving the builder.
 
-1. Select **Insert instructions** or **Replace instructions**, as shown.
-2. Wait for the normal instructions save to finish.
-3. Check the text in **Agent Instructions**.
-
-If you discard the proposal, continue editing manually with [Write your agent's instructions](/build-your-agent/write-your-agents-instructions).
-
-**Undo replace** appears briefly after a replacement. Use it promptly if you applied the wrong proposal. It is not permanent version history.
-
-Continue with [Check the saved instructions](#check-the-saved-instructions).
+After a replacement, **Undo replace** is available for eight seconds. Select it promptly if you applied the wrong proposal; keep your own copy for changes you may want to reverse later.
 
 ## Refine instructions already in the editor
 
-After guided agent creation, the helper may show a continuing conversation with **Refine** and **Dismiss**. The initial instructions are already in the editor in this state.
+If you created the agent with guided drafting, its initial instructions are already in **Agent Instructions**. The helper's continuing conversation may offer **Refine** and **Dismiss**.
 
-If you want to keep the initial instructions, select **Dismiss** and continue with [Check the saved instructions](#check-the-saved-instructions).
+Select **Dismiss** to keep those initial instructions and close the helper. To change them:
 
-To change them:
+1. Read the instructions in the editor.
+2. Enter a specific follow-up in the helper and select **Refine**.
+3. Read the new proposal, including any unchanged rules you need to keep.
+4. Select **Replace instructions** to use it, or **Discard** to keep the current instructions.
 
-1. Read the current **Agent Instructions**.
-2. Enter a specific follow-up request in the helper.
-3. Select **Refine**.
-4. Read the new proposal.
-5. Continue with [Apply or discard the proposal](#apply-or-discard-the-proposal).
+The continuing conversation supplies the earlier draft. If you have since edited the instructions yourself, include the updated text in your request so the helper can work from those changes.
 
-The initial instructions are already applied; a new refinement is a proposal that you still choose whether to apply.
+For an agent whose helper is starting fresh, paste the instructions you want revised into its request box with your change, select **Draft prompt**, then review and apply the proposal in the same way.
 
 ## Check the saved instructions
 
-Applying a proposal uses the normal automatic save for instructions. Let the save indicator near the top of the builder finish before leaving. On a computer, hover over it to check for **All changes saved**.
+Check **Agent Instructions** after applying the proposal. If the editor flags a length problem, shorten the text until it passes validation. The limit is estimated at 20,000 tokens, which are pieces of text rather than a word count.
 
-Return to [Home](https://app.alysium.ai/spaces), reopen the same agent and check **Build** → **Settings** → **Agent Instructions**. Confirm your intended text remains.
+Wait for saving to finish. Where the save indicator is shown, hover over it to check for **All changes saved**. Return to [Home](https://app.alysium.ai/spaces) and select **Build** on the same agent's card. Select **Settings** if needed, then scroll to **Agent Builder** and confirm that the intended text remains in **Agent Instructions**.
 
-Then try a question relevant to the task. Use [Test your agent while you build](/build-your-agent/test-your-agent-while-you-build) to compare a reply with the instructions and sources.
+Try a question related to the instructions. Use the chat beside the settings on a wide screen, or select **Chat Preview** within Build on a smaller screen. Type your question, then select **Send message** or press Enter. Preview messages also use credits. Compare the answer with the intended behavior and the agent's actual sources. You can [test more of the agent’s behavior](/build-your-agent/test-your-agent-while-you-build) before relying on the revised instructions.
 
 ## If drafting or refinement fails
 
-- **Drafting credits are exhausted:** review the current space's usage in [Billing](https://app.alysium.ai/spaces?settings=billing), or continue editing the existing instructions manually.
-- **A follow-up fails:** the last good proposal stays visible. Read the error before trying the refinement again.
-- **The proposal invents a policy or capability:** request a correction through [Refine the proposal](#refine-the-proposal) before applying it.
-- **The applied text does not save:** preserve it in your notes and follow the save recovery in [Write your agent's instructions](/build-your-agent/write-your-agents-instructions).
+- **The space is out of drafting credits:** continue by editing **Agent Instructions** yourself. Each new draft or refinement needs credits.
+- **A refinement fails:** the last good proposal stays visible. Read the error, then enter or re-enter your desired change in the follow-up box before selecting **Refine**.
+- **The proposal invents a policy or capability:** describe the correction and refine it before applying.
+- **The reopened editor does not contain your intended text:** preserve your copy, enter the text in **Agent Instructions**, let saving finish and reopen the agent to check it again.

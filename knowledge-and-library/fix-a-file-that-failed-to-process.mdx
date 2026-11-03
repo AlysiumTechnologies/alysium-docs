@@ -4,72 +4,78 @@ description: "Use the message beside a failed document to identify the stage tha
 keywords: ["Alysium", "Fix a file that failed to process", "Knowledge and Library"]
 ---
 
-Use the message beside a failed item to recover the step that stopped. A document can finish one stage and fail at another.
+<span id="fix-a-file-that-failed-to-process" />
 
-| Stage | What is happening |
+Check which step stopped before retrying a file. Uploading, preparing its contents and attaching it to an agent are separate stages:
+
+| Stage | What happens |
 |---|---|
 | Transfer | The file moves from your device to Alysium. |
-| Processing | Readable knowledge is prepared from the file. |
-| Attachment | The saved document is connected to an agent. |
-
-Keep the original file on your device until the upload is complete. Avoid repeated uploads before checking what was already saved.
+| Processing | Alysium prepares readable knowledge from the saved file. |
+| Attachment | The saved file is connected to the intended agent. |
 
 ## Find the failed item
 
-For an agent upload:
+For a file uploaded through an agent:
 
-1. Open [Home](https://app.alysium.ai/spaces).
-2. Select the intended agent.
-3. Open **Build** → **Settings** → **Knowledge**.
-4. Find the file in **Attached knowledge**.
-5. Read its name, status and accompanying message.
+1. Open [Home](https://app.alysium.ai/spaces) and select **Build** on that agent's card.
+2. Select **Settings** if another Build view is open, then scroll down to **Knowledge**.
+3. Find the filename in **Attached knowledge** and check its status.
 
-If the upload began in [Library](https://app.alysium.ai/library), open the relevant upload or location there. Read the file's status and message, then continue with [Correct the cause](#correct-the-cause).
+An upload still open can show **Failed**, a message and **Retry**. A saved file loaded when you return later can show **Failed** and **Remove**, without the upload's message or Retry action.
 
-**Ready** means preparation completed. **Failed** needs attention. A processing spinner is a waiting state, not an instruction to delete the source.
+If the upload started in [Library](https://app.alysium.ai/library), check its **Upload files** dialog while the upload is still open. It can show the failed stage, a message and **Retry**. For a file already saved, find it in its Library project or folder.
+
+**Ready** means processing finished. A processing spinner means the file is still being prepared; wait for its result.
 
 ## Correct the cause
 
-| Message concerns | What to do before retrying |
+When the upload gives a refusal, use that message to choose the correction:
+
+| Refusal concerns | What to change |
 |---|---|
-| Format | Export to a supported actual format. Renaming an extension does not convert the file. |
-| File size | Reduce or split the source. |
-| Storage | Review usage and Trash using [Storage limits](/knowledge-and-library/storage-limits). Resolve the space's storage issue first. |
+| File format | Export a genuine supported file. Alysium accepts CSV, Word (.doc or .docx), Markdown (.md or .markdown), PDF, plain text (.text or .txt), and Excel (.xls or .xlsx). Renaming an extension does not convert the contents. |
+| File size | Reduce or split the file so each file is at most **25 MiB**. |
+| Storage | Reduce the selection to fit the space still available, or resolve the space's storage usage before selecting files again. You can [check what counts toward storage](/knowledge-and-library/storage-limits). |
 
-[File and storage limits](/help/file-and-storage-limits) lists supported formats and caps. Retry cannot make an unsupported or over-quota selection valid.
+A changed or re-exported file needs a new selection:
 
-If the message says the document is saved in Library but not attached, go to [Recover the attachment](#recover-the-attachment).
+- **Upload it to an agent:** use **Browse files** under **Upload Documents** in that agent’s Knowledge, select the corrected file on your device and confirm.
+- **Keep it in Library:** open [Library](https://app.alysium.ai/library), open the project or folder where you want to save it, then select **Add new** → **Upload files**. In the upload dialog, select **Browse files**, choose the corrected file and confirm. Check the destination shown in the dialog.
+
+Uploading starts on selection. This creates a new upload; **Retry** does not replace an existing item’s contents with your edited file. A Library-only upload must be attached separately if an agent should use it.
 
 ## Retry the existing item when offered
 
-After correcting the cause:
+If the original upload row offers **Retry**, select it and read the result. Retry attempts the step that stopped, which may be transfer, processing or attachment. Wait for the updated status.
 
-1. Select **Retry** if the failed row offers it.
-2. Select the original file if Alysium asks for the same file again.
-3. Wait for the updated state.
-4. Check whether it reaches **Ready**.
+For a saved failed file, including one whose agent row only offers Remove:
 
-An earlier browser session may no longer hold the local file needed for transfer. Use the same original file when requested.
+1. Open [Library](https://app.alysium.ai/library) and find the same file in its project or folder.
+2. Open the file's three-dot menu and select **Try again** when offered.
+3. Read the action's result. If it starts retrying, wait for the file's updated status.
 
-Some saved document rows do not offer Retry. If no recovery action is available, use [Get help from a person](/help/get-help-from-a-person) with the filename, file type and exact message. **Remove** is a different action from retrying.
+**Try again** requests processing of the file already stored in Library. It does not upload revised contents from your device.
+
+If the result says **Retry this file from its upload queue.**, return to the original upload attempt if it is still open and use its **Retry** action. If that attempt is no longer available, or Retry reports that the original file is unavailable and cannot continue, the saved item has not been recovered. Contact [support@alysium.ai](mailto:support@alysium.ai) with the filename, the affected agent if applicable, the visible status, the action you tried and its result. Do the same if the offered retry finishes with another failure.
 
 ## Recover the attachment
 
-If the document is saved in Library but not attached:
+If a warning says the file was saved in Library but not attached, select **Retry attachment** beside that warning. Check that the file appears in the intended agent's **Attached knowledge**. This retries the connection without uploading or processing another copy.
 
-1. Select **Retry attachment** beside the warning.
-2. Check that the source appears in this agent's **Attached knowledge**.
+To attach a saved file to an agent yourself:
 
-This repairs the connection to the agent. It does not upload or process another copy.
+1. Open **Build** on the intended agent's card in [Home](https://app.alysium.ai/spaces), select **Settings** if needed and scroll down to **Knowledge**.
+2. Select **Add from Library** and expand the file's project and folder.
+3. Select the file and choose **Attach**.
+4. Check that file in **Attached knowledge**.
 
-If you intended a different agent, follow [Use Library files in an agent](/knowledge-and-library/use-library-files-in-an-agent) to attach the saved material there. Do not assume an unsuccessful attachment connected it elsewhere.
+You can [attach a whole folder or project](/knowledge-and-library/use-library-files-in-an-agent) when the agent should also use other eligible files in that container.
 
 ## Check the recovered result
 
-Confirm the document is Ready. If it is meant for an agent, also confirm it is attached to that intended agent, then ask about a fact the source contains.
+Preview messages use your space’s credits. For an agent, check that the intended file is **Ready** in **Attached knowledge**. Choose a specific fact in the file, then ask a question about it in the chat beside the Build settings. On a narrow screen, select **Chat Preview** within Build. Select **Send message** or press Enter, then compare the full reply with the file's actual contents.
 
-[Test your agent while you build](/build-your-agent/test-your-agent-while-you-build) explains how to find the preview and check that reply.
+If you are keeping the file only in Library, check its status in the list view. If Library shows file cards, select the list icon above the files (**View as list**), then check that the file is **Ready**.
 
-If a corrected file keeps failing, give support the file type, visible state and exact message. Avoid sending confidential content unnecessarily.
-
-If you choose to delete a failed row, read the action carefully; deletion is separate from retry. [Upload and file messages](/help/upload-and-file-messages) explains the visible stages.
+If you remove an attachment from the agent, **Remove** revokes that selected connection. The agent may still have access through an attached folder or project. A failed upload's **Delete** action is separate cleanup; it does not retry the file.

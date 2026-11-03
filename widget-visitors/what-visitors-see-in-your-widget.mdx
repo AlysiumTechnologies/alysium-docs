@@ -4,61 +4,62 @@ description: "Understand the website chat experience visitors use to ask an agen
 keywords: ["Alysium", "What visitors see in your widget", "Your widget visitors"]
 ---
 
-The widget is the small chat experience installed on a website. Visitors use it to ask the agent questions; they do not need access to your agent builder.
+<span id="what-visitors-see-in-your-widget" />
 
-They see the welcome content, chat controls and menu options available for that agent and their visitor session.
+Visitors use the widget to ask your agent questions from a website. They see its greeting, conversation and visitor menus, while you manage its instructions and reference information in the agent builder.
 
 ## Open the actual visitor view
 
-Go to the published website where the widget is installed and open its chat launcher. Use that website's address rather than an Alysium builder link.
+Visit the published website where the widget is installed. With a floating installation, select its chat launcher. An inline or fullscreen installation may show the chat directly instead.
 
-Creators can find installation controls from [Home](https://app.alysium.ai/spaces): select the intended agent, then open **Deploy** → **Embed on a website**. For a separate chat page, use the actual link under **Share link + QR**.
-
-A separate chat link does not show whether the website installation works.
+To find this agent's website installation settings, open [Home](https://app.alysium.ai/spaces), select **Build** on its card, then open **Deploy → Embed on a website**. A separate chat page is available through **Share link + QR** when sharing is enabled. That page gives visitors another way to chat; checking it does not verify the website installation.
 
 ## Welcome, questions and chat
 
-The welcome message explains what the agent helps with. Offered starter prompts are suggested questions visitors can choose to begin. For example, a fictional café might offer a menu question. The creator supplies the actual wording and information.
+The opening **Home** view introduces the agent through its greeting and description. If starter questions are enabled, visitors can select one to send that question. Write starters that match questions the agent's information can answer.
 
-To send your own question:
+To ask something else, open **Chat**, type in the message box, then select **Send message** or press Enter. Use Shift+Enter for a new line. The question appears in the conversation, followed by the agent's response when it finishes.
 
-1. Open **Chat** in the widget.
-2. Enter a question in the message box.
-3. Select the arrow button labelled **Send message**, or press Enter.
-4. Wait for the response.
-
-Ask a follow-up if you need more detail. A useful first-visit check is whether the expected agent is identified, the question appears in Chat and a response arrives.
+A useful first-visit check is whether the widget identifies the intended agent, explains what it helps with and responds to a question it should be able to answer. Compare the answer with the information you supplied.
 
 ## What the navigation means
 
-| Item | Where it takes the visitor |
+| Item | What visitors use it for |
 |---|---|
-| **Home** | The welcome experience. |
-| **Chat** | The conversation. |
-| **Account** | The visitor's account menu. |
+| **Home** | Read the introduction and choose an offered starter question. |
+| **Chat** | Write messages and read the conversation. |
+| **Conversations**, when enabled | Open the conversation list through a main-navigation shortcut. |
+| **Account** | Find history, uploaded files, privacy information and help. |
 
-Account can provide **Conversation history**, **View conversations**, **Your uploaded files**, **Data & Privacy**, **About This Agent** and help options. Available features and links depend on creator configuration and the visitor's session.
+During an active chat, the bottom navigation is hidden. Select **Back to browse** in the chat header to return to the browsing view, then open Account or another navigation item.
 
-Optional **Conversations** or **Resources** items may also appear in the main navigation.
+**Account** contains:
+
+- **About This Agent**, with public information about its creator.
+- **Conversation history**, the visitor's preference for saving conversations.
+- **View conversations**, which remains available even when the main Conversations shortcut is hidden.
+- **Your uploaded files**, the visitor's own uploaded-file gallery.
+- **Data & Privacy** and **Help & Support**.
+- **Terms & Privacy**, if the creator has supplied a policy link.
+
+Help & Support opens the creator's external help page when one is configured; otherwise it opens the widget's contact screen. These are help routes supplied for that agent. The visitor's Account menu is separate from your agent-building settings.
 
 ## What the creator controls
 
 | Creator area | What it supplies |
 |---|---|
-| **Build** | Instructions, knowledge, welcome message and starter questions. |
-| **Design** | Appearance and enabled widget features. |
-| **Deploy** | Public link or website installation. |
+| **Build** | The agent's instructions, reference knowledge, welcome message and starter questions. |
+| **Design** | The widget's appearance, menu details and feature switches. |
+| **Deploy** | Public access, sharing and website installation. |
 
-Opening Account does not let a visitor change the agent's instructions. Visitor account and history choices apply to the visitor's chat experience.
+Visitors also make choices within their own experience. For example, turning off **Conversation history** makes their conversation temporary and hides attachments. The [visitor account guide](/widget-visitors/visitor-accounts-and-saved-history) explains saved-history limits and account choices.
 
-When checking a release, read the welcome content, try an offered starter, send your own question and inspect Account. Check the installed widget as well as the builder preview.
-
-If the welcome wording is wrong, review the intended agent's Build settings. For appearance or feature differences, check its saved Design choices.
+For a release check, read the opening content, try an offered starter or your own question, and inspect Account on the published website. If the welcome text is wrong, correct it in Build settings. If a menu detail or feature differs from what you intended, check the saved Design configuration.
 
 ## If the visit does not work as expected
 
-Use [When the widget will not load](/widget-visitors/when-the-widget-will-not-load) for a missing launcher or connection problem.
+If a floating launcher is missing, check the published page and try reloading it. A visitor who still cannot open the chat should give the website owner the page address and describe what happened. The owner can [check the installation and access settings](/widget-visitors/when-the-widget-will-not-load).
 
-For a missing old conversation, check the same agent, account and website. A session on one website does not automatically follow a visitor to another. [Visitor accounts and saved history](/widget-visitors/visitor-accounts-and-saved-history) explains those limits.
+An open panel may show an access or connection message instead of a conversation. Read that message; use **Retry** if it is offered.
 
-[Your widget on phones](/widget-visitors/your-widget-on-phones) covers a phone visit.
+For missing old conversations, check the same agent, website and visitor account. A visit on one website does not guarantee access to history on another. The [phone guide](/widget-visitors/your-widget-on-phones) explains the phone layout and the differences between an installed widget and a separate chat link.

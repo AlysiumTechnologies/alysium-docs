@@ -4,67 +4,72 @@ description: "Arrange Library material in projects and folders so you can find s
 keywords: ["Alysium", "Organise your Library", "Knowledge and Library"]
 ---
 
-Arrange reference material in projects and folders so you can find it and choose deliberately what an agent should use. Projects group work, folders organize related material, and files hold the reference information.
+<span id="organise-your-library" />
 
-Creating, moving or renaming can require permission beyond reading an item. You need permission for the operation you want to perform.
+Arrange reference files in projects and folders so you can find them and choose deliberately what agents should use. A **Customer help** project, for example, could contain separate **Approved FAQ** and **Draft material** folders. Keeping them separate lets you attach approved material without including drafts.
 
-Open [Library](https://app.alysium.ai/library) to work with your current space's material. If asked to sign in, sign in and open Library again if needed. Use the projects rail to open the project you want to organize.
-
-For a fictional **Customer help** project, you might keep **Approved FAQ** and **Draft material** in separate folders. Those are example names you create. Keeping them separate helps you attach approved material without including drafts.
+Open [Library](https://app.alysium.ai/library) to organise your current space's material. Projects group folders and files; **General** is the default project.
 
 ## Create a project
 
-1. Select **New project** in the projects rail.
-2. Enter a meaningful name in the creation dialog.
-3. Select **Create**.
-4. Check that the new project appears.
-
-A blank name leaves Create unavailable.
+1. On a wide screen, find the projects rail on the left. Select the plus beside **Library**, labelled **New project**.
+2. Enter a **Project name**.
+3. Select **Create**, wait for the result, then check that the new project appears.
 
 ## Create a folder
 
-1. Open the intended project or parent folder.
-2. Select **Add new**.
-3. Select **New folder**.
-4. Enter a meaningful **Folder name**.
-5. Select **Create**.
-6. Check the folder in that location.
+1. Open the project or parent folder where the new folder belongs.
+2. Select **Add new → New folder**.
+3. Enter a **Folder name** and select **Create**.
+4. Wait for the result and check the new folder in that location.
 
-Inside the destination, **Add new** also offers **Upload files**, **Paste text** and the available website source. Uploading a complete folder is not currently supported. Use [Upload files to your agent](/knowledge-and-library/upload-files-to-your-agent) for the document procedure.
+A folder created with no project selected goes into **General**. A blank name leaves **Create** unavailable. The creation dialog can close before saving finishes, so use the result and the new item to confirm the change.
+
+**Add new** also offers files, pasted text and website sources. You can [save text as a document](/knowledge-and-library/paste-text-as-knowledge) or [add a website source](/knowledge-and-library/add-a-website-to-your-agents-knowledge) when that suits the material. Uploading a complete folder is unavailable; create the folders and add files to them.
 
 ## Rename an item
 
-1. Open the item's menu.
-2. Select **Rename** where offered.
-3. Enter the new name.
-4. Select **Save**.
-5. Check the saved name.
+1. Open the item's three-dot menu.
+2. Select the pencil beside its name at the top of the menu, labelled **Rename [name]**, where offered.
+3. Enter the **New name** and select **Save**.
+4. Wait for the result and check the name shown in Library.
 
-Renaming changes how you identify the item. It does not rewrite its contents. Check the result before relying on that name in an agent's instructions.
+For an open project or folder, you can also use the three-dot menu beside its heading. Renaming changes the item's name without rewriting file contents.
 
 ## Move files or folders
 
-Moving material can change an agent's knowledge scope when it has a whole folder or project attached. Check the source and destination before moving an approved file into or out of such a container.
+Moving a file into or out of a folder or project attached to an agent can change that agent's knowledge coverage. Check the intended source and destination before moving approved material.
 
-1. Select the item's **Move** action.
-2. Choose the destination in the move dialog.
-3. Select **Move here**.
-4. Open the destination to check the result.
+Use this procedure for ordinary files and folders. Website pages and managed website or visitor-upload folders cannot be moved through it. A folder containing a managed folder is also excluded.
 
-For several items, select them first. Use the bulk **Move** action, then continue from the destination choice in step 2 above.
+1. Open the item's three-dot menu and select **Move**. For several files or folders, select their checkboxes and use **Move** in the selection bar.
+2. Choose a selectable destination in the tree. **General** can be selected directly. Other project names are headings; choose an ordinary folder within the project as the destination.
+3. Select **Move here** and wait for the result.
+4. Open the destination to check the moved items. Check any agents using the source or destination containers to confirm their intended knowledge remains available.
 
-A destination can be unavailable because it is protected or the move is invalid.
+Managed folders are not move destinations, and a folder cannot be moved into itself or its descendants. If a move is refused, read the displayed reason and choose an allowed destination or item. For a bulk move, check each item's actual location before retrying anything that did not move.
 
-## Read folder and project deletion scope
+<span id="read-folder-and-project-deletion-scope" />
 
-Deleting a file and deleting a containing folder or project have different scope. A structural deletion can affect descendant items and show a count-based confirmation. Read its explanation of saved files and agent access before confirming.
+## Delete a folder or project
 
-The default **General** project and special website or visitor-upload folders have restrictions. Deleting a container is not a shortcut for removing one agent's knowledge attachment. Use [Remove a file from your agent](/knowledge-and-library/remove-a-file-from-your-agent) for that task.
+Deleting a folder or project permanently removes its structure, including nested folders. Its live files move to **Trash** for 30 days. Files already in Trash keep their existing deletion dates; deleting their container does not restart that period.
 
-If a deletion confirmation says the contents changed, review the updated counts before deciding again. If a file was moved to Trash, use [Restore or permanently delete from Trash](/knowledge-and-library/restore-or-permanently-delete-from-trash) for recovery or permanent erasure.
+Agents keep equivalent access to the files after this deletion. To stop an agent using saved material, [remove its knowledge attachment](/knowledge-and-library/remove-a-file-from-your-agent) instead.
+
+Use this procedure for ordinary folders and projects without managed website or visitor-upload folders inside them. **General** and the managed folders themselves are excluded.
+
+1. Open the ordinary folder or project's three-dot menu and select **Delete**.
+2. Read the confirmation's container name, nested-folder counts and file counts. Check which files will move to Trash and where recovered files will go.
+3. Select **Delete** only if the stated scope is what you intend.
+4. Wait for the result and check that the container has gone. If the confirmation reports a changed scope and updates its counts, review them before confirming again.
+
+After a folder deletion, recovered files return to the surviving project's root. After a project deletion, they return to **General**. You can [restore files from Trash](/knowledge-and-library/restore-or-permanently-delete-from-trash); recovery does not recreate the deleted project or folder structure.
+
+If deletion is refused because the scope contains a managed folder, read that result before choosing another action. Removing a website source is a separate task from organising its Library folder.
 
 ## If a change fails or a file is missing
 
-Check the actual location and the permission message before repeating a failed create, move or rename. A failed action is not confirmation that the item changed.
+Read the displayed result or error, then check the item's current name and location before retrying. A closed create, rename or move dialog does not establish that the operation finished.
 
-Use [Find files in your Library](/knowledge-and-library/find-files-in-your-library) and check Trash when material seems missing. Once the structure is ready, use [Use Library files in an agent](/knowledge-and-library/use-library-files-in-an-agent) to attach the intended file, folder or project.
+If material seems missing, [search Library by name](/knowledge-and-library/find-files-in-your-library) and check Trash. Once your folders contain the intended material, you can [attach the selected files, folders or projects to an agent](/knowledge-and-library/use-library-files-in-an-agent).

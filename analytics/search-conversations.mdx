@@ -4,65 +4,57 @@ description: "Find an agent's existing conversations by words in a question or a
 keywords: ["Alysium", "Search conversations", "Analytics"]
 ---
 
-Find an agent's existing conversations by words in a question or an answer. Search helps when you remember the topic but not the date or conversation title.
+<span id="search-conversations" />
 
-Search covers the selected agent's accessible conversation messages. It does not search other agents or the documents in your Library.
-
-**Already on the right agent's Analytics page?** Continue with [Search the messages](#search-the-messages).
+Find an agent's saved conversations by a word in a question or reply, then read the exchange to check that it is the one you wanted.
 
 ## Open the conversation list
 
 1. Open [Analytics](https://app.alysium.ai/analytics).
-2. Under **Your Agents**, select the intended agent.
-3. Open **Conversations**, or **Chats** on a smaller screen, if the list is hidden.
-4. Continue with [Search the messages](#search-the-messages).
+2. Under **Your Agents**, select the intended agent's card and check the agent name on the page that opens.
+3. If the list is hidden on a smaller screen, select **Conversations** or **Chats**.
 
-The link opens the Analytics overview, where you choose your own agent. If it asks you to sign in, sign in. Open Analytics again if needed.
+The overview shows up to 20 agent cards. If the intended agent is missing, [check the dashboard's scope and active space](/analytics/read-your-analytics-dashboard#if-something-is-missing).
 
 ## Search the messages
 
-Start with one distinctive word likely to appear in the exchange. More words can narrow the search, so begin simply if you are unsure of the wording.
+Start with one distinctive word likely to appear in the exchange. Search includes the agent's replies: a search for **receipt** can find a reply mentioning a receipt even if the visitor never used that word.
 
-1. Under **Recent Conversations**, select **Search conversations...**.
-2. Type your search word.
-3. Wait for the searching indicator to finish.
-4. Select a matching conversation.
-5. On a small screen, open **Msgs** if needed.
-6. Read the messages to confirm that you found the exchange you wanted.
+1. Under **Recent Conversations**, click **Search conversations...** and type the word.
+2. Wait for the list to finish loading the matches. Typing starts the search automatically.
+3. Select a matching conversation and wait for its saved messages.
+4. Read the question and reply to confirm the match. On smaller screens, selection switches to **Messages** or **Msgs**; open that tab if needed.
 
-Typing triggers the search. There is no separate Search button, and you do not need to send a chat message.
+Changing the search can leave an earlier transcript open. Select a row from the matching list before treating the displayed messages as a search result.
 
-For example, suppose a visitor to a fictional outdoor-shop assistant asked what to bring for a return. The reply mentioned a receipt. Searching for **receipt** can find that conversation even though the visitor did not type the word, because search includes the agent's replies.
+Search matches words and beginnings of words, rather than any sequence of letters inside a word. With several words, all must match within a message. Punctuation does not turn a search into an exact-phrase request. Try a distinctive plain word first, then add words to narrow the results.
 
 ## Understand which conversations are searched
 
-**Searching all conversations** means the search covers all time, rather than the summary's selected period or a custom list date range. A **Last 7 days** summary does not restrict keyword results to that week.
+**Searching all conversations** appears in place of the list calendar while you have a search word entered. Search covers the selected agent's saved questions and replies across all time. Matches come from message text, not just conversation titles. Search is limited to this agent; it does not search other agents or your Library.
 
-Search still follows the list's **Show teammate conversations** setting, where available. Turn it on when looking for your own practice chats. This setting includes you as the space owner; your space currently has no other members. It changes the list scope without changing visitor summary metrics.
+The summary's **Period**, custom list dates and **Showed it didn't** filter do not restrict keyword results. A **Last 7 days** summary can therefore sit above results from much earlier conversations.
+
+**Show teammate conversations** still affects search. It starts off; turn it on to include your own practice chats. Your space currently contains only you, its owner. This control changes the list and search without changing the visitor summary metrics.
 
 ## Return to the ordinary or dated list
 
-1. Select the X in the search field, labelled **Clear search**.
-2. Wait for the regular conversation list to return.
+Select the X labelled **Clear search** in the search field. Wait for the ordinary list and its calendar to return. The list returns to its retained date range and other list choices, so check those controls if you expected a broader result.
 
-To choose dates, continue with [Filter conversations by date](/analytics/filter-conversations-by-date). Search can hide the date picker while it is active.
+To choose a custom range, open **Filter by date range**, or the displayed dates, and select its start and end days. The list updates when you select the range. The X labelled **Clear date filter** returns the list to all time. You can [read more about which activity the dates include](/analytics/filter-conversations-by-date).
 
-Searching and clearing search change the view without editing or deleting messages. No Save action is needed. Selecting a result can mark that conversation as read.
+Searching and clearing search need no **Save** action. Selecting a result yourself can mark it as read after the update succeeds.
 
 ## If nothing matches
 
-1. Check the selected agent's name.
-2. Check your spelling.
-3. Try one distinctive word instead of a complete sentence.
-4. Turn on **Show teammate conversations**, if available, when looking for your own practice chat.
+Check the agent name and spelling, then try one distinctive word or fewer words. When looking for your own practice chat, turn on **Show teammate conversations**.
 
-A topic in a knowledge document will not appear here unless it was also mentioned in an accessible conversation message. Try a different word from the exchange if your first search returns no matches.
+A topic in a knowledge document will only match here if it also appears in a searchable conversation message. No matches do not establish that the topic has never come up; try another word you remember from the exchange.
+
+Newly saved activity does not automatically appear in the current view. Refresh or reopen the agent's Analytics page if you are looking for a conversation that just happened, then enter your search again.
 
 ## If searching fails
 
-1. Select **Retry** if the failed-read message offers it.
-2. [Clear the search](#return-to-the-ordinary-or-dated-list) to check whether the regular list loads.
+If the list shows **Couldn't load these conversations.**, select its **Retry**. You can also use **Clear search** to check whether the ordinary list loads.
 
-If the problem continues, record the agent name, search word and displayed error for support. Avoid including private transcript contents unless they are needed to explain the problem.
-
-Once you find the conversation, use [Export conversations](/analytics/export-conversations) for a local copy or [Read answer feedback](/analytics/read-answer-feedback) to investigate a reported answer problem when Feedback is available.
+If a matching row loads but its saved messages do not, reload or reopen the agent's page. Alternatively, select a different conversation, then select the intended result again and wait for its messages.

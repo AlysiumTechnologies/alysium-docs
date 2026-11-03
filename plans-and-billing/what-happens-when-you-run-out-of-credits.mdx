@@ -4,62 +4,72 @@ description: "Identify whether chat paused for a space allowance, an additional-
 keywords: ["Alysium", "What happens when you run out of credits", "Plans credits and billing"]
 ---
 
-Chat can pause when an allowance is spent or a saved additional-spending cap is reached. First identify which limit the notice describes; a space allowance, a purchased agent's bundle and a free preview are different.
+<span id="what-happens-when-you-run-out-of-credits" />
 
-A payment problem can also pause chat while credits remain. If the notice concerns a failed or unpaid payment, use [Fix a failed payment](/plans-and-billing/fix-a-failed-payment).
+Chat can pause when an included allowance is spent or a saved additional-spending cap is reached. Check which allowance is involved before changing a plan: your space's credits, a purchased agent's bundle and a free preview each have their own limits.
 
 ## Match the notice to the next check
 
-| What the notice concerns | Continue with |
+| What the notice concerns | What to inspect |
 |---|---|
-| Your space's allowance or on-demand limit | [Check the space balance and cap](#check-the-space-balance-and-cap). |
-| A purchased agent's included bundle | [Check the agent's bundle](#check-the-agent%E2%80%99s-bundle). |
-| A website agent reaching its creator's limit | [If you are a website visitor](#if-you-are-a-website-visitor). |
-| The end of a free marketplace preview | [Try an agent for free](/agenthub/try-an-agent-for-free), which explains the preview's end and the choice to review a paid offer or stop. |
+| The space's allowance or additional-spending limit | The current period in **Consumption**, then the plan and saved **On-Demand Usage** setting in Billing. |
+| A purchased agent's included usage | That agent and creator's card under **Agent Access and Subscriptions** in Billing. |
+| A failed payment or paused subscription | The affected subscription's payment status. Remaining credits do not resolve a payment problem. |
+| The end of a free preview | The agent's paid offer, if you want to keep using it, or the option to stop. This preview is separate from your space's credits. |
+
+A general **Usage limit reached** message may not identify the cause on its own. Compare it with the actual balance and subscription status. For a payment warning, [resolve the existing bill](/plans-and-billing/fix-a-failed-payment). If a free preview has ended, you can [review the choice to subscribe](/agenthub/try-an-agent-for-free) before deciding whether to pay.
 
 ## Check the space balance and cap
 
-Already on **Usage & Consumption** for the intended space? Start at step 3. Otherwise, the settings link opens the current space's **Profile Settings**, initially on Team.
+1. Open [Billing](https://app.alysium.ai/spaces?settings=billing). Check the space name above the settings content, then read its plan and subscription status.
+2. Select **Consumption**. On **Usage & Consumption**, check the period between the **«** and **»** controls and select **Summary**. If you are viewing an earlier period, use **»** to return to the current one.
+3. Wait for the amounts to load, then compare used credits with the included allowance and remaining amount.
+4. Select **Billing** again. For Pro, scroll below the plan controls to **Overage Billing** and **On-Demand Usage**, where shown. Compare the saved **Billing Period Limit** with the **Usage** amount.
 
-1. Open [Profile Settings](https://app.alysium.ai/spaces?settings=team).
-2. Select **Consumption**.
-3. Confirm the current space and displayed period.
-4. Select **Summary**.
-5. Read the remaining credits.
-6. Open [Billing](https://app.alysium.ai/spaces?settings=billing).
-7. Check the plan and subscription status.
-8. Read the saved **On-Demand Usage** setting, where available.
-
-| Plan or setting | What happens after included credits are spent |
+| Plan or setting | After the included credits are spent |
 |---|---|
-| Free | Usage pauses at the allowance. |
-| Pro with additional usage **Disabled** | Usage also pauses at the allowance. |
-| Pro with on-demand usage enabled | Usage may continue within the saved additional-usage limit. Reaching a **Fixed** cap can stop further usage even while Pro remains subscribed. |
+| Free | Usage stops at the allowance. |
+| Active Pro with **Disabled** on-demand usage | Usage stops at the allowance. |
+| Active Pro with on-demand usage enabled | Paid usage can continue within the saved limit. A reached **Fixed** cap can stop it. |
 
-Use Consumption's displayed period dates to understand the next allowance period. [Check your usage](/plans-and-billing/check-your-usage) explains the period controls and breakdowns.
+You can wait for the next allowance period, using the dates shown in Consumption, then check the new balance. If you need more usage sooner on Free, you can [review Pro and its checkout terms](/plans-and-billing/upgrade-to-pro). Pro is a recurring subscription; additional usage is a separate spending choice.
 
-If you need usage sooner, review [Upgrade to Pro](/plans-and-billing/upgrade-to-pro) or [Turn on overages and set a cap](/plans-and-billing/turn-on-overages-and-set-a-cap), as appropriate for the current plan. These changes can create charges. Review their terms and save/confirmation steps before deciding. An edited but unsaved cap does not permit more usage.
+For active Pro, decide whether you want to permit more paid usage before changing **Billing Period Limit**:
 
-After a saved change or a new allowance period, check the current balance and setting again before returning to chat. If a limit notice remains, compare its wording with those recorded amounts rather than making another purchase.
+| Setting | What it allows |
+|---|---|
+| **Fixed** | Paid additional usage up to a USD limit for the billing period. Enter a valid nonnegative amount in the adjacent USD field. |
+| **Unlimited** | Paid additional usage without a fixed dollar cap. |
+| **Disabled** | No additional usage after the included credits are spent. |
+
+1. Open the menu beside **Billing Period Limit** and choose a mode. For **Fixed**, enter the amount you intend to allow.
+2. Select **Save**. Wait for **Updating your plan...** to finish and for the success message.
+3. Reopen [Billing](https://app.alysium.ai/spaces?settings=billing), scroll to **On-Demand Usage** and check the saved mode and, for **Fixed**, the amount.
+
+Editing the mode or amount alone does not save it. A zero fixed limit permits no additional usage. Lowering or disabling a limit does not erase charges already incurred. Usage already in progress can take spending beyond a fixed amount; the cap is checked against recorded usage before new work starts. You can [read more about setting a cap](/plans-and-billing/turn-on-overages-and-set-a-cap) before choosing one.
+
+If a **Fixed** amount has a validation message, correct it before saving. If saving fails, reopen Billing and inspect the saved value before trying again. After a saved change or a new allowance period, check the balance and setting, then return to chat.
+
+<span id="check-the-agents-bundle" />
 
 ## Check the agent's bundle
 
-1. Open [Billing](https://app.alysium.ai/spaces?settings=billing) using the account that obtained the agent.
-2. Find **Agent Access and Subscriptions**.
-3. Locate the card by both agent and creator name.
-4. Read the premium-usage meter and bundle reset information, where shown.
-5. Continue with [Check the space balance and cap](#check-the-space-balance-and-cap) to see what usage may be available after that bundle.
+1. Open [Billing](https://app.alysium.ai/spaces?settings=billing) for the space that obtained the agent and scroll to **Agent Access and Subscriptions**.
+2. Match both the agent and creator name. Read the subscription's status and, where shown, the **Premium usage** meter.
+3. Compare consumed credits with the bundle limit and read the reset or access information beneath the meter.
 
-Spending the bundle does not cancel the monthly agent subscription. Further usage depends on the buyer's space plan and limits. Buying the same agent again is not a bundle-reset action. Renewal and bundle reset dates can differ; use the dates shown on the card. [How credits work](/plans-and-billing/how-credits-work) explains the separate allowances.
+The agent's included bundle is used first. After it is spent, continued usage depends on your space's allowance and limits. Spending the bundle does not cancel the agent's subscription, and buying the agent again is not a bundle-reset action.
+
+Use the card's actual bundle-reset information. Its subscription renewal date concerns billing and can differ from the bundle reset; an unavailable reset date cannot be worked out from the renewal date. [How credits work](/plans-and-billing/how-credits-work) explains the two allowances.
 
 ## If you are a website visitor
 
-A notice that the agent reached its message limit can concern the creator's allowance. You cannot raise that allowance from the visitor chat. The creator needs to check the space that owns the agent, using [Check the space balance and cap](#check-the-space-balance-and-cap).
+When the notice concerns your own purchased agent, open [Billing](https://app.alysium.ai/spaces?settings=billing) and find its agent and creator under **Agent Access and Subscriptions**. Check the payment status and bundle there.
 
-If you are visiting someone else's site, report the exact notice to the site or agent owner. Buying a visitor subscription is not a guaranteed remedy for a creator-wide usage pause.
+If the notice concerns the site or agent owner's allowance, share the exact message with that owner. They need to check the space that owns the agent. A visitor cannot raise that allowance from the chat, and buying a visitor subscription may not resolve that pause.
 
 ## If the warning conflicts with the balance
 
-Reopen Consumption for the current space and period. Compare the exact warning with the plan status, remaining credits and saved cap. If it still conflicts, contact billing@alysium.ai with the affected agent, space and warning.
+Reopen Consumption for the intended space and current period, then check the plan status, the agent's card and any saved cap in Billing. If the notice still conflicts with those amounts or a confirmed setting change, contact [billing@alysium.ai](mailto:billing@alysium.ai) with the space and agent names, displayed amounts, status and exact notice.
 
-An active subscription alone does not establish that usage is available. Likewise, a spent free preview is not exhaustion of your space plan. If the notice instead says access ended, payment is pending or the listing is unavailable, use [Why a marketplace chat is read-only](/agenthub/why-a-marketplace-chat-is-read-only).
+If the notice instead says access ended, payment is pending or the listing is unavailable, [check the agent's access state](/agenthub/why-a-marketplace-chat-is-read-only) before changing a spending limit.

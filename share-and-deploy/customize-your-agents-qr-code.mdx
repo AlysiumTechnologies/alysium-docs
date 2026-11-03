@@ -4,86 +4,72 @@ description: "Customize the QR image people scan to open your agent, choose colo
 keywords: ["Alysium", "Customize your agent’s QR code", "Share and deploy"]
 ---
 
-Change the picture people scan to open your agent. You can adjust colors, the shape of the code and what appears in its center without creating a new agent.
+<span id="customize-your-agent’s-qr-code" />
 
-Use an agent whose deployment settings you can edit. [Make the agent live](/share-and-deploy/make-your-agent-live) and [enable its direct link](/share-and-deploy/share-your-agent-with-a-link-and-qr-code) first so you can check the destination as well as the picture.
-
-**Already in the QR editor?** Continue with [Choose colors](#choose-colors), [Choose dots and a center](#choose-dots-and-a-center) or [Save and download the result](#save-and-download-the-result).
+Change the colors, pattern and center image of the QR code people scan to open your agent. The appearance can change while the destination stays the same.
 
 ## Open the QR editor
 
-1. Open [Home](https://app.alysium.ai/spaces).
-2. Select the intended agent.
-3. Open **Deploy**.
-4. Select **Share link + QR**.
-5. Select **Customize QR**.
-
-Home opens your active space, where you choose the agent. If it asks you to sign in, sign in. Open Home again if needed.
-
-The editor starts from your widget's appearance and shows a live QR preview. After each appearance change, check the preview and wait for **Saving…** to finish before changing another option.
-
-It is fine to use the first version; continue with [Save and download the result](#save-and-download-the-result) if you want to keep it.
+1. Open [Home](https://app.alysium.ai/spaces) and select **Build** on the intended agent’s card.
+2. Open **Deploy**. On a narrow screen, this navigation is at the bottom.
+3. If the agent is not live, check the launch card. Complete any missing name or Agent Instructions in Build, then return and select **Make agent live**. Wait for the launch change to save.
+4. Select **Share link + QR** and turn **Direct link** on. Wait for the address and QR code to appear.
+5. Select **Try your live agent** to check the destination, then return and select **Customize QR** to expand the appearance controls.
 
 ## Choose colors
 
-Under **What should it look like?**, choose a color swatch or open the color editor using **Add a new color**.
+Under **What should it look like?**, select a swatch: **Text color**, **Brand color**, **Accent color** or **Black**. These use colors from the agent’s theme.
 
-- **Code** changes the dark pattern the camera reads.
-- **Background** changes the area behind the pattern.
-- **Solid color** uses one pattern color.
-- **Gradient** blends starting and ending pattern colors. Choose each end color and the offered **Gradient style**.
-- The color editor lets you pick a hue and adjust saturation and brightness. Use its hex color field if you already have an exact brand color.
+For your own colors, select **Add a new color**. The editor offers:
 
-For a simple starting choice, use a dark code on a light background. This is a suggested practice choice, not a required brand style. Colors may be adjusted slightly so cameras can read the code.
+- **Solid color** for one code color, or **Gradient** for starting and ending colors.
+- **Code** and **Background** controls for the pattern and the area behind it.
+- A hue selector, saturation and brightness controls, and a hex field for an exact color.
+- Gradient **Style** choices: **Left to right**, **Top to bottom**, **Diagonal**, **Reverse diagonal** and **Radial**.
 
-Check the preview after a change. Continue with [Choose dots and a center](#choose-dots-and-a-center) for another adjustment, or [Save and download the result](#save-and-download-the-result) when ready.
+Start with a dark code on a light background so it is easy to scan. Check the preview as you change the colors. Alysium may adjust a color for readability and show a message explaining the adjustment.
 
 ## Choose dots and a center
 
-Under **How should the dots look?**, choose **Rounded**, **Square**, **Dots** or **Petal**. Each sample changes the complete code pattern; you do not have to configure each corner separately.
+Under **How should the dots look?**, select **Rounded**, **Square**, **Dots** or **Petal**. Each choice changes the whole pattern.
 
-Under **What goes in the middle?**, choose the option you want:
+Under **What goes in the middle?**, choose:
 
-| Option | Result |
+| Option | What appears in the center |
 |---|---|
-| **Nothing** | Leaves the full code pattern visible. |
-| **Initials** | Shows the agent's initials. |
-| **Agent picture** | Uses its profile picture. If it has no picture, [add an agent picture](/build-your-agent/set-your-agents-name-picture-and-description) or choose another center. |
-| **Upload** | Uses your own logo or photo. Continue with [Upload a center image](#upload-a-center-image). |
+| **Nothing** | The code pattern, without a center image. |
+| **Initials** | The agent’s initials. |
+| **Agent picture** | The agent’s profile picture. The option indicates when no profile picture has been added. |
+| **Upload** | A logo or photo you provide. |
 
-**Surprise me** offers another combination if you want to explore the available looks. Once you have the appearance you want, continue with [Save and download the result](#save-and-download-the-result).
+To add a profile picture, open **Build → Profile**, scroll to **Agent Images**, and upload an **Avatar**. The [profile guide](/build-your-agent/set-your-agents-name-picture-and-description) explains the image controls.
+
+**Surprise me** tries another combination of the available appearance choices. It keeps your custom colors and uploaded image available for later use.
 
 ## Upload a center image
 
-Use **PNG, JPG or WebP** up to **2 MB**. The image becomes a small square, so choose something recognizable at a small size.
+Use a **PNG, JPG or WebP** image up to **2 MB**. Choose something recognizable when shown small.
 
 1. Select **Upload** under **What goes in the middle?**.
-2. Select the upload area.
-3. Choose the image file.
-4. Check the preview.
+2. Select the upload area and choose the file, or drop the file into that area.
+3. Wait for the upload and saving to finish, then check the QR preview.
 
-You can drop the image into the upload area instead of selecting it. Then continue from the preview check in step 4.
-
-Once uploaded, **Use a different image** replaces it. **Remove** removes the custom image and returns the center choice to the agent picture; it does not delete the agent's profile picture. Continue with [Save and download the result](#save-and-download-the-result).
+**Use a different image** replaces the uploaded center image. **Remove** clears it and switches the center to **Agent picture**; your profile picture stays in place.
 
 ## Save and download the result
 
-The editor saves changes as you make them. Downloading creates an image file; it is not the action that saves editor settings.
+QR appearance changes save automatically. Wait for **Saving…** to finish before distributing the result. If you see a save error, correct it and check the saved appearance by reopening the editor.
 
-1. Check the preview after your appearance changes.
-2. Wait for **Saving…** to finish.
-3. Select **Download PNG**.
-4. Locate the downloaded image.
-5. Scan it with a phone.
-6. Check that it opens the intended agent.
-7. Check it again at the size and distance people will actually use.
+Once the QR preview is ready, choose **Download PNG** for an ordinary image file or **SVG** for an image that can scale for printing. **Copy image** is also available in browsers that support copying images. Downloading or copying the picture does not confirm that the appearance settings saved.
 
-Test the downloaded image before printing more copies. If you make another change, wait for saving and download the updated result before testing it.
+Open the downloaded image and scan it with a phone. Check that it opens the intended agent. Before printing many copies, test a sample at the size and distance people will use. Download and test a new image after making further changes.
 
 ## If a change does not work
 
-If an image upload fails, read the error and try a supported file within the size limit. If the upload area says it needs a workspace, open the agent from [Home](https://app.alysium.ai/spaces) and follow [Open the QR editor](#open-the-qr-editor) before retrying.
+If an upload fails, read its error and choose a supported image within the size limit. If the upload area specifically asks you to open the agent from a workspace, return to [Home](https://app.alysium.ai/spaces), select its **Build** button and reopen **Deploy → Share link + QR → Customize QR**.
 
-If the QR preview cannot load, the separately displayed text link remains a way to share the agent. Use [Share your agent with a link and QR code](/share-and-deploy/share-your-agent-with-a-link-and-qr-code) to copy it.
+If an appearance change fails to save, read the deployment error, check the saved result by reopening the editor, and repeat the intended change if needed.
 
-If a printed sample is hard to scan, return to a simple, high-contrast appearance and try again before printing more copies.
+If export says **Export failed — try again**, wait for the preview to be ready and try the export again. If the QR preview cannot load, you can still copy the separately displayed text link to share the agent.
+
+For a printed code that is difficult to scan, try a simple, high-contrast appearance and test another sample before printing more copies.

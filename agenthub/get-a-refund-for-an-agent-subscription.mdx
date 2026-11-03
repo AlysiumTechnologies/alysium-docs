@@ -1,56 +1,43 @@
 ---
 title: "Get a refund for an agent subscription"
-description: "Identify an agent subscription payment and contact the creator or Alysium billing. The buyer's card has no general self-service refund button."
+description: "Ask Alysium billing to review a specific agent-subscription payment, using the charge details and an explanation of what went wrong."
 keywords: ["Alysium", "Get a refund for an agent subscription", "Agenthub buying"]
 ---
 
-To ask about a paid agent charge, identify the payment and contact the creator or Alysium billing. The buyer's subscription card does not provide a general self-service Refund button.
+<span id="get-a-refund-for-an-agent-subscription" />
 
-A refund and cancellation have different effects. Canceling ordinarily stops the next renewal while keeping access until the paid period ends. A refund returns an eligible payment. If that payment funds your current access period, the subscription is canceled and access ends once Stripe confirms the refund.
+Ask Alysium billing to review a specific agent-subscription payment. Send the actual charge details and explain what went wrong so the request can be matched to the right purchase.
 
-If your aim is only to stop renewal, follow [Cancel an agent subscription](/agenthub/cancel-an-agent-subscription). Do not request a refund expecting to keep the same refunded paid access unchanged.
+If you only want to stop the next renewal, [cancel the subscription](/agenthub/cancel-an-agent-subscription). Ordinary cancellation keeps access through the current paid period. A refund request asks for money back and needs a separate review.
 
 ## Identify the charge
 
-Use the purchasing account and your payment records. The listing's current price cannot establish what you were charged or whether a refund is eligible.
+1. Open [Billing](https://app.alysium.ai/spaces?settings=billing) and check the space name. Billing opens your current space's settings.
+2. Scroll to **Agent Access and Subscriptions**, below the space's plan and usage settings. Find the agent and match its creator name.
+3. Note the subscription card's price and status. Use your payment confirmation or invoice to find the actual payment date, amount and reference for the charge you want reviewed.
 
-**Already have the agent, creator and payment details?** Continue with [Request a review of the payment](#request-a-review-of-the-payment).
-
-1. Open [Billing](https://app.alysium.ai/spaces?settings=billing).
-2. Find **Agent Access and Subscriptions**.
-3. Match the agent and creator names.
-4. Note the card's price and status.
-5. Find the payment date in your payment records.
-6. Find the amount and confirmation or invoice reference for that payment.
-7. Continue with [Request a review of the payment](#request-a-review-of-the-payment).
-
-Billing opens your active space's settings. Check the space and account used for the purchase if the record is missing.
+Use the payment record for the amount you paid; the listing's current offer may differ from that charge.
 
 ## Request a review of the payment
 
-Contact the creator through an available published contact route, or contact billing@alysium.ai. Include:
+Email [billing@alysium.ai](mailto:billing@alysium.ai) with:
 
-- The agent and creator names.
-- The actual payment date and amount.
-- The confirmation or invoice reference.
-- A short explanation of the problem and why you want a refund.
+- Your space name and the agent and creator names.
+- The payment date and amount.
+- The payment confirmation or invoice reference.
+- What happened and why you are requesting a refund.
 - Whether you also want future renewal stopped.
 
-For example, use the date and amount from your payment record, then explain what happened when you tried to use the agent. State cancellation separately so the recipient understands both requests.
+For example, explain the task you tried and the problem you encountered, using the date and amount from your payment record. State the renewal request separately so both requests are clear. Include the payment reference rather than a complete card number.
 
-Do not send a complete card number. Typing a request into an agent chat does not submit a refund through the billing process.
+Keep the sent request and any replies or refund confirmation. Sending the request begins a review; it does not confirm approval.
 
 ## Understand eligibility and a pending result
 
-Creators have a per-payment refund workflow with eligibility checks, including a **30-day self-service window**. This is the creator's in-app workflow, not a promise that every buyer request within 30 days will be approved. Older or otherwise unavailable payments need support review; that alone does not establish approval or refusal.
+Refunds are reviewed payment by payment. The creator's in-app refund window is 30 days for eligible successful charges; older charges need support review. A request within that window is not a guarantee of approval.
 
-A submitted or verifying refund is different from money received by your bank. Follow the confirmation and payment status provided for your request. This guide does not promise a fixed bank-arrival date.
+A confirmed full eligible refund of the payment funding your current service period can cause immediate cancellation. Access ends when Stripe confirms that cancellation. A partial refund, a refund for an older period, or a request that is pending, failed or still under review does not by itself establish that your current access has ended.
 
-After a confirmed refund:
+Follow the payment status and confirmation provided for your request. A submitted or pending refund is different from money received by your bank.
 
-1. Reopen [Billing](https://app.alysium.ai/spaces?settings=billing).
-2. Find the agent under **Agent Access and Subscriptions**.
-3. Check its access state and cancellation result.
-4. Follow up on the same request if the confirmed payment and access states conflict.
-
-Do not repeatedly purchase and refund to test access. For a payment error rather than a refund request, use [Fix a failed payment](/plans-and-billing/fix-a-failed-payment).
+After a confirmed refund, reopen [Billing](https://app.alysium.ai/spaces?settings=billing), scroll to **Agent Access and Subscriptions** and check the agent's status. If the refund confirmation and subscription state conflict, reply to the same billing request with the confirmation reference and the status you see.

@@ -21,7 +21,7 @@
     const src = 'https://app.alysium.ai/cdn/widget-v1.js';
     const attributes = {
       src,
-      'data-agent-id': 'uyk4hrzmh9jc',
+      'data-agent-id': 'u0pb0k23yr6a',
       'data-placement': 'floating',
       'data-position': 'bottom-right',
     };
